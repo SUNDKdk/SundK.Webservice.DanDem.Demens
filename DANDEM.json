@@ -25,7 +25,7 @@
                             "isActivated": true,
                             "properties": [
                                 {
-                                    "name": "ActivityCode",
+                                    "name": "StatusCode",
                                     "hackoladeMeta": {},
                                     "isActivated": true,
                                     "properties": [
@@ -36,8 +36,7 @@
                                             "python_type": "enum",
                                             "childType": "Base_Value_String",
                                             "type": "string",
-                                            "GUID": "74ecc474-5a33-446b-953a-4ea28df1642b",
-                                            "error": {},
+                                            "GUID": "1deedd4e-bd3d-4aa6-80b0-f44169d5ef0c",
                                             "enum": [
                                                 {
                                                     "GUID": "858d9c68-f223-4e13-b301-040b443f8938",
@@ -47,12 +46,15 @@
                                                     "GUID": "b19b4a77-3c3f-4d2f-8618-971cdef8e4ec",
                                                     "Udfald": "nej"
                                                 }
-                                            ]
+                                            ],
+                                            "foreignCollection": "",
+                                            "foreignField": [],
+                                            "error": {}
                                         }
                                     ],
-                                    "childType": "Attribute_ActivityCode",
+                                    "childType": "Attribute_StatusCode",
                                     "type": "document",
-                                    "GUID": "e2d85e08-cc7c-46ec-a29c-b29377517f4f",
+                                    "GUID": "48a64e1c-23fd-4478-886c-cf0117f57ee8",
                                     "description": "Er der udført normal-tryks-hydrocephalus (NPH)-udredning? Udredningen foretages, hvis man mistænker forhøjet intrakranielt tryk som årsag til kognigitiv deficit.\n\nKan i de fleste implementeringer stå på \"nej\" som standard.",
                                     "error": {}
                                 }
@@ -535,6 +537,40 @@
                                     "type": "document",
                                     "GUID": "6dcc67cd-66f3-4bb1-befd-15ea9584f7e0",
                                     "error": {}
+                                },
+                                {
+                                    "name": "StatusCode",
+                                    "hackoladeMeta": {},
+                                    "isActivated": true,
+                                    "properties": [
+                                        {
+                                            "name": "Value_String",
+                                            "hackoladeMeta": {},
+                                            "isActivated": true,
+                                            "python_type": "enum",
+                                            "childType": "Base_Value_String",
+                                            "type": "string",
+                                            "GUID": "a5411b6a-f3cc-4058-a1b5-a0feda80eef2",
+                                            "error": {},
+                                            "enum": [
+                                                {
+                                                    "GUID": "ad608a8a-e269-487a-972b-71c19872a8cc",
+                                                    "Udfald": "ja"
+                                                },
+                                                {
+                                                    "GUID": "5341e42c-e830-49f3-8e99-c30097f5d911",
+                                                    "Udfald": "nej"
+                                                }
+                                            ]
+                                        }
+                                    ],
+                                    "childType": "Attribute_StatusCode",
+                                    "type": "document",
+                                    "GUID": "66a4954a-d697-4059-b113-898f9ed13649",
+                                    "description": "Var der en pårørende / professionel omsorgsperson involveret i vurderingen af FAQ_ADL?\n\nDa demente ikke altid selv har indsigt i eget funktionsniveau, da inddrages pårørende eller andre, som kender patienten indgående. Der markeres ”Ja” hvis der har været en pårørende og/eller professionel omsorgsperson (der kender patienten til at kunne svare på FAQ_ADL vurdering) ved forundersøgelse.",
+                                    "foreignCollection": "",
+                                    "foreignField": [],
+                                    "error": {}
                                 }
                             ],
                             "childType": "Base_Object",
@@ -609,6 +645,38 @@
                                     "type": "document",
                                     "GUID": "5b7f7fd4-7459-425b-81b3-acfb1dde901a",
                                     "error": {}
+                                },
+                                {
+                                    "name": "StatusCode",
+                                    "hackoladeMeta": {},
+                                    "isActivated": true,
+                                    "properties": [
+                                        {
+                                            "name": "Value_String",
+                                            "hackoladeMeta": {},
+                                            "isActivated": true,
+                                            "python_type": "enum",
+                                            "childType": "Base_Value_String",
+                                            "type": "string",
+                                            "GUID": "56cd7dcb-2293-4148-a084-1885b8f67656",
+                                            "error": {},
+                                            "enum": [
+                                                {
+                                                    "GUID": "ad608a8a-e269-487a-972b-71c19872a8cc",
+                                                    "Udfald": "ja"
+                                                },
+                                                {
+                                                    "GUID": "5341e42c-e830-49f3-8e99-c30097f5d911",
+                                                    "Udfald": "nej"
+                                                }
+                                            ]
+                                        }
+                                    ],
+                                    "childType": "Attribute_StatusCode",
+                                    "type": "document",
+                                    "GUID": "647aea15-f292-4a5c-9a11-1e87026316d3",
+                                    "description": "Var der en pårørende / professionel omsorgsperson involveret i vurderingen af ADSC_ADL?\n\nDa demente ikke altid selv har indsigt i eget funktionsniveau, da inddrages pårørende eller andre, som kender patienten indgående. Der markeres ”Ja” hvis der har været en pårørende og/eller professionel omsorgsperson (der kender patienten til at kunne svare på ADSC_ADL vurdering) ved forundersøgelse.",
+                                    "error": {}
                                 }
                             ],
                             "childType": "Base_Object",
@@ -671,6 +739,51 @@
                             "type": "document",
                             "GUID": "c9a045e5-1740-4fe1-ab88-26eb47c91aad",
                             "description": "Habituel kognitiv funktion: Test inden for alders- og uddannelseskorrigeret normalområde og præmorbid funktion.",
+                            "error": {}
+                        },
+                        {
+                            "name": "Trinvold_DSQIID",
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "properties": [
+                                {
+                                    "name": "StatusCode",
+                                    "hackoladeMeta": {},
+                                    "isActivated": true,
+                                    "properties": [
+                                        {
+                                            "name": "Value_String",
+                                            "hackoladeMeta": {},
+                                            "isActivated": true,
+                                            "python_type": "enum",
+                                            "childType": "Base_Value_String",
+                                            "type": "string",
+                                            "GUID": "db48f4a3-65c3-4115-b411-f39caccebfbb",
+                                            "error": {},
+                                            "enum": [
+                                                {
+                                                    "GUID": "a58e751e-2b7a-47ae-99e2-dc4c4a6d9d9c",
+                                                    "Udfald": "ja"
+                                                },
+                                                {
+                                                    "GUID": "1acebd6d-9d09-4ae0-a3c5-987906d10b97",
+                                                    "Udfald": "nej"
+                                                }
+                                            ]
+                                        }
+                                    ],
+                                    "childType": "Attribute_StatusCode",
+                                    "type": "document",
+                                    "GUID": "e4957fed-32a6-414c-8400-1a98ab83c847",
+                                    "error": {}
+                                }
+                            ],
+                            "childType": "Base_Object",
+                            "type": "document",
+                            "GUID": "3abc60d0-fe94-4510-be1e-5dbf70df735b",
+                            "description": "Trindvold/DSQIID er instrumenter der anvendes til vurdering af patienter med samtidig Downs syndrom eller anden mental retardering og mistanke om erhvervet demenssygdom.\n\nDette instrument anvendes, når det ikke er muligt at anvende de sædvanlige instrumenter grundet mental retardering m.fl.\n\n**I tilfælde af denne er positiv, er der ikke behov for at udføre de andre tests. (LISTE AF TESTS)**",
+                            "foreignCollection": "",
+                            "foreignField": [],
                             "error": {}
                         }
                     ],
@@ -1031,8 +1144,6 @@
         "830a1dae-94f2-4886-b4bf-cd431adeffc1": "DateTime",
         "3e10fc0c-0d28-4ac5-96c9-409c6ba64219": "Value_DateTime",
         "5ded80eb-01f0-4515-ac24-a7fe56d018ee": "NPHAssessment",
-        "e2d85e08-cc7c-46ec-a29c-b29377517f4f": "ActivityCode",
-        "74ecc474-5a33-446b-953a-4ea28df1642b": "Value_String",
         "e75477aa-ae6e-4e3a-8012-6224aeaad1e4": "MMSE",
         "b0bf0abe-ccfc-4a22-8a4b-cc26729e4cd2": "Referral",
         "82a7f073-f54e-4a0d-a0c5-f55ec238ba00": "ResultValue",
@@ -1091,7 +1202,16 @@
         "1e1e54e2-4434-4dde-a12a-8d697fd13738": "StatusCode",
         "b3546bbd-92f7-4943-8c30-840df84a49b2": "Value_String",
         "b6f59db2-0a63-4b31-b6fe-33fdad26c63e": "StatusCode",
-        "766c6b7d-5fb3-4183-b86b-be1b82e73517": "Value_String"
+        "766c6b7d-5fb3-4183-b86b-be1b82e73517": "Value_String",
+        "647aea15-f292-4a5c-9a11-1e87026316d3": "StatusCode",
+        "56cd7dcb-2293-4148-a084-1885b8f67656": "Value_String",
+        "66a4954a-d697-4059-b113-898f9ed13649": "StatusCode",
+        "a5411b6a-f3cc-4058-a1b5-a0feda80eef2": "Value_String",
+        "48a64e1c-23fd-4478-886c-cf0117f57ee8": "StatusCode",
+        "1deedd4e-bd3d-4aa6-80b0-f44169d5ef0c": "Value_String",
+        "3abc60d0-fe94-4510-be1e-5dbf70df735b": "Trinvold_DSQIID",
+        "e4957fed-32a6-414c-8400-1a98ab83c847": "StatusCode",
+        "db48f4a3-65c3-4115-b411-f39caccebfbb": "Value_String"
     },
     "definitions": {
         "type": "definitions",
@@ -1116,7 +1236,7 @@
     "creationTS": "2024-08-16T10:58:12.414Z",
     "GUID": "119a2ef9-e29b-4a27-94d3-d52ee6653d29",
     "isLineageEnabled": false,
-    "lastModifTS": "2024-08-19T17:31:56.376Z",
+    "lastModifTS": "2024-08-23T10:33:36.905Z",
     "persistenceSchemaVersion": "6",
     "isCreatedByPlugin": true,
     "pluginInformation": {
