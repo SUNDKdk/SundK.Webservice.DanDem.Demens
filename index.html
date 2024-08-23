@@ -100,7 +100,7 @@
                             <div class="container-fluid">
                                 <div class="row d-flex align-items-center">
                                     <div class="col-md-8">
-                                        <h1>Dansk Klinisk Kvalitetsdatabase for Demens - Base</h1>
+                                        <h1>Dansk Klinisk Kvalitetsdatabase for Demens</h1>
                                     </div>
                                     <div class="col-md-4 d-flex justify-content-end">
                                         <ul class="nav ">
@@ -136,7 +136,7 @@
                                             <span class="badge bg-success hidden" style="vertical-align: super !important;font-size: 12px;">Newest version</span>
                                         </h6>
                                         <p>
-                                                    Dette er endpoint dokumentation til databasen Dansk Klinisk Kvalitetsdatabase for Demens - Base.
+                                                    Dette er endpoint dokumentation til databasen Dansk Klinisk Kvalitetsdatabase for Demens.
                                                      </p>
                                         <hr />
                                         <h6>Populations beskrivelse</h6>
@@ -322,7 +322,7 @@ Datagrundlaget indeholder ikke: </p>
                                                         </thead>
                                                         <tbody class="table-group-divider">
                                                             <tr>
-                                                                <th scope="row">ActivityCode</th>
+                                                                <th scope="row">StatusCode</th>
                                                                 <td scope="row"><p>Er der udført normal-tryks-hydrocephalus (NPH)-udredning? Udredningen foretages, hvis man mistænker forhøjet intrakranielt tryk som årsag til kognigitiv deficit.</p>
 <p>Kan i de fleste implementeringer stå på 'nej' som standard.</p></td>
                                                                 <td scope="row">str, Enum</td>
@@ -816,6 +816,20 @@ Hvis der ikke kan stilles en specifik diagnose.</p></div>
                                                                 </td>
                                                                 <td scope="row"></td>
                                                             </tr>
+                                                            <tr>
+                                                                <th scope="row">StatusCode</th>
+                                                                <td scope="row"><p>Var der en pårørende / professionel omsorgsperson involveret i vurderingen af ADSC_ADL?</p>
+<p>Da demente ikke altid selv har indsigt i eget funktionsniveau, da inddrages pårørende eller andre, som kender patienten indgående. Der markeres ”Ja” hvis der har været en pårørende og/eller professionel omsorgsperson (der kender patienten til at kunne svare på ADSC_ADL vurdering) ved forundersøgelse.</p></td>
+                                                                <td scope="row">str, Enum</td>
+                                                                <td scope="row">
+                                                                    <p style="margin:0px; font-weight: bold;">Udfald:</p>
+                                                                    <ul class="list-group list-group-flush">
+                                                                        <li class="list-group-item">"ja"</li>
+                                                                        <li class="list-group-item">"nej"</li>
+                                                                    </ul>
+                                                                </td>
+                                                                <td scope="row"></td>
+                                                            </tr>
                                                         </tbody>
                                                     </table>
                                                 </div>
@@ -1060,6 +1074,20 @@ Hvis der ikke kan stilles en specifik diagnose.</p></div>
                                                                 </td>
                                                                 <td scope="row"></td>
                                                             </tr>
+                                                            <tr>
+                                                                <th scope="row">StatusCode</th>
+                                                                <td scope="row"><p>Var der en pårørende / professionel omsorgsperson involveret i vurderingen af FAQ_ADL?</p>
+<p>Da demente ikke altid selv har indsigt i eget funktionsniveau, da inddrages pårørende eller andre, som kender patienten indgående. Der markeres ”Ja” hvis der har været en pårørende og/eller professionel omsorgsperson (der kender patienten til at kunne svare på FAQ_ADL vurdering) ved forundersøgelse.</p></td>
+                                                                <td scope="row">str, Enum</td>
+                                                                <td scope="row">
+                                                                    <p style="margin:0px; font-weight: bold;">Udfald:</p>
+                                                                    <ul class="list-group list-group-flush">
+                                                                        <li class="list-group-item">"ja"</li>
+                                                                        <li class="list-group-item">"nej"</li>
+                                                                    </ul>
+                                                                </td>
+                                                                <td scope="row"></td>
+                                                            </tr>
                                                         </tbody>
                                                     </table>
                                                 </div>
@@ -1244,6 +1272,52 @@ Hvis der ikke kan stilles en specifik diagnose.</p></div>
                                                                     <p style="margin:0px; font-weight: bold;">Max or Equal to</p>
                                                                     <ul class="list-group list-group-flush">
                                                                         <li class="list-group-item">30</li>
+                                                                    </ul>
+                                                                </td>
+                                                                <td scope="row"></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="dataObject">
+                                            <a data-bs-toggle='collapse' aria-expanded='false' href="#Trinvold_DSQIID12" class="ObjectHeaderWrapper">
+                                                <ol class="breadcrumb objectHeaderMain objectHeaderColor">
+                                                    <i class="bi bi-folder2 me-2"></i>
+                                                    <li class="breadcrumb-item">DANDEM</li>
+                                                    <li class="breadcrumb-item">Observation</li>
+                                                    <li aria-current='page' class="breadcrumb-item active">Trinvold_DSQIID</li>
+                                                </ol>
+                                            </a>
+                                            <div class="collapse m-3 objectBodyMain" id="Trinvold_DSQIID12">
+                                                <div class="object_margin">
+                                                    <p class="table_view_hider" style="height: 1rem !important; margin: 0px !important;"></p>
+                                                    <div class="objectDescription bg-body-tertiary">
+                                                        <div class="alert alert-warning" role="alert"><p>Trindvold/DSQIID er instrumenter der anvendes til vurdering af patienter med samtidig Downs syndrom eller anden mental retardering og mistanke om erhvervet demenssygdom.</p>
+<p>Dette instrument anvendes, når det ikke er muligt at anvende de sædvanlige instrumenter grundet mental retardering m.fl.</p>
+<p><strong>I tilfælde af denne er positiv, er der ikke behov for at udføre de andre tests. (LISTE AF TESTS)</strong></p></div>
+                                                    </div>
+                                                    <table class="table table-bordered table-striped table-hover ">
+                                                        <thead>
+                                                            <tr>
+                                                                <th scope="col" class="fst-italic th-attribute">Attribute</th>
+                                                                <th scope="col" class="fst-italic th-description">Description</th>
+                                                                <th scope="col" class="fst-italic th-type">Type</th>
+                                                                <th scope="col" class="fst-italic th-value">Constraints</th>
+                                                                <th scope="col" class="fst-italic th-required">Required</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody class="table-group-divider">
+                                                            <tr>
+                                                                <th scope="row">StatusCode</th>
+                                                                <td scope="row"></td>
+                                                                <td scope="row">str, Enum</td>
+                                                                <td scope="row">
+                                                                    <p style="margin:0px; font-weight: bold;">Udfald:</p>
+                                                                    <ul class="list-group list-group-flush">
+                                                                        <li class="list-group-item">"ja"</li>
+                                                                        <li class="list-group-item">"nej"</li>
                                                                     </ul>
                                                                 </td>
                                                                 <td scope="row"></td>
