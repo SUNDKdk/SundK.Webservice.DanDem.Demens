@@ -25,43 +25,32 @@
                             "isActivated": true,
                             "properties": [
                                 {
-                                    "name": "StatusCode",
+                                    "name": "DateTime",
                                     "hackoladeMeta": {},
                                     "isActivated": true,
                                     "properties": [
                                         {
-                                            "name": "Value_String",
+                                            "name": "Value_DateTime",
                                             "hackoladeMeta": {},
                                             "isActivated": true,
-                                            "python_type": "enum",
-                                            "childType": "Base_Value_String",
+                                            "python_type": "DateTime",
+                                            "childType": "Base_Value_DateTime",
                                             "type": "string",
-                                            "GUID": "1deedd4e-bd3d-4aa6-80b0-f44169d5ef0c",
-                                            "enum": [
-                                                {
-                                                    "GUID": "858d9c68-f223-4e13-b301-040b443f8938",
-                                                    "Udfald": "ja"
-                                                },
-                                                {
-                                                    "GUID": "b19b4a77-3c3f-4d2f-8618-971cdef8e4ec",
-                                                    "Udfald": "nej"
-                                                }
-                                            ],
-                                            "foreignCollection": "",
-                                            "foreignField": [],
+                                            "GUID": "34a0baba-704d-45b2-bd1a-886e32e70232",
                                             "error": {}
                                         }
                                     ],
-                                    "childType": "Attribute_StatusCode",
+                                    "childType": "Attribute_DateTime",
                                     "type": "document",
-                                    "GUID": "48a64e1c-23fd-4478-886c-cf0117f57ee8",
-                                    "description": "Er der udført normal-tryks-hydrocephalus (NPH)-udredning? Udredningen foretages, hvis man mistænker forhøjet intrakranielt tryk som årsag til kognigitiv deficit.\n\nKan i de fleste implementeringer stå på \"nej\" som standard.",
+                                    "GUID": "5a2ec827-284b-401a-a728-8ac1965d1ad5",
+                                    "description": "Er der udført normal-tryks-hydrocephalus (NPH)-udredning? Udredningen foretages, hvis man mistænker forhøjet intrakranielt tryk som årsag til kognigitiv deficit.",
                                     "error": {}
                                 }
                             ],
                             "childType": "Base_Object",
                             "type": "document",
                             "GUID": "5ded80eb-01f0-4515-ac24-a7fe56d018ee",
+                            "description": "Dette er kun relevant for:\n\n- Rigshospitalet, Blegdamsvej (SOR: 253121000016002)\n- Aalborg UH, Demensenheden (SOR: 911061000016003)\n- Aalborg UH, Neurologisk (SOR: 275991000016001)",
                             "error": {}
                         },
                         {
@@ -70,34 +59,24 @@
                             "isActivated": true,
                             "properties": [
                                 {
-                                    "name": "StatusCode",
+                                    "name": "ResultValue",
                                     "hackoladeMeta": {},
                                     "isActivated": true,
                                     "properties": [
                                         {
-                                            "name": "Value_String",
+                                            "name": "Value_DateTime",
                                             "hackoladeMeta": {},
                                             "isActivated": true,
-                                            "python_type": "enum",
-                                            "childType": "Base_Value_String",
+                                            "python_type": "DateTime",
+                                            "childType": "Base_Value_DateTime",
                                             "type": "string",
-                                            "GUID": "286cf1b3-663c-4bd8-8636-a8dfbda5eabe",
-                                            "error": {},
-                                            "enum": [
-                                                {
-                                                    "GUID": "091103d3-108b-4473-acb2-43573e5a2ee9",
-                                                    "Udfald": "ja"
-                                                },
-                                                {
-                                                    "GUID": "2f64734c-7a53-47af-b817-c64fc2988a8f",
-                                                    "Udfald": "nej"
-                                                }
-                                            ]
+                                            "GUID": "20534840-0746-4352-9e8e-6c7399a21e30",
+                                            "error": {}
                                         }
                                     ],
-                                    "childType": "Attribute_StatusCode",
+                                    "childType": "Attribute_ResultValue",
                                     "type": "document",
-                                    "GUID": "40547d16-1b79-4ec8-b525-e40fc0a08831",
+                                    "GUID": "6480f538-f464-46f4-93d2-78613fbb9bf6",
                                     "description": "Forelægger der CT-scanning af cerebrum og evt. adgang til  billeder foretaget indenfor 24 måneder før diagnosesamtaledatoen.",
                                     "error": {}
                                 }
@@ -113,35 +92,27 @@
                             "isActivated": true,
                             "properties": [
                                 {
-                                    "name": "StatusCode",
+                                    "name": "ResultValue",
                                     "hackoladeMeta": {},
                                     "isActivated": true,
                                     "properties": [
                                         {
-                                            "name": "Value_String",
+                                            "name": "Value_DateTime",
                                             "hackoladeMeta": {},
                                             "isActivated": true,
-                                            "python_type": "enum",
-                                            "childType": "Base_Value_String",
+                                            "python_type": "DateTime",
+                                            "childType": "Base_Value_DateTime",
                                             "type": "string",
-                                            "GUID": "da1b005b-3fe1-454b-a38f-2e009c06175d",
-                                            "error": {},
-                                            "enum": [
-                                                {
-                                                    "GUID": "091103d3-108b-4473-acb2-43573e5a2ee9",
-                                                    "Udfald": "ja"
-                                                },
-                                                {
-                                                    "GUID": "2f64734c-7a53-47af-b817-c64fc2988a8f",
-                                                    "Udfald": "nej"
-                                                }
-                                            ]
+                                            "GUID": "4e1f9016-3264-48fd-aeca-fa53ead5b24f",
+                                            "error": {}
                                         }
                                     ],
-                                    "childType": "Attribute_StatusCode",
+                                    "childType": "Attribute_ResultValue",
                                     "type": "document",
-                                    "GUID": "d99f0afd-8628-4df8-a1c0-6a60f02b1ecf",
+                                    "GUID": "f530461d-fe4f-4d21-9bd5-ce97fc90f6e1",
                                     "description": "Forelægger der MR-scanning af cerebrum og evt. adgang til  billeder foretaget indenfor 24 måneder før diagnosesamtaledatoen.",
+                                    "foreignCollection": "",
+                                    "foreignField": [],
                                     "error": {}
                                 }
                             ],
@@ -156,35 +127,27 @@
                             "isActivated": true,
                             "properties": [
                                 {
-                                    "name": "StatusCode",
+                                    "name": "ResultValue",
                                     "hackoladeMeta": {},
                                     "isActivated": true,
                                     "properties": [
                                         {
-                                            "name": "Value_String",
+                                            "name": "Value_DateTime",
                                             "hackoladeMeta": {},
                                             "isActivated": true,
-                                            "python_type": "enum",
-                                            "childType": "Base_Value_String",
+                                            "python_type": "DateTime",
+                                            "childType": "Base_Value_DateTime",
                                             "type": "string",
-                                            "GUID": "04801a85-3692-4b54-a3a3-7d13eb70feb7",
-                                            "error": {},
-                                            "enum": [
-                                                {
-                                                    "GUID": "091103d3-108b-4473-acb2-43573e5a2ee9",
-                                                    "Udfald": "ja"
-                                                },
-                                                {
-                                                    "GUID": "2f64734c-7a53-47af-b817-c64fc2988a8f",
-                                                    "Udfald": "nej"
-                                                }
-                                            ]
+                                            "GUID": "77b7f650-1fef-448c-b1d4-0df137bb9e12",
+                                            "error": {}
                                         }
                                     ],
-                                    "childType": "Attribute_StatusCode",
+                                    "childType": "Attribute_ResultValue",
                                     "type": "document",
-                                    "GUID": "c8c8ea93-00bc-451d-b3b5-8dacc7477cea",
+                                    "GUID": "3a4e4047-c636-46e0-b72c-22bbef482ea7",
                                     "description": "Er NPU udført i udredningsenhedens regi, uddelegeret derfra eller blevet gennemlæst/vurderet af udredningsenhedens neuropsykologer og fundet velgennemført?\n\n**Testen skal være udført inden for de seneste 12 mdr.**",
+                                    "foreignCollection": "",
+                                    "foreignField": [],
                                     "error": {}
                                 }
                             ],
@@ -192,51 +155,6 @@
                             "type": "document",
                             "GUID": "991acd7b-fd4d-4169-810f-066fbbd9677a",
                             "description": "Neuropsykologisk undersøgelse (NPU)",
-                            "error": {}
-                        },
-                        {
-                            "name": "OfferedDementiaMedication",
-                            "hackoladeMeta": {},
-                            "isActivated": true,
-                            "properties": [
-                                {
-                                    "name": "StatusCode",
-                                    "hackoladeMeta": {},
-                                    "isActivated": true,
-                                    "properties": [
-                                        {
-                                            "name": "Value_String",
-                                            "hackoladeMeta": {},
-                                            "isActivated": true,
-                                            "python_type": "enum",
-                                            "childType": "Base_Value_String",
-                                            "type": "string",
-                                            "GUID": "b3546bbd-92f7-4943-8c30-840df84a49b2",
-                                            "enum": [
-                                                {
-                                                    "GUID": "744abaf4-72f4-4db5-9f07-a35e0b86e52e",
-                                                    "Udfald": "ja"
-                                                },
-                                                {
-                                                    "GUID": "50855194-a615-4a4a-a3d5-03158729dbf5",
-                                                    "Udfald": "nej"
-                                                }
-                                            ],
-                                            "foreignCollection": "",
-                                            "foreignField": [],
-                                            "error": {}
-                                        }
-                                    ],
-                                    "childType": "Attribute_StatusCode",
-                                    "type": "document",
-                                    "GUID": "1e1e54e2-4434-4dde-a12a-8d697fd13738",
-                                    "error": {}
-                                }
-                            ],
-                            "childType": "Base_Object",
-                            "type": "document",
-                            "GUID": "95c368a6-1c7e-4ec5-b9c5-221ffd2eda23",
-                            "description": "Er patienten blevet tilbudt demensmedicin?\n\nVed Ja forstås, at der i udredningsforløbet for demens er tilbudt behandling med én af følgende relevante medicintyper, som patienten skal påbegynde behandling med eller allerede er i behandling med følgende relevante medicintyper:\n\n- Aricept: Donepezil\n- Exelon: Rivastigmin\n- Reminyl: Galantamin\n- Ebixa: Memantin",
                             "error": {}
                         }
                     ],
@@ -499,13 +417,14 @@
                                     "childType": "Attribute_ResultValue",
                                     "type": "document",
                                     "GUID": "6cf3fb59-2148-4eeb-9674-a2dd915c51c2",
+                                    "description": "**Hvis denne test er positiv, er der ikke behov for at udføre yderligere tests. Det anbefales at implementere denne først i integrationer til webservicen.**",
                                     "error": {}
                                 }
                             ],
                             "childType": "Base_Object",
                             "type": "document",
                             "GUID": "00c0430e-a335-47b1-b762-29614ad39979",
-                            "description": "The Rowland Universal Dementia Assessment Scale (RUDAS) er udviklet som et så vidt muligt kulturuafhængigt eller tværkulturelt screeningsinstrument for demens. \n",
+                            "description": "The Rowland Universal Dementia Assessment Scale (RUDAS) er udviklet som et så vidt muligt kulturuafhængigt eller tværkulturelt screeningsinstrument for demens. \n\n**Hvis denne test er positiv, er der ikke behov for at udføre yderligere tests. Det anbefales at implementere denne først i integrationer til webservicen.**",
                             "error": {}
                         },
                         {
@@ -536,40 +455,6 @@
                                     "childType": "Attribute_ResultValue",
                                     "type": "document",
                                     "GUID": "6dcc67cd-66f3-4bb1-befd-15ea9584f7e0",
-                                    "error": {}
-                                },
-                                {
-                                    "name": "StatusCode",
-                                    "hackoladeMeta": {},
-                                    "isActivated": true,
-                                    "properties": [
-                                        {
-                                            "name": "Value_String",
-                                            "hackoladeMeta": {},
-                                            "isActivated": true,
-                                            "python_type": "enum",
-                                            "childType": "Base_Value_String",
-                                            "type": "string",
-                                            "GUID": "a5411b6a-f3cc-4058-a1b5-a0feda80eef2",
-                                            "error": {},
-                                            "enum": [
-                                                {
-                                                    "GUID": "ad608a8a-e269-487a-972b-71c19872a8cc",
-                                                    "Udfald": "ja"
-                                                },
-                                                {
-                                                    "GUID": "5341e42c-e830-49f3-8e99-c30097f5d911",
-                                                    "Udfald": "nej"
-                                                }
-                                            ]
-                                        }
-                                    ],
-                                    "childType": "Attribute_StatusCode",
-                                    "type": "document",
-                                    "GUID": "66a4954a-d697-4059-b113-898f9ed13649",
-                                    "description": "Var der en pårørende / professionel omsorgsperson involveret i vurderingen af FAQ_ADL?\n\nDa demente ikke altid selv har indsigt i eget funktionsniveau, da inddrages pårørende eller andre, som kender patienten indgående. Der markeres ”Ja” hvis der har været en pårørende og/eller professionel omsorgsperson (der kender patienten til at kunne svare på FAQ_ADL vurdering) ved forundersøgelse.",
-                                    "foreignCollection": "",
-                                    "foreignField": [],
                                     "error": {}
                                 }
                             ],
@@ -645,38 +530,6 @@
                                     "type": "document",
                                     "GUID": "5b7f7fd4-7459-425b-81b3-acfb1dde901a",
                                     "error": {}
-                                },
-                                {
-                                    "name": "StatusCode",
-                                    "hackoladeMeta": {},
-                                    "isActivated": true,
-                                    "properties": [
-                                        {
-                                            "name": "Value_String",
-                                            "hackoladeMeta": {},
-                                            "isActivated": true,
-                                            "python_type": "enum",
-                                            "childType": "Base_Value_String",
-                                            "type": "string",
-                                            "GUID": "56cd7dcb-2293-4148-a084-1885b8f67656",
-                                            "error": {},
-                                            "enum": [
-                                                {
-                                                    "GUID": "ad608a8a-e269-487a-972b-71c19872a8cc",
-                                                    "Udfald": "ja"
-                                                },
-                                                {
-                                                    "GUID": "5341e42c-e830-49f3-8e99-c30097f5d911",
-                                                    "Udfald": "nej"
-                                                }
-                                            ]
-                                        }
-                                    ],
-                                    "childType": "Attribute_StatusCode",
-                                    "type": "document",
-                                    "GUID": "647aea15-f292-4a5c-9a11-1e87026316d3",
-                                    "description": "Var der en pårørende / professionel omsorgsperson involveret i vurderingen af ADSC_ADL?\n\nDa demente ikke altid selv har indsigt i eget funktionsniveau, da inddrages pårørende eller andre, som kender patienten indgående. Der markeres ”Ja” hvis der har været en pårørende og/eller professionel omsorgsperson (der kender patienten til at kunne svare på ADSC_ADL vurdering) ved forundersøgelse.",
-                                    "error": {}
                                 }
                             ],
                             "childType": "Base_Object",
@@ -732,6 +585,7 @@
                                     "type": "document",
                                     "GUID": "e6db085b-5b02-473e-9a6d-38365d0f2a93",
                                     "description": "*Kognitiv svækkelse, ikke dement*\n\nKognitiv svækkelse i et eller flere domæner, men ikke dement (normal ADL). Det er ikke  afgørende om patienten har svigt indenfor ét eller flere kognitive domæner, men om patienten trods svigt opretholder et normalt dagligt funktionsniveau. Den kognitive svækkelse kan være på såvel organisk som non-organisk baggrund.\n\n*Demens i let grad jf. ICD-10*\n\nICD-10 Demenskriterierne skal være opfyldte og sværhedsgrad let ud fra en samlet klinisk vurdering.\n\n*Demens (NIA-AA) i let grad (ICD-10)*\n\nNIA-AA kriterier for demens skal være opfyldte og ADL påvirkning er let jf. ICD-10 kriterier.\n\n*Demens (NIA-AA) i moderat grad (ICD-10):*\n\nNIA-AA kriterier for demens skal være opfyldte og ADL påvirkning er moderat jf. ICD-10 kriterier.\n\n*Demens (NIA-AA) i svær grad (ICD-10)*\n\nNIA-AA kriterier for demens skal være opfyldte og ADL påvirkning er svær jf. ICD-10 kriterier",
+                                    "required": true,
                                     "error": {}
                                 }
                             ],
@@ -739,6 +593,7 @@
                             "type": "document",
                             "GUID": "c9a045e5-1740-4fe1-ab88-26eb47c91aad",
                             "description": "Habituel kognitiv funktion: Test inden for alders- og uddannelseskorrigeret normalområde og præmorbid funktion.",
+                            "required": true,
                             "error": {}
                         },
                         {
@@ -784,6 +639,54 @@
                             "description": "Trindvold/DSQIID er instrumenter der anvendes til vurdering af patienter med samtidig Downs syndrom eller anden mental retardering og mistanke om erhvervet demenssygdom.\n\nDette instrument anvendes, når det ikke er muligt at anvende de sædvanlige instrumenter grundet mental retardering m.fl.\n\n**I tilfælde af denne er positiv, er der ikke behov for at udføre de andre tests. (LISTE AF TESTS)**",
                             "foreignCollection": "",
                             "foreignField": [],
+                            "error": {}
+                        },
+                        {
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "properties": [
+                                {
+                                    "name": "StatusCode",
+                                    "hackoladeMeta": {},
+                                    "isActivated": true,
+                                    "properties": [
+                                        {
+                                            "name": "Value_String",
+                                            "hackoladeMeta": {},
+                                            "isActivated": true,
+                                            "python_type": "enum",
+                                            "childType": "Base_Value_String",
+                                            "type": "string",
+                                            "GUID": "0f515031-6ba9-4b5a-9ec5-ccca95dc62cc",
+                                            "enum": [
+                                                {
+                                                    "GUID": "744abaf4-72f4-4db5-9f07-a35e0b86e52e",
+                                                    "Udfald": "ja"
+                                                },
+                                                {
+                                                    "GUID": "50855194-a615-4a4a-a3d5-03158729dbf5",
+                                                    "Udfald": "nej"
+                                                }
+                                            ],
+                                            "foreignCollection": "",
+                                            "foreignField": [],
+                                            "error": {}
+                                        }
+                                    ],
+                                    "childType": "Attribute_StatusCode",
+                                    "type": "document",
+                                    "GUID": "d2a39830-27f0-48c7-81f5-7c484ef703c7",
+                                    "foreignCollection": "",
+                                    "foreignField": [],
+                                    "description": "Der skal svares Ja, hvis patienten er blevet tilbudt henvisning. Både hvis patient/pårørende ønsker dette sat i værk eller hvis de ikke ønsker dette sat i værk.",
+                                    "error": {}
+                                }
+                            ],
+                            "childType": "Base_Object",
+                            "type": "document",
+                            "GUID": "f57abb4f-f4e4-454b-8cd5-c6e127ad6f9d",
+                            "description": "Var der en pårørende / professionel omsorgsperson involveret i vurderingerne?\n\nDa demente ikke altid selv har indsigt i eget funktionsniveau, da inddrages pårørende eller andre, som kender patienten indgående. Der markeres ”Ja” hvis der har været en pårørende og/eller professionel omsorgsperson (der kender patienten til at kunne svare på vurderingen) ved forundersøgelse.\n\nDenne variabel er dækkende for alle de nævnte vurderinger, og det antages at hvis der har været en pårørende til stede ved en vurdering har der været en pårørende til stede ved alle.",
+                            "name": "SupportPersonPresent",
                             "error": {}
                         }
                     ],
@@ -961,10 +864,6 @@
                                                 {
                                                     "GUID": "744abaf4-72f4-4db5-9f07-a35e0b86e52e",
                                                     "Udfald": "ja"
-                                                },
-                                                {
-                                                    "GUID": "50855194-a615-4a4a-a3d5-03158729dbf5",
-                                                    "Udfald": "nej"
                                                 }
                                             ],
                                             "foreignCollection": "",
@@ -1080,13 +979,16 @@
                                     "childType": "Attribute_DiagnosisCode",
                                     "type": "document",
                                     "GUID": "7bf736bc-48a2-40a8-8718-dd5a1376dcea",
+                                    "required": false,
+                                    "description": "*Demens*\n\nNational Institute on Aging and the Alzheimer's Association (NIA-AA) workgroup kriterier (McKhann GM et al. 2011)\nNogle udredningsenheder har også erfaring med anvende NIA-AA 2018 AD-kriterierne\n\n*Alzheimers sygdom*\n\nEn række demensudredningsenheder samarbejder i ADEX alliancen om harmonisering: \nhttp://www.videnscenterfordemens.dk/forskning/adex/adex-alliancen/ og er 2016 enige om at  anvende følgende diagnosekriterier: National Institute on Aging and the Alzheimer's Association (NIA-AA) workgroup kriterier (McKhann GM et al. 2011)\n\nNogle udredningsenheder har også erfaring med anvende NIA-AA 2018 AD-kriterierne\n\n*Lewy Body sygdom*\n\nKriterier fra fourth consensus report of the DLB Consortium (McKeith IG et al. 2017)\nParkinson sygdom\n\n*Cerebrovaskulær sygdom*\n\nThe International Society for Vascular Behavioral and Cognitive Disorders (VAS-COG)-kriterier \n(Sachdev P et al. 2014)\n\n*Mixed (Alzheimer + Cerebrovaskulær)*\n\nNår de kognitive symptomer er forklaret ved Alzheimers sygdom såvel som cerebrovaskulær sygdom.\n\n*Frontotemporal demens*\n\nRevised diagnostic criteria for the behavioral variant of frontotemporal demens (Rascovsky K et al. 2011) Classification of primary progressive aphasia and its variants (Gorno-Tempini M et al. 2011)\n\n*Atypisk Parkinson (MSA, CBS, PSP)*\n\nNormaltryks hydrocephalus (NPH)\n\n*Huntingtons sygdom*\n\nDiagnostic Criteria for Huntington's Disease based on Natural History (Reilmann R et al. 2014)\n\n*Alkohol*\nFor at anvende Alkohol som den primære årsag til kognitivt deficit, så skal det være den  primære årsag og/eller der er diagnosticeret Wernicke-Korsakoff. Hvis der samtidig er verificeret en neuro-degenerativ lidelse (f. eks Alzheimers sygdom), så skal denne vælges som \nprimære årsag, ikke alkohol.\n\n*Anden specifik neuro-degenerativ sygdom*\n\nKan f.eks. være spinocerebellare ataksier, ALS-FTD og lign.\n\n*Anden ikke neuro-degenerativ sygdom*\n\nKan f.eks. være følger efter traume eller intra-kraniel tumor.\n\n*Psykiatrisk sygdom*\n\nPsykiatrisk genese til kognitive deficit registres selvstændigt, når det er den eneste/primære årsag. Hvis der er verificeret en neuro-degenerativ lidelse (f.eks. Alzheimers sygdom), så skal denne vælges som den primære årsag og ikke psykiatrisk sygdom.\n\n*Uafklaret ætiologi*\n\nHvis der ikke kan stilles en specifik diagnose.",
                                     "error": {}
                                 }
                             ],
                             "childType": "Base_Object",
                             "type": "document",
                             "GUID": "f4442f9a-60c4-423e-9c30-10c0ca68b6ba",
-                            "description": "Hvis Graden af kognitiv påvirkning ikke er svarende til Habituel kognitiv funktion, da skal Ætiologisk diagnose angives, hvis det er muligt. \n\nDen sygdomsspecifikke diagnose, der registres skal være den anførte diagnose i journalen og som er kommunikeret til patient/pårørende. Ved flere konkurrerende ætiologier indberettes den ætiologi, der bedst beskriver den dominerende kliniske tilstand. \nSiden 2015 har de diagnostiske kriterier for demens været diskuteret, men der er stadig ikke \nkonsensus om, hvilke diagnostiske kriterier, der skal anvendes på tværs af landet. Trial Nation \nanbefaler følgende diagnosekriterier:\n\nDemens\nNational Institute on Aging and the Alzheimer's Association (NIA-AA) workgroup kriterier (McKhann GM et al. 2011)\nNogle udredningsenheder har også erfaring med anvende NIA-AA 2018 AD-kriterierne\n\nAlzheimers sygdom\nEn række demensudredningsenheder samarbejder i ADEX alliancen om harmonisering: \nhttp://www.videnscenterfordemens.dk/forskning/adex/adex-alliancen/ og er 2016 enige om at \nanvende følgende diagnosekriterier:\nNational Institute on Aging and the Alzheimer's Association (NIA-AA) workgroup kriterier\n(McKhann GM et al. 2011)\nNogle udredningsenheder har også erfaring med anvende NIA-AA 2018 AD-kriterierne\n\nLewy Body sygdom: \nKriterier fra fourth consensus report of the DLB Consortium (McKeith IG et al. 2017)\nParkinson sygdom\n\nCerebrovaskulær sygdom:\nThe International Society for Vascular Behavioral and Cognitive Disorders (VAS-COG)-kriterier \n(Sachdev P et al. 2014)\n\nMixed (Alzheimer + Cerebrovaskulær):\nNår de kognitive symptomer er forklaret ved Alzheimers sygdom såvel som cerebrovaskulær \nsygdom.\n\nFrontotemporal demens:\nRevised diagnostic criteria for the behavioral variant of frontotemporal demens (Rascovsky K \net al. 2011)\nClassification of primary progressive aphasia and its variants (Gorno-Tempini M et al. 2011)\n\nAtypisk Parkinson (MSA, CBS, PSP)\n\nNormaltryks hydrocephalus (NPH)\n\nHuntingtons sygdom\nDiagnostic Criteria for Huntington's Disease based on Natural History (Reilmann R et al. 2014)\n\nAlkohol:\nFor at anvende Alkohol som den primære årsag til kognitivt deficit, så skal det være den \nprimære årsag og/eller der er diagnosticeret Wernicke-Korsakoff. Hvis der samtidig er \nverificeret en neuro-degenerativ lidelse (f. eks Alzheimers sygdom), så skal denne vælges som \nprimære årsag, ikke alkohol.\n\nAnden specifik neuro-degenerativ sygdom:\nKan f.eks. være spinocerebellare ataksier, ALS-FTD og lign.\n\nAnden ikke neuro-degenerativ sygdom:\nKan f.eks. være følger efter traume eller intra-kraniel tumor.\n\nPsykiatrisk sygdom:\nPsykiatrisk genese til kognitive deficit registres selvstændigt, når det er den eneste/primære \nårsag. Hvis der er verificeret en neuro-degenerativ lidelse (f.eks. Alzheimers sygdom), så skal \ndenne vælges som den primære årsag og ikke psykiatrisk sygdom.\n\nUafklaret ætiologi:\nHvis der ikke kan stilles en specifik diagnose.",
+                            "description": "Hvis Graden af kognitiv påvirkning ikke er svarende til Habituel kognitiv funktion, da skal Ætiologisk diagnose angives, hvis det er muligt. \n\nDen sygdomsspecifikke diagnose, der registres skal være den anførte diagnose i journalen og som er kommunikeret til patient/pårørende. Ved flere konkurrerende ætiologier indberettes den ætiologi, der bedst beskriver den dominerende kliniske tilstand. \nSiden 2015 har de diagnostiske kriterier for demens været diskuteret, men der er stadig ikke konsensus om, hvilke diagnostiske kriterier, der skal anvendes på tværs af landet. Trial Nation anbefaler følgende diagnosekriterier:",
+                            "required": false,
                             "error": {}
                         }
                     ],
@@ -1106,8 +1008,7 @@
             "GUID": "79e59bf8-0e30-4b5c-8afd-c85afb00b871",
             "bucketId": "bdea2baf-86e0-4dce-aefe-a5d20dd110b8",
             "dbNameShort": "DANDEM",
-            "dbSchema": "Base",
-            "dbPopulation": "Populationen omfatter alle som henvises til elektiv demensudredning i en demensudredningsenhed/hukommelsesklinik, der er placeret under følgende tre specialer: \n\n- geriatri\n- neurologi\n- psykiatri\n\nPatienten skal være henvist til demensudredning med procedurekoden ZZ1500. Patienten skal være fyldt 18 år på henvisningstidspunktet for at kunne indgå i DanDem.\n\nDatabase populationen defineres, som patienter der udredes for demens i hospitalsregi eller via fritvalgsordning ved alternativt hospital, anden region eller privat aktør. \n\nEkslusionskriterier:\nDatagrundlaget indeholder ikke: \n\n- Patienter, der er yngre end 18 år\n- patienter genhenvist med sikker diagnose pga. adfærdsforstyrrelser eller behandling . \n"
+            "dbPopulation": "Populationen omfatter alle som henvises til elektiv demensudredning i en demensudredningsenhed/hukommelsesklinik, der er placeret under følgende tre specialer: \n\n1. geriatri\n2. neurologi\n3. psykiatri\n\nPatienten skal være henvist til demensudredning med procedurekoden ZZ1500. Patienten skal være fyldt 18 år på henvisningstidspunktet for at kunne indgå i DanDem.\n\nDatabase populationen defineres, som patienter der udredes for demens i hospitalsregi eller via fritvalgsordning ved alternativt hospital, anden region eller privat aktør. \n\n**Ekslusionskriterier**\n\nDatagrundlaget indeholder ikke: \n1. Patienter, der er yngre end 18 år samt \n2. patienter genhenvist med sikker diagnose pga. adfærdsforstyrrelser"
         }
     ],
     "buckets": [
@@ -1183,35 +1084,31 @@
         "5b7f7fd4-7459-425b-81b3-acfb1dde901a": "ResultValue",
         "b2ac1b6b-a337-40a3-b620-1b8798438c64": "Value_Numeric",
         "19ad6c43-c1a9-43d9-b2bd-9995e5ecca9c": "CT_Scan",
-        "40547d16-1b79-4ec8-b525-e40fc0a08831": "StatusCode",
-        "286cf1b3-663c-4bd8-8636-a8dfbda5eabe": "Value_String",
         "02c6ae38-34ea-41ec-a3cf-37f41eafa6ea": "MR_Scan",
-        "d99f0afd-8628-4df8-a1c0-6a60f02b1ecf": "StatusCode",
-        "da1b005b-3fe1-454b-a38f-2e009c06175d": "Value_String",
         "991acd7b-fd4d-4169-810f-066fbbd9677a": "NPU",
-        "c8c8ea93-00bc-451d-b3b5-8dacc7477cea": "StatusCode",
-        "04801a85-3692-4b54-a3a3-7d13eb70feb7": "Value_String",
         "c9a045e5-1740-4fe1-ab88-26eb47c91aad": "CognitiveImpairment",
         "e6db085b-5b02-473e-9a6d-38365d0f2a93": "ResultValue",
         "39215999-cbbc-4d38-89d5-3e9687c82b78": "Value_String",
         "f4442f9a-60c4-423e-9c30-10c0ca68b6ba": "EtiologicalDiagnosis",
         "7bf736bc-48a2-40a8-8718-dd5a1376dcea": "DiagnosisCode",
         "bdf367db-22a0-4933-8de1-8782481c09ba": "Value_String",
-        "95c368a6-1c7e-4ec5-b9c5-221ffd2eda23": "OfferedDementiaMedication",
         "6ad72a23-7572-4583-b09a-524f7fa9d55d": "ReferralCommunalCoordinator",
-        "1e1e54e2-4434-4dde-a12a-8d697fd13738": "StatusCode",
-        "b3546bbd-92f7-4943-8c30-840df84a49b2": "Value_String",
         "b6f59db2-0a63-4b31-b6fe-33fdad26c63e": "StatusCode",
         "766c6b7d-5fb3-4183-b86b-be1b82e73517": "Value_String",
-        "647aea15-f292-4a5c-9a11-1e87026316d3": "StatusCode",
-        "56cd7dcb-2293-4148-a084-1885b8f67656": "Value_String",
-        "66a4954a-d697-4059-b113-898f9ed13649": "StatusCode",
-        "a5411b6a-f3cc-4058-a1b5-a0feda80eef2": "Value_String",
-        "48a64e1c-23fd-4478-886c-cf0117f57ee8": "StatusCode",
-        "1deedd4e-bd3d-4aa6-80b0-f44169d5ef0c": "Value_String",
         "3abc60d0-fe94-4510-be1e-5dbf70df735b": "Trinvold_DSQIID",
         "e4957fed-32a6-414c-8400-1a98ab83c847": "StatusCode",
-        "db48f4a3-65c3-4115-b411-f39caccebfbb": "Value_String"
+        "db48f4a3-65c3-4115-b411-f39caccebfbb": "Value_String",
+        "5a2ec827-284b-401a-a728-8ac1965d1ad5": "DateTime",
+        "34a0baba-704d-45b2-bd1a-886e32e70232": "Value_DateTime",
+        "f57abb4f-f4e4-454b-8cd5-c6e127ad6f9d": "SupportPersonPresent",
+        "d2a39830-27f0-48c7-81f5-7c484ef703c7": "StatusCode",
+        "0f515031-6ba9-4b5a-9ec5-ccca95dc62cc": "Value_String",
+        "6480f538-f464-46f4-93d2-78613fbb9bf6": "ResultValue",
+        "20534840-0746-4352-9e8e-6c7399a21e30": "Value_DateTime",
+        "f530461d-fe4f-4d21-9bd5-ce97fc90f6e1": "ResultValue",
+        "4e1f9016-3264-48fd-aeca-fa53ead5b24f": "Value_DateTime",
+        "3a4e4047-c636-46e0-b72c-22bbef482ea7": "ResultValue",
+        "77b7f650-1fef-448c-b1d4-0df137bb9e12": "Value_DateTime"
     },
     "definitions": {
         "type": "definitions",
@@ -1236,7 +1133,7 @@
     "creationTS": "2024-08-16T10:58:12.414Z",
     "GUID": "119a2ef9-e29b-4a27-94d3-d52ee6653d29",
     "isLineageEnabled": false,
-    "lastModifTS": "2024-08-23T10:33:36.905Z",
+    "lastModifTS": "2024-09-09T08:53:23.560Z",
     "persistenceSchemaVersion": "6",
     "isCreatedByPlugin": true,
     "pluginInformation": {
