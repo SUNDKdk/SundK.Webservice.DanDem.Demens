@@ -568,11 +568,11 @@
                                                 },
                                                 {
                                                     "GUID": "a8e367ce-58c9-4d4c-9b7d-6fa799a144b4",
-                                                    "Udfald": "demens_ let_ grad"
+                                                    "Udfald": "demens_let_grad"
                                                 },
                                                 {
                                                     "GUID": "2cea4017-9908-4893-a10b-2dc326d6a037",
-                                                    "Udfald": "demens_ moderat_ grad"
+                                                    "Udfald": "demens_moderat_grad"
                                                 },
                                                 {
                                                     "GUID": "4dbf6494-4614-46d0-8b75-e4e69573ab6d",
@@ -1133,7 +1133,7 @@
     "creationTS": "2024-08-16T10:58:12.414Z",
     "GUID": "119a2ef9-e29b-4a27-94d3-d52ee6653d29",
     "isLineageEnabled": false,
-    "lastModifTS": "2024-09-09T08:53:23.560Z",
+    "lastModifTS": "2024-09-09T08:57:33.933Z",
     "persistenceSchemaVersion": "6",
     "isCreatedByPlugin": true,
     "pluginInformation": {
