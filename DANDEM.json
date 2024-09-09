@@ -77,7 +77,7 @@
                                     "childType": "Attribute_ResultValue",
                                     "type": "document",
                                     "GUID": "6480f538-f464-46f4-93d2-78613fbb9bf6",
-                                    "description": "Forelægger der CT-scanning af cerebrum og evt. adgang til  billeder foretaget indenfor 24 måneder før diagnosesamtaledatoen.",
+                                    "description": "Forelægger der CT-scanning af cerebrum og evt. adgang til billeder foretaget indenfor 24 måneder før diagnosesamtaledatoen.\n\n**Bemærk:** Dette indberettes som data af typen DateTime for at muliggøre automatisk indberetning, ikke fordi at dato og tid er af analytisk relevans. Derfor kan tid indberettes som 00:00:00. Hvis dette ikke indberettes tolkes det som at CT-scanning ikke har fundet sted.",
                                     "error": {}
                                 }
                             ],
@@ -110,7 +110,7 @@
                                     "childType": "Attribute_ResultValue",
                                     "type": "document",
                                     "GUID": "f530461d-fe4f-4d21-9bd5-ce97fc90f6e1",
-                                    "description": "Forelægger der MR-scanning af cerebrum og evt. adgang til  billeder foretaget indenfor 24 måneder før diagnosesamtaledatoen.",
+                                    "description": "Forelægger der MR-scanning af cerebrum og evt. adgang til  billeder foretaget indenfor 24 måneder før diagnosesamtaledatoen.\n\n**Bemærk:** Dette indberettes som data af typen DateTime for at muliggøre automatisk indberetning, ikke fordi at dato og tid er af analytisk relevans. Derfor kan tid indberettes som 00:00:00. Hvis dette ikke indberettes tolkes det som at MR-scanning ikke har fundet sted.",
                                     "foreignCollection": "",
                                     "foreignField": [],
                                     "error": {}
@@ -417,14 +417,14 @@
                                     "childType": "Attribute_ResultValue",
                                     "type": "document",
                                     "GUID": "6cf3fb59-2148-4eeb-9674-a2dd915c51c2",
-                                    "description": "**Hvis denne test er positiv, er der ikke behov for at udføre yderligere tests. Det anbefales at implementere denne først i integrationer til webservicen.**",
+                                    "description": "**Hvis denne test er udført, er der ikke behov for at udføre yderligere tests. Det anbefales derfor at implementere denne først i integrationer til webservicen.**",
                                     "error": {}
                                 }
                             ],
                             "childType": "Base_Object",
                             "type": "document",
                             "GUID": "00c0430e-a335-47b1-b762-29614ad39979",
-                            "description": "The Rowland Universal Dementia Assessment Scale (RUDAS) er udviklet som et så vidt muligt kulturuafhængigt eller tværkulturelt screeningsinstrument for demens. \n\n**Hvis denne test er positiv, er der ikke behov for at udføre yderligere tests. Det anbefales at implementere denne først i integrationer til webservicen.**",
+                            "description": "The Rowland Universal Dementia Assessment Scale (RUDAS) er udviklet som et så vidt muligt kulturuafhængigt eller tværkulturelt screeningsinstrument for demens. \n\n**Hvis denne test er udført, er der ikke behov for at udføre yderligere tests. Det anbefales derfor at implementere denne først i integrationer til webservicen.**",
                             "error": {}
                         },
                         {
@@ -979,7 +979,7 @@
                                     "childType": "Attribute_DiagnosisCode",
                                     "type": "document",
                                     "GUID": "7bf736bc-48a2-40a8-8718-dd5a1376dcea",
-                                    "required": false,
+                                    "required": true,
                                     "description": "*Demens*\n\nNational Institute on Aging and the Alzheimer's Association (NIA-AA) workgroup kriterier (McKhann GM et al. 2011)\nNogle udredningsenheder har også erfaring med anvende NIA-AA 2018 AD-kriterierne\n\n*Alzheimers sygdom*\n\nEn række demensudredningsenheder samarbejder i ADEX alliancen om harmonisering: \nhttp://www.videnscenterfordemens.dk/forskning/adex/adex-alliancen/ og er 2016 enige om at  anvende følgende diagnosekriterier: National Institute on Aging and the Alzheimer's Association (NIA-AA) workgroup kriterier (McKhann GM et al. 2011)\n\nNogle udredningsenheder har også erfaring med anvende NIA-AA 2018 AD-kriterierne\n\n*Lewy Body sygdom*\n\nKriterier fra fourth consensus report of the DLB Consortium (McKeith IG et al. 2017)\nParkinson sygdom\n\n*Cerebrovaskulær sygdom*\n\nThe International Society for Vascular Behavioral and Cognitive Disorders (VAS-COG)-kriterier \n(Sachdev P et al. 2014)\n\n*Mixed (Alzheimer + Cerebrovaskulær)*\n\nNår de kognitive symptomer er forklaret ved Alzheimers sygdom såvel som cerebrovaskulær sygdom.\n\n*Frontotemporal demens*\n\nRevised diagnostic criteria for the behavioral variant of frontotemporal demens (Rascovsky K et al. 2011) Classification of primary progressive aphasia and its variants (Gorno-Tempini M et al. 2011)\n\n*Atypisk Parkinson (MSA, CBS, PSP)*\n\nNormaltryks hydrocephalus (NPH)\n\n*Huntingtons sygdom*\n\nDiagnostic Criteria for Huntington's Disease based on Natural History (Reilmann R et al. 2014)\n\n*Alkohol*\nFor at anvende Alkohol som den primære årsag til kognitivt deficit, så skal det være den  primære årsag og/eller der er diagnosticeret Wernicke-Korsakoff. Hvis der samtidig er verificeret en neuro-degenerativ lidelse (f. eks Alzheimers sygdom), så skal denne vælges som \nprimære årsag, ikke alkohol.\n\n*Anden specifik neuro-degenerativ sygdom*\n\nKan f.eks. være spinocerebellare ataksier, ALS-FTD og lign.\n\n*Anden ikke neuro-degenerativ sygdom*\n\nKan f.eks. være følger efter traume eller intra-kraniel tumor.\n\n*Psykiatrisk sygdom*\n\nPsykiatrisk genese til kognitive deficit registres selvstændigt, når det er den eneste/primære årsag. Hvis der er verificeret en neuro-degenerativ lidelse (f.eks. Alzheimers sygdom), så skal denne vælges som den primære årsag og ikke psykiatrisk sygdom.\n\n*Uafklaret ætiologi*\n\nHvis der ikke kan stilles en specifik diagnose.",
                                     "error": {}
                                 }
@@ -988,7 +988,7 @@
                             "type": "document",
                             "GUID": "f4442f9a-60c4-423e-9c30-10c0ca68b6ba",
                             "description": "Hvis Graden af kognitiv påvirkning ikke er svarende til Habituel kognitiv funktion, da skal Ætiologisk diagnose angives, hvis det er muligt. \n\nDen sygdomsspecifikke diagnose, der registres skal være den anførte diagnose i journalen og som er kommunikeret til patient/pårørende. Ved flere konkurrerende ætiologier indberettes den ætiologi, der bedst beskriver den dominerende kliniske tilstand. \nSiden 2015 har de diagnostiske kriterier for demens været diskuteret, men der er stadig ikke konsensus om, hvilke diagnostiske kriterier, der skal anvendes på tværs af landet. Trial Nation anbefaler følgende diagnosekriterier:",
-                            "required": false,
+                            "required": true,
                             "error": {}
                         }
                     ],
@@ -1007,8 +1007,8 @@
             "dbVersion": "v1.0.0",
             "GUID": "79e59bf8-0e30-4b5c-8afd-c85afb00b871",
             "bucketId": "bdea2baf-86e0-4dce-aefe-a5d20dd110b8",
-            "dbNameShort": "DANDEM",
-            "dbPopulation": "Populationen omfatter alle som henvises til elektiv demensudredning i en demensudredningsenhed/hukommelsesklinik, der er placeret under følgende tre specialer: \n\n1. geriatri\n2. neurologi\n3. psykiatri\n\nPatienten skal være henvist til demensudredning med procedurekoden ZZ1500. Patienten skal være fyldt 18 år på henvisningstidspunktet for at kunne indgå i DanDem.\n\nDatabase populationen defineres, som patienter der udredes for demens i hospitalsregi eller via fritvalgsordning ved alternativt hospital, anden region eller privat aktør. \n\n**Ekslusionskriterier**\n\nDatagrundlaget indeholder ikke: \n1. Patienter, der er yngre end 18 år samt \n2. patienter genhenvist med sikker diagnose pga. adfærdsforstyrrelser"
+            "dbNameShort": "DanDem",
+            "dbPopulation": "###### Populations beskrivelse\n\nPopulationen omfatter alle som henvises til elektiv demensudredning i en demensudredningsenhed/hukommelsesklinik, der er placeret under følgende tre specialer: \n\n1. geriatri\n2. neurologi\n3. psykiatri\n\nPatienten skal være henvist til demensudredning med procedurekoden ZZ1500. \n\nPatienten skal være fyldt 18 år på henvisningstidspunktet for at kunne indgå i DanDem.\n\nDatabase populationen defineres, som patienter der udredes for demens i hospitalsregi eller via fritvalgsordningen ved alternativt hospital, anden region eller privat aktør. \n\n###### Ekslusionskriterier\n\nDatagrundlaget indeholder ikke: \n\n1. Patienter, der er yngre end 18 år samt \n2. patienter genhenvist med sikker diagnose pga. adfærdsforstyrrelser\n\n###### Uddybende information\n\nDet anbefales at databasens kontaktperson kontaktes forud for ændringer samt ved etableringen af nye integrationer til webservicen, da det kan have betydning for datakvaliteten. "
         }
     ],
     "buckets": [
@@ -1133,7 +1133,7 @@
     "creationTS": "2024-08-16T10:58:12.414Z",
     "GUID": "119a2ef9-e29b-4a27-94d3-d52ee6653d29",
     "isLineageEnabled": false,
-    "lastModifTS": "2024-09-09T08:57:33.933Z",
+    "lastModifTS": "2024-09-09T12:27:13.441Z",
     "persistenceSchemaVersion": "6",
     "isCreatedByPlugin": true,
     "pluginInformation": {
