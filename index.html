@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>DANDEM.Base.v1.0.0 Dokumentation</title>
+        <title>DANDEM v1.0.0 Dokumentation</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous" />
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet" />
         <link href="style.css" rel="stylesheet" />
@@ -25,21 +25,21 @@
                             </a>
                         </li>
                         <li class="nav-item ms-3">
-                            <a class="btn btn-info btn-sm" href="https://rkkp-wsapi.test.tcs.trifork.cloud/redoc">
+                            <a class="btn btn-info btn-sm" href="https://rkkp-wsapi.test.tcs.trifork.cloud/redoc" id="redocs-link">
                                 <i class="bi bi-window-sidebar"></i>
                                  ReDocs
                             </a>
                         </li>
                         <li class="nav-item ms-3">
-                            <a class="btn btn-info btn-sm" href="https://rkkp-wsapi.test.tcs.trifork.cloud/docs">
+                            <a class="btn btn-info btn-sm" href="https://rkkp-wsapi.test.tcs.trifork.cloud/docs" id="swagger-link">
                                 <i class="bi bi-menu-button-wide"></i>
                                  Swagger UI
                             </a>
                         </li>
                         <li class="nav-item ms-3">
-                            <a class="btn btn-info btn-sm disabled" href="#">
+                            <a class="btn btn-info btn-sm disabled" href="#" id="ldm-link">
                                 <i class="bi bi-database"></i>
-                                 RKKP DataModel
+                                 RKKP Data Model
                             </a>
                         </li>
                     </ul>
@@ -132,35 +132,26 @@
                                 <div class="row">
                                     <div class="col">
                                         <h5>(DANDEM)</h5>
-                                        <h6>Endpoint version: 1.0.0
+                                        <h6>Endpoint version: v1.0.0
                                             <span class="badge bg-success hidden" style="vertical-align: super !important;font-size: 12px;">Newest version</span>
                                         </h6>
-                                        <p>
-                                                    Dette er endpoint dokumentation til databasen Dansk Klinisk Kvalitetsdatabase for Demens.
-                                                     </p>
+                                        <p>Dette er endpoint dokumentation til databasen Dansk Klinisk Kvalitetsdatabase for Demens.</p>
                                         <hr />
                                         <h6>Populations beskrivelse</h6>
                                         <p><p>Populationen omfatter alle som henvises til elektiv demensudredning i en demensudredningsenhed/hukommelsesklinik, der er placeret under følgende tre specialer: </p>
-<ul>
+<ol>
 <li>geriatri</li>
 <li>neurologi</li>
 <li>psykiatri</li>
-</ul>
+</ol>
 <p>Patienten skal være henvist til demensudredning med procedurekoden ZZ1500. Patienten skal være fyldt 18 år på henvisningstidspunktet for at kunne indgå i DanDem.</p>
 <p>Database populationen defineres, som patienter der udredes for demens i hospitalsregi eller via fritvalgsordning ved alternativt hospital, anden region eller privat aktør. </p>
-<p>Ekslusionskriterier:
-Datagrundlaget indeholder ikke: </p>
-<ul>
-<li>Patienter, der er yngre end 18 år</li>
-<li>patienter genhenvist med sikker diagnose pga. adfærdsforstyrrelser eller behandling . </li>
-</ul></p>
-<!--Force update-->
+<p><strong>Ekslusionskriterier</strong></p>
+<p>Datagrundlaget indeholder ikke: 
+1. Patienter, der er yngre end 18 år samt 
+2. patienter genhenvist med sikker diagnose pga. adfærdsforstyrrelser</p></p>
                                         <hr />
-                                        <p>
-                                                    I denne dokumentation kan du finde en oversigt over dataobjekterne i databasen, samt deres attributter, beskrivelser af attributter (hvor tilgængeligt), og kravstatus.
-
-                                                    I headeren kan du finde værktøjer til at tilpasse din visning af dokumentationen.
-                                                    </p>
+                                        <p>I denne dokumentation kan du finde en oversigt over dataobjekterne i databasen, samt deres attributter, beskrivelser af attributter (hvor tilgængeligt), og kravstatus. I headeren kan du finde værktøjer til at tilpasse din visning af dokumentationen.</p>
                                     </div>
                                 </div>
                             </div>
@@ -241,16 +232,10 @@ Datagrundlaget indeholder ikke: </p>
                                                         </thead>
                                                         <tbody class="table-group-divider">
                                                             <tr>
-                                                                <th scope="row">StatusCode</th>
+                                                                <th scope="row">ResultValue</th>
                                                                 <td scope="row"><p>Forelægger der CT-scanning af cerebrum og evt. adgang til  billeder foretaget indenfor 24 måneder før diagnosesamtaledatoen.</p></td>
-                                                                <td scope="row">str, Enum</td>
-                                                                <td scope="row">
-                                                                    <p style="margin:0px; font-weight: bold;">Udfald:</p>
-                                                                    <ul class="list-group list-group-flush">
-                                                                        <li class="list-group-item">"ja"</li>
-                                                                        <li class="list-group-item">"nej"</li>
-                                                                    </ul>
-                                                                </td>
+                                                                <td scope="row">DateTime</td>
+                                                                <td scope="row"></td>
                                                                 <td scope="row"></td>
                                                             </tr>
                                                         </tbody>
@@ -282,16 +267,10 @@ Datagrundlaget indeholder ikke: </p>
                                                         </thead>
                                                         <tbody class="table-group-divider">
                                                             <tr>
-                                                                <th scope="row">StatusCode</th>
+                                                                <th scope="row">ResultValue</th>
                                                                 <td scope="row"><p>Forelægger der MR-scanning af cerebrum og evt. adgang til  billeder foretaget indenfor 24 måneder før diagnosesamtaledatoen.</p></td>
-                                                                <td scope="row">str, Enum</td>
-                                                                <td scope="row">
-                                                                    <p style="margin:0px; font-weight: bold;">Udfald:</p>
-                                                                    <ul class="list-group list-group-flush">
-                                                                        <li class="list-group-item">"ja"</li>
-                                                                        <li class="list-group-item">"nej"</li>
-                                                                    </ul>
-                                                                </td>
+                                                                <td scope="row">DateTime</td>
+                                                                <td scope="row"></td>
                                                                 <td scope="row"></td>
                                                             </tr>
                                                         </tbody>
@@ -311,6 +290,14 @@ Datagrundlaget indeholder ikke: </p>
                                             <div class="collapse m-3 objectBodyMain" id="NPHAssessment3">
                                                 <div class="object_margin">
                                                     <p class="table_view_hider" style="height: 1rem !important; margin: 0px !important;"></p>
+                                                    <div class="objectDescription bg-body-tertiary">
+                                                        <div class="alert alert-warning" role="alert"><p>Dette er kun relevant for:</p>
+<ul>
+<li>Rigshospitalet, Blegdamsvej (SOR: 253121000016002)</li>
+<li>Aalborg UH, Demensenheden (SOR: 911061000016003)</li>
+<li>Aalborg UH, Neurologisk (SOR: 275991000016001)</li>
+</ul></div>
+                                                    </div>
                                                     <table class="table table-bordered table-striped table-hover ">
                                                         <thead>
                                                             <tr>
@@ -323,17 +310,10 @@ Datagrundlaget indeholder ikke: </p>
                                                         </thead>
                                                         <tbody class="table-group-divider">
                                                             <tr>
-                                                                <th scope="row">StatusCode</th>
-                                                                <td scope="row"><p>Er der udført normal-tryks-hydrocephalus (NPH)-udredning? Udredningen foretages, hvis man mistænker forhøjet intrakranielt tryk som årsag til kognigitiv deficit.</p>
-<p>Kan i de fleste implementeringer stå på 'nej' som standard.</p></td>
-                                                                <td scope="row">str, Enum</td>
-                                                                <td scope="row">
-                                                                    <p style="margin:0px; font-weight: bold;">Udfald:</p>
-                                                                    <ul class="list-group list-group-flush">
-                                                                        <li class="list-group-item">"ja"</li>
-                                                                        <li class="list-group-item">"nej"</li>
-                                                                    </ul>
-                                                                </td>
+                                                                <th scope="row">DateTime</th>
+                                                                <td scope="row"><p>Er der udført normal-tryks-hydrocephalus (NPH)-udredning? Udredningen foretages, hvis man mistænker forhøjet intrakranielt tryk som årsag til kognigitiv deficit.</p></td>
+                                                                <td scope="row">DateTime</td>
+                                                                <td scope="row"></td>
                                                                 <td scope="row"></td>
                                                             </tr>
                                                         </tbody>
@@ -368,68 +348,11 @@ Datagrundlaget indeholder ikke: </p>
                                                         </thead>
                                                         <tbody class="table-group-divider">
                                                             <tr>
-                                                                <th scope="row">StatusCode</th>
+                                                                <th scope="row">ResultValue</th>
                                                                 <td scope="row"><p>Er NPU udført i udredningsenhedens regi, uddelegeret derfra eller blevet gennemlæst/vurderet af udredningsenhedens neuropsykologer og fundet velgennemført?</p>
 <p><strong>Testen skal være udført inden for de seneste 12 mdr.</strong></p></td>
-                                                                <td scope="row">str, Enum</td>
-                                                                <td scope="row">
-                                                                    <p style="margin:0px; font-weight: bold;">Udfald:</p>
-                                                                    <ul class="list-group list-group-flush">
-                                                                        <li class="list-group-item">"ja"</li>
-                                                                        <li class="list-group-item">"nej"</li>
-                                                                    </ul>
-                                                                </td>
+                                                                <td scope="row">DateTime</td>
                                                                 <td scope="row"></td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="dataObject">
-                                            <a data-bs-toggle='collapse' aria-expanded='false' href="#OfferedDementiaMedication5" class="ObjectHeaderWrapper">
-                                                <ol class="breadcrumb objectHeaderMain objectHeaderColor">
-                                                    <i class="bi bi-folder2 me-2"></i>
-                                                    <li class="breadcrumb-item">DANDEM</li>
-                                                    <li class="breadcrumb-item">Activity</li>
-                                                    <li aria-current='page' class="breadcrumb-item active">OfferedDementiaMedication</li>
-                                                </ol>
-                                            </a>
-                                            <div class="collapse m-3 objectBodyMain" id="OfferedDementiaMedication5">
-                                                <div class="object_margin">
-                                                    <p class="table_view_hider" style="height: 1rem !important; margin: 0px !important;"></p>
-                                                    <div class="objectDescription bg-body-tertiary">
-                                                        <div class="alert alert-warning" role="alert"><p>Er patienten blevet tilbudt demensmedicin?</p>
-<p>Ved Ja forstås, at der i udredningsforløbet for demens er tilbudt behandling med én af følgende relevante medicintyper, som patienten skal påbegynde behandling med eller allerede er i behandling med følgende relevante medicintyper:</p>
-<ul>
-<li>Aricept: Donepezil</li>
-<li>Exelon: Rivastigmin</li>
-<li>Reminyl: Galantamin</li>
-<li>Ebixa: Memantin</li>
-</ul></div>
-                                                    </div>
-                                                    <table class="table table-bordered table-striped table-hover ">
-                                                        <thead>
-                                                            <tr>
-                                                                <th scope="col" class="fst-italic th-attribute">Attribute</th>
-                                                                <th scope="col" class="fst-italic th-description">Description</th>
-                                                                <th scope="col" class="fst-italic th-type">Type</th>
-                                                                <th scope="col" class="fst-italic th-value">Constraints</th>
-                                                                <th scope="col" class="fst-italic th-required">Required</th>
-                                                            </tr>
-                                                        </thead>
-                                                        <tbody class="table-group-divider">
-                                                            <tr>
-                                                                <th scope="row">StatusCode</th>
-                                                                <td scope="row"></td>
-                                                                <td scope="row">str, Enum</td>
-                                                                <td scope="row">
-                                                                    <p style="margin:0px; font-weight: bold;">Udfald:</p>
-                                                                    <ul class="list-group list-group-flush">
-                                                                        <li class="list-group-item">"ja"</li>
-                                                                        <li class="list-group-item">"nej"</li>
-                                                                    </ul>
-                                                                </td>
                                                                 <td scope="row"></td>
                                                             </tr>
                                                         </tbody>
@@ -573,7 +496,6 @@ Datagrundlaget indeholder ikke: </p>
                                                                     <p style="margin:0px; font-weight: bold;">Udfald:</p>
                                                                     <ul class="list-group list-group-flush">
                                                                         <li class="list-group-item">"ja"</li>
-                                                                        <li class="list-group-item">"nej"</li>
                                                                     </ul>
                                                                 </td>
                                                                 <td scope="row"></td>
@@ -639,51 +561,7 @@ Datagrundlaget indeholder ikke: </p>
                                                     <div class="objectDescription bg-body-tertiary">
                                                         <div class="alert alert-warning" role="alert"><p>Hvis Graden af kognitiv påvirkning ikke er svarende til Habituel kognitiv funktion, da skal Ætiologisk diagnose angives, hvis det er muligt. </p>
 <p>Den sygdomsspecifikke diagnose, der registres skal være den anførte diagnose i journalen og som er kommunikeret til patient/pårørende. Ved flere konkurrerende ætiologier indberettes den ætiologi, der bedst beskriver den dominerende kliniske tilstand. 
-Siden 2015 har de diagnostiske kriterier for demens været diskuteret, men der er stadig ikke 
-konsensus om, hvilke diagnostiske kriterier, der skal anvendes på tværs af landet. Trial Nation 
-anbefaler følgende diagnosekriterier:</p>
-<p>Demens
-National Institute on Aging and the Alzheimer's Association (NIA-AA) workgroup kriterier (McKhann GM et al. 2011)
-Nogle udredningsenheder har også erfaring med anvende NIA-AA 2018 AD-kriterierne</p>
-<p>Alzheimers sygdom
-En række demensudredningsenheder samarbejder i ADEX alliancen om harmonisering: 
-http://www.videnscenterfordemens.dk/forskning/adex/adex-alliancen/ og er 2016 enige om at 
-anvende følgende diagnosekriterier:
-National Institute on Aging and the Alzheimer's Association (NIA-AA) workgroup kriterier
-(McKhann GM et al. 2011)
-Nogle udredningsenheder har også erfaring med anvende NIA-AA 2018 AD-kriterierne</p>
-<p>Lewy Body sygdom: 
-Kriterier fra fourth consensus report of the DLB Consortium (McKeith IG et al. 2017)
-Parkinson sygdom</p>
-<p>Cerebrovaskulær sygdom:
-The International Society for Vascular Behavioral and Cognitive Disorders (VAS-COG)-kriterier 
-(Sachdev P et al. 2014)</p>
-<p>Mixed (Alzheimer + Cerebrovaskulær):
-Når de kognitive symptomer er forklaret ved Alzheimers sygdom såvel som cerebrovaskulær 
-sygdom.</p>
-<p>Frontotemporal demens:
-Revised diagnostic criteria for the behavioral variant of frontotemporal demens (Rascovsky K 
-et al. 2011)
-Classification of primary progressive aphasia and its variants (Gorno-Tempini M et al. 2011)</p>
-<p>Atypisk Parkinson (MSA, CBS, PSP)</p>
-<p>Normaltryks hydrocephalus (NPH)</p>
-<p>Huntingtons sygdom
-Diagnostic Criteria for Huntington's Disease based on Natural History (Reilmann R et al. 2014)</p>
-<p>Alkohol:
-For at anvende Alkohol som den primære årsag til kognitivt deficit, så skal det være den 
-primære årsag og/eller der er diagnosticeret Wernicke-Korsakoff. Hvis der samtidig er 
-verificeret en neuro-degenerativ lidelse (f. eks Alzheimers sygdom), så skal denne vælges som 
-primære årsag, ikke alkohol.</p>
-<p>Anden specifik neuro-degenerativ sygdom:
-Kan f.eks. være spinocerebellare ataksier, ALS-FTD og lign.</p>
-<p>Anden ikke neuro-degenerativ sygdom:
-Kan f.eks. være følger efter traume eller intra-kraniel tumor.</p>
-<p>Psykiatrisk sygdom:
-Psykiatrisk genese til kognitive deficit registres selvstændigt, når det er den eneste/primære 
-årsag. Hvis der er verificeret en neuro-degenerativ lidelse (f.eks. Alzheimers sygdom), så skal 
-denne vælges som den primære årsag og ikke psykiatrisk sygdom.</p>
-<p>Uafklaret ætiologi:
-Hvis der ikke kan stilles en specifik diagnose.</p></div>
+Siden 2015 har de diagnostiske kriterier for demens været diskuteret, men der er stadig ikke konsensus om, hvilke diagnostiske kriterier, der skal anvendes på tværs af landet. Trial Nation anbefaler følgende diagnosekriterier:</p></div>
                                                     </div>
                                                     <table class="table table-bordered table-striped table-hover ">
                                                         <thead>
@@ -698,7 +576,38 @@ Hvis der ikke kan stilles en specifik diagnose.</p></div>
                                                         <tbody class="table-group-divider">
                                                             <tr>
                                                                 <th scope="row">DiagnosisCode</th>
-                                                                <td scope="row"></td>
+                                                                <td scope="row"><p><em>Demens</em></p>
+<p>National Institute on Aging and the Alzheimer's Association (NIA-AA) workgroup kriterier (McKhann GM et al. 2011)
+Nogle udredningsenheder har også erfaring med anvende NIA-AA 2018 AD-kriterierne</p>
+<p><em>Alzheimers sygdom</em></p>
+<p>En række demensudredningsenheder samarbejder i ADEX alliancen om harmonisering: 
+http://www.videnscenterfordemens.dk/forskning/adex/adex-alliancen/ og er 2016 enige om at  anvende følgende diagnosekriterier: National Institute on Aging and the Alzheimer's Association (NIA-AA) workgroup kriterier (McKhann GM et al. 2011)</p>
+<p>Nogle udredningsenheder har også erfaring med anvende NIA-AA 2018 AD-kriterierne</p>
+<p><em>Lewy Body sygdom</em></p>
+<p>Kriterier fra fourth consensus report of the DLB Consortium (McKeith IG et al. 2017)
+Parkinson sygdom</p>
+<p><em>Cerebrovaskulær sygdom</em></p>
+<p>The International Society for Vascular Behavioral and Cognitive Disorders (VAS-COG)-kriterier 
+(Sachdev P et al. 2014)</p>
+<p><em>Mixed (Alzheimer + Cerebrovaskulær)</em></p>
+<p>Når de kognitive symptomer er forklaret ved Alzheimers sygdom såvel som cerebrovaskulær sygdom.</p>
+<p><em>Frontotemporal demens</em></p>
+<p>Revised diagnostic criteria for the behavioral variant of frontotemporal demens (Rascovsky K et al. 2011) Classification of primary progressive aphasia and its variants (Gorno-Tempini M et al. 2011)</p>
+<p><em>Atypisk Parkinson (MSA, CBS, PSP)</em></p>
+<p>Normaltryks hydrocephalus (NPH)</p>
+<p><em>Huntingtons sygdom</em></p>
+<p>Diagnostic Criteria for Huntington's Disease based on Natural History (Reilmann R et al. 2014)</p>
+<p><em>Alkohol</em>
+For at anvende Alkohol som den primære årsag til kognitivt deficit, så skal det være den  primære årsag og/eller der er diagnosticeret Wernicke-Korsakoff. Hvis der samtidig er verificeret en neuro-degenerativ lidelse (f. eks Alzheimers sygdom), så skal denne vælges som 
+primære årsag, ikke alkohol.</p>
+<p><em>Anden specifik neuro-degenerativ sygdom</em></p>
+<p>Kan f.eks. være spinocerebellare ataksier, ALS-FTD og lign.</p>
+<p><em>Anden ikke neuro-degenerativ sygdom</em></p>
+<p>Kan f.eks. være følger efter traume eller intra-kraniel tumor.</p>
+<p><em>Psykiatrisk sygdom</em></p>
+<p>Psykiatrisk genese til kognitive deficit registres selvstændigt, når det er den eneste/primære årsag. Hvis der er verificeret en neuro-degenerativ lidelse (f.eks. Alzheimers sygdom), så skal denne vælges som den primære årsag og ikke psykiatrisk sygdom.</p>
+<p><em>Uafklaret ætiologi</em></p>
+<p>Hvis der ikke kan stilles en specifik diagnose.</p></td>
                                                                 <td scope="row">str, Enum</td>
                                                                 <td scope="row">
                                                                     <p style="margin:0px; font-weight: bold;">Udfald:</p>
@@ -817,20 +726,6 @@ Hvis der ikke kan stilles en specifik diagnose.</p></div>
                                                                 </td>
                                                                 <td scope="row"></td>
                                                             </tr>
-                                                            <tr>
-                                                                <th scope="row">StatusCode</th>
-                                                                <td scope="row"><p>Var der en pårørende / professionel omsorgsperson involveret i vurderingen af ADSC_ADL?</p>
-<p>Da demente ikke altid selv har indsigt i eget funktionsniveau, da inddrages pårørende eller andre, som kender patienten indgående. Der markeres ”Ja” hvis der har været en pårørende og/eller professionel omsorgsperson (der kender patienten til at kunne svare på ADSC_ADL vurdering) ved forundersøgelse.</p></td>
-                                                                <td scope="row">str, Enum</td>
-                                                                <td scope="row">
-                                                                    <p style="margin:0px; font-weight: bold;">Udfald:</p>
-                                                                    <ul class="list-group list-group-flush">
-                                                                        <li class="list-group-item">"ja"</li>
-                                                                        <li class="list-group-item">"nej"</li>
-                                                                    </ul>
-                                                                </td>
-                                                                <td scope="row"></td>
-                                                            </tr>
                                                         </tbody>
                                                     </table>
                                                 </div>
@@ -937,6 +832,7 @@ Hvis der ikke kan stilles en specifik diagnose.</p></div>
                                                     <li class="breadcrumb-item">DANDEM</li>
                                                     <li class="breadcrumb-item">Observation</li>
                                                     <li aria-current='page' class="breadcrumb-item active">CognitiveImpairment</li>
+                                                    <span class="badge rounded-pill text-bg-danger ms-auto">* Required</span>
                                                 </ol>
                                             </a>
                                             <div class="collapse m-3 objectBodyMain" id="CognitiveImpairment5">
@@ -979,7 +875,9 @@ Hvis der ikke kan stilles en specifik diagnose.</p></div>
                                                                         <li class="list-group-item">"demens_svaer_grad"</li>
                                                                     </ul>
                                                                 </td>
-                                                                <td scope="row"></td>
+                                                                <td scope="row">
+                                                                    <span class="badge rounded-pill text-bg-danger ms-auto">* Required</span>
+                                                                </td>
                                                             </tr>
                                                         </tbody>
                                                     </table>
@@ -1071,20 +969,6 @@ Hvis der ikke kan stilles en specifik diagnose.</p></div>
                                                                     <p style="margin:0px; font-weight: bold;">Max or Equal to</p>
                                                                     <ul class="list-group list-group-flush">
                                                                         <li class="list-group-item">30</li>
-                                                                    </ul>
-                                                                </td>
-                                                                <td scope="row"></td>
-                                                            </tr>
-                                                            <tr>
-                                                                <th scope="row">StatusCode</th>
-                                                                <td scope="row"><p>Var der en pårørende / professionel omsorgsperson involveret i vurderingen af FAQ_ADL?</p>
-<p>Da demente ikke altid selv har indsigt i eget funktionsniveau, da inddrages pårørende eller andre, som kender patienten indgående. Der markeres ”Ja” hvis der har været en pårørende og/eller professionel omsorgsperson (der kender patienten til at kunne svare på FAQ_ADL vurdering) ved forundersøgelse.</p></td>
-                                                                <td scope="row">str, Enum</td>
-                                                                <td scope="row">
-                                                                    <p style="margin:0px; font-weight: bold;">Udfald:</p>
-                                                                    <ul class="list-group list-group-flush">
-                                                                        <li class="list-group-item">"ja"</li>
-                                                                        <li class="list-group-item">"nej"</li>
                                                                     </ul>
                                                                 </td>
                                                                 <td scope="row"></td>
@@ -1248,7 +1132,8 @@ Hvis der ikke kan stilles en specifik diagnose.</p></div>
                                                 <div class="object_margin">
                                                     <p class="table_view_hider" style="height: 1rem !important; margin: 0px !important;"></p>
                                                     <div class="objectDescription bg-body-tertiary">
-                                                        <div class="alert alert-warning" role="alert"><p>The Rowland Universal Dementia Assessment Scale (RUDAS) er udviklet som et så vidt muligt kulturuafhængigt eller tværkulturelt screeningsinstrument for demens. </p></div>
+                                                        <div class="alert alert-warning" role="alert"><p>The Rowland Universal Dementia Assessment Scale (RUDAS) er udviklet som et så vidt muligt kulturuafhængigt eller tværkulturelt screeningsinstrument for demens. </p>
+<p><strong>Hvis denne test er positiv, er der ikke behov for at udføre yderligere tests. Det anbefales at implementere denne først i integrationer til webservicen.</strong></p></div>
                                                     </div>
                                                     <table class="table table-bordered table-striped table-hover ">
                                                         <thead>
@@ -1263,7 +1148,7 @@ Hvis der ikke kan stilles en specifik diagnose.</p></div>
                                                         <tbody class="table-group-divider">
                                                             <tr>
                                                                 <th scope="row">ResultValue</th>
-                                                                <td scope="row"></td>
+                                                                <td scope="row"><p><strong>Hvis denne test er positiv, er der ikke behov for at udføre yderligere tests. Det anbefales at implementere denne først i integrationer til webservicen.</strong></p></td>
                                                                 <td scope="row">Integer</td>
                                                                 <td scope="row">
                                                                     <p style="margin:0px; font-weight: bold;">Min or Equal to</p>
@@ -1283,7 +1168,53 @@ Hvis der ikke kan stilles en specifik diagnose.</p></div>
                                             </div>
                                         </div>
                                         <div class="dataObject">
-                                            <a data-bs-toggle='collapse' aria-expanded='false' href="#Trinvold_DSQIID12" class="ObjectHeaderWrapper">
+                                            <a data-bs-toggle='collapse' aria-expanded='false' href="#SupportPersonPresent12" class="ObjectHeaderWrapper">
+                                                <ol class="breadcrumb objectHeaderMain objectHeaderColor">
+                                                    <i class="bi bi-folder2 me-2"></i>
+                                                    <li class="breadcrumb-item">DANDEM</li>
+                                                    <li class="breadcrumb-item">Observation</li>
+                                                    <li aria-current='page' class="breadcrumb-item active">SupportPersonPresent</li>
+                                                </ol>
+                                            </a>
+                                            <div class="collapse m-3 objectBodyMain" id="SupportPersonPresent12">
+                                                <div class="object_margin">
+                                                    <p class="table_view_hider" style="height: 1rem !important; margin: 0px !important;"></p>
+                                                    <div class="objectDescription bg-body-tertiary">
+                                                        <div class="alert alert-warning" role="alert"><p>Var der en pårørende / professionel omsorgsperson involveret i vurderingerne?</p>
+<p>Da demente ikke altid selv har indsigt i eget funktionsniveau, da inddrages pårørende eller andre, som kender patienten indgående. Der markeres ”Ja” hvis der har været en pårørende og/eller professionel omsorgsperson (der kender patienten til at kunne svare på vurderingen) ved forundersøgelse.</p>
+<p>Denne variabel er dækkende for alle de nævnte vurderinger, og det antages at hvis der har været en pårørende til stede ved en vurdering har der været en pårørende til stede ved alle.</p></div>
+                                                    </div>
+                                                    <table class="table table-bordered table-striped table-hover ">
+                                                        <thead>
+                                                            <tr>
+                                                                <th scope="col" class="fst-italic th-attribute">Attribute</th>
+                                                                <th scope="col" class="fst-italic th-description">Description</th>
+                                                                <th scope="col" class="fst-italic th-type">Type</th>
+                                                                <th scope="col" class="fst-italic th-value">Constraints</th>
+                                                                <th scope="col" class="fst-italic th-required">Required</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody class="table-group-divider">
+                                                            <tr>
+                                                                <th scope="row">StatusCode</th>
+                                                                <td scope="row"><p>Der skal svares Ja, hvis patienten er blevet tilbudt henvisning. Både hvis patient/pårørende ønsker dette sat i værk eller hvis de ikke ønsker dette sat i værk.</p></td>
+                                                                <td scope="row">str, Enum</td>
+                                                                <td scope="row">
+                                                                    <p style="margin:0px; font-weight: bold;">Udfald:</p>
+                                                                    <ul class="list-group list-group-flush">
+                                                                        <li class="list-group-item">"ja"</li>
+                                                                        <li class="list-group-item">"nej"</li>
+                                                                    </ul>
+                                                                </td>
+                                                                <td scope="row"></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="dataObject">
+                                            <a data-bs-toggle='collapse' aria-expanded='false' href="#Trinvold_DSQIID13" class="ObjectHeaderWrapper">
                                                 <ol class="breadcrumb objectHeaderMain objectHeaderColor">
                                                     <i class="bi bi-folder2 me-2"></i>
                                                     <li class="breadcrumb-item">DANDEM</li>
@@ -1291,7 +1222,7 @@ Hvis der ikke kan stilles en specifik diagnose.</p></div>
                                                     <li aria-current='page' class="breadcrumb-item active">Trinvold_DSQIID</li>
                                                 </ol>
                                             </a>
-                                            <div class="collapse m-3 objectBodyMain" id="Trinvold_DSQIID12">
+                                            <div class="collapse m-3 objectBodyMain" id="Trinvold_DSQIID13">
                                                 <div class="object_margin">
                                                     <p class="table_view_hider" style="height: 1rem !important; margin: 0px !important;"></p>
                                                     <div class="objectDescription bg-body-tertiary">
@@ -1439,19 +1370,14 @@ Hvis der ikke kan stilles en specifik diagnose.</p></div>
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title fs-5" id="jsonModalLabel">API request structure of DANDEM.Base.v1.0.0</h5>
+                        <h5 class="modal-title fs-5" id="jsonModalLabel">API request structure of Dansk Klinisk Kvalitetsdatabase for Demens v1.0.0</h5>
                         <button data-bs-dismiss='modal' type="button" class="btn-close"></button>
                     </div>
                     <div class="modal-body">
                         <div class="alert alert-tertiary border">
-                            <p>
-                                                        Dette er et auto-genereret eksempel af JSON strukturen til indberetning af data.
-                                                         </p>
+                            <p>Dette er et auto-genereret eksempel af JSON strukturen til indberetning af data.</p>
                             <hr />
-                            <p>
-                                                         For mere information om processen af at indsende data til API'en, se venligst vores tekniske guide på www.rkkp.dk eller besøg <a href='https://rkkp-wsapi.test.tcs.trifork.cloud/docs' target='_blank'>Swagger UI</a>.
-
-                                                         På <a href='https://rkkp-wsapi.test.tcs.trifork.cloud/docs' target='_blank'>Swagger UI</a> kan du finde en oversigt over API endpoints, samt detaljerede beskrivelser af de tilgængelige API forespørgsler, som kan foretages til hvert endpoint. </p>
+                            <p>For mere information om processen af at indsende data til API'en, se venligst vores tekniske guide                                         på www.rkkp.dk eller besøg <a href='https://rkkp-wsapi.test.tcs.trifork.cloud/docs' target='_blank'>Swagger UI</a>.                                         På <a href='https://rkkp-wsapi.test.tcs.trifork.cloud/docs' target='_blank'>Swagger UI</a> kan du finde en oversigt                                         over API endpoints, samt detaljerede beskrivelser af de tilgængelige API forespørgsler, som kan foretages til hvert endpoint. </p>
                         </div>
                         <ul class="nav nav-tabs" id="myTab" style="border-bottom: 0px !important">
                             <li class="nav-item">
@@ -1464,13 +1390,187 @@ Hvis der ikke kan stilles en specifik diagnose.</p></div>
                         <div class="tab-content">
                             <div class="" id="postJSONContent">
                                 <div class="form-floating mb-3">
-                                    <textarea class="form-control textarea-tabs bg-body-tertiary current_json" id="json_post_textarea" style="height: 1000px">JSON eksempel ikke fundet. Se Swagger UI for eksempler på json struktur - link kan findes i toppen af siden.</textarea>
+                                    <textarea class="form-control textarea-tabs bg-body-tertiary current_json" id="json_post_textarea" style="height: 1000px">{
+    "Report": {
+        "Patient": {
+            "CivilRegistrationNumber": "1102398cI4"
+        },
+        "Organization": {
+            "OrganizationType": "regionskode",
+            "Identifier": "1234"
+        },
+        "Data": {
+            "Diagnosis": {
+                "EtiologicalDiagnosis": {
+                    "DiagnosisCode": "cerebrovaskulaer_sygdom"
+                }
+            },
+            "Observation": {
+                "CAMcog": {
+                    "ResultValue": 27
+                },
+                "MCE": {
+                    "ResultValue": 11
+                },
+                "FAQ_IADL": {
+                    "ResultValue": 16
+                },
+                "DAD": {
+                    "ResultValue": 22
+                },
+                "Trinvold_DSQIID": {
+                    "StatusCode": "ja"
+                },
+                "MMSE": {
+                    "ResultValue": 6
+                },
+                "SupportPersonPresent": {
+                    "StatusCode": "ja"
+                },
+                "RUDAS": {
+                    "ResultValue": 25
+                },
+                "MoCa": {
+                    "ResultValue": 19
+                },
+                "ACE": {
+                    "ResultValue": 20
+                },
+                "ADSC_ADL": {
+                    "ResultValue": 9
+                },
+                "BASIC": {
+                    "ResultValue": 7
+                },
+                "CognitiveImpairment": {
+                    "ResultValue": "demens__moderat__grad"
+                }
+            },
+            "Activity": {
+                "CT_Scan": {
+                    "ResultValue": "25-12-2008 22:30:21"
+                },
+                "NPU": {
+                    "ResultValue": "10-06-2020 08:25:45"
+                },
+                "NPHAssessment": {
+                    "DateTime": "02-12-2001 04:19:46"
+                },
+                "MR_Scan": {
+                    "ResultValue": "07-01-2013 13:23:20"
+                }
+            },
+            "Contact": {
+                "InformDiagnosis": {
+                    "DateTime": "22-10-1994 17:40:18"
+                },
+                "ReferralCommunalCoordinator": {
+                    "StatusCode": "ja"
+                },
+                "ReferralFreeChoice": {
+                    "DateTime": "28-04-2010 08:25:39"
+                },
+                "Referral": {
+                    "DateTime": "22-12-2013 18:45:07",
+                    "ResultValue": "second_opinion"
+                }
+            }
+        }
+    }
+}</textarea>
                                     <label _for="floatingTextarea2">JSON POST Structure</label>
                                 </div>
                             </div>
                             <div class="hidden" id="putJSONContent">
                                 <div class="form-floating mb-3">
-                                    <textarea class="form-control textarea-tabs bg-body-tertiary" id="json_put_textarea" style="height: 1000px">JSON eksempel ikke fundet. Se Swagger UI for eksempler på json struktur - link kan findes i toppen af siden.</textarea>
+                                    <textarea class="form-control textarea-tabs bg-body-tertiary" id="json_put_textarea" style="height: 1000px">{
+    "Report": {
+        "Patient": {
+            "CivilRegistrationNumber": "0202743Wj7"
+        },
+        "Organization": {
+            "OrganizationType": "regionskode",
+            "Identifier": "1234"
+        },
+        "Data": {
+            "Diagnosis": {
+                "EtiologicalDiagnosis": {
+                    "DiagnosisCode": "cerebrovaskulaer_sygdom"
+                }
+            },
+            "Observation": {
+                "CAMcog": {
+                    "ResultValue": 35
+                },
+                "MCE": {
+                    "ResultValue": 82
+                },
+                "FAQ_IADL": {
+                    "ResultValue": 7
+                },
+                "DAD": {
+                    "ResultValue": 34
+                },
+                "Trinvold_DSQIID": {
+                    "StatusCode": "ja"
+                },
+                "MMSE": {
+                    "ResultValue": 14
+                },
+                "SupportPersonPresent": {
+                    "StatusCode": "nej"
+                },
+                "RUDAS": {
+                    "ResultValue": 7
+                },
+                "MoCa": {
+                    "ResultValue": 10
+                },
+                "ACE": {
+                    "ResultValue": 45
+                },
+                "ADSC_ADL": {
+                    "ResultValue": 59
+                },
+                "BASIC": {
+                    "ResultValue": 22
+                },
+                "CognitiveImpairment": {
+                    "ResultValue": "demens__let__grad"
+                }
+            },
+            "Activity": {
+                "CT_Scan": {
+                    "ResultValue": "21-06-2014 00:21:22"
+                },
+                "NPU": {
+                    "ResultValue": "23-02-2006 04:35:23"
+                },
+                "NPHAssessment": {
+                    "DateTime": "06-04-2001 09:16:02"
+                },
+                "MR_Scan": {
+                    "ResultValue": "12-06-2012 14:09:08"
+                }
+            },
+            "Contact": {
+                "InformDiagnosis": {
+                    "DateTime": "28-05-2004 03:23:32"
+                },
+                "ReferralCommunalCoordinator": {
+                    "StatusCode": "ja"
+                },
+                "ReferralFreeChoice": {
+                    "DateTime": "21-06-2016 16:37:38"
+                },
+                "Referral": {
+                    "DateTime": "27-10-1997 02:10:19",
+                    "ResultValue": "second_opinion"
+                }
+            }
+        }
+    }
+}</textarea>
                                     <label _for="floatingTextarea2">JSON PUT Structure</label>
                                 </div>
                             </div>
@@ -1484,286 +1584,7 @@ Hvis der ikke kan stilles en specifik diagnose.</p></div>
             </div>
         </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" crossorgigin="anonymous"></script>
-        <script>
-            
-            // Hide a Column from Col Index in a table
-        function hideAdvancedColumn(columnIndex) {
-            var tables = document.querySelectorAll('table');
-            tables.forEach(function (table) {
-                var rows = table.querySelectorAll('tr');
-                rows.forEach(function (row) {
-                    var cells = row.querySelectorAll('th, td');
-                    if (columnIndex >= 0 && columnIndex < cells.length) {
-                        cells[columnIndex].classList.add('hidden-col');
-                    }
-                });
-            });
-        }
-
-        // Hide a Row based on Class in a table
-        function hideAdvancedRows() {
-            var rows = document.querySelectorAll('tr.advanced-data');
-            rows.forEach(function (row) {
-                row.classList.add('hidden-row');
-            });
-        }
-
-        // Toggle Advanced Data
-        var checkboxAdvView = document.getElementById('toggleAdvView');
-        checkboxAdvView.addEventListener('change', toggleAdvView);
-
-        function toggleAdvView() {
-            var hiddenCells = document.querySelectorAll('td.hidden-col, th.hidden-col');
-            var hiddenRows = document.querySelectorAll('tr.hidden-row, th.hidden-row');
-            var visibleCells = document.querySelectorAll('td.visible-col, th.visible-col');
-            var visibleRows = document.querySelectorAll('tr.visible-row, th.visible-row');
-            var gitHubIcon = document.getElementById('github-link');
-
-            if (checkboxAdvView.checked) {
-                hiddenCells.forEach(function (cell) {
-                    cell.classList.remove('hidden-col');
-                    cell.classList.add('visible-col');
-                });
-
-                hiddenRows.forEach(function (row) {
-                    row.classList.remove('hidden-row');
-                    row.classList.add('visible-row');
-                });
-                gitHubIcon.classList.remove('hidden');
-            } else {
-                visibleCells.forEach(function (cell) {
-                    cell.classList.remove('visible-col');
-                    cell.classList.add('hidden-col');
-                });
-
-                visibleRows.forEach(function (row) {
-                    row.classList.remove('visible-row');
-                    row.classList.add('hidden-row');
-                });
-                gitHubIcon.classList.add('hidden');
-            }
-        }
-        
-        </script>
-        <script>
-                    var allGroups = ["groupReport", "groupActivity", "groupContact", "groupCourse", "groupDiagnosis", "groupObservation", "groupGray"];
-
-        function filterTypes(targetGroup, button) {
-            var oldTab = document.querySelector('.nav-link.active');
-            oldTab.classList.remove('active');
-            button.classList.add('active');
-            if (targetGroup === "showAll") {
-                allGroups.forEach(function (elementId) {
-                    var a = document.getElementById(elementId);
-                    if (a) {  // Check if the element exists
-                        if (a.classList.contains("hidden")) {
-                            a.classList.remove("hidden");
-                        }
-                    }
-                });
-            } else {
-                allGroups.forEach(function (elementId) {
-                    var a = document.getElementById(elementId);
-                    if (a) {  // Check if the element exists
-                        if (elementId === targetGroup) {
-                            if (a.classList.contains("hidden")) {
-                                a.classList.remove("hidden");
-                            }
-                        } else {
-                            a.classList.add("hidden");
-                        }
-                    }
-                });
-            }
-        }
-        </script>
-        <script>
-            
-        function jsonTabs(button) {
-            console.log(button)
-            if (button === "postJSONTab") {
-                document.getElementById('putJSONTab').classList.remove('active');
-                document.getElementById('putJSONContent').classList.add('hidden');
-                document.getElementById('postJSONTab').classList.add('active');
-                document.getElementById('postJSONContent').classList.remove('hidden');
-                document.getElementById('json_post_textarea').classList.add('current_json');
-                document.getElementById('json_put_textarea').classList.remove('current_json');
-            } else {
-                document.getElementById('postJSONTab').classList.remove('active');
-                document.getElementById('postJSONContent').classList.add('hidden');
-                document.getElementById('putJSONTab').classList.add('active');
-                document.getElementById('putJSONContent').classList.remove('hidden');
-                document.getElementById('json_post_textarea').classList.remove('current_json');
-                document.getElementById('json_put_textarea').classList.add('current_json');
-            }
-            }
-
-        </script>
-        <script>
-            
-  var checkboxGrayscale = document.getElementById('toggleGrayscale');
-        checkboxGrayscale.addEventListener('change', toggleGrayscale);
-        var root = document.documentElement;
-        var colorGray = getComputedStyle(root).getPropertyValue('--colorGray');
-        var colorReport = getComputedStyle(root).getPropertyValue('--colorReport');
-        var colorActivity = getComputedStyle(root).getPropertyValue('--colorActivity');
-        var colorContact = getComputedStyle(root).getPropertyValue('--colorContact');
-        var colorCourse = getComputedStyle(root).getPropertyValue('--colorCourse');
-        var colorDiagnosis = getComputedStyle(root).getPropertyValue('--colorDiagnosis');
-        var colorObservation = getComputedStyle(root).getPropertyValue('--colorObservation');
-
-        function toggleGrayscale() {
-            if (checkboxGrayscale.checked) {
-                root.style.setProperty('--colorReport', colorGray);
-                root.style.setProperty('--colorActivity', colorGray);
-                root.style.setProperty('--colorContact', colorGray);
-                root.style.setProperty('--colorCourse', colorGray);
-                root.style.setProperty('--colorDiagnosis', colorGray);
-                root.style.setProperty('--colorObservation', colorGray);
-            } else {
-                root.style.setProperty('--colorReport', colorReport);
-                root.style.setProperty('--colorActivity', colorActivity);
-                root.style.setProperty('--colorContact', colorContact);
-                root.style.setProperty('--colorCourse', colorCourse);
-                root.style.setProperty('--colorDiagnosis', colorDiagnosis);
-                root.style.setProperty('--colorObservation', colorObservation);
-            }
-        }
-                               
-        </script>
-        <script>
-            
-                var checkboxFlatView = document.getElementById('toggleFlatView');
-        checkboxFlatView.addEventListener('change', toggleFlatView);
-
-        function toggleFlatView() {
-            var elements = document.querySelectorAll('.objectHeaderMain, .objectDescription, .objectBodyMain, .object_margin, .table_view_hider')
-
-            elements.forEach(function (element) {
-                if (checkboxFlatView.checked) {
-                    if (element.classList.contains("objectHeaderMain")) {
-                        element.classList.add("objectHeaderMainFlatView");
-                    }
-
-                    if (element.classList.contains("objectDescription")) {
-                        element.classList.add("objectDescriptionFlatView");
-                    }
-                    if (element.classList.contains("objectBodyMain")) {
-                        element.classList.add("objectBodyMainFlatView");
-                    }
-                    if (element.classList.contains("object_margin")) {
-                        element.classList.add("remove_object_margin");
-                    }
-                    if (element.classList.contains("table_view_hider")) {
-                        element.classList.add("hidden");
-                    }
-                } else {
-                    if (element.classList.contains("objectHeaderMainFlatView")) {
-                        element.classList.remove("objectHeaderMainFlatView");
-                    }
-                    if (element.classList.contains("objectDescriptionFlatView")) {
-                        element.classList.remove("objectDescriptionFlatView");
-                    }
-                    if (element.classList.contains("objectBodyMainFlatView")) {
-                        element.classList.remove("objectBodyMainFlatView");
-                    }
-                    if (element.classList.contains("object_margin")) {
-                        element.classList.remove("remove_object_margin");
-                    }
-                    if (element.classList.contains("table_view_hider")) {
-                        element.classList.remove("hidden");
-                    }
-                }
-            })
-        };
-                               
-        </script>
-        <script>
-            
-        var checkboxDarkMode = document.getElementById('toggleDarkMode');
-        checkboxDarkMode.addEventListener('change', toggleDarkMode);
-
-        function toggleDarkMode() {
-            if (checkboxDarkMode.checked) {
-                document.documentElement.setAttribute('data-bs-theme', 'dark')
-            } else {
-                document.documentElement.setAttribute('data-bs-theme', 'light')
-            }
-        };
-    
-        </script>
-        <script>
-            
-        function copyText() {
-            var textarea = document.getElementsByClassName("current_json");
-            textarea[0].select();
-            document.execCommand("copy");
-        }
-    
-        </script>
-        <script>
-            
-        function expandAll() {
-            var divs = document.querySelectorAll('.collapse');
-            divs.forEach(function (div) {
-                div.classList.add('show');
-            });
-            document.getElementById('toggleExpand').classList.add('hidden');
-            document.getElementById('toggleExpand').classList.remove('visible');
-            document.getElementById('toggleCollapse').classList.add('visible');
-            document.getElementById('toggleCollapse').classList.remove('hidden');
-        }
-
-        function collapseAll() {
-            var divs = document.querySelectorAll('.collapse.show');
-            divs.forEach(function (div) {
-                div.classList.remove('show');
-            });
-            document.getElementById('toggleExpand').classList.add('visible');
-            document.getElementById('toggleExpand').classList.remove('hidden');
-            document.getElementById('toggleCollapse').classList.add('hidden');
-            document.getElementById('toggleCollapse').classList.remove('visible');
-        }
-    
-        </script>
-        <script>
-            
-        const searchInput = document.getElementById('searchInput');
-        const searchableObjects = document.querySelectorAll('.dataObject');
-
-        searchInput.addEventListener('input', function () {
-            const searchTerm = searchInput.value.toLowerCase();
-            if (searchTerm == "") {
-                searchableObjects.forEach(function (element) {
-                    if (element.classList.contains("hidden")) {
-                        element.classList.remove("hidden");
-                    }
-                });
-            } else {
-                searchableObjects.forEach(function (element) {
-                    var breadcrumb = element.querySelector('.breadcrumb-item.active');
-                    var description = element.querySelector('.objectDescription');
-                    let breadcrumb_text = '';
-                    let description_text = '';
-                    if (breadcrumb) {
-                        breadcrumb_text = (breadcrumb.innerText || '').toLowerCase();
-                    }
-                    if (description) {
-                        description_text = (description.innerText || '').toLowerCase();
-                    }
-                    const text = breadcrumb_text + " " + description_text;
-                    if (text.includes(searchTerm)) {
-                        if (element.classList.contains("hidden")) {
-                            element.classList.remove("hidden");
-                        }
-                    } else {
-                        element.classList.add("hidden");
-                    }
-                });
-            }
-        });
-                           
-        </script>
+        <script src="js/rkkp.js" crossorgigin="anonymous"></script>
         <script>
             
         // Bootstrap tooltips
