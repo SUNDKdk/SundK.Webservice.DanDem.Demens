@@ -25,7 +25,7 @@
                             "isActivated": true,
                             "properties": [
                                 {
-                                    "name": "DateTime",
+                                    "name": "ResultValue",
                                     "hackoladeMeta": {},
                                     "isActivated": true,
                                     "properties": [
@@ -36,14 +36,15 @@
                                             "python_type": "DateTime",
                                             "childType": "Base_Value_DateTime",
                                             "type": "string",
-                                            "GUID": "34a0baba-704d-45b2-bd1a-886e32e70232",
+                                            "GUID": "f0a64ab7-b978-4a9a-844f-43493dc31dae",
+                                            "foreignCollection": "",
+                                            "foreignField": [],
                                             "error": {}
                                         }
                                     ],
-                                    "childType": "Attribute_DateTime",
+                                    "childType": "Attribute_ResultValue",
                                     "type": "document",
-                                    "GUID": "5a2ec827-284b-401a-a728-8ac1965d1ad5",
-                                    "description": "Er der udført normal-tryks-hydrocephalus (NPH)-udredning? Udredningen foretages, hvis man mistænker forhøjet intrakranielt tryk som årsag til kognigitiv deficit.",
+                                    "GUID": "e18a8060-78c7-4aea-9f39-ec7d6b5ab130",
                                     "error": {}
                                 }
                             ],
@@ -1098,8 +1099,6 @@
         "3abc60d0-fe94-4510-be1e-5dbf70df735b": "Trinvold_DSQIID",
         "e4957fed-32a6-414c-8400-1a98ab83c847": "StatusCode",
         "db48f4a3-65c3-4115-b411-f39caccebfbb": "Value_String",
-        "5a2ec827-284b-401a-a728-8ac1965d1ad5": "DateTime",
-        "34a0baba-704d-45b2-bd1a-886e32e70232": "Value_DateTime",
         "f57abb4f-f4e4-454b-8cd5-c6e127ad6f9d": "SupportPersonPresent",
         "d2a39830-27f0-48c7-81f5-7c484ef703c7": "StatusCode",
         "0f515031-6ba9-4b5a-9ec5-ccca95dc62cc": "Value_String",
@@ -1108,7 +1107,9 @@
         "f530461d-fe4f-4d21-9bd5-ce97fc90f6e1": "ResultValue",
         "4e1f9016-3264-48fd-aeca-fa53ead5b24f": "Value_DateTime",
         "3a4e4047-c636-46e0-b72c-22bbef482ea7": "ResultValue",
-        "77b7f650-1fef-448c-b1d4-0df137bb9e12": "Value_DateTime"
+        "77b7f650-1fef-448c-b1d4-0df137bb9e12": "Value_DateTime",
+        "e18a8060-78c7-4aea-9f39-ec7d6b5ab130": "ResultValue",
+        "f0a64ab7-b978-4a9a-844f-43493dc31dae": "Value_DateTime"
     },
     "definitions": {
         "type": "definitions",
@@ -1133,7 +1134,7 @@
     "creationTS": "2024-08-16T10:58:12.414Z",
     "GUID": "119a2ef9-e29b-4a27-94d3-d52ee6653d29",
     "isLineageEnabled": false,
-    "lastModifTS": "2024-09-09T12:27:13.441Z",
+    "lastModifTS": "2024-09-24T11:53:46.813Z",
     "persistenceSchemaVersion": "6",
     "isCreatedByPlugin": true,
     "pluginInformation": {
