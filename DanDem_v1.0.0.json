@@ -45,6 +45,7 @@
                                     "childType": "Attribute_ResultValue",
                                     "type": "document",
                                     "GUID": "e18a8060-78c7-4aea-9f39-ec7d6b5ab130",
+                                    "description": "Hvis dette ikke indberettes tolkes det som at NPH-assessment ikke har fundet sted.\n\n**Bemærk:** Hvis kun en dato kan findes kan tid indberettes som 00:00:00.",
                                     "error": {}
                                 }
                             ],
@@ -78,13 +79,14 @@
                                     "childType": "Attribute_ResultValue",
                                     "type": "document",
                                     "GUID": "6480f538-f464-46f4-93d2-78613fbb9bf6",
-                                    "description": "Forelægger der CT-scanning af cerebrum og evt. adgang til billeder foretaget indenfor 24 måneder før diagnosesamtaledatoen.\n\n**Bemærk:** Dette indberettes som data af typen DateTime for at muliggøre automatisk indberetning, ikke fordi at dato og tid er af analytisk relevans. Derfor kan tid indberettes som 00:00:00. Hvis dette ikke indberettes tolkes det som at CT-scanning ikke har fundet sted.",
+                                    "description": "Hvis dette ikke indberettes tolkes det som at CT-scanning ikke har fundet sted.\n\n**Bemærk:** Hvis kun en dato kan findes kan tid indberettes som 00:00:00.",
                                     "error": {}
                                 }
                             ],
                             "childType": "Base_Object",
                             "type": "document",
                             "GUID": "19ad6c43-c1a9-43d9-b2bd-9995e5ecca9c",
+                            "description": "Forelægger der CT-scanning af cerebrum og evt. adgang til billeder foretaget indenfor **24 måneder** før diagnosesamtaledatoen.\n\n**Scanningen skal være udført inden for de seneste 24 mdr.**",
                             "error": {}
                         },
                         {
@@ -111,7 +113,7 @@
                                     "childType": "Attribute_ResultValue",
                                     "type": "document",
                                     "GUID": "f530461d-fe4f-4d21-9bd5-ce97fc90f6e1",
-                                    "description": "Forelægger der MR-scanning af cerebrum og evt. adgang til  billeder foretaget indenfor 24 måneder før diagnosesamtaledatoen.\n\n**Bemærk:** Dette indberettes som data af typen DateTime for at muliggøre automatisk indberetning, ikke fordi at dato og tid er af analytisk relevans. Derfor kan tid indberettes som 00:00:00. Hvis dette ikke indberettes tolkes det som at MR-scanning ikke har fundet sted.",
+                                    "description": "Hvis dette ikke indberettes tolkes det som at MR-scanning ikke har fundet sted.\n\n**Bemærk:** Hvis kun en dato kan findes kan tid indberettes som 00:00:00.",
                                     "foreignCollection": "",
                                     "foreignField": [],
                                     "error": {}
@@ -120,6 +122,7 @@
                             "childType": "Base_Object",
                             "type": "document",
                             "GUID": "02c6ae38-34ea-41ec-a3cf-37f41eafa6ea",
+                            "description": "Forelægger der MR-scanning af cerebrum og evt. adgang til  billeder foretaget indenfor 24 måneder før diagnosesamtaledatoen.\n\n**Scanningen skal være udført inden for de seneste 24 mdr.**",
                             "error": {}
                         },
                         {
@@ -146,7 +149,7 @@
                                     "childType": "Attribute_ResultValue",
                                     "type": "document",
                                     "GUID": "3a4e4047-c636-46e0-b72c-22bbef482ea7",
-                                    "description": "Er NPU udført i udredningsenhedens regi, uddelegeret derfra eller blevet gennemlæst/vurderet af udredningsenhedens neuropsykologer og fundet velgennemført?\n\n**Testen skal være udført inden for de seneste 12 mdr.**",
+                                    "description": "Hvis dette ikke indberettes tolkes det som at NPU ikke har fundet sted.\n\n**Bemærk:** Hvis kun en dato kan findes kan tid indberettes som 00:00:00.",
                                     "foreignCollection": "",
                                     "foreignField": [],
                                     "error": {}
@@ -155,7 +158,7 @@
                             "childType": "Base_Object",
                             "type": "document",
                             "GUID": "991acd7b-fd4d-4169-810f-066fbbd9677a",
-                            "description": "Neuropsykologisk undersøgelse (NPU)",
+                            "description": "Er Neuropsykologisk undersøgelse (NPU) udført i udredningsenhedens regi, uddelegeret derfra eller blevet gennemlæst/vurderet af udredningsenhedens neuropsykologer og fundet velgennemført?\n\n**Testen skal være udført inden for de seneste 12 mdr.**",
                             "error": {}
                         }
                     ],
@@ -637,7 +640,7 @@
                             "childType": "Base_Object",
                             "type": "document",
                             "GUID": "3abc60d0-fe94-4510-be1e-5dbf70df735b",
-                            "description": "Trindvold/DSQIID er instrumenter der anvendes til vurdering af patienter med samtidig Downs syndrom eller anden mental retardering og mistanke om erhvervet demenssygdom.\n\nDette instrument anvendes, når det ikke er muligt at anvende de sædvanlige instrumenter grundet mental retardering m.fl.\n\n**I tilfælde af denne er positiv, er der ikke behov for at udføre de andre tests. (LISTE AF TESTS)**",
+                            "description": "Trindvold/DSQIID er instrumenter der anvendes til vurdering af patienter med samtidig Downs syndrom eller anden mental retardering og mistanke om erhvervet demenssygdom.\n\nDette instrument anvendes, når det ikke er muligt at anvende de sædvanlige instrumenter grundet mental retardering m.fl.\n\n**I tilfælde af denne er positiv, er der ikke behov for at udføre de andre tests: MMSE, ACE, BASIC, CAMcog, MoCa, MCE, RUDAS, FAQ_IADL, DAD, ADSC_ADL, CognitiveImpairment**",
                             "foreignCollection": "",
                             "foreignField": [],
                             "error": {}
@@ -1134,7 +1137,7 @@
     "creationTS": "2024-08-16T10:58:12.414Z",
     "GUID": "119a2ef9-e29b-4a27-94d3-d52ee6653d29",
     "isLineageEnabled": false,
-    "lastModifTS": "2024-09-24T11:53:46.813Z",
+    "lastModifTS": "2024-10-01T12:54:07.641Z",
     "persistenceSchemaVersion": "6",
     "isCreatedByPlugin": true,
     "pluginInformation": {
