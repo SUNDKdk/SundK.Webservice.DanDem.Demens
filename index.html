@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>DanDem.v1.0.0 Dokumentation</title>
+        <title>DanDem v1.0.0 Dokumentation</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous" />
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet" />
         <link href="style.css" rel="stylesheet" />
@@ -25,21 +25,21 @@
                             </a>
                         </li>
                         <li class="nav-item ms-3">
-                            <a class="btn btn-info btn-sm" href="https://rkkp-wsapi.test.tcs.trifork.cloud/redoc">
+                            <a class="btn btn-info btn-sm" href="https://rkkp-wsapi.test.tcs.trifork.cloud/redoc" id="redocs-link">
                                 <i class="bi bi-window-sidebar"></i>
                                  ReDocs
                             </a>
                         </li>
                         <li class="nav-item ms-3">
-                            <a class="btn btn-info btn-sm" href="https://rkkp-wsapi.test.tcs.trifork.cloud/docs">
+                            <a class="btn btn-info btn-sm" href="https://rkkp-wsapi.test.tcs.trifork.cloud/docs" id="swagger-link">
                                 <i class="bi bi-menu-button-wide"></i>
                                  Swagger UI
                             </a>
                         </li>
                         <li class="nav-item ms-3">
-                            <a class="btn btn-info btn-sm disabled" href="#">
+                            <a class="btn btn-info btn-sm disabled" href="#" id="ldm-link">
                                 <i class="bi bi-database"></i>
-                                 RKKP DataModel
+                                 RKKP Data Model
                             </a>
                         </li>
                     </ul>
@@ -131,15 +131,13 @@
                                 </div>
                                 <div class="row">
                                     <div class="col">
-                                        <h5>(DanDem)</h5>
-                                        <h6>Endpoint version: 1.0.0
+                                        <h4>DanDem</h4>
+                                        <h6>Dokumentation til endpoint version: v1.0.0
                                             <span class="badge bg-success hidden" style="vertical-align: super !important;font-size: 12px;">Newest version</span>
                                         </h6>
-                                        <p>
-                                                    Dette er endpoint dokumentation til databasen Dansk Klinisk Kvalitetsdatabase for Demens.
-                                                     </p>
+                                        <p>Dette er endpoint dokumentation til databasen Dansk Klinisk Kvalitetsdatabase for Demens.</p>
                                         <hr />
-                                        <h6>Populations beskrivelse</h6>
+                                        <h5>Implementeringsguide</h5>
                                         <p><h6>Populations beskrivelse</h6>
 <p>Populationen omfatter alle som henvises til elektiv demensudredning i en demensudredningsenhed/hukommelsesklinik, der er placeret under følgende tre specialer: </p>
 <ol>
@@ -159,11 +157,7 @@
 <h6>Uddybende information</h6>
 <p>Det anbefales at databasens kontaktperson kontaktes forud for ændringer samt ved etableringen af nye integrationer til webservicen, da det kan have betydning for datakvaliteten.</p></p>
                                         <hr />
-                                        <p>
-                                                    I denne dokumentation kan du finde en oversigt over dataobjekterne i databasen, samt deres attributter, beskrivelser af attributter (hvor tilgængeligt), og kravstatus.
-
-                                                    I headeren kan du finde værktøjer til at tilpasse din visning af dokumentationen.
-                                                    </p>
+                                        <p>I denne dokumentation kan du finde en oversigt over dataobjekterne i databasen, samt deres attributter, beskrivelser af attributter (hvor tilgængeligt), og kravstatus. I headeren kan du finde værktøjer til at tilpasse din visning af dokumentationen.</p>
                                     </div>
                                 </div>
                             </div>
@@ -232,6 +226,10 @@
                                             <div class="collapse m-3 objectBodyMain" id="CT_Scan1">
                                                 <div class="object_margin">
                                                     <p class="table_view_hider" style="height: 1rem !important; margin: 0px !important;"></p>
+                                                    <div class="objectDescription bg-body-tertiary">
+                                                        <div class="alert alert-warning" role="alert"><p>Forelægger der CT-scanning af cerebrum og evt. adgang til billeder foretaget indenfor <strong>24 måneder</strong> før diagnosesamtaledatoen.</p>
+<p><strong>Scanningen skal være udført inden for de seneste 24 mdr.</strong></p></div>
+                                                    </div>
                                                     <table class="table table-bordered table-striped table-hover ">
                                                         <thead>
                                                             <tr>
@@ -245,16 +243,10 @@
                                                         <tbody class="table-group-divider">
                                                             <tr>
                                                                 <th scope="row">ResultValue</th>
-                                                                <td scope="row"><p>Forelægger der CT-scanning af cerebrum og evt. adgang til billeder foretaget indenfor 24 måneder før diagnosesamtaledatoen.</p>
-<p><strong>Bemærk:</strong> Dette indberettes som data af typen DateTime for at muliggøre automatisk indberetning, ikke fordi at dato og tid er af analytisk relevans. Derfor kan tid indberettes som 00:00:00. Hvis dette ikke indberettes tolkes det som at CT-scanning ikke har fundet sted.</p></td>
-                                                                <td scope="row">DateTime /<br> str, Enum</td>
-                                                                <td scope="row">
-                                                                   <p style="margin:0px; font-weight: bold;">Udfald:</p>
-                                                                    <ul class="list-group list-group-flush">
-                                                                        <li class="list-group-item">"ja"</li>
-                                                                        <li class="list-group-item">"nej"</li>
-                                                                    </ul>																
-																</td>
+                                                                <td scope="row"><p>Hvis dette ikke indberettes tolkes det som at CT-scanning ikke har fundet sted.</p>
+<p><strong>Bemærk:</strong> Hvis kun en dato kan findes kan tid indberettes som 00:00:00.</p></td>
+                                                                <td scope="row">DateTime</td>
+                                                                <td scope="row"></td>
                                                                 <td scope="row"></td>
                                                             </tr>
                                                         </tbody>
@@ -274,6 +266,10 @@
                                             <div class="collapse m-3 objectBodyMain" id="MR_Scan2">
                                                 <div class="object_margin">
                                                     <p class="table_view_hider" style="height: 1rem !important; margin: 0px !important;"></p>
+                                                    <div class="objectDescription bg-body-tertiary">
+                                                        <div class="alert alert-warning" role="alert"><p>Forelægger der MR-scanning af cerebrum og evt. adgang til  billeder foretaget indenfor 24 måneder før diagnosesamtaledatoen.</p>
+<p><strong>Scanningen skal være udført inden for de seneste 24 mdr.</strong></p></div>
+                                                    </div>
                                                     <table class="table table-bordered table-striped table-hover ">
                                                         <thead>
                                                             <tr>
@@ -287,16 +283,10 @@
                                                         <tbody class="table-group-divider">
                                                             <tr>
                                                                 <th scope="row">ResultValue</th>
-                                                                <td scope="row"><p>Forelægger der MR-scanning af cerebrum og evt. adgang til  billeder foretaget indenfor 24 måneder før diagnosesamtaledatoen.</p>
-<p><strong>Bemærk:</strong> Dette indberettes som data af typen DateTime for at muliggøre automatisk indberetning, ikke fordi at dato og tid er af analytisk relevans. Derfor kan tid indberettes som 00:00:00. Hvis dette ikke indberettes tolkes det som at MR-scanning ikke har fundet sted.</p></td>
-                                                                <td scope="row">DateTime /<br> str, Enum</td>
-                                                                <td scope="row">
-                                                                   <p style="margin:0px; font-weight: bold;">Udfald:</p>
-                                                                    <ul class="list-group list-group-flush">
-                                                                        <li class="list-group-item">"ja"</li>
-                                                                        <li class="list-group-item">"nej"</li>
-                                                                    </ul>																
-																</td>
+                                                                <td scope="row"><p>Hvis dette ikke indberettes tolkes det som at MR-scanning ikke har fundet sted.</p>
+<p><strong>Bemærk:</strong> Hvis kun en dato kan findes kan tid indberettes som 00:00:00.</p></td>
+                                                                <td scope="row">DateTime</td>
+                                                                <td scope="row"></td>
                                                                 <td scope="row"></td>
                                                             </tr>
                                                         </tbody>
@@ -337,15 +327,10 @@
                                                         <tbody class="table-group-divider">
                                                             <tr>
                                                                 <th scope="row">ResultValue</th>
-                                                                <td scope="row"><p>Er der udført normal-tryks-hydrocephalus (NPH)-udredning? Udredningen foretages, hvis man mistænker forhøjet intrakranielt tryk som årsag til kognigitiv deficit.</p></td>
-                                                                <td scope="row">DateTime /<br> str, Enum</td>
-                                                                <td scope="row">
-                                                                   <p style="margin:0px; font-weight: bold;">Udfald:</p>
-                                                                    <ul class="list-group list-group-flush">
-                                                                        <li class="list-group-item">"ja"</li>
-                                                                        <li class="list-group-item">"nej"</li>
-                                                                    </ul>																
-																</td>
+                                                                <td scope="row"><p>Hvis dette ikke indberettes tolkes det som at NPH-assessment ikke har fundet sted.</p>
+<p><strong>Bemærk:</strong> Hvis kun en dato kan findes kan tid indberettes som 00:00:00.</p></td>
+                                                                <td scope="row">DateTime</td>
+                                                                <td scope="row"></td>
                                                                 <td scope="row"></td>
                                                             </tr>
                                                         </tbody>
@@ -366,7 +351,8 @@
                                                 <div class="object_margin">
                                                     <p class="table_view_hider" style="height: 1rem !important; margin: 0px !important;"></p>
                                                     <div class="objectDescription bg-body-tertiary">
-                                                        <div class="alert alert-warning" role="alert"><p>Neuropsykologisk undersøgelse (NPU)</p></div>
+                                                        <div class="alert alert-warning" role="alert"><p>Er Neuropsykologisk undersøgelse (NPU) udført i udredningsenhedens regi, uddelegeret derfra eller blevet gennemlæst/vurderet af udredningsenhedens neuropsykologer og fundet velgennemført?</p>
+<p><strong>Testen skal være udført inden for de seneste 12 mdr.</strong></p></div>
                                                     </div>
                                                     <table class="table table-bordered table-striped table-hover ">
                                                         <thead>
@@ -381,16 +367,10 @@
                                                         <tbody class="table-group-divider">
                                                             <tr>
                                                                 <th scope="row">ResultValue</th>
-                                                                <td scope="row"><p>Er NPU udført i udredningsenhedens regi, uddelegeret derfra eller blevet gennemlæst/vurderet af udredningsenhedens neuropsykologer og fundet velgennemført?</p>
-<p><strong>Testen skal være udført inden for de seneste 12 mdr.</strong></p></td>
-                                                                <td scope="row">DateTime /<br> str, Enum</td>
-                                                                <td scope="row">
-                                                                   <p style="margin:0px; font-weight: bold;">Udfald:</p>
-                                                                    <ul class="list-group list-group-flush">
-                                                                        <li class="list-group-item">"ja"</li>
-                                                                        <li class="list-group-item">"nej"</li>
-                                                                    </ul>																
-																</td>
+                                                                <td scope="row"><p>Hvis dette ikke indberettes tolkes det som at NPU ikke har fundet sted.</p>
+<p><strong>Bemærk:</strong> Hvis kun en dato kan findes kan tid indberettes som 00:00:00.</p></td>
+                                                                <td scope="row">DateTime</td>
+                                                                <td scope="row"></td>
                                                                 <td scope="row"></td>
                                                             </tr>
                                                         </tbody>
@@ -1269,7 +1249,7 @@ primære årsag, ikke alkohol.</p>
                                                     <div class="objectDescription bg-body-tertiary">
                                                         <div class="alert alert-warning" role="alert"><p>Trindvold/DSQIID er instrumenter der anvendes til vurdering af patienter med samtidig Downs syndrom eller anden mental retardering og mistanke om erhvervet demenssygdom.</p>
 <p>Dette instrument anvendes, når det ikke er muligt at anvende de sædvanlige instrumenter grundet mental retardering m.fl.</p>
-<p><strong>I tilfælde af denne er positiv, er der ikke behov for at udføre de andre tests. (LISTE AF TESTS)</strong></p></div>
+<p><strong>I tilfælde af denne er positiv, er der ikke behov for at udføre de andre tests: MMSE, ACE, BASIC, CAMcog, MoCa, MCE, RUDAS, FAQ_IADL, DAD, ADSC_ADL, CognitiveImpairment</strong></p></div>
                                                     </div>
                                                     <table class="table table-bordered table-striped table-hover ">
                                                         <thead>
@@ -1411,19 +1391,14 @@ primære årsag, ikke alkohol.</p>
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title fs-5" id="jsonModalLabel">API request structure of DanDem.v1.0.0</h5>
+                        <h5 class="modal-title fs-5" id="jsonModalLabel">API request structure of Dansk Klinisk Kvalitetsdatabase for Demens v1.0.0</h5>
                         <button data-bs-dismiss='modal' type="button" class="btn-close"></button>
                     </div>
                     <div class="modal-body">
                         <div class="alert alert-tertiary border">
-                            <p>
-                                                        Dette er et auto-genereret eksempel af JSON strukturen til indberetning af data.
-                                                         </p>
+                            <p>Dette er et auto-genereret eksempel af JSON strukturen til indberetning af data.</p>
                             <hr />
-                            <p>
-                                                         For mere information om processen af at indsende data til API'en, se venligst vores tekniske guide på www.rkkp.dk eller besøg <a href='https://rkkp-wsapi.test.tcs.trifork.cloud/docs' target='_blank'>Swagger UI</a>.
-
-                                                         På <a href='https://rkkp-wsapi.test.tcs.trifork.cloud/docs' target='_blank'>Swagger UI</a> kan du finde en oversigt over API endpoints, samt detaljerede beskrivelser af de tilgængelige API forespørgsler, som kan foretages til hvert endpoint. </p>
+                            <p>For mere information om processen af at indsende data til API'en, se venligst vores tekniske guide                                         på www.rkkp.dk eller besøg <a href='https://rkkp-wsapi.test.tcs.trifork.cloud/docs' target='_blank'>Swagger UI</a>.                                         På <a href='https://rkkp-wsapi.test.tcs.trifork.cloud/docs' target='_blank'>Swagger UI</a> kan du finde en oversigt                                         over API endpoints, samt detaljerede beskrivelser af de tilgængelige API forespørgsler, som kan foretages til hvert endpoint. </p>
                         </div>
                         <ul class="nav nav-tabs" id="myTab" style="border-bottom: 0px !important">
                             <li class="nav-item">
@@ -1439,86 +1414,86 @@ primære årsag, ikke alkohol.</p>
                                     <textarea class="form-control textarea-tabs bg-body-tertiary current_json" id="json_post_textarea" style="height: 1000px">{
     "Report": {
         "Patient": {
-            "CivilRegistrationNumber": "2803171Bb8"
+            "CivilRegistrationNumber": "0411594NU6"
         },
         "Organization": {
             "OrganizationType": "regionskode",
             "Identifier": "1234"
         },
         "Data": {
-            "Observation": {
-                "MoCa": {
-                    "ResultValue": 12
-                },
-                "ACE": {
-                    "ResultValue": 79
-                },
-                "MCE": {
-                    "ResultValue": 58
-                },
-                "ADSC_ADL": {
-                    "ResultValue": 58
-                },
-                "CognitiveImpairment": {
-                    "ResultValue": "demens_moderat_grad"
-                },
-                "SupportPersonPresent": {
-                    "StatusCode": "nej"
-                },
-                "CAMcog": {
-                    "ResultValue": 69
-                },
-                "DAD": {
-                    "ResultValue": 25
-                },
-                "Trinvold_DSQIID": {
-                    "StatusCode": "ja"
-                },
-                "RUDAS": {
-                    "ResultValue": 8
-                },
-                "FAQ_IADL": {
-                    "ResultValue": 27
-                },
-                "BASIC": {
-                    "ResultValue": 11
-                },
-                "MMSE": {
-                    "ResultValue": 12
-                }
-            },
-            "Activity": {
-                "MR_Scan": {
-                    "ResultValue": "26-04-2000 07:27:38"
-                },
-                "CT_Scan": {
-                    "ResultValue": "26-07-2018 16:20:40"
-                },
-                "NPHAssessment": {
-                    "DateTime": "16-03-2006 07:05:07"
-                },
-                "NPU": {
-                    "ResultValue": "09-03-1995 05:55:39"
-                }
-            },
             "Contact": {
-                "ReferralFreeChoice": {
-                    "DateTime": "04-05-2009 02:35:34"
-                },
                 "InformDiagnosis": {
-                    "DateTime": "30-01-2019 09:54:20"
+                    "DateTime": "18-01-1998 03:16:07"
                 },
                 "ReferralCommunalCoordinator": {
                     "StatusCode": "ja"
                 },
                 "Referral": {
-                    "ResultValue": "patient_oensker_ikke_yderligere_undersoegelser",
-                    "DateTime": "23-04-1996 08:34:59"
+                    "ResultValue": "second_opinion",
+                    "DateTime": "11-05-2008 04:52:06"
+                },
+                "ReferralFreeChoice": {
+                    "DateTime": "03-12-2013 19:58:32"
+                }
+            },
+            "Observation": {
+                "FAQ_IADL": {
+                    "ResultValue": 23
+                },
+                "CognitiveImpairment": {
+                    "ResultValue": "kognitiv_svaekkelse"
+                },
+                "RUDAS": {
+                    "ResultValue": 18
+                },
+                "Trinvold_DSQIID": {
+                    "StatusCode": "nej"
+                },
+                "MMSE": {
+                    "ResultValue": 18
+                },
+                "MoCa": {
+                    "ResultValue": 15
+                },
+                "ACE": {
+                    "ResultValue": 73
+                },
+                "CAMcog": {
+                    "ResultValue": 7
+                },
+                "BASIC": {
+                    "ResultValue": 5
+                },
+                "MCE": {
+                    "ResultValue": 19
+                },
+                "SupportPersonPresent": {
+                    "StatusCode": "ja"
+                },
+                "ADSC_ADL": {
+                    "ResultValue": 12
+                },
+                "DAD": {
+                    "ResultValue": 18
+                }
+            },
+            "Activity": {
+                "NPU": {
+                    "ResultValue": "27-08-1997 14:13:50"
+                },
+                "NPHAssessment": {
+                    "ResultValue": "31-03-2024 04:54:36"
+                },
+                "CT_Scan": {
+                    "ResultValue": "23-10-2019 22:42:30"
+                },
+                "MR_Scan": {
+                    "ResultValue": "12-08-2003 01:41:01"
                 }
             },
             "Diagnosis": {
                 "EtiologicalDiagnosis": {
-                    "DiagnosisCode": "huntingtons_sygdom"
+                    "DiagnosisCode": "alzheimer_sygdom"
                 }
             }
         }
@@ -1531,84 +1506,87 @@ primære årsag, ikke alkohol.</p>
                                 <div class="form-floating mb-3">
                                     <textarea class="form-control textarea-tabs bg-body-tertiary" id="json_put_textarea" style="height: 1000px">{
     "Report": {
+        "Patient": {
+            "CivilRegistrationNumber": "3005296sc1"
+        },
         "Organization": {
             "OrganizationType": "regionskode",
             "Identifier": "1234"
         },
         "Data": {
-            "Observation": {
-                "MoCa": {
-                    "ResultValue": 16
-                },
-                "ACE": {
-                    "ResultValue": 20
-                },
-                "MCE": {
-                    "ResultValue": 96
-                },
-                "ADSC_ADL": {
-                    "ResultValue": 70
-                },
-                "CognitiveImpairment": {
-                    "ResultValue": "demens_let_grad"
-                },
-                "SupportPersonPresent": {
-                    "StatusCode": "ja"
-                },
-                "CAMcog": {
-                    "ResultValue": 2
-                },
-                "DAD": {
-                    "ResultValue": 4
-                },
-                "Trinvold_DSQIID": {
-                    "StatusCode": "nej"
-                },
-                "RUDAS": {
-                    "ResultValue": 6
-                },
-                "FAQ_IADL": {
-                    "ResultValue": 12
-                },
-                "BASIC": {
-                    "ResultValue": 8
-                },
-                "MMSE": {
-                    "ResultValue": 9
-                }
-            },
-            "Activity": {
-                "MR_Scan": {
-                    "ResultValue": "16-12-2005 07:23:53"
-                },
-                "CT_Scan": {
-                    "ResultValue": "10-07-1998 09:40:13"
-                },
-                "NPHAssessment": {
-                    "DateTime": "17-07-2011 23:52:35"
-                },
-                "NPU": {
-                    "ResultValue": "01-02-2014 09:18:01"
-                }
-            },
             "Contact": {
-                "ReferralFreeChoice": {
-                    "DateTime": "07-05-1996 12:40:38"
-                },
                 "InformDiagnosis": {
-                    "DateTime": "26-04-1996 06:28:46"
+                    "DateTime": "01-06-2016 16:23:27"
                 },
                 "ReferralCommunalCoordinator": {
                     "StatusCode": "ja"
                 },
                 "Referral": {
-                    "ResultValue": "omvisiteret_fritvalgspatient_til_primaer_udredning",
-                    "DateTime": "05-07-1995 21:10:54"
+                    "ResultValue": "patient_oensker_ikke_yderligere_undersoegelser",
+                    "DateTime": "24-09-2004 00:41:37"
+                },
+                "ReferralFreeChoice": {
+                    "DateTime": "11-05-1996 14:40:26"
+                }
+            },
+            "Observation": {
+                "FAQ_IADL": {
+                    "ResultValue": 26
+                },
+                "CognitiveImpairment": {
+                    "ResultValue": "demens_moderat_grad"
+                },
+                "RUDAS": {
+                    "ResultValue": 29
+                },
+                "Trinvold_DSQIID": {
+                    "StatusCode": "ja"
+                },
+                "MMSE": {
+                    "ResultValue": 2
+                },
+                "MoCa": {
+                    "ResultValue": 17
+                },
+                "ACE": {
+                    "ResultValue": 31
+                },
+                "CAMcog": {
+                    "ResultValue": 11
+                },
+                "BASIC": {
+                    "ResultValue": 20
+                },
+                "MCE": {
+                    "ResultValue": 77
+                },
+                "SupportPersonPresent": {
+                    "StatusCode": "nej"
+                },
+                "ADSC_ADL": {
+                    "ResultValue": 77
+                },
+                "DAD": {
+                    "ResultValue": 1
+                }
+            },
+            "Activity": {
+                "NPU": {
+                    "ResultValue": "06-09-2017 22:47:21"
+                },
+                "NPHAssessment": {
+                    "ResultValue": "09-10-2011 08:27:21"
+                },
+                "CT_Scan": {
+                    "ResultValue": "23-01-2011 13:16:32"
+                },
+                "MR_Scan": {
+                    "ResultValue": "20-11-2011 04:08:15"
                 }
             },
             "Diagnosis": {
                 "EtiologicalDiagnosis": {
-                    "DiagnosisCode": "alzheimer_sygdom"
+                    "DiagnosisCode": "anden__ikke_neurodegenerativ_sygdom"
                 }
             }
         }
@@ -1627,286 +1605,7 @@ primære årsag, ikke alkohol.</p>
             </div>
         </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" crossorgigin="anonymous"></script>
-        <script>
-            
-            // Hide a Column from Col Index in a table
-        function hideAdvancedColumn(columnIndex) {
-            var tables = document.querySelectorAll('table');
-            tables.forEach(function (table) {
-                var rows = table.querySelectorAll('tr');
-                rows.forEach(function (row) {
-                    var cells = row.querySelectorAll('th, td');
-                    if (columnIndex >= 0 && columnIndex < cells.length) {
-                        cells[columnIndex].classList.add('hidden-col');
-                    }
-                });
-            });
-        }
-
-        // Hide a Row based on Class in a table
-        function hideAdvancedRows() {
-            var rows = document.querySelectorAll('tr.advanced-data');
-            rows.forEach(function (row) {
-                row.classList.add('hidden-row');
-            });
-        }
-
-        // Toggle Advanced Data
-        var checkboxAdvView = document.getElementById('toggleAdvView');
-        checkboxAdvView.addEventListener('change', toggleAdvView);
-
-        function toggleAdvView() {
-            var hiddenCells = document.querySelectorAll('td.hidden-col, th.hidden-col');
-            var hiddenRows = document.querySelectorAll('tr.hidden-row, th.hidden-row');
-            var visibleCells = document.querySelectorAll('td.visible-col, th.visible-col');
-            var visibleRows = document.querySelectorAll('tr.visible-row, th.visible-row');
-            var gitHubIcon = document.getElementById('github-link');
-
-            if (checkboxAdvView.checked) {
-                hiddenCells.forEach(function (cell) {
-                    cell.classList.remove('hidden-col');
-                    cell.classList.add('visible-col');
-                });
-
-                hiddenRows.forEach(function (row) {
-                    row.classList.remove('hidden-row');
-                    row.classList.add('visible-row');
-                });
-                gitHubIcon.classList.remove('hidden');
-            } else {
-                visibleCells.forEach(function (cell) {
-                    cell.classList.remove('visible-col');
-                    cell.classList.add('hidden-col');
-                });
-
-                visibleRows.forEach(function (row) {
-                    row.classList.remove('visible-row');
-                    row.classList.add('hidden-row');
-                });
-                gitHubIcon.classList.add('hidden');
-            }
-        }
-        
-        </script>
-        <script>
-                    var allGroups = ["groupReport", "groupActivity", "groupContact", "groupCourse", "groupDiagnosis", "groupObservation", "groupGray"];
-
-        function filterTypes(targetGroup, button) {
-            var oldTab = document.querySelector('.nav-link.active');
-            oldTab.classList.remove('active');
-            button.classList.add('active');
-            if (targetGroup === "showAll") {
-                allGroups.forEach(function (elementId) {
-                    var a = document.getElementById(elementId);
-                    if (a) {  // Check if the element exists
-                        if (a.classList.contains("hidden")) {
-                            a.classList.remove("hidden");
-                        }
-                    }
-                });
-            } else {
-                allGroups.forEach(function (elementId) {
-                    var a = document.getElementById(elementId);
-                    if (a) {  // Check if the element exists
-                        if (elementId === targetGroup) {
-                            if (a.classList.contains("hidden")) {
-                                a.classList.remove("hidden");
-                            }
-                        } else {
-                            a.classList.add("hidden");
-                        }
-                    }
-                });
-            }
-        }
-        </script>
-        <script>
-            
-        function jsonTabs(button) {
-            console.log(button)
-            if (button === "postJSONTab") {
-                document.getElementById('putJSONTab').classList.remove('active');
-                document.getElementById('putJSONContent').classList.add('hidden');
-                document.getElementById('postJSONTab').classList.add('active');
-                document.getElementById('postJSONContent').classList.remove('hidden');
-                document.getElementById('json_post_textarea').classList.add('current_json');
-                document.getElementById('json_put_textarea').classList.remove('current_json');
-            } else {
-                document.getElementById('postJSONTab').classList.remove('active');
-                document.getElementById('postJSONContent').classList.add('hidden');
-                document.getElementById('putJSONTab').classList.add('active');
-                document.getElementById('putJSONContent').classList.remove('hidden');
-                document.getElementById('json_post_textarea').classList.remove('current_json');
-                document.getElementById('json_put_textarea').classList.add('current_json');
-            }
-            }
-
-        </script>
-        <script>
-            
-  var checkboxGrayscale = document.getElementById('toggleGrayscale');
-        checkboxGrayscale.addEventListener('change', toggleGrayscale);
-        var root = document.documentElement;
-        var colorGray = getComputedStyle(root).getPropertyValue('--colorGray');
-        var colorReport = getComputedStyle(root).getPropertyValue('--colorReport');
-        var colorActivity = getComputedStyle(root).getPropertyValue('--colorActivity');
-        var colorContact = getComputedStyle(root).getPropertyValue('--colorContact');
-        var colorCourse = getComputedStyle(root).getPropertyValue('--colorCourse');
-        var colorDiagnosis = getComputedStyle(root).getPropertyValue('--colorDiagnosis');
-        var colorObservation = getComputedStyle(root).getPropertyValue('--colorObservation');
-
-        function toggleGrayscale() {
-            if (checkboxGrayscale.checked) {
-                root.style.setProperty('--colorReport', colorGray);
-                root.style.setProperty('--colorActivity', colorGray);
-                root.style.setProperty('--colorContact', colorGray);
-                root.style.setProperty('--colorCourse', colorGray);
-                root.style.setProperty('--colorDiagnosis', colorGray);
-                root.style.setProperty('--colorObservation', colorGray);
-            } else {
-                root.style.setProperty('--colorReport', colorReport);
-                root.style.setProperty('--colorActivity', colorActivity);
-                root.style.setProperty('--colorContact', colorContact);
-                root.style.setProperty('--colorCourse', colorCourse);
-                root.style.setProperty('--colorDiagnosis', colorDiagnosis);
-                root.style.setProperty('--colorObservation', colorObservation);
-            }
-        }
-                               
-        </script>
-        <script>
-            
-                var checkboxFlatView = document.getElementById('toggleFlatView');
-        checkboxFlatView.addEventListener('change', toggleFlatView);
-
-        function toggleFlatView() {
-            var elements = document.querySelectorAll('.objectHeaderMain, .objectDescription, .objectBodyMain, .object_margin, .table_view_hider')
-
-            elements.forEach(function (element) {
-                if (checkboxFlatView.checked) {
-                    if (element.classList.contains("objectHeaderMain")) {
-                        element.classList.add("objectHeaderMainFlatView");
-                    }
-
-                    if (element.classList.contains("objectDescription")) {
-                        element.classList.add("objectDescriptionFlatView");
-                    }
-                    if (element.classList.contains("objectBodyMain")) {
-                        element.classList.add("objectBodyMainFlatView");
-                    }
-                    if (element.classList.contains("object_margin")) {
-                        element.classList.add("remove_object_margin");
-                    }
-                    if (element.classList.contains("table_view_hider")) {
-                        element.classList.add("hidden");
-                    }
-                } else {
-                    if (element.classList.contains("objectHeaderMainFlatView")) {
-                        element.classList.remove("objectHeaderMainFlatView");
-                    }
-                    if (element.classList.contains("objectDescriptionFlatView")) {
-                        element.classList.remove("objectDescriptionFlatView");
-                    }
-                    if (element.classList.contains("objectBodyMainFlatView")) {
-                        element.classList.remove("objectBodyMainFlatView");
-                    }
-                    if (element.classList.contains("object_margin")) {
-                        element.classList.remove("remove_object_margin");
-                    }
-                    if (element.classList.contains("table_view_hider")) {
-                        element.classList.remove("hidden");
-                    }
-                }
-            })
-        };
-                               
-        </script>
-        <script>
-            
-        var checkboxDarkMode = document.getElementById('toggleDarkMode');
-        checkboxDarkMode.addEventListener('change', toggleDarkMode);
-
-        function toggleDarkMode() {
-            if (checkboxDarkMode.checked) {
-                document.documentElement.setAttribute('data-bs-theme', 'dark')
-            } else {
-                document.documentElement.setAttribute('data-bs-theme', 'light')
-            }
-        };
-    
-        </script>
-        <script>
-            
-        function copyText() {
-            var textarea = document.getElementsByClassName("current_json");
-            textarea[0].select();
-            document.execCommand("copy");
-        }
-    
-        </script>
-        <script>
-            
-        function expandAll() {
-            var divs = document.querySelectorAll('.collapse');
-            divs.forEach(function (div) {
-                div.classList.add('show');
-            });
-            document.getElementById('toggleExpand').classList.add('hidden');
-            document.getElementById('toggleExpand').classList.remove('visible');
-            document.getElementById('toggleCollapse').classList.add('visible');
-            document.getElementById('toggleCollapse').classList.remove('hidden');
-        }
-
-        function collapseAll() {
-            var divs = document.querySelectorAll('.collapse.show');
-            divs.forEach(function (div) {
-                div.classList.remove('show');
-            });
-            document.getElementById('toggleExpand').classList.add('visible');
-            document.getElementById('toggleExpand').classList.remove('hidden');
-            document.getElementById('toggleCollapse').classList.add('hidden');
-            document.getElementById('toggleCollapse').classList.remove('visible');
-        }
-    
-        </script>
-        <script>
-            
-        const searchInput = document.getElementById('searchInput');
-        const searchableObjects = document.querySelectorAll('.dataObject');
-
-        searchInput.addEventListener('input', function () {
-            const searchTerm = searchInput.value.toLowerCase();
-            if (searchTerm == "") {
-                searchableObjects.forEach(function (element) {
-                    if (element.classList.contains("hidden")) {
-                        element.classList.remove("hidden");
-                    }
-                });
-            } else {
-                searchableObjects.forEach(function (element) {
-                    var breadcrumb = element.querySelector('.breadcrumb-item.active');
-                    var description = element.querySelector('.objectDescription');
-                    let breadcrumb_text = '';
-                    let description_text = '';
-                    if (breadcrumb) {
-                        breadcrumb_text = (breadcrumb.innerText || '').toLowerCase();
-                    }
-                    if (description) {
-                        description_text = (description.innerText || '').toLowerCase();
-                    }
-                    const text = breadcrumb_text + " " + description_text;
-                    if (text.includes(searchTerm)) {
-                        if (element.classList.contains("hidden")) {
-                            element.classList.remove("hidden");
-                        }
-                    } else {
-                        element.classList.add("hidden");
-                    }
-                });
-            }
-        });
-                           
-        </script>
+        <script src="js/rkkp.js" crossorgigin="anonymous"></script>
         <script>
             
         // Bootstrap tooltips
