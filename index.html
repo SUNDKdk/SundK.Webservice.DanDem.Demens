@@ -1218,13 +1218,12 @@ primære årsag, ikke alkohol.</p>
                                                         <tbody class="table-group-divider">
                                                             <tr>
                                                                 <th scope="row">StatusCode</th>
-                                                                <td scope="row"><p>Der skal svares Ja, hvis patienten er blevet tilbudt henvisning. Både hvis patient/pårørende ønsker dette sat i værk eller hvis de ikke ønsker dette sat i værk.</p></td>
+                                                                <td scope="row"></td>
                                                                 <td scope="row">str, Enum</td>
                                                                 <td scope="row">
                                                                     <p style="margin:0px; font-weight: bold;">Udfald:</p>
                                                                     <ul class="list-group list-group-flush">
                                                                         <li class="list-group-item">"ja"</li>
-                                                                        <li class="list-group-item">"nej"</li>
                                                                     </ul>
                                                                 </td>
                                                                 <td scope="row"></td>
@@ -1414,86 +1413,86 @@ primære årsag, ikke alkohol.</p>
                                     <textarea class="form-control textarea-tabs bg-body-tertiary current_json" id="json_post_textarea" style="height: 1000px">{
     "Report": {
         "Patient": {
-            "CivilRegistrationNumber": "0411594NU6"
+            "CivilRegistrationNumber": "2102798pz5"
         },
         "Organization": {
             "OrganizationType": "regionskode",
             "Identifier": "1234"
         },
         "Data": {
-            "Contact": {
-                "InformDiagnosis": {
-                    "DateTime": "18-01-1998 03:16:07"
-                },
-                "ReferralCommunalCoordinator": {
-                    "StatusCode": "ja"
-                },
-                "Referral": {
-                    "ResultValue": "second_opinion",
-                    "DateTime": "11-05-2008 04:52:06"
-                },
-                "ReferralFreeChoice": {
-                    "DateTime": "03-12-2013 19:58:32"
-                }
-            },
             "Observation": {
-                "FAQ_IADL": {
-                    "ResultValue": 23
-                },
-                "CognitiveImpairment": {
-                    "ResultValue": "kognitiv_svaekkelse"
-                },
                 "RUDAS": {
-                    "ResultValue": 18
+                    "ResultValue": 12
                 },
-                "Trinvold_DSQIID": {
-                    "StatusCode": "nej"
+                "DAD": {
+                    "ResultValue": 24
+                },
+                "ADSC_ADL": {
+                    "ResultValue": 2
                 },
                 "MMSE": {
-                    "ResultValue": 18
-                },
-                "MoCa": {
-                    "ResultValue": 15
-                },
-                "ACE": {
-                    "ResultValue": 73
-                },
-                "CAMcog": {
-                    "ResultValue": 7
+                    "ResultValue": 12
                 },
                 "BASIC": {
                     "ResultValue": 5
                 },
+                "Trinvold_DSQIID": {
+                    "StatusCode": "nej"
+                },
+                "MoCa": {
+                    "ResultValue": 23
+                },
                 "MCE": {
-                    "ResultValue": 19
+                    "ResultValue": 11
                 },
                 "SupportPersonPresent": {
                     "StatusCode": "ja"
                 },
-                "ADSC_ADL": {
-                    "ResultValue": 12
+                "CAMcog": {
+                    "ResultValue": 77
                 },
-                "DAD": {
-                    "ResultValue": 18
+                "ACE": {
+                    "ResultValue": 22
+                },
+                "FAQ_IADL": {
+                    "ResultValue": 24
+                },
+                "CognitiveImpairment": {
+                    "ResultValue": "demens_moderat_grad"
                 }
             },
-            "Activity": {
-                "NPU": {
-                    "ResultValue": "27-08-1997 14:13:50"
+            "Contact": {
+                "InformDiagnosis": {
+                    "DateTime": "24-10-1996 04:58:52"
                 },
-                "NPHAssessment": {
-                    "ResultValue": "31-03-2024 04:54:36"
+                "ReferralFreeChoice": {
+                    "DateTime": "09-07-2014 12:08:02"
                 },
-                "CT_Scan": {
-                    "ResultValue": "23-10-2019 22:42:30"
+                "Referral": {
+                    "DateTime": "09-08-2019 22:57:02",
+                    "ResultValue": "omvisiteret_fritvalgspatient_til_primaer_udredning"
                 },
-                "MR_Scan": {
-                    "ResultValue": "12-08-2003 01:41:01"
+                "ReferralCommunalCoordinator": {
+                    "StatusCode": "ja"
                 }
             },
             "Diagnosis": {
                 "EtiologicalDiagnosis": {
-                    "DiagnosisCode": "alzheimer_sygdom"
+                    "DiagnosisCode": "anden__ikke_neurodegenerativ_sygdom"
+                }
+            },
+            "Activity": {
+                "NPHAssessment": {
+                    "ResultValue": "25-08-2009 06:23:40"
+                },
+                "MR_Scan": {
+                    "ResultValue": "19-11-2017 10:31:40"
+                },
+                "NPU": {
+                    "ResultValue": "16-02-2006 23:13:39"
+                },
+                "CT_Scan": {
+                    "ResultValue": "15-05-2012 02:34:29"
                 }
             }
         }
@@ -1507,86 +1506,86 @@ primære årsag, ikke alkohol.</p>
                                     <textarea class="form-control textarea-tabs bg-body-tertiary" id="json_put_textarea" style="height: 1000px">{
     "Report": {
         "Patient": {
-            "CivilRegistrationNumber": "3005296sc1"
+            "CivilRegistrationNumber": "1202701887"
         },
         "Organization": {
             "OrganizationType": "regionskode",
             "Identifier": "1234"
         },
         "Data": {
+            "Observation": {
+                "RUDAS": {
+                    "ResultValue": 27
+                },
+                "DAD": {
+                    "ResultValue": 40
+                },
+                "ADSC_ADL": {
+                    "ResultValue": 38
+                },
+                "MMSE": {
+                    "ResultValue": 10
+                },
+                "BASIC": {
+                    "ResultValue": 9
+                },
+                "Trinvold_DSQIID": {
+                    "StatusCode": "nej"
+                },
+                "MoCa": {
+                    "ResultValue": 19
+                },
+                "MCE": {
+                    "ResultValue": 7
+                },
+                "SupportPersonPresent": {
+                    "StatusCode": "ja"
+                },
+                "CAMcog": {
+                    "ResultValue": 6
+                },
+                "ACE": {
+                    "ResultValue": 49
+                },
+                "FAQ_IADL": {
+                    "ResultValue": 19
+                },
+                "CognitiveImpairment": {
+                    "ResultValue": "kognitiv_svaekkelse"
+                }
+            },
             "Contact": {
                 "InformDiagnosis": {
-                    "DateTime": "01-06-2016 16:23:27"
+                    "DateTime": "01-04-2007 23:31:07"
+                },
+                "ReferralFreeChoice": {
+                    "DateTime": "04-07-1998 22:48:59"
+                },
+                "Referral": {
+                    "DateTime": "10-11-1997 16:22:09",
+                    "ResultValue": "patient_oensker_ikke_yderligere_undersoegelser"
                 },
                 "ReferralCommunalCoordinator": {
                     "StatusCode": "ja"
-                },
-                "Referral": {
-                    "ResultValue": "patient_oensker_ikke_yderligere_undersoegelser",
-                    "DateTime": "24-09-2004 00:41:37"
-                },
-                "ReferralFreeChoice": {
-                    "DateTime": "11-05-1996 14:40:26"
-                }
-            },
-            "Observation": {
-                "FAQ_IADL": {
-                    "ResultValue": 26
-                },
-                "CognitiveImpairment": {
-                    "ResultValue": "demens_moderat_grad"
-                },
-                "RUDAS": {
-                    "ResultValue": 29
-                },
-                "Trinvold_DSQIID": {
-                    "StatusCode": "ja"
-                },
-                "MMSE": {
-                    "ResultValue": 2
-                },
-                "MoCa": {
-                    "ResultValue": 17
-                },
-                "ACE": {
-                    "ResultValue": 31
-                },
-                "CAMcog": {
-                    "ResultValue": 11
-                },
-                "BASIC": {
-                    "ResultValue": 20
-                },
-                "MCE": {
-                    "ResultValue": 77
-                },
-                "SupportPersonPresent": {
-                    "StatusCode": "nej"
-                },
-                "ADSC_ADL": {
-                    "ResultValue": 77
-                },
-                "DAD": {
-                    "ResultValue": 1
-                }
-            },
-            "Activity": {
-                "NPU": {
-                    "ResultValue": "06-09-2017 22:47:21"
-                },
-                "NPHAssessment": {
-                    "ResultValue": "09-10-2011 08:27:21"
-                },
-                "CT_Scan": {
-                    "ResultValue": "23-01-2011 13:16:32"
-                },
-                "MR_Scan": {
-                    "ResultValue": "20-11-2011 04:08:15"
                 }
             },
             "Diagnosis": {
                 "EtiologicalDiagnosis": {
-                    "DiagnosisCode": "anden__ikke_neurodegenerativ_sygdom"
+                    "DiagnosisCode": "normaltryks_hydrocephalus_nph"
+                }
+            },
+            "Activity": {
+                "NPHAssessment": {
+                    "ResultValue": "06-04-2006 17:22:46"
+                },
+                "MR_Scan": {
+                    "ResultValue": "19-10-2002 15:56:36"
+                },
+                "NPU": {
+                    "ResultValue": "16-08-2005 00:56:42"
+                },
+                "CT_Scan": {
+                    "ResultValue": "02-12-2007 19:25:22"
                 }
             }
         }
