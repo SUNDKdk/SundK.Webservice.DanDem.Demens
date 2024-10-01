@@ -666,10 +666,6 @@
                                                 {
                                                     "GUID": "744abaf4-72f4-4db5-9f07-a35e0b86e52e",
                                                     "Udfald": "ja"
-                                                },
-                                                {
-                                                    "GUID": "50855194-a615-4a4a-a3d5-03158729dbf5",
-                                                    "Udfald": "nej"
                                                 }
                                             ],
                                             "foreignCollection": "",
@@ -682,7 +678,6 @@
                                     "GUID": "d2a39830-27f0-48c7-81f5-7c484ef703c7",
                                     "foreignCollection": "",
                                     "foreignField": [],
-                                    "description": "Der skal svares Ja, hvis patienten er blevet tilbudt henvisning. Både hvis patient/pårørende ønsker dette sat i værk eller hvis de ikke ønsker dette sat i værk.",
                                     "error": {}
                                 }
                             ],
@@ -1137,7 +1132,7 @@
     "creationTS": "2024-08-16T10:58:12.414Z",
     "GUID": "119a2ef9-e29b-4a27-94d3-d52ee6653d29",
     "isLineageEnabled": false,
-    "lastModifTS": "2024-10-01T12:54:07.641Z",
+    "lastModifTS": "2024-10-01T13:41:21.902Z",
     "persistenceSchemaVersion": "6",
     "isCreatedByPlugin": true,
     "pluginInformation": {
