@@ -53,7 +53,8 @@
                             "type": "document",
                             "GUID": "5ded80eb-01f0-4515-ac24-a7fe56d018ee",
                             "description": "Dette er kun relevant for:\n\n- Rigshospitalet, Blegdamsvej (SOR: 253121000016002)\n- Aalborg UH, Demensenheden (SOR: 911061000016003)\n- Aalborg UH, Neurologisk (SOR: 275991000016001)",
-                            "error": {}
+                            "error": {},
+                            "ChangeLogID": "71775ac3-9417-4bb7-b131-69e47ccee44f"
                         },
                         {
                             "name": "CT_Scan",
@@ -87,7 +88,8 @@
                             "type": "document",
                             "GUID": "19ad6c43-c1a9-43d9-b2bd-9995e5ecca9c",
                             "description": "Forelægger der CT-scanning af cerebrum og evt. adgang til billeder foretaget indenfor **24 måneder** før diagnosesamtaledatoen.\n\n**Scanningen skal være udført inden for de seneste 24 mdr.**",
-                            "error": {}
+                            "error": {},
+                            "ChangeLogID": "c2a2ae58-7b45-4cce-8b3b-ca2be2920727"
                         },
                         {
                             "name": "MR_Scan",
@@ -123,7 +125,8 @@
                             "type": "document",
                             "GUID": "02c6ae38-34ea-41ec-a3cf-37f41eafa6ea",
                             "description": "Forelægger der MR-scanning af cerebrum og evt. adgang til  billeder foretaget indenfor 24 måneder før diagnosesamtaledatoen.\n\n**Scanningen skal være udført inden for de seneste 24 mdr.**",
-                            "error": {}
+                            "error": {},
+                            "ChangeLogID": "30d7e892-caf5-4bea-af77-b4a32175a869"
                         },
                         {
                             "name": "NPU",
@@ -159,7 +162,8 @@
                             "type": "document",
                             "GUID": "991acd7b-fd4d-4169-810f-066fbbd9677a",
                             "description": "Er Neuropsykologisk undersøgelse (NPU) udført i udredningsenhedens regi, uddelegeret derfra eller blevet gennemlæst/vurderet af udredningsenhedens neuropsykologer og fundet velgennemført?\n\n**Testen skal være udført inden for de seneste 12 mdr.**",
-                            "error": {}
+                            "error": {},
+                            "ChangeLogID": "c0c4a864-01c4-44e2-8de9-87d19e73b0b8"
                         }
                     ],
                     "childType": "Group_Activity",
@@ -206,7 +210,8 @@
                             "type": "document",
                             "GUID": "e75477aa-ae6e-4e3a-8012-6224aeaad1e4",
                             "description": "Mini mental status examination (MMSE) er uden sammenligning det hyppigst anvendte kognitive screeningsinstrument i ind- og udland og indgår som rutineundersøgelse ved demensudredning.",
-                            "error": {}
+                            "error": {},
+                            "ChangeLogID": "751eade1-9161-4bdd-85b6-922c1e55523e"
                         },
                         {
                             "name": "ACE",
@@ -243,7 +248,8 @@
                             "type": "document",
                             "GUID": "aa739dc0-ee7a-43f6-b3e1-86efb73c7d8d",
                             "description": "Addenbrooke’s Cognitive Examination (ACE) giver flere og mere nuancerede oplysninger om det kognitive funktionsniveau end fx MMSE alene og udgør et velegnet supplement ved demensudredning.\n",
-                            "error": {}
+                            "error": {},
+                            "ChangeLogID": "aec31738-aaef-4b4d-b2e4-f32bab50ef56"
                         },
                         {
                             "name": "BASIC",
@@ -280,7 +286,8 @@
                             "type": "document",
                             "GUID": "22390531-9832-4def-b39c-a1ff4d3ad445",
                             "description": "Brief Assessment of Impaired Cognition (BASIC) er udviklet til rettidig identifikation af kognitiv svækkelse og demens. ",
-                            "error": {}
+                            "error": {},
+                            "ChangeLogID": "6694c1c0-22ca-482b-80a0-6a6fabf758b2"
                         },
                         {
                             "name": "CAMcog",
@@ -317,7 +324,8 @@
                             "type": "document",
                             "GUID": "fe6c8b51-212e-46fb-bb50-e1987a1f4549",
                             "description": "Cambridge Cognitive Examination (CAMCOG) er udviklet med henblik på at bidrage til at diagnosticere demens i et tidligt stadium og giver væsentligt flere oplysninger end fx MMSE. \n",
-                            "error": {}
+                            "error": {},
+                            "ChangeLogID": "b03b5cf6-7443-4e7b-912a-71853dfc76d8"
                         },
                         {
                             "name": "MoCa",
@@ -354,7 +362,8 @@
                             "type": "document",
                             "GUID": "c3352418-4f96-4263-b68a-1753cd145534",
                             "description": "The Montreal Cognitive Assessment (MoCA) er udviklet med henblik på at identificere mild cognitive impairment (let kognitiv svækkelse; MCI).\n",
-                            "error": {}
+                            "error": {},
+                            "ChangeLogID": "ed1bb896-8742-431c-a1e2-c118f7e30235"
                         },
                         {
                             "name": "MCE",
@@ -391,7 +400,8 @@
                             "type": "document",
                             "GUID": "24fcbea2-165a-4247-a9db-737b2a35828b",
                             "description": "Multicultural Cognitive Examination (MCE) er udviklet som et så vidt muligt kulturuafhængigt eller tværkulturelt screeningsinstrument for demens. MCE giver flere og mere nuancerede oplysninger om det kognitive funktionsniveau end fx RUDAS alene og udgør et velegnet supplement ved tværkulturel demensudredning.  \n",
-                            "error": {}
+                            "error": {},
+                            "ChangeLogID": "3b2c4582-6fb6-4ef7-9027-91944506b9fb"
                         },
                         {
                             "name": "RUDAS",
@@ -429,7 +439,8 @@
                             "type": "document",
                             "GUID": "00c0430e-a335-47b1-b762-29614ad39979",
                             "description": "The Rowland Universal Dementia Assessment Scale (RUDAS) er udviklet som et så vidt muligt kulturuafhængigt eller tværkulturelt screeningsinstrument for demens. \n\n**Hvis denne test er udført, er der ikke behov for at udføre yderligere tests. Det anbefales derfor at implementere denne først i integrationer til webservicen.**",
-                            "error": {}
+                            "error": {},
+                            "ChangeLogID": "ec7dd490-e83a-42e4-944e-e6e51072acc3"
                         },
                         {
                             "name": "FAQ_IADL",
@@ -466,7 +477,8 @@
                             "type": "document",
                             "GUID": "b5d5886d-ed56-4cea-86d0-7295b409f6d5",
                             "description": "Functional Activities Questionnaire (FAQ IADL) er udviklet med henblik på – via oplysninger fra pårørende – at opnå en hurtig og systematisk vurdering af patientens praktiske funktionsevne i hverdagen.\n",
-                            "error": {}
+                            "error": {},
+                            "ChangeLogID": "0631ceda-0f28-4734-995a-07a250d96270"
                         },
                         {
                             "name": "DAD",
@@ -503,7 +515,8 @@
                             "type": "document",
                             "GUID": "0383f5ba-abdf-4a60-8252-6a43cdff5560",
                             "description": "The Disability Assessment for Dementia (DAD) er udviklet af en gruppe canadiske ergo- og fysioterapeuter med henblik på vurdering af praktisk funktionsevne hos hjemmeboende patienter med Alzheimers sygdom. Instrumentet er følsomt over for ændringer i funktionsevne.\n",
-                            "error": {}
+                            "error": {},
+                            "ChangeLogID": "1d4ba429-0e87-4ea2-a2df-7a3decb7fb43"
                         },
                         {
                             "name": "ADSC_ADL",
@@ -540,7 +553,8 @@
                             "type": "document",
                             "GUID": "33a16fc2-eda7-48df-9395-e163f0f47e05",
                             "description": "Alzheimer's Disease Cooperative Study(ADCS)-ADL er udviklet med henblik på vurdering af praktisk funktionsevne hos patienter med Alzheimers sygdom.",
-                            "error": {}
+                            "error": {},
+                            "ChangeLogID": "d6943ede-e4d4-49d1-bc86-cd64f7caf80e"
                         },
                         {
                             "name": "CognitiveImpairment",
@@ -598,7 +612,8 @@
                             "GUID": "c9a045e5-1740-4fe1-ab88-26eb47c91aad",
                             "description": "Habituel kognitiv funktion: Test inden for alders- og uddannelseskorrigeret normalområde og præmorbid funktion.",
                             "required": true,
-                            "error": {}
+                            "error": {},
+                            "ChangeLogID": "53ba861f-1748-4cd0-b652-3ff0d755ddb6"
                         },
                         {
                             "name": "Trinvold_DSQIID",
@@ -643,7 +658,8 @@
                             "description": "Trindvold/DSQIID er instrumenter der anvendes til vurdering af patienter med samtidig Downs syndrom eller anden mental retardering og mistanke om erhvervet demenssygdom.\n\nDette instrument anvendes, når det ikke er muligt at anvende de sædvanlige instrumenter grundet mental retardering m.fl.\n\n**I tilfælde af denne er positiv, er der ikke behov for at udføre de andre tests: MMSE, ACE, BASIC, CAMcog, MoCa, MCE, RUDAS, FAQ_IADL, DAD, ADSC_ADL, CognitiveImpairment**",
                             "foreignCollection": "",
                             "foreignField": [],
-                            "error": {}
+                            "error": {},
+                            "ChangeLogID": "8e2e6652-f4d0-4da2-85ae-4deb96e04502"
                         },
                         {
                             "hackoladeMeta": {},
@@ -686,7 +702,8 @@
                             "GUID": "f57abb4f-f4e4-454b-8cd5-c6e127ad6f9d",
                             "description": "Var der en pårørende / professionel omsorgsperson involveret i vurderingerne?\n\nDa demente ikke altid selv har indsigt i eget funktionsniveau, da inddrages pårørende eller andre, som kender patienten indgående. Der markeres ”Ja” hvis der har været en pårørende og/eller professionel omsorgsperson (der kender patienten til at kunne svare på vurderingen) ved forundersøgelse.\n\nDenne variabel er dækkende for alle de nævnte vurderinger, og det antages at hvis der har været en pårørende til stede ved en vurdering har der været en pårørende til stede ved alle.",
                             "name": "SupportPersonPresent",
-                            "error": {}
+                            "error": {},
+                            "ChangeLogID": "ed742d89-b813-4d71-ac1b-6bcc07300a18"
                         }
                     ],
                     "childType": "Group_Observation",
@@ -732,7 +749,8 @@
                             "GUID": "8df64c5d-a51b-4042-a5ae-0ce5a6823bc1",
                             "description": "Denne dato er ekstrem vigtig og der skal gøres en stor indsats for at validere denne dato. Denne dato kobles bl.a. med henvsiningsdato og første kontakt dato i udredningsforløbet identificeret i LPR ved procedurekoden ZZ1500. Herudfra bestemmes ventetid og udredningstid, hvilke er ekstremt vigtige parametre for patient og pårørende og dermed ventidsgarantier regionerne bør leve op til. \n\nDatoen er den dato, hvor alle undersøgelser, der er blevet lavet i udredningsforløbet foreligger og er vurderet/beskrevet og dermed kan føre til en konklusiv diagnose på det bedst mulige kliniske grundlag.\n",
                             "required": true,
-                            "error": {}
+                            "error": {},
+                            "ChangeLogID": "a1a41f9a-4d39-4e24-aa85-970fdcfe4aaa"
                         },
                         {
                             "name": "Referral",
@@ -805,7 +823,8 @@
                             "type": "document",
                             "GUID": "b0bf0abe-ccfc-4a22-8a4b-cc26729e4cd2",
                             "description": "Henvisningstype  / Pt. ønsker ikke udredning.\n\nHenvisningstypen er afgørende for, hvorledes patienten indgår i indikatorberegningen.",
-                            "error": {}
+                            "error": {},
+                            "ChangeLogID": "d221e3a8-041a-49b3-bb31-dc5f442c50c5"
                         },
                         {
                             "name": "ReferralFreeChoice",
@@ -839,7 +858,8 @@
                             "type": "document",
                             "GUID": "387313ff-43c9-41f3-b1f4-57747d8935a9",
                             "description": "Fritvalgshenvisning modtaget\n",
-                            "error": {}
+                            "error": {},
+                            "ChangeLogID": "1f889d10-46b6-412f-8aa8-2e4a3a84d1b1"
                         },
                         {
                             "name": "ReferralCommunalCoordinator",
@@ -883,7 +903,8 @@
                             "type": "document",
                             "GUID": "6ad72a23-7572-4583-b09a-524f7fa9d55d",
                             "description": "Kommunal demenskoordinator henvisning",
-                            "error": {}
+                            "error": {},
+                            "ChangeLogID": "d04767f8-4b6a-47ba-b114-ec8011b8d9a5"
                         }
                     ],
                     "childType": "Group_Contact",
@@ -988,7 +1009,8 @@
                             "GUID": "f4442f9a-60c4-423e-9c30-10c0ca68b6ba",
                             "description": "Hvis Graden af kognitiv påvirkning ikke er svarende til Habituel kognitiv funktion, da skal Ætiologisk diagnose angives, hvis det er muligt. \n\nDen sygdomsspecifikke diagnose, der registres skal være den anførte diagnose i journalen og som er kommunikeret til patient/pårørende. Ved flere konkurrerende ætiologier indberettes den ætiologi, der bedst beskriver den dominerende kliniske tilstand. \nSiden 2015 har de diagnostiske kriterier for demens været diskuteret, men der er stadig ikke konsensus om, hvilke diagnostiske kriterier, der skal anvendes på tværs af landet. Trial Nation anbefaler følgende diagnosekriterier:",
                             "required": true,
-                            "error": {}
+                            "error": {},
+                            "ChangeLogID": "1d9cc20d-1675-423a-81d5-bdf51513345f"
                         }
                     ],
                     "childType": "Group_Diagnosis",
