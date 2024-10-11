@@ -1025,7 +1025,7 @@
             },
             "isActivated": true,
             "additionalProperties": false,
-            "dbVersion": "v1.0.0",
+            "dbVersion": "1.0.0",
             "GUID": "79e59bf8-0e30-4b5c-8afd-c85afb00b871",
             "bucketId": "bdea2baf-86e0-4dce-aefe-a5d20dd110b8",
             "dbNameShort": "DanDem",
