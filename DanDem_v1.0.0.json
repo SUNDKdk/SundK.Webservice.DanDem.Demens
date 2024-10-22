@@ -1029,7 +1029,8 @@
             "GUID": "79e59bf8-0e30-4b5c-8afd-c85afb00b871",
             "bucketId": "bdea2baf-86e0-4dce-aefe-a5d20dd110b8",
             "dbNameShort": "DanDem",
-            "dbImplementationGuide": "###### Populations beskrivelse\n\nPopulationen omfatter alle som henvises til elektiv demensudredning i en demensudredningsenhed/hukommelsesklinik, der er placeret under følgende tre specialer: \n\n1. geriatri\n2. neurologi\n3. psykiatri\n\nPatienten skal være henvist til demensudredning med procedurekoden ZZ1500. \n\nPatienten skal være fyldt 18 år på henvisningstidspunktet for at kunne indgå i DanDem.\n\nDatabase populationen defineres, som patienter der udredes for demens i hospitalsregi eller via fritvalgsordningen ved alternativt hospital, anden region eller privat aktør. \n\n###### Ekslusionskriterier\n\nDatagrundlaget indeholder ikke: \n\n1. Patienter, der er yngre end 18 år samt \n2. patienter genhenvist med sikker diagnose pga. adfærdsforstyrrelser\n\n###### Uddybende information\n\nDet anbefales at databasens kontaktperson kontaktes forud for ændringer samt ved etableringen af nye integrationer til webservicen, da det kan have betydning for datakvaliteten. "
+            "dbImplementationGuide": "###### Populations beskrivelse\n\nPopulationen omfatter alle som henvises til elektiv demensudredning i en demensudredningsenhed/hukommelsesklinik, der er placeret under følgende tre specialer: \n\n1. geriatri\n2. neurologi\n3. psykiatri\n\nPatienten skal være henvist til demensudredning med procedurekoden ZZ1500. \n\nPatienten skal være fyldt 18 år på henvisningstidspunktet for at kunne indgå i DanDem.\n\nDatabase populationen defineres, som patienter der udredes for demens i hospitalsregi eller via fritvalgsordningen ved alternativt hospital, anden region eller privat aktør. \n\n###### Ekslusionskriterier\n\nDatagrundlaget indeholder ikke: \n\n1. Patienter, der er yngre end 18 år samt \n2. patienter genhenvist med sikker diagnose pga. adfærdsforstyrrelser\n\n###### Uddybende information\n\nDet anbefales at databasens kontaktperson kontaktes forud for ændringer samt ved etableringen af nye integrationer til webservicen, da det kan have betydning for datakvaliteten. ",
+            "dbSchema": "Demens"
         }
     ],
     "buckets": [
@@ -1154,7 +1155,7 @@
     "creationTS": "2024-08-16T10:58:12.414Z",
     "GUID": "119a2ef9-e29b-4a27-94d3-d52ee6653d29",
     "isLineageEnabled": false,
-    "lastModifTS": "2024-10-01T13:41:21.902Z",
+    "lastModifTS": "2024-10-22T08:28:03.832Z",
     "persistenceSchemaVersion": "6",
     "isCreatedByPlugin": true,
     "pluginInformation": {
