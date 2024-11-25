@@ -11,7 +11,7 @@
     </head>
     <body>
         <header class="mb-5">
-            <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary py-4">
+            <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary py-4 header-style">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="https://www.rkkp.dk/">
                         <img class="d-inline-block me-1 align-text-middle" src="favicon.png" width="50" height="50" />
@@ -96,7 +96,7 @@
             <div class="container-lg" style="margin-top:6rem !important">
                 <div class="row mt-4">
                     <div class="col-sm-12 mt-5">
-                        <div class="alert alert-tertiary border" style="margin-bottom: 0px !important">
+                        <div class="container main-container-style bg-body-tertiary rounded-3 p-3" style="margin-bottom: 0px !important">
                             <div class="container-fluid">
                                 <div class="row d-flex align-items-center">
                                     <div class="col-md-8">
@@ -131,11 +131,10 @@
                                 </div>
                                 <div class="row">
                                     <div class="col">
-                                        <h4>DanDem</h4>
-                                        <h6>Dokumentation til endpoint version: v1.0.0
+                                        <h4>DanDem - Demens</h4>
+                                        <h6>Dokumentation til endpoint version: 1.0.0
                                             <span class="badge bg-success hidden" style="vertical-align: super !important;font-size: 12px;">Newest version</span>
                                         </h6>
-                                        <p>Dette er endpoint dokumentation til databasen Dansk Klinisk Kvalitetsdatabase for Demens.</p>
                                         <hr />
                                         <h5>Implementeringsguide</h5>
                                         <p><h6>Populations beskrivelse</h6>
@@ -166,7 +165,7 @@
                 </div>
                 <div class="row mt-4">
                     <div class="col-sm-12">
-                        <div class="p-3 bg-body-tertiary border rounded-3">
+                        <div class="main-container-style bg-body-tertiary border rounded-3 p-3">
                             <input class="form-control form-control-lg" id="searchInput" placeholder="Søg i objektnavne og beskrivelser ..." type="text" />
                         </div>
                     </div>
@@ -196,7 +195,7 @@
                                 <button class="nav-link" id="tabReport" type="button" onclick="filterTypes('groupReport', this)"><i class="bi bi-square-fill bg-body-tertiary report-txt me-2"></i>Report Objects</button>
                             </li>
                         </ul>
-                        <div class="container container-border bg-body-tertiary">
+                        <div class="container main-container-style bg-body-tertiary rounded-3 p-3 mb-3" style="border-top: 0px !important;border-top-left-radius: 0px !important;border-top-right-radius: 0px !important;">
                             <ul class="nav mb-2 d-flex justify-content-end">
                                 <li class="nav-item me-2">
                                     <a class="btn btn-info btn-sm" href="dandem_export_v1_0_0.xlsx">
@@ -213,40 +212,67 @@
                             </ul>
                             <div class="tab-content">
                                 <div class="tab-pane fade show active" id="tabAll-pane">
+                                    <div class="alert alert-danger m-3" role="alert">
+                                        <div class="d-flex align-items-center" style="margin-bottom: 0.5rem !important;">
+                                            <h6 style="margin-top: 0px !important;margin-bottom: 0px !important;">Bemærk: </h6>
+                                            <div class="badge rounded-pill text-bg-danger ms-2 me-2 d-inline-flex align-items-center">
+                                                <i class="bi bi-exclamation-diamond me-1" style="margin-top: -2px;"></i>
+                                                <span> Required</span>
+                                            </div>
+                                        </div>
+                                        <p>Alle felter skal som udgangspunkt indberettes. Felter markeret som <strong>required</strong> er påkrævet for at kunne oprette en indberetning.</p>
+                                    </div>
                                     <div id="groupActivity" class="groupActivity">
                                         <div class="dataObject">
-                                            <a data-bs-toggle='collapse' aria-expanded='false' href="#CT_Scan1" class="ObjectHeaderWrapper">
+                                            <a data-bs-toggle='collapse' aria-expanded='false' href="#ExtendedNeuroAssessment1" class="ObjectHeaderWrapper">
                                                 <ol class="breadcrumb objectHeaderMain objectHeaderColor">
-                                                    <i class="bi bi-folder2 me-2"></i>
+                                                    <i class="bi bi-folder2 me-2" style="margin-top: -3px;"></i>
                                                     <li class="breadcrumb-item">DanDem</li>
                                                     <li class="breadcrumb-item">Activity</li>
-                                                    <li aria-current='page' class="breadcrumb-item active">CT_Scan</li>
+                                                    <li class="breadcrumb-item active">ExtendedNeuroAssessment</li>
+                                                    <li class="mx-2"> - </li>
+                                                    <li><strong>Udvidet neuropsykologisk undersøgelse</strong></li>
                                                 </ol>
                                             </a>
-                                            <div class="collapse m-3 objectBodyMain" id="CT_Scan1">
+                                            <div class="collapse m-3 objectBodyMain" id="ExtendedNeuroAssessment1">
                                                 <div class="object_margin">
                                                     <p class="table_view_hider" style="height: 1rem !important; margin: 0px !important;"></p>
                                                     <div class="objectDescription alert alert-warning">
-                                                        <p><p>Forelægger der CT-scanning af cerebrum og evt. adgang til billeder foretaget indenfor <strong>24 måneder</strong> før diagnosesamtaledatoen.</p>
-<p><strong>Scanningen skal være udført inden for de seneste 24 mdr.</strong></p></p>
+                                                        <p><strong>Udvidet neuropsykologisk undersøgelse</strong></p>
+                                                        <p><p>Er 'Udvidet neuropsykologisk undersøgelse' (Diagnosekode: ZZ5000A) udført i udredningsenhedens regi, uddelegeret derfra eller blevet gennemlæst/vurderet af udredningsenhedens neuropsykologer og fundet velgennemført?</p>
+<p><strong>Testen skal være udført inden for de seneste 12 mdr.</strong></p></p>
                                                     </div>
                                                     <table class="table table-bordered table-striped table-hover ">
                                                         <thead>
                                                             <tr>
                                                                 <th scope="col" class="fst-italic th-attribute">Attribute</th>
                                                                 <th scope="col" class="fst-italic th-description">Description</th>
-                                                                <th scope="col" class="fst-italic th-type">Type</th>
                                                                 <th scope="col" class="fst-italic th-value">Constraints</th>
                                                                 <th scope="col" class="fst-italic th-required">Required</th>
                                                             </tr>
                                                         </thead>
                                                         <tbody class="table-group-divider">
                                                             <tr>
-                                                                <th scope="row">ResultValue</th>
-                                                                <td scope="row"><p>Hvis dette ikke indberettes tolkes det som at CT-scanning ikke har fundet sted.</p>
-<p><strong>Bemærk:</strong> Hvis kun en dato kan findes kan tid indberettes som 00:00:00.</p></td>
-                                                                <td scope="row">DateTime</td>
-                                                                <td scope="row"></td>
+                                                                <th scope="row">DateTime</th>
+                                                                <td scope="row"><p>Hvis dette ikke indberettes tolkes det som at undersøgelsen ikke har fundet sted.
+<br><br>
+<strong>Bemærk:</strong> Hvis kun en dato kan findes kan tid indberettes som 00:00:00.</p></td>
+                                                                <td scope="row">
+                                                                    <table class="table table-sm" style="--bs-table-bg: transparent !important;">
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th scope="col" style="width: 20%">Type</th>
+                                                                                <th scope="col">Ingen begrænsninger</th>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td scope="row">DateTime</td>
+                                                                                <td></td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </td>
                                                                 <td scope="row"></td>
                                                             </tr>
                                                         </tbody>
@@ -255,55 +281,15 @@
                                             </div>
                                         </div>
                                         <div class="dataObject">
-                                            <a data-bs-toggle='collapse' aria-expanded='false' href="#MR_Scan2" class="ObjectHeaderWrapper">
+                                            <a data-bs-toggle='collapse' aria-expanded='false' href="#NPHAssessment2" class="ObjectHeaderWrapper">
                                                 <ol class="breadcrumb objectHeaderMain objectHeaderColor">
-                                                    <i class="bi bi-folder2 me-2"></i>
+                                                    <i class="bi bi-folder2 me-2" style="margin-top: -3px;"></i>
                                                     <li class="breadcrumb-item">DanDem</li>
                                                     <li class="breadcrumb-item">Activity</li>
-                                                    <li aria-current='page' class="breadcrumb-item active">MR_Scan</li>
+                                                    <li class="breadcrumb-item active">NPHAssessment</li>
                                                 </ol>
                                             </a>
-                                            <div class="collapse m-3 objectBodyMain" id="MR_Scan2">
-                                                <div class="object_margin">
-                                                    <p class="table_view_hider" style="height: 1rem !important; margin: 0px !important;"></p>
-                                                    <div class="objectDescription alert alert-warning">
-                                                        <p><p>Forelægger der MR-scanning af cerebrum og evt. adgang til  billeder foretaget indenfor 24 måneder før diagnosesamtaledatoen.</p>
-<p><strong>Scanningen skal være udført inden for de seneste 24 mdr.</strong></p></p>
-                                                    </div>
-                                                    <table class="table table-bordered table-striped table-hover ">
-                                                        <thead>
-                                                            <tr>
-                                                                <th scope="col" class="fst-italic th-attribute">Attribute</th>
-                                                                <th scope="col" class="fst-italic th-description">Description</th>
-                                                                <th scope="col" class="fst-italic th-type">Type</th>
-                                                                <th scope="col" class="fst-italic th-value">Constraints</th>
-                                                                <th scope="col" class="fst-italic th-required">Required</th>
-                                                            </tr>
-                                                        </thead>
-                                                        <tbody class="table-group-divider">
-                                                            <tr>
-                                                                <th scope="row">ResultValue</th>
-                                                                <td scope="row"><p>Hvis dette ikke indberettes tolkes det som at MR-scanning ikke har fundet sted.</p>
-<p><strong>Bemærk:</strong> Hvis kun en dato kan findes kan tid indberettes som 00:00:00.</p></td>
-                                                                <td scope="row">DateTime</td>
-                                                                <td scope="row"></td>
-                                                                <td scope="row"></td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="dataObject">
-                                            <a data-bs-toggle='collapse' aria-expanded='false' href="#NPHAssessment3" class="ObjectHeaderWrapper">
-                                                <ol class="breadcrumb objectHeaderMain objectHeaderColor">
-                                                    <i class="bi bi-folder2 me-2"></i>
-                                                    <li class="breadcrumb-item">DanDem</li>
-                                                    <li class="breadcrumb-item">Activity</li>
-                                                    <li aria-current='page' class="breadcrumb-item active">NPHAssessment</li>
-                                                </ol>
-                                            </a>
-                                            <div class="collapse m-3 objectBodyMain" id="NPHAssessment3">
+                                            <div class="collapse m-3 objectBodyMain" id="NPHAssessment2">
                                                 <div class="object_margin">
                                                     <p class="table_view_hider" style="height: 1rem !important; margin: 0px !important;"></p>
                                                     <div class="objectDescription alert alert-warning">
@@ -319,58 +305,32 @@
                                                             <tr>
                                                                 <th scope="col" class="fst-italic th-attribute">Attribute</th>
                                                                 <th scope="col" class="fst-italic th-description">Description</th>
-                                                                <th scope="col" class="fst-italic th-type">Type</th>
                                                                 <th scope="col" class="fst-italic th-value">Constraints</th>
                                                                 <th scope="col" class="fst-italic th-required">Required</th>
                                                             </tr>
                                                         </thead>
                                                         <tbody class="table-group-divider">
                                                             <tr>
-                                                                <th scope="row">ResultValue</th>
-                                                                <td scope="row"><p>Hvis dette ikke indberettes tolkes det som at NPH-assessment ikke har fundet sted.</p>
-<p><strong>Bemærk:</strong> Hvis kun en dato kan findes kan tid indberettes som 00:00:00.</p></td>
-                                                                <td scope="row">DateTime</td>
-                                                                <td scope="row"></td>
-                                                                <td scope="row"></td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="dataObject">
-                                            <a data-bs-toggle='collapse' aria-expanded='false' href="#NPU4" class="ObjectHeaderWrapper">
-                                                <ol class="breadcrumb objectHeaderMain objectHeaderColor">
-                                                    <i class="bi bi-folder2 me-2"></i>
-                                                    <li class="breadcrumb-item">DanDem</li>
-                                                    <li class="breadcrumb-item">Activity</li>
-                                                    <li aria-current='page' class="breadcrumb-item active">NPU</li>
-                                                </ol>
-                                            </a>
-                                            <div class="collapse m-3 objectBodyMain" id="NPU4">
-                                                <div class="object_margin">
-                                                    <p class="table_view_hider" style="height: 1rem !important; margin: 0px !important;"></p>
-                                                    <div class="objectDescription alert alert-warning">
-                                                        <p><p>Er Neuropsykologisk undersøgelse (NPU) udført i udredningsenhedens regi, uddelegeret derfra eller blevet gennemlæst/vurderet af udredningsenhedens neuropsykologer og fundet velgennemført?</p>
-<p><strong>Testen skal være udført inden for de seneste 12 mdr.</strong></p></p>
-                                                    </div>
-                                                    <table class="table table-bordered table-striped table-hover ">
-                                                        <thead>
-                                                            <tr>
-                                                                <th scope="col" class="fst-italic th-attribute">Attribute</th>
-                                                                <th scope="col" class="fst-italic th-description">Description</th>
-                                                                <th scope="col" class="fst-italic th-type">Type</th>
-                                                                <th scope="col" class="fst-italic th-value">Constraints</th>
-                                                                <th scope="col" class="fst-italic th-required">Required</th>
-                                                            </tr>
-                                                        </thead>
-                                                        <tbody class="table-group-divider">
-                                                            <tr>
-                                                                <th scope="row">ResultValue</th>
-                                                                <td scope="row"><p>Hvis dette ikke indberettes tolkes det som at NPU ikke har fundet sted.</p>
-<p><strong>Bemærk:</strong> Hvis kun en dato kan findes kan tid indberettes som 00:00:00.</p></td>
-                                                                <td scope="row">DateTime</td>
-                                                                <td scope="row"></td>
+                                                                <th scope="row">DateTime</th>
+                                                                <td scope="row"><p>Hvis dette ikke indberettes tolkes det som at NPH-assessment ikke har fundet sted.
+<br><br>
+<strong>Bemærk:</strong> Hvis kun en dato kan findes kan tid indberettes som 00:00:00.</p></td>
+                                                                <td scope="row">
+                                                                    <table class="table table-sm" style="--bs-table-bg: transparent !important;">
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th scope="col" style="width: 20%">Type</th>
+                                                                                <th scope="col">Ingen begrænsninger</th>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td scope="row">DateTime</td>
+                                                                                <td></td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </td>
                                                                 <td scope="row"></td>
                                                             </tr>
                                                         </tbody>
@@ -383,26 +343,33 @@
                                         <div class="dataObject">
                                             <a data-bs-toggle='collapse' aria-expanded='false' href="#InformDiagnosis1" class="ObjectHeaderWrapper">
                                                 <ol class="breadcrumb objectHeaderMain objectHeaderColor">
-                                                    <i class="bi bi-folder2 me-2"></i>
+                                                    <i class="bi bi-folder2 me-2" style="margin-top: -3px;"></i>
                                                     <li class="breadcrumb-item">DanDem</li>
                                                     <li class="breadcrumb-item">Contact</li>
-                                                    <li aria-current='page' class="breadcrumb-item active">InformDiagnosis</li>
-                                                    <span class="badge rounded-pill text-bg-danger ms-auto">* Required</span>
+                                                    <li class="breadcrumb-item active">InformDiagnosis</li>
+                                                    <span class="d-flex ms-auto align-content-center">
+                                                        <div class="badge rounded-pill text-bg-danger ms-2 me-2 d-inline-flex align-items-center">
+                                                            <i class="bi bi-exclamation-diamond me-1" style="margin-top: -2px;"></i>
+                                                            <span> Required</span>
+                                                        </div>
+                                                    </span>
                                                 </ol>
                                             </a>
                                             <div class="collapse m-3 objectBodyMain" id="InformDiagnosis1">
                                                 <div class="object_margin">
                                                     <p class="table_view_hider" style="height: 1rem !important; margin: 0px !important;"></p>
                                                     <div class="objectDescription alert alert-warning">
-                                                        <p><p>Denne dato er ekstrem vigtig og der skal gøres en stor indsats for at validere denne dato. Denne dato kobles bl.a. med henvsiningsdato og første kontakt dato i udredningsforløbet identificeret i LPR ved procedurekoden ZZ1500. Herudfra bestemmes ventetid og udredningstid, hvilke er ekstremt vigtige parametre for patient og pårørende og dermed ventidsgarantier regionerne bør leve op til. </p>
-<p>Datoen er den dato, hvor alle undersøgelser, der er blevet lavet i udredningsforløbet foreligger og er vurderet/beskrevet og dermed kan føre til en konklusiv diagnose på det bedst mulige kliniske grundlag.</p></p>
+                                                        <p><p><strong>Denne dato er ekstrem vigtig og der skal gøres en stor indsats for at validere denne dato.</strong>
+<br><br>
+Denne dato kobles bl.a. med henvsiningsdato og første kontakt dato i udredningsforløbet identificeret i LPR ved procedurekoden ZZ1500. Herudfra bestemmes ventetid og udredningstid, hvilke er ekstremt vigtige parametre for patient og pårørende og dermed ventidsgarantier regionerne bør leve op til. 
+<br><br>
+Datoen er den dato, hvor alle undersøgelser, der er blevet lavet i udredningsforløbet foreligger og er vurderet/beskrevet og dermed kan føre til en konklusiv diagnose på det bedst mulige kliniske grundlag.</p></p>
                                                     </div>
                                                     <table class="table table-bordered table-striped table-hover ">
                                                         <thead>
                                                             <tr>
                                                                 <th scope="col" class="fst-italic th-attribute">Attribute</th>
                                                                 <th scope="col" class="fst-italic th-description">Description</th>
-                                                                <th scope="col" class="fst-italic th-type">Type</th>
                                                                 <th scope="col" class="fst-italic th-value">Constraints</th>
                                                                 <th scope="col" class="fst-italic th-required">Required</th>
                                                             </tr>
@@ -410,15 +377,36 @@
                                                         <tbody class="table-group-divider">
                                                             <tr>
                                                                 <th scope="row">DateTime</th>
-                                                                <td scope="row"><p>Dato for diagnosesamtale defineres som den dag patienten første gang informeres om en diagnostisk konklusion. Dette er normalt ved en ambulant konsultation. Se eksempler nedenfor. Det skal ses fra patienten synsvinkel: ”Hvornår fik jeg første gang noget at vide om diagnose og evt. behandling.</p>
-<p>Hvis der gives svar per brev (f. eks hvis patienten ikke ønsker at møde op, eller der er aftalt brevsvar) anvendes dato for afgivelse af dette svar.</p>
-<p>Hvis patienten aflyser midt i et udredningsforløb, anvendes den dato hvor patienten afsluttes journalmæssigt.</p>
-<p>Hvis patienten dør under udredningsforløb, anvendes dødsdato.</p>
-<p>Hvis patienten efter den initiale udredning informeres om, at der er depression / depressive symptomer (og evt. sættes i behandling) vil dette være dato for diagnose. Dette også selv om man klinisk kan have en mistanke om en bagvedliggende demenssygdom, men hvor diagnose først kan stilles når depressionen er behandlet.</p></td>
-                                                                <td scope="row">DateTime</td>
-                                                                <td scope="row"></td>
+                                                                <td scope="row"><p>Dato for diagnosesamtale defineres som den dag patienten første gang informeres om en diagnostisk konklusion. Dette er normalt ved en ambulant konsultation. Se eksempler nedenfor. Det skal ses fra patienten synsvinkel: ”Hvornår fik jeg første gang noget at vide om diagnose og evt. behandling.
+<br><br>
+Hvis der gives svar per brev (f. eks hvis patienten ikke ønsker at møde op, eller der er aftalt brevsvar) anvendes dato for afgivelse af dette svar.
+<br><br>
+Hvis patienten aflyser midt i et udredningsforløb, anvendes den dato hvor patienten afsluttes journalmæssigt.
+<br><br>
+Hvis patienten dør under udredningsforløb, anvendes dødsdato.
+<br><br>
+Hvis patienten efter den initiale udredning informeres om, at der er depression / depressive symptomer (og evt. sættes i behandling) vil dette være dato for diagnose. Dette også selv om man klinisk kan have en mistanke om en bagvedliggende demenssygdom, men hvor diagnose først kan stilles når depressionen er behandlet.</p></td>
                                                                 <td scope="row">
-                                                                    <span class="badge rounded-pill text-bg-danger ms-auto">* Required</span>
+                                                                    <table class="table table-sm" style="--bs-table-bg: transparent !important;">
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th scope="col" style="width: 20%">Type</th>
+                                                                                <th scope="col">Ingen begrænsninger</th>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td scope="row">DateTime</td>
+                                                                                <td></td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </td>
+                                                                <td scope="row">
+                                                                    <div class="badge rounded-pill text-bg-danger ms-2 me-2 d-inline-flex align-items-center">
+                                                                        <i class="bi bi-exclamation-diamond me-1" style="margin-top: -2px;"></i>
+                                                                        <span> Required</span>
+                                                                    </div>
                                                                 </td>
                                                             </tr>
                                                         </tbody>
@@ -429,10 +417,10 @@
                                         <div class="dataObject">
                                             <a data-bs-toggle='collapse' aria-expanded='false' href="#Referral2" class="ObjectHeaderWrapper">
                                                 <ol class="breadcrumb objectHeaderMain objectHeaderColor">
-                                                    <i class="bi bi-folder2 me-2"></i>
+                                                    <i class="bi bi-folder2 me-2" style="margin-top: -3px;"></i>
                                                     <li class="breadcrumb-item">DanDem</li>
                                                     <li class="breadcrumb-item">Contact</li>
-                                                    <li aria-current='page' class="breadcrumb-item active">Referral</li>
+                                                    <li class="breadcrumb-item active">Referral</li>
                                                 </ol>
                                             </a>
                                             <div class="collapse m-3 objectBodyMain" id="Referral2">
@@ -447,7 +435,6 @@
                                                             <tr>
                                                                 <th scope="col" class="fst-italic th-attribute">Attribute</th>
                                                                 <th scope="col" class="fst-italic th-description">Description</th>
-                                                                <th scope="col" class="fst-italic th-type">Type</th>
                                                                 <th scope="col" class="fst-italic th-value">Constraints</th>
                                                                 <th scope="col" class="fst-italic th-required">Required</th>
                                                             </tr>
@@ -456,22 +443,59 @@
                                                             <tr>
                                                                 <th scope="row">DateTime</th>
                                                                 <td scope="row"><p>Hvis 'Omvisiteret' er valgt, skal der angives en dato.</p></td>
-                                                                <td scope="row">DateTime</td>
-                                                                <td scope="row"></td>
+                                                                <td scope="row">
+                                                                    <table class="table table-sm" style="--bs-table-bg: transparent !important;">
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th scope="col" style="width: 20%">Type</th>
+                                                                                <th scope="col">Ingen begrænsninger</th>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td scope="row">DateTime</td>
+                                                                                <td></td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </td>
                                                                 <td scope="row"></td>
                                                             </tr>
                                                             <tr>
                                                                 <th scope="row">ResultValue</th>
                                                                 <td scope="row"></td>
-                                                                <td scope="row">str, Enum</td>
                                                                 <td scope="row">
-                                                                    <p style="margin:0px; font-weight: bold;">Udfald:</p>
-                                                                    <ul class="list-group list-group-flush">
-                                                                        <li class="list-group-item">"primaer_demensudredning_henvist_direkte"</li>
-                                                                        <li class="list-group-item">"second_opinion"</li>
-                                                                        <li class="list-group-item">"patient_oensker_ikke_yderligere_undersoegelser"</li>
-                                                                        <li class="list-group-item">"omvisiteret_fritvalgspatient_til_primaer_udredning"</li>
-                                                                    </ul>
+                                                                    <table class="table table-sm" style="--bs-table-bg: transparent !important;">
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th scope="col" style="width: 20%">Type</th>
+                                                                                <th scope="col" style="width: 20%">Udfald</th>
+                                                                                <th scope="col" style="width: 60%">Beskrivelse</th>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td>str, Enum</td>
+                                                                                <td>primaer_demensudredning_henvist_direkte</td>
+                                                                                <td></td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>-</td>
+                                                                                <td>second_opinion</td>
+                                                                                <td></td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>-</td>
+                                                                                <td>patient_oensker_ikke_yderligere_undersoegelser</td>
+                                                                                <td></td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>-</td>
+                                                                                <td>omvisiteret_fritvalgspatient_til_primaer_udredning</td>
+                                                                                <td></td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
                                                                 </td>
                                                                 <td scope="row"></td>
                                                             </tr>
@@ -483,10 +507,10 @@
                                         <div class="dataObject">
                                             <a data-bs-toggle='collapse' aria-expanded='false' href="#ReferralCommunalCoordinator3" class="ObjectHeaderWrapper">
                                                 <ol class="breadcrumb objectHeaderMain objectHeaderColor">
-                                                    <i class="bi bi-folder2 me-2"></i>
+                                                    <i class="bi bi-folder2 me-2" style="margin-top: -3px;"></i>
                                                     <li class="breadcrumb-item">DanDem</li>
                                                     <li class="breadcrumb-item">Contact</li>
-                                                    <li aria-current='page' class="breadcrumb-item active">ReferralCommunalCoordinator</li>
+                                                    <li class="breadcrumb-item active">ReferralCommunalCoordinator</li>
                                                 </ol>
                                             </a>
                                             <div class="collapse m-3 objectBodyMain" id="ReferralCommunalCoordinator3">
@@ -500,7 +524,6 @@
                                                             <tr>
                                                                 <th scope="col" class="fst-italic th-attribute">Attribute</th>
                                                                 <th scope="col" class="fst-italic th-description">Description</th>
-                                                                <th scope="col" class="fst-italic th-type">Type</th>
                                                                 <th scope="col" class="fst-italic th-value">Constraints</th>
                                                                 <th scope="col" class="fst-italic th-required">Required</th>
                                                             </tr>
@@ -509,12 +532,23 @@
                                                             <tr>
                                                                 <th scope="row">StatusCode</th>
                                                                 <td scope="row"><p>Der skal svares Ja, hvis patienten er blevet tilbudt henvisning. Både hvis patient/pårørende ønsker dette sat i værk eller hvis de ikke ønsker dette sat i værk.</p></td>
-                                                                <td scope="row">str, Enum</td>
                                                                 <td scope="row">
-                                                                    <p style="margin:0px; font-weight: bold;">Udfald:</p>
-                                                                    <ul class="list-group list-group-flush">
-                                                                        <li class="list-group-item">"ja"</li>
-                                                                    </ul>
+                                                                    <table class="table table-sm" style="--bs-table-bg: transparent !important;">
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th scope="col" style="width: 20%">Type</th>
+                                                                                <th scope="col" style="width: 20%">Udfald</th>
+                                                                                <th scope="col" style="width: 60%">Beskrivelse</th>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td>str, Enum</td>
+                                                                                <td>ja</td>
+                                                                                <td></td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
                                                                 </td>
                                                                 <td scope="row"></td>
                                                             </tr>
@@ -526,10 +560,10 @@
                                         <div class="dataObject">
                                             <a data-bs-toggle='collapse' aria-expanded='false' href="#ReferralFreeChoice4" class="ObjectHeaderWrapper">
                                                 <ol class="breadcrumb objectHeaderMain objectHeaderColor">
-                                                    <i class="bi bi-folder2 me-2"></i>
+                                                    <i class="bi bi-folder2 me-2" style="margin-top: -3px;"></i>
                                                     <li class="breadcrumb-item">DanDem</li>
                                                     <li class="breadcrumb-item">Contact</li>
-                                                    <li aria-current='page' class="breadcrumb-item active">ReferralFreeChoice</li>
+                                                    <li class="breadcrumb-item active">ReferralFreeChoice</li>
                                                 </ol>
                                             </a>
                                             <div class="collapse m-3 objectBodyMain" id="ReferralFreeChoice4">
@@ -543,7 +577,6 @@
                                                             <tr>
                                                                 <th scope="col" class="fst-italic th-attribute">Attribute</th>
                                                                 <th scope="col" class="fst-italic th-description">Description</th>
-                                                                <th scope="col" class="fst-italic th-type">Type</th>
                                                                 <th scope="col" class="fst-italic th-value">Constraints</th>
                                                                 <th scope="col" class="fst-italic th-required">Required</th>
                                                             </tr>
@@ -552,8 +585,22 @@
                                                             <tr>
                                                                 <th scope="row">DateTime</th>
                                                                 <td scope="row"><p>Patienter der er omvisiteret via fritvalgsordning til primær udredning jf. henvisningstype, da skal datoen for fritvalgshenvisningen oplyses. Fritvalgshenvisning kan gives ved lang ventetid.</p></td>
-                                                                <td scope="row">DateTime</td>
-                                                                <td scope="row"></td>
+                                                                <td scope="row">
+                                                                    <table class="table table-sm" style="--bs-table-bg: transparent !important;">
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th scope="col" style="width: 20%">Type</th>
+                                                                                <th scope="col">Ingen begrænsninger</th>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td scope="row">DateTime</td>
+                                                                                <td></td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </td>
                                                                 <td scope="row"></td>
                                                             </tr>
                                                         </tbody>
@@ -567,11 +614,16 @@
                                         <div class="dataObject">
                                             <a data-bs-toggle='collapse' aria-expanded='false' href="#EtiologicalDiagnosis1" class="ObjectHeaderWrapper">
                                                 <ol class="breadcrumb objectHeaderMain objectHeaderColor">
-                                                    <i class="bi bi-folder2 me-2"></i>
+                                                    <i class="bi bi-folder2 me-2" style="margin-top: -3px;"></i>
                                                     <li class="breadcrumb-item">DanDem</li>
                                                     <li class="breadcrumb-item">Diagnosis</li>
-                                                    <li aria-current='page' class="breadcrumb-item active">EtiologicalDiagnosis</li>
-                                                    <span class="badge rounded-pill text-bg-danger ms-auto">* Required</span>
+                                                    <li class="breadcrumb-item active">EtiologicalDiagnosis</li>
+                                                    <span class="d-flex ms-auto align-content-center">
+                                                        <div class="badge rounded-pill text-bg-danger ms-2 me-2 d-inline-flex align-items-center">
+                                                            <i class="bi bi-exclamation-diamond me-1" style="margin-top: -2px;"></i>
+                                                            <span> Required</span>
+                                                        </div>
+                                                    </span>
                                                 </ol>
                                             </a>
                                             <div class="collapse m-3 objectBodyMain" id="EtiologicalDiagnosis1">
@@ -587,7 +639,6 @@ Siden 2015 har de diagnostiske kriterier for demens været diskuteret, men der e
                                                             <tr>
                                                                 <th scope="col" class="fst-italic th-attribute">Attribute</th>
                                                                 <th scope="col" class="fst-italic th-description">Description</th>
-                                                                <th scope="col" class="fst-italic th-type">Type</th>
                                                                 <th scope="col" class="fst-italic th-value">Constraints</th>
                                                                 <th scope="col" class="fst-italic th-required">Required</th>
                                                             </tr>
@@ -595,60 +646,128 @@ Siden 2015 har de diagnostiske kriterier for demens været diskuteret, men der e
                                                         <tbody class="table-group-divider">
                                                             <tr>
                                                                 <th scope="row">DiagnosisCode</th>
-                                                                <td scope="row"><p><em>Demens</em></p>
+                                                                <td scope="row"><h6>Demens</h6>
 <p>National Institute on Aging and the Alzheimer's Association (NIA-AA) workgroup kriterier (McKhann GM et al. 2011)
-Nogle udredningsenheder har også erfaring med anvende NIA-AA 2018 AD-kriterierne</p>
-<p><em>Alzheimers sygdom</em></p>
-<p>En række demensudredningsenheder samarbejder i ADEX alliancen om harmonisering: 
-http://www.videnscenterfordemens.dk/forskning/adex/adex-alliancen/ og er 2016 enige om at  anvende følgende diagnosekriterier: National Institute on Aging and the Alzheimer's Association (NIA-AA) workgroup kriterier (McKhann GM et al. 2011)</p>
-<p>Nogle udredningsenheder har også erfaring med anvende NIA-AA 2018 AD-kriterierne</p>
-<p><em>Lewy Body sygdom</em></p>
-<p>Kriterier fra fourth consensus report of the DLB Consortium (McKeith IG et al. 2017)
-Parkinson sygdom</p>
-<p><em>Cerebrovaskulær sygdom</em></p>
-<p>The International Society for Vascular Behavioral and Cognitive Disorders (VAS-COG)-kriterier 
-(Sachdev P et al. 2014)</p>
-<p><em>Mixed (Alzheimer + Cerebrovaskulær)</em></p>
+Nogle udredningsenheder har også erfaring med anvende NIA-AA 2018 AD-kriterierne.</p>
+<h6>Alzheimers sygdom</h6>
+<p>En række demensudredningsenheder samarbejder i ADEX alliancen om harmonisering <a href="http://www.videnscenterfordemens.dk/forskning/adex/adex-alliancen/">Link</a> og er 2016 enige om at  anvende følgende diagnosekriterier: National Institute on Aging and the Alzheimer's Association (NIA-AA) workgroup kriterier (McKhann GM et al. 2011)</p>
+<h6>Lewy Body sygdom</h6>
+<p>Kriterier fra fourth consensus report of the DLB Consortium (McKeith IG et al. 2017)</p>
+<h6>Parkinson sygdom</h6>
+<p>Parkinson</p>
+<h6>Cerebrovaskulær sygdom</h6>
+<p>The International Society for Vascular Behavioral and Cognitive Disorders (VAS-COG)-kriterier  (Sachdev P et al. 2014)</p>
+<h6>Mixed (Alzheimer + Cerebrovaskulær)</h6>
 <p>Når de kognitive symptomer er forklaret ved Alzheimers sygdom såvel som cerebrovaskulær sygdom.</p>
-<p><em>Frontotemporal demens</em></p>
+<h6>Frontotemporal demens</h6>
 <p>Revised diagnostic criteria for the behavioral variant of frontotemporal demens (Rascovsky K et al. 2011) Classification of primary progressive aphasia and its variants (Gorno-Tempini M et al. 2011)</p>
-<p><em>Atypisk Parkinson (MSA, CBS, PSP)</em></p>
+<h6>Atypisk Parkinson (MSA, CBS, PSP)</h6>
 <p>Normaltryks hydrocephalus (NPH)</p>
-<p><em>Huntingtons sygdom</em></p>
+<h6>Huntingtons sygdom</h6>
 <p>Diagnostic Criteria for Huntington's Disease based on Natural History (Reilmann R et al. 2014)</p>
-<p><em>Alkohol</em>
-For at anvende Alkohol som den primære årsag til kognitivt deficit, så skal det være den  primære årsag og/eller der er diagnosticeret Wernicke-Korsakoff. Hvis der samtidig er verificeret en neuro-degenerativ lidelse (f. eks Alzheimers sygdom), så skal denne vælges som 
-primære årsag, ikke alkohol.</p>
-<p><em>Anden specifik neuro-degenerativ sygdom</em></p>
+<h6>Alkohol</h6>
+<p>For at anvende Alkohol som den primære årsag til kognitivt deficit, så skal det være den  primære årsag og/eller der er diagnosticeret Wernicke-Korsakoff. Hvis der samtidig er verificeret en neuro-degenerativ lidelse (f. eks Alzheimers sygdom), så skal denne vælges som primære årsag, ikke alkohol.</p>
+<h6>Anden specifik neuro-degenerativ sygdom</h6>
 <p>Kan f.eks. være spinocerebellare ataksier, ALS-FTD og lign.</p>
-<p><em>Anden ikke neuro-degenerativ sygdom</em></p>
+<h6>Anden ikke neuro-degenerativ sygdom</h6>
 <p>Kan f.eks. være følger efter traume eller intra-kraniel tumor.</p>
-<p><em>Psykiatrisk sygdom</em></p>
+<h6>Psykiatrisk sygdom</h6>
 <p>Psykiatrisk genese til kognitive deficit registres selvstændigt, når det er den eneste/primære årsag. Hvis der er verificeret en neuro-degenerativ lidelse (f.eks. Alzheimers sygdom), så skal denne vælges som den primære årsag og ikke psykiatrisk sygdom.</p>
-<p><em>Uafklaret ætiologi</em></p>
+<h6>Uafklaret ætiologi</h6>
 <p>Hvis der ikke kan stilles en specifik diagnose.</p></td>
-                                                                <td scope="row">str, Enum</td>
                                                                 <td scope="row">
-                                                                    <p style="margin:0px; font-weight: bold;">Udfald:</p>
-                                                                    <ul class="list-group list-group-flush">
-                                                                        <li class="list-group-item">"alzheimer_sygdom"</li>
-                                                                        <li class="list-group-item">"lewy_body_sygdom"</li>
-                                                                        <li class="list-group-item">"parkinson_sygdom"</li>
-                                                                        <li class="list-group-item">"cerebrovaskulaer_sygdom"</li>
-                                                                        <li class="list-group-item">"mixed_alzheimer_cerebrovaskulaer"</li>
-                                                                        <li class="list-group-item">"frontotemporal_demens"</li>
-                                                                        <li class="list-group-item">"atypisk_parkinson_msa_cbs_psp"</li>
-                                                                        <li class="list-group-item">"normaltryks_hydrocephalus_nph"</li>
-                                                                        <li class="list-group-item">"huntingtons_sygdom"</li>
-                                                                        <li class="list-group-item">"alkohol"</li>
-                                                                        <li class="list-group-item">"anden_specifik_neurodegenerativ_sygdom"</li>
-                                                                        <li class="list-group-item">"anden__ikke_neurodegenerativ_sygdom"</li>
-                                                                        <li class="list-group-item">"psykiatrisk_sygdom"</li>
-                                                                        <li class="list-group-item">"uafklaret_aetiologi"</li>
-                                                                    </ul>
+                                                                    <table class="table table-sm" style="--bs-table-bg: transparent !important;">
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th scope="col" style="width: 20%">Type</th>
+                                                                                <th scope="col" style="width: 20%">Udfald</th>
+                                                                                <th scope="col" style="width: 60%">Beskrivelse</th>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td>str, Enum</td>
+                                                                                <td>alzheimer_sygdom</td>
+                                                                                <td></td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>-</td>
+                                                                                <td>lewy_body_sygdom</td>
+                                                                                <td></td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>-</td>
+                                                                                <td>parkinson_sygdom</td>
+                                                                                <td></td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>-</td>
+                                                                                <td>cerebrovaskulaer_sygdom</td>
+                                                                                <td></td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>-</td>
+                                                                                <td>mixed_alzheimer_cerebrovaskulaer</td>
+                                                                                <td></td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>-</td>
+                                                                                <td>frontotemporal_demens</td>
+                                                                                <td></td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>-</td>
+                                                                                <td>atypisk_parkinson_msa_cbs_psp</td>
+                                                                                <td></td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>-</td>
+                                                                                <td>normaltryks_hydrocephalus_nph</td>
+                                                                                <td></td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>-</td>
+                                                                                <td>huntingtons_sygdom</td>
+                                                                                <td></td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>-</td>
+                                                                                <td>alkohol</td>
+                                                                                <td></td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>-</td>
+                                                                                <td>anden_specifik_neurodegenerativ_sygdom</td>
+                                                                                <td></td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>-</td>
+                                                                                <td>anden_ikke_neurodegenerativ_sygdom</td>
+                                                                                <td></td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>-</td>
+                                                                                <td>psykiatrisk_sygdom</td>
+                                                                                <td></td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>-</td>
+                                                                                <td>uafklaret_aetiologi</td>
+                                                                                <td></td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>-</td>
+                                                                                <td>ikke_relevant</td>
+                                                                                <td></td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
                                                                 </td>
                                                                 <td scope="row">
-                                                                    <span class="badge rounded-pill text-bg-danger ms-auto">* Required</span>
+                                                                    <div class="badge rounded-pill text-bg-danger ms-2 me-2 d-inline-flex align-items-center">
+                                                                        <i class="bi bi-exclamation-diamond me-1" style="margin-top: -2px;"></i>
+                                                                        <span> Required</span>
+                                                                    </div>
                                                                 </td>
                                                             </tr>
                                                         </tbody>
@@ -661,10 +780,10 @@ primære årsag, ikke alkohol.</p>
                                         <div class="dataObject">
                                             <a data-bs-toggle='collapse' aria-expanded='false' href="#ACE1" class="ObjectHeaderWrapper">
                                                 <ol class="breadcrumb objectHeaderMain objectHeaderColor">
-                                                    <i class="bi bi-folder2 me-2"></i>
+                                                    <i class="bi bi-folder2 me-2" style="margin-top: -3px;"></i>
                                                     <li class="breadcrumb-item">DanDem</li>
                                                     <li class="breadcrumb-item">Observation</li>
-                                                    <li aria-current='page' class="breadcrumb-item active">ACE</li>
+                                                    <li class="breadcrumb-item active">ACE</li>
                                                 </ol>
                                             </a>
                                             <div class="collapse m-3 objectBodyMain" id="ACE1">
@@ -678,7 +797,6 @@ primære årsag, ikke alkohol.</p>
                                                             <tr>
                                                                 <th scope="col" class="fst-italic th-attribute">Attribute</th>
                                                                 <th scope="col" class="fst-italic th-description">Description</th>
-                                                                <th scope="col" class="fst-italic th-type">Type</th>
                                                                 <th scope="col" class="fst-italic th-value">Constraints</th>
                                                                 <th scope="col" class="fst-italic th-required">Required</th>
                                                             </tr>
@@ -687,16 +805,23 @@ primære årsag, ikke alkohol.</p>
                                                             <tr>
                                                                 <th scope="row">ResultValue</th>
                                                                 <td scope="row"></td>
-                                                                <td scope="row">Integer</td>
                                                                 <td scope="row">
-                                                                    <p style="margin:0px; font-weight: bold;">Min or Equal to</p>
-                                                                    <ul class="list-group list-group-flush">
-                                                                        <li class="list-group-item">0</li>
-                                                                    </ul>
-                                                                    <p style="margin:0px; font-weight: bold;">Max or Equal to</p>
-                                                                    <ul class="list-group list-group-flush">
-                                                                        <li class="list-group-item">100</li>
-                                                                    </ul>
+                                                                    <table class="table table-sm" style="--bs-table-bg: transparent !important;">
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th scope="col" style="width: 20%">Type</th>
+                                                                                <th scope="col">Min or Equal to</th>
+                                                                                <th scope="col">Max or Equal to</th>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td scope="row">Integer</td>
+                                                                                <td>0</td>
+                                                                                <td>100</td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
                                                                 </td>
                                                                 <td scope="row"></td>
                                                             </tr>
@@ -708,10 +833,10 @@ primære årsag, ikke alkohol.</p>
                                         <div class="dataObject">
                                             <a data-bs-toggle='collapse' aria-expanded='false' href="#ADSC_ADL2" class="ObjectHeaderWrapper">
                                                 <ol class="breadcrumb objectHeaderMain objectHeaderColor">
-                                                    <i class="bi bi-folder2 me-2"></i>
+                                                    <i class="bi bi-folder2 me-2" style="margin-top: -3px;"></i>
                                                     <li class="breadcrumb-item">DanDem</li>
                                                     <li class="breadcrumb-item">Observation</li>
-                                                    <li aria-current='page' class="breadcrumb-item active">ADSC_ADL</li>
+                                                    <li class="breadcrumb-item active">ADSC_ADL</li>
                                                 </ol>
                                             </a>
                                             <div class="collapse m-3 objectBodyMain" id="ADSC_ADL2">
@@ -725,7 +850,6 @@ primære årsag, ikke alkohol.</p>
                                                             <tr>
                                                                 <th scope="col" class="fst-italic th-attribute">Attribute</th>
                                                                 <th scope="col" class="fst-italic th-description">Description</th>
-                                                                <th scope="col" class="fst-italic th-type">Type</th>
                                                                 <th scope="col" class="fst-italic th-value">Constraints</th>
                                                                 <th scope="col" class="fst-italic th-required">Required</th>
                                                             </tr>
@@ -734,16 +858,23 @@ primære årsag, ikke alkohol.</p>
                                                             <tr>
                                                                 <th scope="row">ResultValue</th>
                                                                 <td scope="row"></td>
-                                                                <td scope="row">Integer</td>
                                                                 <td scope="row">
-                                                                    <p style="margin:0px; font-weight: bold;">Min or Equal to</p>
-                                                                    <ul class="list-group list-group-flush">
-                                                                        <li class="list-group-item">0</li>
-                                                                    </ul>
-                                                                    <p style="margin:0px; font-weight: bold;">Max or Equal to</p>
-                                                                    <ul class="list-group list-group-flush">
-                                                                        <li class="list-group-item">78</li>
-                                                                    </ul>
+                                                                    <table class="table table-sm" style="--bs-table-bg: transparent !important;">
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th scope="col" style="width: 20%">Type</th>
+                                                                                <th scope="col">Min or Equal to</th>
+                                                                                <th scope="col">Max or Equal to</th>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td scope="row">Integer</td>
+                                                                                <td>0</td>
+                                                                                <td>78</td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
                                                                 </td>
                                                                 <td scope="row"></td>
                                                             </tr>
@@ -755,10 +886,10 @@ primære årsag, ikke alkohol.</p>
                                         <div class="dataObject">
                                             <a data-bs-toggle='collapse' aria-expanded='false' href="#BASIC3" class="ObjectHeaderWrapper">
                                                 <ol class="breadcrumb objectHeaderMain objectHeaderColor">
-                                                    <i class="bi bi-folder2 me-2"></i>
+                                                    <i class="bi bi-folder2 me-2" style="margin-top: -3px;"></i>
                                                     <li class="breadcrumb-item">DanDem</li>
                                                     <li class="breadcrumb-item">Observation</li>
-                                                    <li aria-current='page' class="breadcrumb-item active">BASIC</li>
+                                                    <li class="breadcrumb-item active">BASIC</li>
                                                 </ol>
                                             </a>
                                             <div class="collapse m-3 objectBodyMain" id="BASIC3">
@@ -772,7 +903,6 @@ primære årsag, ikke alkohol.</p>
                                                             <tr>
                                                                 <th scope="col" class="fst-italic th-attribute">Attribute</th>
                                                                 <th scope="col" class="fst-italic th-description">Description</th>
-                                                                <th scope="col" class="fst-italic th-type">Type</th>
                                                                 <th scope="col" class="fst-italic th-value">Constraints</th>
                                                                 <th scope="col" class="fst-italic th-required">Required</th>
                                                             </tr>
@@ -781,16 +911,23 @@ primære årsag, ikke alkohol.</p>
                                                             <tr>
                                                                 <th scope="row">ResultValue</th>
                                                                 <td scope="row"></td>
-                                                                <td scope="row">Integer</td>
                                                                 <td scope="row">
-                                                                    <p style="margin:0px; font-weight: bold;">Min or Equal to</p>
-                                                                    <ul class="list-group list-group-flush">
-                                                                        <li class="list-group-item">0</li>
-                                                                    </ul>
-                                                                    <p style="margin:0px; font-weight: bold;">Max or Equal to</p>
-                                                                    <ul class="list-group list-group-flush">
-                                                                        <li class="list-group-item">25</li>
-                                                                    </ul>
+                                                                    <table class="table table-sm" style="--bs-table-bg: transparent !important;">
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th scope="col" style="width: 20%">Type</th>
+                                                                                <th scope="col">Min or Equal to</th>
+                                                                                <th scope="col">Max or Equal to</th>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td scope="row">Integer</td>
+                                                                                <td>0</td>
+                                                                                <td>25</td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
                                                                 </td>
                                                                 <td scope="row"></td>
                                                             </tr>
@@ -802,10 +939,10 @@ primære årsag, ikke alkohol.</p>
                                         <div class="dataObject">
                                             <a data-bs-toggle='collapse' aria-expanded='false' href="#CAMcog4" class="ObjectHeaderWrapper">
                                                 <ol class="breadcrumb objectHeaderMain objectHeaderColor">
-                                                    <i class="bi bi-folder2 me-2"></i>
+                                                    <i class="bi bi-folder2 me-2" style="margin-top: -3px;"></i>
                                                     <li class="breadcrumb-item">DanDem</li>
                                                     <li class="breadcrumb-item">Observation</li>
-                                                    <li aria-current='page' class="breadcrumb-item active">CAMcog</li>
+                                                    <li class="breadcrumb-item active">CAMcog</li>
                                                 </ol>
                                             </a>
                                             <div class="collapse m-3 objectBodyMain" id="CAMcog4">
@@ -819,7 +956,6 @@ primære årsag, ikke alkohol.</p>
                                                             <tr>
                                                                 <th scope="col" class="fst-italic th-attribute">Attribute</th>
                                                                 <th scope="col" class="fst-italic th-description">Description</th>
-                                                                <th scope="col" class="fst-italic th-type">Type</th>
                                                                 <th scope="col" class="fst-italic th-value">Constraints</th>
                                                                 <th scope="col" class="fst-italic th-required">Required</th>
                                                             </tr>
@@ -828,16 +964,23 @@ primære årsag, ikke alkohol.</p>
                                                             <tr>
                                                                 <th scope="row">ResultValue</th>
                                                                 <td scope="row"></td>
-                                                                <td scope="row">Integer</td>
                                                                 <td scope="row">
-                                                                    <p style="margin:0px; font-weight: bold;">Min or Equal to</p>
-                                                                    <ul class="list-group list-group-flush">
-                                                                        <li class="list-group-item">0</li>
-                                                                    </ul>
-                                                                    <p style="margin:0px; font-weight: bold;">Max or Equal to</p>
-                                                                    <ul class="list-group list-group-flush">
-                                                                        <li class="list-group-item">105</li>
-                                                                    </ul>
+                                                                    <table class="table table-sm" style="--bs-table-bg: transparent !important;">
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th scope="col" style="width: 20%">Type</th>
+                                                                                <th scope="col">Min or Equal to</th>
+                                                                                <th scope="col">Max or Equal to</th>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td scope="row">Integer</td>
+                                                                                <td>0</td>
+                                                                                <td>105</td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
                                                                 </td>
                                                                 <td scope="row"></td>
                                                             </tr>
@@ -849,11 +992,16 @@ primære årsag, ikke alkohol.</p>
                                         <div class="dataObject">
                                             <a data-bs-toggle='collapse' aria-expanded='false' href="#CognitiveImpairment5" class="ObjectHeaderWrapper">
                                                 <ol class="breadcrumb objectHeaderMain objectHeaderColor">
-                                                    <i class="bi bi-folder2 me-2"></i>
+                                                    <i class="bi bi-folder2 me-2" style="margin-top: -3px;"></i>
                                                     <li class="breadcrumb-item">DanDem</li>
                                                     <li class="breadcrumb-item">Observation</li>
-                                                    <li aria-current='page' class="breadcrumb-item active">CognitiveImpairment</li>
-                                                    <span class="badge rounded-pill text-bg-danger ms-auto">* Required</span>
+                                                    <li class="breadcrumb-item active">CognitiveImpairment</li>
+                                                    <span class="d-flex ms-auto align-content-center">
+                                                        <div class="badge rounded-pill text-bg-danger ms-2 me-2 d-inline-flex align-items-center">
+                                                            <i class="bi bi-exclamation-diamond me-1" style="margin-top: -2px;"></i>
+                                                            <span> Required</span>
+                                                        </div>
+                                                    </span>
                                                 </ol>
                                             </a>
                                             <div class="collapse m-3 objectBodyMain" id="CognitiveImpairment5">
@@ -867,7 +1015,6 @@ primære årsag, ikke alkohol.</p>
                                                             <tr>
                                                                 <th scope="col" class="fst-italic th-attribute">Attribute</th>
                                                                 <th scope="col" class="fst-italic th-description">Description</th>
-                                                                <th scope="col" class="fst-italic th-type">Type</th>
                                                                 <th scope="col" class="fst-italic th-value">Constraints</th>
                                                                 <th scope="col" class="fst-italic th-required">Required</th>
                                                             </tr>
@@ -875,29 +1022,59 @@ primære årsag, ikke alkohol.</p>
                                                         <tbody class="table-group-divider">
                                                             <tr>
                                                                 <th scope="row">ResultValue</th>
-                                                                <td scope="row"><p><em>Kognitiv svækkelse, ikke dement</em></p>
+                                                                <td scope="row"><h6>Kognitiv svækkelse, ikke dement</h6>
 <p>Kognitiv svækkelse i et eller flere domæner, men ikke dement (normal ADL). Det er ikke  afgørende om patienten har svigt indenfor ét eller flere kognitive domæner, men om patienten trods svigt opretholder et normalt dagligt funktionsniveau. Den kognitive svækkelse kan være på såvel organisk som non-organisk baggrund.</p>
-<p><em>Demens i let grad jf. ICD-10</em></p>
+<h6>Demens i let grad jf. ICD-10</h6>
 <p>ICD-10 Demenskriterierne skal være opfyldte og sværhedsgrad let ud fra en samlet klinisk vurdering.</p>
-<p><em>Demens (NIA-AA) i let grad (ICD-10)</em></p>
+<h6>Demens (NIA-AA) i let grad (ICD-10)</h6>
 <p>NIA-AA kriterier for demens skal være opfyldte og ADL påvirkning er let jf. ICD-10 kriterier.</p>
-<p><em>Demens (NIA-AA) i moderat grad (ICD-10):</em></p>
+<h6>Demens (NIA-AA) i moderat grad (ICD-10):</h6>
 <p>NIA-AA kriterier for demens skal være opfyldte og ADL påvirkning er moderat jf. ICD-10 kriterier.</p>
-<p><em>Demens (NIA-AA) i svær grad (ICD-10)</em></p>
+<h6>Demens (NIA-AA) i svær grad (ICD-10)</h6>
 <p>NIA-AA kriterier for demens skal være opfyldte og ADL påvirkning er svær jf. ICD-10 kriterier</p></td>
-                                                                <td scope="row">str, Enum</td>
                                                                 <td scope="row">
-                                                                    <p style="margin:0px; font-weight: bold;">Udfald:</p>
-                                                                    <ul class="list-group list-group-flush">
-                                                                        <li class="list-group-item">"kognitiv_intakt"</li>
-                                                                        <li class="list-group-item">"kognitiv_svaekkelse"</li>
-                                                                        <li class="list-group-item">"demens_let_grad"</li>
-                                                                        <li class="list-group-item">"demens_moderat_grad"</li>
-                                                                        <li class="list-group-item">"demens_svaer_grad"</li>
-                                                                    </ul>
+                                                                    <table class="table table-sm" style="--bs-table-bg: transparent !important;">
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th scope="col" style="width: 20%">Type</th>
+                                                                                <th scope="col" style="width: 20%">Udfald</th>
+                                                                                <th scope="col" style="width: 60%">Beskrivelse</th>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td>str, Enum</td>
+                                                                                <td>kognitiv_intakt</td>
+                                                                                <td></td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>-</td>
+                                                                                <td>kognitiv_svaekkelse</td>
+                                                                                <td></td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>-</td>
+                                                                                <td>demens_let_grad</td>
+                                                                                <td></td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>-</td>
+                                                                                <td>demens_moderat_grad</td>
+                                                                                <td></td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>-</td>
+                                                                                <td>demens_svaer_grad</td>
+                                                                                <td></td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
                                                                 </td>
                                                                 <td scope="row">
-                                                                    <span class="badge rounded-pill text-bg-danger ms-auto">* Required</span>
+                                                                    <div class="badge rounded-pill text-bg-danger ms-2 me-2 d-inline-flex align-items-center">
+                                                                        <i class="bi bi-exclamation-diamond me-1" style="margin-top: -2px;"></i>
+                                                                        <span> Required</span>
+                                                                    </div>
                                                                 </td>
                                                             </tr>
                                                         </tbody>
@@ -908,10 +1085,10 @@ primære årsag, ikke alkohol.</p>
                                         <div class="dataObject">
                                             <a data-bs-toggle='collapse' aria-expanded='false' href="#DAD6" class="ObjectHeaderWrapper">
                                                 <ol class="breadcrumb objectHeaderMain objectHeaderColor">
-                                                    <i class="bi bi-folder2 me-2"></i>
+                                                    <i class="bi bi-folder2 me-2" style="margin-top: -3px;"></i>
                                                     <li class="breadcrumb-item">DanDem</li>
                                                     <li class="breadcrumb-item">Observation</li>
-                                                    <li aria-current='page' class="breadcrumb-item active">DAD</li>
+                                                    <li class="breadcrumb-item active">DAD</li>
                                                 </ol>
                                             </a>
                                             <div class="collapse m-3 objectBodyMain" id="DAD6">
@@ -925,7 +1102,6 @@ primære årsag, ikke alkohol.</p>
                                                             <tr>
                                                                 <th scope="col" class="fst-italic th-attribute">Attribute</th>
                                                                 <th scope="col" class="fst-italic th-description">Description</th>
-                                                                <th scope="col" class="fst-italic th-type">Type</th>
                                                                 <th scope="col" class="fst-italic th-value">Constraints</th>
                                                                 <th scope="col" class="fst-italic th-required">Required</th>
                                                             </tr>
@@ -934,16 +1110,23 @@ primære årsag, ikke alkohol.</p>
                                                             <tr>
                                                                 <th scope="row">ResultValue</th>
                                                                 <td scope="row"></td>
-                                                                <td scope="row">Integer</td>
                                                                 <td scope="row">
-                                                                    <p style="margin:0px; font-weight: bold;">Min or Equal to</p>
-                                                                    <ul class="list-group list-group-flush">
-                                                                        <li class="list-group-item">0</li>
-                                                                    </ul>
-                                                                    <p style="margin:0px; font-weight: bold;">Max or Equal to</p>
-                                                                    <ul class="list-group list-group-flush">
-                                                                        <li class="list-group-item">40</li>
-                                                                    </ul>
+                                                                    <table class="table table-sm" style="--bs-table-bg: transparent !important;">
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th scope="col" style="width: 20%">Type</th>
+                                                                                <th scope="col">Min or Equal to</th>
+                                                                                <th scope="col">Max or Equal to</th>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td scope="row">Integer</td>
+                                                                                <td>0</td>
+                                                                                <td>40</td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
                                                                 </td>
                                                                 <td scope="row"></td>
                                                             </tr>
@@ -955,10 +1138,10 @@ primære årsag, ikke alkohol.</p>
                                         <div class="dataObject">
                                             <a data-bs-toggle='collapse' aria-expanded='false' href="#FAQ_IADL7" class="ObjectHeaderWrapper">
                                                 <ol class="breadcrumb objectHeaderMain objectHeaderColor">
-                                                    <i class="bi bi-folder2 me-2"></i>
+                                                    <i class="bi bi-folder2 me-2" style="margin-top: -3px;"></i>
                                                     <li class="breadcrumb-item">DanDem</li>
                                                     <li class="breadcrumb-item">Observation</li>
-                                                    <li aria-current='page' class="breadcrumb-item active">FAQ_IADL</li>
+                                                    <li class="breadcrumb-item active">FAQ_IADL</li>
                                                 </ol>
                                             </a>
                                             <div class="collapse m-3 objectBodyMain" id="FAQ_IADL7">
@@ -972,7 +1155,6 @@ primære årsag, ikke alkohol.</p>
                                                             <tr>
                                                                 <th scope="col" class="fst-italic th-attribute">Attribute</th>
                                                                 <th scope="col" class="fst-italic th-description">Description</th>
-                                                                <th scope="col" class="fst-italic th-type">Type</th>
                                                                 <th scope="col" class="fst-italic th-value">Constraints</th>
                                                                 <th scope="col" class="fst-italic th-required">Required</th>
                                                             </tr>
@@ -981,16 +1163,23 @@ primære årsag, ikke alkohol.</p>
                                                             <tr>
                                                                 <th scope="row">ResultValue</th>
                                                                 <td scope="row"></td>
-                                                                <td scope="row">Integer</td>
                                                                 <td scope="row">
-                                                                    <p style="margin:0px; font-weight: bold;">Min or Equal to</p>
-                                                                    <ul class="list-group list-group-flush">
-                                                                        <li class="list-group-item">0</li>
-                                                                    </ul>
-                                                                    <p style="margin:0px; font-weight: bold;">Max or Equal to</p>
-                                                                    <ul class="list-group list-group-flush">
-                                                                        <li class="list-group-item">30</li>
-                                                                    </ul>
+                                                                    <table class="table table-sm" style="--bs-table-bg: transparent !important;">
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th scope="col" style="width: 20%">Type</th>
+                                                                                <th scope="col">Min or Equal to</th>
+                                                                                <th scope="col">Max or Equal to</th>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td scope="row">Integer</td>
+                                                                                <td>0</td>
+                                                                                <td>30</td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
                                                                 </td>
                                                                 <td scope="row"></td>
                                                             </tr>
@@ -1002,10 +1191,10 @@ primære årsag, ikke alkohol.</p>
                                         <div class="dataObject">
                                             <a data-bs-toggle='collapse' aria-expanded='false' href="#MCE8" class="ObjectHeaderWrapper">
                                                 <ol class="breadcrumb objectHeaderMain objectHeaderColor">
-                                                    <i class="bi bi-folder2 me-2"></i>
+                                                    <i class="bi bi-folder2 me-2" style="margin-top: -3px;"></i>
                                                     <li class="breadcrumb-item">DanDem</li>
                                                     <li class="breadcrumb-item">Observation</li>
-                                                    <li aria-current='page' class="breadcrumb-item active">MCE</li>
+                                                    <li class="breadcrumb-item active">MCE</li>
                                                 </ol>
                                             </a>
                                             <div class="collapse m-3 objectBodyMain" id="MCE8">
@@ -1019,7 +1208,6 @@ primære årsag, ikke alkohol.</p>
                                                             <tr>
                                                                 <th scope="col" class="fst-italic th-attribute">Attribute</th>
                                                                 <th scope="col" class="fst-italic th-description">Description</th>
-                                                                <th scope="col" class="fst-italic th-type">Type</th>
                                                                 <th scope="col" class="fst-italic th-value">Constraints</th>
                                                                 <th scope="col" class="fst-italic th-required">Required</th>
                                                             </tr>
@@ -1028,16 +1216,23 @@ primære årsag, ikke alkohol.</p>
                                                             <tr>
                                                                 <th scope="row">ResultValue</th>
                                                                 <td scope="row"></td>
-                                                                <td scope="row">Integer</td>
                                                                 <td scope="row">
-                                                                    <p style="margin:0px; font-weight: bold;">Min or Equal to</p>
-                                                                    <ul class="list-group list-group-flush">
-                                                                        <li class="list-group-item">0</li>
-                                                                    </ul>
-                                                                    <p style="margin:0px; font-weight: bold;">Max or Equal to</p>
-                                                                    <ul class="list-group list-group-flush">
-                                                                        <li class="list-group-item">100</li>
-                                                                    </ul>
+                                                                    <table class="table table-sm" style="--bs-table-bg: transparent !important;">
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th scope="col" style="width: 20%">Type</th>
+                                                                                <th scope="col">Min or Equal to</th>
+                                                                                <th scope="col">Max or Equal to</th>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td scope="row">Integer</td>
+                                                                                <td>0</td>
+                                                                                <td>100</td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
                                                                 </td>
                                                                 <td scope="row"></td>
                                                             </tr>
@@ -1049,10 +1244,10 @@ primære årsag, ikke alkohol.</p>
                                         <div class="dataObject">
                                             <a data-bs-toggle='collapse' aria-expanded='false' href="#MMSE9" class="ObjectHeaderWrapper">
                                                 <ol class="breadcrumb objectHeaderMain objectHeaderColor">
-                                                    <i class="bi bi-folder2 me-2"></i>
+                                                    <i class="bi bi-folder2 me-2" style="margin-top: -3px;"></i>
                                                     <li class="breadcrumb-item">DanDem</li>
                                                     <li class="breadcrumb-item">Observation</li>
-                                                    <li aria-current='page' class="breadcrumb-item active">MMSE</li>
+                                                    <li class="breadcrumb-item active">MMSE</li>
                                                 </ol>
                                             </a>
                                             <div class="collapse m-3 objectBodyMain" id="MMSE9">
@@ -1066,7 +1261,6 @@ primære årsag, ikke alkohol.</p>
                                                             <tr>
                                                                 <th scope="col" class="fst-italic th-attribute">Attribute</th>
                                                                 <th scope="col" class="fst-italic th-description">Description</th>
-                                                                <th scope="col" class="fst-italic th-type">Type</th>
                                                                 <th scope="col" class="fst-italic th-value">Constraints</th>
                                                                 <th scope="col" class="fst-italic th-required">Required</th>
                                                             </tr>
@@ -1075,16 +1269,23 @@ primære årsag, ikke alkohol.</p>
                                                             <tr>
                                                                 <th scope="row">ResultValue</th>
                                                                 <td scope="row"></td>
-                                                                <td scope="row">Integer</td>
                                                                 <td scope="row">
-                                                                    <p style="margin:0px; font-weight: bold;">Min or Equal to</p>
-                                                                    <ul class="list-group list-group-flush">
-                                                                        <li class="list-group-item">0</li>
-                                                                    </ul>
-                                                                    <p style="margin:0px; font-weight: bold;">Max or Equal to</p>
-                                                                    <ul class="list-group list-group-flush">
-                                                                        <li class="list-group-item">30</li>
-                                                                    </ul>
+                                                                    <table class="table table-sm" style="--bs-table-bg: transparent !important;">
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th scope="col" style="width: 20%">Type</th>
+                                                                                <th scope="col">Min or Equal to</th>
+                                                                                <th scope="col">Max or Equal to</th>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td scope="row">Integer</td>
+                                                                                <td>0</td>
+                                                                                <td>30</td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
                                                                 </td>
                                                                 <td scope="row"></td>
                                                             </tr>
@@ -1096,10 +1297,10 @@ primære årsag, ikke alkohol.</p>
                                         <div class="dataObject">
                                             <a data-bs-toggle='collapse' aria-expanded='false' href="#MoCa10" class="ObjectHeaderWrapper">
                                                 <ol class="breadcrumb objectHeaderMain objectHeaderColor">
-                                                    <i class="bi bi-folder2 me-2"></i>
+                                                    <i class="bi bi-folder2 me-2" style="margin-top: -3px;"></i>
                                                     <li class="breadcrumb-item">DanDem</li>
                                                     <li class="breadcrumb-item">Observation</li>
-                                                    <li aria-current='page' class="breadcrumb-item active">MoCa</li>
+                                                    <li class="breadcrumb-item active">MoCa</li>
                                                 </ol>
                                             </a>
                                             <div class="collapse m-3 objectBodyMain" id="MoCa10">
@@ -1113,7 +1314,6 @@ primære årsag, ikke alkohol.</p>
                                                             <tr>
                                                                 <th scope="col" class="fst-italic th-attribute">Attribute</th>
                                                                 <th scope="col" class="fst-italic th-description">Description</th>
-                                                                <th scope="col" class="fst-italic th-type">Type</th>
                                                                 <th scope="col" class="fst-italic th-value">Constraints</th>
                                                                 <th scope="col" class="fst-italic th-required">Required</th>
                                                             </tr>
@@ -1122,16 +1322,23 @@ primære årsag, ikke alkohol.</p>
                                                             <tr>
                                                                 <th scope="row">ResultValue</th>
                                                                 <td scope="row"></td>
-                                                                <td scope="row">Integer</td>
                                                                 <td scope="row">
-                                                                    <p style="margin:0px; font-weight: bold;">Min or Equal to</p>
-                                                                    <ul class="list-group list-group-flush">
-                                                                        <li class="list-group-item">0</li>
-                                                                    </ul>
-                                                                    <p style="margin:0px; font-weight: bold;">Max or Equal to</p>
-                                                                    <ul class="list-group list-group-flush">
-                                                                        <li class="list-group-item">30</li>
-                                                                    </ul>
+                                                                    <table class="table table-sm" style="--bs-table-bg: transparent !important;">
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th scope="col" style="width: 20%">Type</th>
+                                                                                <th scope="col">Min or Equal to</th>
+                                                                                <th scope="col">Max or Equal to</th>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td scope="row">Integer</td>
+                                                                                <td>0</td>
+                                                                                <td>30</td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
                                                                 </td>
                                                                 <td scope="row"></td>
                                                             </tr>
@@ -1143,10 +1350,10 @@ primære årsag, ikke alkohol.</p>
                                         <div class="dataObject">
                                             <a data-bs-toggle='collapse' aria-expanded='false' href="#RUDAS11" class="ObjectHeaderWrapper">
                                                 <ol class="breadcrumb objectHeaderMain objectHeaderColor">
-                                                    <i class="bi bi-folder2 me-2"></i>
+                                                    <i class="bi bi-folder2 me-2" style="margin-top: -3px;"></i>
                                                     <li class="breadcrumb-item">DanDem</li>
                                                     <li class="breadcrumb-item">Observation</li>
-                                                    <li aria-current='page' class="breadcrumb-item active">RUDAS</li>
+                                                    <li class="breadcrumb-item active">RUDAS</li>
                                                 </ol>
                                             </a>
                                             <div class="collapse m-3 objectBodyMain" id="RUDAS11">
@@ -1161,7 +1368,6 @@ primære årsag, ikke alkohol.</p>
                                                             <tr>
                                                                 <th scope="col" class="fst-italic th-attribute">Attribute</th>
                                                                 <th scope="col" class="fst-italic th-description">Description</th>
-                                                                <th scope="col" class="fst-italic th-type">Type</th>
                                                                 <th scope="col" class="fst-italic th-value">Constraints</th>
                                                                 <th scope="col" class="fst-italic th-required">Required</th>
                                                             </tr>
@@ -1170,16 +1376,23 @@ primære årsag, ikke alkohol.</p>
                                                             <tr>
                                                                 <th scope="row">ResultValue</th>
                                                                 <td scope="row"><p><strong>Hvis denne test er udført, er der ikke behov for at udføre yderligere tests. Det anbefales derfor at implementere denne først i integrationer til webservicen.</strong></p></td>
-                                                                <td scope="row">Integer</td>
                                                                 <td scope="row">
-                                                                    <p style="margin:0px; font-weight: bold;">Min or Equal to</p>
-                                                                    <ul class="list-group list-group-flush">
-                                                                        <li class="list-group-item">0</li>
-                                                                    </ul>
-                                                                    <p style="margin:0px; font-weight: bold;">Max or Equal to</p>
-                                                                    <ul class="list-group list-group-flush">
-                                                                        <li class="list-group-item">30</li>
-                                                                    </ul>
+                                                                    <table class="table table-sm" style="--bs-table-bg: transparent !important;">
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th scope="col" style="width: 20%">Type</th>
+                                                                                <th scope="col">Min or Equal to</th>
+                                                                                <th scope="col">Max or Equal to</th>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td scope="row">Integer</td>
+                                                                                <td>0</td>
+                                                                                <td>30</td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
                                                                 </td>
                                                                 <td scope="row"></td>
                                                             </tr>
@@ -1191,16 +1404,19 @@ primære årsag, ikke alkohol.</p>
                                         <div class="dataObject">
                                             <a data-bs-toggle='collapse' aria-expanded='false' href="#SupportPersonPresent12" class="ObjectHeaderWrapper">
                                                 <ol class="breadcrumb objectHeaderMain objectHeaderColor">
-                                                    <i class="bi bi-folder2 me-2"></i>
+                                                    <i class="bi bi-folder2 me-2" style="margin-top: -3px;"></i>
                                                     <li class="breadcrumb-item">DanDem</li>
                                                     <li class="breadcrumb-item">Observation</li>
-                                                    <li aria-current='page' class="breadcrumb-item active">SupportPersonPresent</li>
+                                                    <li class="breadcrumb-item active">SupportPersonPresent</li>
+                                                    <li class="mx-2"> - </li>
+                                                    <li><strong>Pårørende til stede</strong></li>
                                                 </ol>
                                             </a>
                                             <div class="collapse m-3 objectBodyMain" id="SupportPersonPresent12">
                                                 <div class="object_margin">
                                                     <p class="table_view_hider" style="height: 1rem !important; margin: 0px !important;"></p>
                                                     <div class="objectDescription alert alert-warning">
+                                                        <p><strong>Pårørende til stede</strong></p>
                                                         <p><p>Var der en pårørende / professionel omsorgsperson involveret i vurderingerne?</p>
 <p>Da demente ikke altid selv har indsigt i eget funktionsniveau, da inddrages pårørende eller andre, som kender patienten indgående. Der markeres ”Ja” hvis der har været en pårørende og/eller professionel omsorgsperson (der kender patienten til at kunne svare på vurderingen) ved forundersøgelse.</p>
 <p>Denne variabel er dækkende for alle de nævnte vurderinger, og det antages at hvis der har været en pårørende til stede ved en vurdering har der været en pårørende til stede ved alle.</p></p>
@@ -1210,7 +1426,6 @@ primære årsag, ikke alkohol.</p>
                                                             <tr>
                                                                 <th scope="col" class="fst-italic th-attribute">Attribute</th>
                                                                 <th scope="col" class="fst-italic th-description">Description</th>
-                                                                <th scope="col" class="fst-italic th-type">Type</th>
                                                                 <th scope="col" class="fst-italic th-value">Constraints</th>
                                                                 <th scope="col" class="fst-italic th-required">Required</th>
                                                             </tr>
@@ -1218,13 +1433,24 @@ primære årsag, ikke alkohol.</p>
                                                         <tbody class="table-group-divider">
                                                             <tr>
                                                                 <th scope="row">StatusCode</th>
-                                                                <td scope="row"></td>
-                                                                <td scope="row">str, Enum</td>
+                                                                <td scope="row"><p>Har der været en pårørende eller professionel omsorgsperson til stede i udredningsforløbet, der kender patienten tilstrækkeligt til at kunne svare på spørgsmål relateret til ADL?</p></td>
                                                                 <td scope="row">
-                                                                    <p style="margin:0px; font-weight: bold;">Udfald:</p>
-                                                                    <ul class="list-group list-group-flush">
-                                                                        <li class="list-group-item">"ja"</li>
-                                                                    </ul>
+                                                                    <table class="table table-sm" style="--bs-table-bg: transparent !important;">
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th scope="col" style="width: 20%">Type</th>
+                                                                                <th scope="col" style="width: 20%">Udfald</th>
+                                                                                <th scope="col" style="width: 60%">Beskrivelse</th>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td>str, Enum</td>
+                                                                                <td>ja</td>
+                                                                                <td></td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
                                                                 </td>
                                                                 <td scope="row"></td>
                                                             </tr>
@@ -1236,10 +1462,10 @@ primære årsag, ikke alkohol.</p>
                                         <div class="dataObject">
                                             <a data-bs-toggle='collapse' aria-expanded='false' href="#Trinvold_DSQIID13" class="ObjectHeaderWrapper">
                                                 <ol class="breadcrumb objectHeaderMain objectHeaderColor">
-                                                    <i class="bi bi-folder2 me-2"></i>
+                                                    <i class="bi bi-folder2 me-2" style="margin-top: -3px;"></i>
                                                     <li class="breadcrumb-item">DanDem</li>
                                                     <li class="breadcrumb-item">Observation</li>
-                                                    <li aria-current='page' class="breadcrumb-item active">Trinvold_DSQIID</li>
+                                                    <li class="breadcrumb-item active">Trinvold_DSQIID</li>
                                                 </ol>
                                             </a>
                                             <div class="collapse m-3 objectBodyMain" id="Trinvold_DSQIID13">
@@ -1255,7 +1481,6 @@ primære årsag, ikke alkohol.</p>
                                                             <tr>
                                                                 <th scope="col" class="fst-italic th-attribute">Attribute</th>
                                                                 <th scope="col" class="fst-italic th-description">Description</th>
-                                                                <th scope="col" class="fst-italic th-type">Type</th>
                                                                 <th scope="col" class="fst-italic th-value">Constraints</th>
                                                                 <th scope="col" class="fst-italic th-required">Required</th>
                                                             </tr>
@@ -1264,13 +1489,28 @@ primære årsag, ikke alkohol.</p>
                                                             <tr>
                                                                 <th scope="row">StatusCode</th>
                                                                 <td scope="row"></td>
-                                                                <td scope="row">str, Enum</td>
                                                                 <td scope="row">
-                                                                    <p style="margin:0px; font-weight: bold;">Udfald:</p>
-                                                                    <ul class="list-group list-group-flush">
-                                                                        <li class="list-group-item">"ja"</li>
-                                                                        <li class="list-group-item">"nej"</li>
-                                                                    </ul>
+                                                                    <table class="table table-sm" style="--bs-table-bg: transparent !important;">
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th scope="col" style="width: 20%">Type</th>
+                                                                                <th scope="col" style="width: 20%">Udfald</th>
+                                                                                <th scope="col" style="width: 60%">Beskrivelse</th>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td>str, Enum</td>
+                                                                                <td>ja</td>
+                                                                                <td></td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>-</td>
+                                                                                <td>nej</td>
+                                                                                <td></td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
                                                                 </td>
                                                                 <td scope="row"></td>
                                                             </tr>
@@ -1280,104 +1520,193 @@ primære årsag, ikke alkohol.</p>
                                             </div>
                                         </div>
                                     </div>
+                                    <div id="groupReport" class="groupReport"></div>
                                     <div id="groupReport" class="groupReport">
                                         <div class="dataObject">
-                                            <a data-bs-toggle='collapse' aria-expanded='false' href="#Organization" class="ObjectHeaderWrapper">
-                                                <ol class="breadcrumb objectHeaderMain objectHeaderColor">
-                                                    <i class="bi bi-folder2 me-2"></i>
-                                                    <li class="breadcrumb-item">DanDem</li>
-                                                    <li class="breadcrumb-item">Report</li>
-                                                    <li aria-current='page' class="breadcrumb-item active">Organization</li>
-                                                    <span class="badge rounded-pill text-bg-danger ms-auto">* Required</span>
-                                                </ol>
-                                            </a>
-                                            <div class="collapse m-3 objectBodyMain" id="Organization">
-                                                <div class="object_margin">
-                                                    <p class="table_view_hider" style="height: 1rem !important; margin: 0px !important;"></p>
-                                                    <h2 class="table_view_hider">Attributes</h2>
-                                                    <table class="table table-bordered table-striped table-hover ">
-                                                        <thead>
-                                                            <tr>
-                                                                <th scope="col" class="fst-italic th-attribute">Attribute</th>
-                                                                <th scope="col" class="fst-italic th-description">Description</th>
-                                                                <th scope="col" class="fst-italic th-type">Type</th>
-                                                                <th scope="col" class="fst-italic th-value">Constraint(s)</th>
-                                                                <th scope="col" class="fst-italic th-required">Required</th>
-                                                            </tr>
-                                                        </thead>
-                                                        <tbody class="table-group-divider">
-                                                            <tr>
-                                                                <th scope="row">OrganizationType</th>
-                                                                <td scope="row">Typen af Identifier, som bliver indberettet.</td>
-                                                                <td scope="row">Udfald (str)</td>
-                                                                <td scope="row">
-                                                                    <p style="margin:0px; font-weight: bold;">Udfald:</p>
-                                                                    <ul class="list-group list-group-flush">
-                                                                        <li class="list-group-item">sor</li>
-                                                                        <li class="list-group-item">shak</li>
-                                                                        <li class="list-group-item">regionskode</li>
-                                                                        <li class="list-group-item">kommunekode</li>
-                                                                        <li class="list-group-item">ydernummer</li>
-                                                                        <li class="list-group-item">lokationsnummer</li>
-                                                                    </ul>
-                                                                </td>
-                                                                <td scope="row">
-                                                                    <span class="badge rounded-pill text-bg-danger ms-auto">* Required</span>
-                                                                </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <th scope="row">Identifier</th>
-                                                                <td scope="row">ID på den enkelte organisation, der er ansvarlig for indberetning af patienten. Typen af ID skal følge den indsendte OrganizationType.</td>
-                                                                <td scope="row">string</td>
-                                                                <td scope="row"></td>
-                                                                <td scope="row">
-                                                                    <span class="badge rounded-pill text-bg-danger ms-auto">* Required</span>
-                                                                </td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table>
-                                                </div>
-                                            </div>
-                                        </div>
+   <a data-bs-toggle="collapse" aria-expanded="false" href="#Organization" class="ObjectHeaderWrapper collapsed">
+      <ol class="breadcrumb objectHeaderMain objectHeaderColor">
+         <i class="bi bi-folder2 me-2"></i>
+         <li class="breadcrumb-item">DAH</li>
+         <li class="breadcrumb-item">DanDem</li>
+         <li class="breadcrumb-item active">Organization</li>
+         <li class="mx-2"> - </li>
+         <li><strong>Organisation</strong></li>
+         <span class="d-flex ms-auto align-content-center">
+            <div class="badge rounded-pill text-bg-danger ms-2 me-2 d-inline-flex align-items-center" style="margin-top: -3px;">
+                <i class="bi bi-exclamation-diamond me-1" style="margin-top: -2px;"></i>
+                <span> Required</span>
+            </div>
+            </span>
+      </ol>
+   </a>
+   <div class="m-3 objectBodyMain collapse" id="Organization" style="">
+      <div class="object_margin">
+         <p class="table_view_hider" style="height: 1rem !important; margin: 0px !important;"></p>
+         <div class="objectDescription alert alert-warning">
+            <p><strong>Organisation</strong></p>
+            <p></p>
+            <p>Standard for all indberetninger. <br><br> Organisationen, der er ansvarlig for indberetning af patienten.</p>
+            <p></p>
+         </div>
+         <table class="table table-bordered table-striped table-hover ">
+            <thead>
+               <tr>
+                  <th scope="col" class="fst-italic th-attribute">Attribute</th>
+                  <th scope="col" class="fst-italic th-description">Description</th>
+                  <th scope="col" class="fst-italic th-value">Constraints</th>
+                  <th scope="col" class="fst-italic th-required">Required</th>
+               </tr>
+            </thead>
+            <tbody class="table-group-divider">
+                <tr>
+                    <th scope="row">OrganizationType</th>
+                    <td scope="row">Typen af Identifier, som bliver indberettet.</td>
+                    <td scope="row">
+                        <table class="table table-sm" style="--bs-table-bg: transparent !important;">
+                            <thead>
+                            <tr>
+                                <th scope="col" style="width: 20%">Type</th>
+                                <th scope="col" style="width: 20%">Udfald</th>
+                                <th scope="col" style="width: 60%">Beskrivelse</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>str, Enum</td>
+                                    <td>sor</td>
+                                    <td>sor format</td>
+                                </tr>
+                                <tr>
+                                    <td>str, Enum</td>
+                                    <td>shak</td>
+                                    <td>shak format</td>
+                                </tr>
+                                <tr>
+                                    <td>str, Enum</td>
+                                    <td>regionskode</td>
+                                    <td>regionskode format</td>
+                                </tr>
+                                <tr>
+                                    <td>str, Enum</td>
+                                    <td>kommunekode</td>
+                                    <td>kommunekode format</td>
+                                </tr>
+                                <tr>
+                                    <td>str, Enum</td>
+                                    <td>ydernummer</td>
+                                    <td>ydernummer format</td>
+                                </tr>
+                                <tr>
+                                    <td>str, Enum</td>
+                                    <td>lokationsnummer</td>
+                                    <td>lokationsnummer format</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                    <td scope="row">
+                        <div class="badge rounded-pill text-bg-danger ms-2 me-2 d-inline-flex align-items-center" style="margin-top: -3px;">
+                            <i class="bi bi-exclamation-diamond me-1" style="margin-top: -2px;"></i>
+                            <span> Required</span>
+                        </div>
+                    </td>
+            </tbody>
+                <tr>
+                    <th scope="row">Identifier</th>
+                    <td scope="row">ID på den enkelte organisation, der er ansvarlig for indberetning af patienten. Typen af ID skal følge den indsendte OrganizationType.</td>
+                    <td scope="row">
+                        <table class="table table-sm" style="--bs-table-bg: transparent !important;">
+                            <thead>
+                            <tr>
+                                <th scope="col" style="width: 20%">Type</th>
+                                <th scope="col" style="width: 20%">Format</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>String</td>
+                                    <td>OrganizationType</td>
+                                </tr>
+                            </tbody>
+                        </table>                    
+                    </td>
+                    <td scope="row">
+                        <div class="badge rounded-pill text-bg-danger ms-2 me-2 d-inline-flex align-items-center" style="margin-top: -3px;">
+                            <i class="bi bi-exclamation-diamond me-1" style="margin-top: -2px;"></i>
+                            <span> Required</span>
+                        </div>
+                    </td>
+            </tbody>
+         </table>
+      </div>
+   </div>
+</div>
                                         <div class="dataObject">
-                                            <a data-bs-toggle='collapse' aria-expanded='false' href="#Patient" class="ObjectHeaderWrapper">
-                                                <ol class="breadcrumb objectHeaderMain objectHeaderColor">
-                                                    <i class="bi bi-folder2 me-2"></i>
-                                                    <li class="breadcrumb-item">DanDem</li>
-                                                    <li class="breadcrumb-item">Report</li>
-                                                    <li aria-current='page' class="breadcrumb-item active">Patient</li>
-                                                    <span class="badge rounded-pill text-bg-danger ms-auto">* Required</span>
-                                                </ol>
-                                            </a>
-                                            <div class="collapse m-3 objectBodyMain" id="Patient">
-                                                <div class="object_margin">
-                                                    <p class="table_view_hider" style="height: 1rem !important; margin: 0px !important;"></p>
-                                                    <h2 class="table_view_hider">Attributes</h2>
-                                                    <table class="table table-bordered table-striped table-hover ">
-                                                        <thead>
-                                                            <tr>
-                                                                <th scope="col" class="fst-italic th-attribute">Attribute</th>
-                                                                <th scope="col" class="fst-italic th-description">Description</th>
-                                                                <th scope="col" class="fst-italic th-type">Type</th>
-                                                                <th scope="col" class="fst-italic th-value">Constraints</th>
-                                                                <th scope="col" class="fst-italic th-required">Required</th>
-                                                            </tr>
-                                                        </thead>
-                                                        <tbody class="table-group-divider">
-                                                            <tr>
-                                                                <th scope="row">CivilRegistrationNumber</th>
-                                                                <td scope="row"></td>
-                                                                <td scope="row">string</td>
-                                                                <td scope="row">Standard formatering af CPR.</td>
-                                                                <td scope="row">
-                                                                    <span class="badge rounded-pill text-bg-danger ms-auto">* Required</span>
-                                                                </td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table>
-                                                </div>
-                                            </div>
-                                        </div>
+   <a data-bs-toggle="collapse" aria-expanded="false" href="#Patient" class="ObjectHeaderWrapper collapsed">
+      <ol class="breadcrumb objectHeaderMain objectHeaderColor">
+         <i class="bi bi-folder2 me-2"></i>
+         <li class="breadcrumb-item">DAH</li>
+         <li class="breadcrumb-item">DanDem</li>
+         <li class="breadcrumb-item active">Patient</li>
+         <li class="mx-2"> - </li>
+         <li><strong>Patient</strong></li>
+         <span class="d-flex ms-auto align-content-center">
+            <div class="badge rounded-pill text-bg-danger ms-2 me-2 d-inline-flex align-items-center" style="margin-top: -3px;">
+                <i class="bi bi-exclamation-diamond me-1" style="margin-top: -2px;"></i>
+                <span> Required</span>
+            </div>
+            </span>
+      </ol>
+   </a>
+   <div class="m-3 objectBodyMain collapse" id="Patient" style="">
+      <div class="object_margin">
+         <p class="table_view_hider" style="height: 1rem !important; margin: 0px !important;"></p>
+         <div class="objectDescription alert alert-warning">
+            <p><strong>Patient</strong></p>
+            <p></p>
+            <p>Standard for all indberetninger. <br> <br> Patienten, som indberetningen vedrører.</p>
+            <p></p>
+         </div>
+         <table class="table table-bordered table-striped table-hover ">
+            <thead>
+               <tr>
+                  <th scope="col" class="fst-italic th-attribute">Attribute</th>
+                  <th scope="col" class="fst-italic th-description">Description</th>
+                  <th scope="col" class="fst-italic th-value">Constraints</th>
+                  <th scope="col" class="fst-italic th-required">Required</th>
+               </tr>
+            </thead>
+            <tbody class="table-group-divider">
+                <tr>
+                    <th scope="row">CivilRegistrationNumber</th>
+                    <td scope="row">CPR nummer på patienten.</td>
+                    <td scope="row">
+                        <table class="table table-sm" style="--bs-table-bg: transparent !important;">
+                            <thead>
+                            <tr>
+                                <th scope="col" style="width: 20%">Type</th>
+                                <th scope="col" style="width: 20%">Format</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>String</td>
+                                    <td>Standard CPR formatering uden bindestreg</td>
+                                </tr>
+                            </tbody>
+                        </table>                    
+                    </td>
+                    <td scope="row">
+                        <div class="badge rounded-pill text-bg-danger ms-2 me-2 d-inline-flex align-items-center" style="margin-top: -3px;">
+                            <i class="bi bi-exclamation-diamond me-1" style="margin-top: -2px;"></i>
+                            <span> Required</span>
+                        </div>
+                    </td>
+            </tbody>
+         </table>
+      </div>
+   </div>
+</div>
                                     </div>
                                 </div>
                             </div>
@@ -1413,7 +1742,7 @@ primære årsag, ikke alkohol.</p>
                                     <textarea class="form-control textarea-tabs bg-body-tertiary current_json" id="json_post_textarea" style="height: 1000px">{
     "Report": {
         "Patient": {
-            "CivilRegistrationNumber": "1102992627"
+            "CivilRegistrationNumber": "0202451uV0"
         },
         "Organization": {
             "OrganizationType": "regionskode",
@@ -1421,72 +1750,66 @@ primære årsag, ikke alkohol.</p>
         },
         "Data": {
             "Activity": {
-                "CT_Scan": {
-                    "ResultValue": "08-06-2016 03:15:50"
-                },
-                "MR_Scan": {
-                    "ResultValue": "03-09-2007 05:29:31"
+                "ExtendedNeuroAssessment": {
+                    "DateTime": "24-09-1996 14:03:02"
                 },
                 "NPHAssessment": {
-                    "ResultValue": "28-11-2011 14:00:00"
-                },
-                "NPU": {
-                    "ResultValue": "02-03-2016 21:02:11"
+                    "DateTime": "30-03-2002 22:07:31"
                 }
             },
             "Contact": {
                 "InformDiagnosis": {
-                    "DateTime": "25-07-1996 15:37:12"
+                    "DateTime": "29-03-2012 15:15:52"
                 },
                 "Referral": {
-                    "ResultValue": "primaer_demensudredning_henvist_direkte",
-                    "DateTime": "28-11-2009 05:42:12"
+                    "ResultValue": "second_opinion",
+                    "DateTime": "19-06-2005 21:17:47"
                 },
                 "ReferralCommunalCoordinator": {
                     "StatusCode": "ja"
                 },
                 "ReferralFreeChoice": {
-                    "DateTime": "21-05-2022 17:06:15"
+                    "DateTime": "25-12-1996 05:22:04"
                 }
             },
             "Diagnosis": {
                 "EtiologicalDiagnosis": {
-                    "DiagnosisCode": "alzheimer_sygdom"
+                    "DiagnosisCode": "frontotemporal_demens"
                 }
             },
             "Observation": {
                 "ACE": {
-                    "ResultValue": 31
+                    "ResultValue": 89
                 },
                 "ADSC_ADL": {
-                    "ResultValue": 18
+                    "ResultValue": 61
                 },
                 "BASIC": {
-                    "ResultValue": 17
+                    "ResultValue": 8
                 },
                 "CAMcog": {
-                    "ResultValue": 85
+                    "ResultValue": 28
                 },
                 "CognitiveImpairment": {
-                    "ResultValue": "demens_let_grad"
+                    "ResultValue": "kognitiv_svaekkelse"
                 },
                 "DAD": {
-                    "ResultValue": 2
+                    "ResultValue": 8
                 },
                 "FAQ_IADL": {
-                    "ResultValue": 10
+                    "ResultValue": 29
                 },
                 "MCE": {
-                    "ResultValue": 87
+                    "ResultValue": 52
                 },
                 "MMSE": {
-                    "ResultValue": 9
+                    "ResultValue": 26
                 },
                 "MoCa": {
-                    "ResultValue": 7
+                    "ResultValue": 19
                 },
                 "RUDAS": {
-                    "ResultValue": 11
+                    "ResultValue": 26
                 },
                 "SupportPersonPresent": {
                     "StatusCode": "ja"
@@ -1506,7 +1829,7 @@ primære årsag, ikke alkohol.</p>
                                     <textarea class="form-control textarea-tabs bg-body-tertiary" id="json_put_textarea" style="height: 1000px">{
     "Report": {
         "Patient": {
-            "CivilRegistrationNumber": "1702622658"
+            "CivilRegistrationNumber": "2508910909"
         },
         "Organization": {
             "OrganizationType": "regionskode",
@@ -1514,72 +1837,66 @@ primære årsag, ikke alkohol.</p>
         },
         "Data": {
             "Activity": {
-                "CT_Scan": {
-                    "ResultValue": "14-11-2009 11:48:47"
-                },
-                "MR_Scan": {
-                    "ResultValue": "30-01-2006 06:59:27"
+                "ExtendedNeuroAssessment": {
+                    "DateTime": "11-09-2005 19:39:51"
                 },
                 "NPHAssessment": {
-                    "ResultValue": "25-08-2022 06:08:12"
-                },
-                "NPU": {
-                    "ResultValue": "29-09-2005 21:52:24"
+                    "DateTime": "15-02-2000 02:28:02"
                 }
             },
             "Contact": {
                 "InformDiagnosis": {
-                    "DateTime": "02-03-2003 23:23:03"
+                    "DateTime": "26-06-2023 01:08:43"
                 },
                 "Referral": {
-                    "ResultValue": "primaer_demensudredning_henvist_direkte",
-                    "DateTime": "04-03-1995 02:26:51"
+                    "ResultValue": "second_opinion",
+                    "DateTime": "09-09-2013 09:40:13"
                 },
                 "ReferralCommunalCoordinator": {
                     "StatusCode": "ja"
                 },
                 "ReferralFreeChoice": {
-                    "DateTime": "11-06-2016 16:31:51"
+                    "DateTime": "29-11-2019 10:10:00"
                 }
             },
             "Diagnosis": {
                 "EtiologicalDiagnosis": {
-                    "DiagnosisCode": "alkohol"
+                    "DiagnosisCode": "anden_specifik_neurodegenerativ_sygdom"
                 }
             },
             "Observation": {
                 "ACE": {
-                    "ResultValue": 14
+                    "ResultValue": 60
                 },
                 "ADSC_ADL": {
-                    "ResultValue": 18
+                    "ResultValue": 75
                 },
                 "BASIC": {
-                    "ResultValue": 4
+                    "ResultValue": 8
                 },
                 "CAMcog": {
-                    "ResultValue": 70
+                    "ResultValue": 35
                 },
                 "CognitiveImpairment": {
                     "ResultValue": "kognitiv_intakt"
                 },
                 "DAD": {
-                    "ResultValue": 3
+                    "ResultValue": 25
                 },
                 "FAQ_IADL": {
-                    "ResultValue": 26
+                    "ResultValue": 22
                 },
                 "MCE": {
-                    "ResultValue": 90
+                    "ResultValue": 37
                 },
                 "MMSE": {
-                    "ResultValue": 6
+                    "ResultValue": 17
                 },
                 "MoCa": {
-                    "ResultValue": 2
+                    "ResultValue": 7
                 },
                 "RUDAS": {
-                    "ResultValue": 21
+                    "ResultValue": 13
                 },
                 "SupportPersonPresent": {
                     "StatusCode": "ja"
@@ -1617,7 +1934,7 @@ primære årsag, ikke alkohol.</p>
             // Hide Advanced Data
 
             hideAdvancedRows() // Hide Rows with class advanced-data
-            hideAdvancedColumn(2); // Hide Column 1 (Type)
+            //hideAdvancedColumn(2); // Hide Column 1 (Type)
         });
                            
         </script>
