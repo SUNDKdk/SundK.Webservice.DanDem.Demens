@@ -25,7 +25,7 @@
                             "isActivated": true,
                             "properties": [
                                 {
-                                    "name": "ResultValue",
+                                    "name": "DateTime",
                                     "hackoladeMeta": {},
                                     "isActivated": true,
                                     "properties": [
@@ -42,10 +42,10 @@
                                             "error": {}
                                         }
                                     ],
-                                    "childType": "Attribute_ResultValue",
+                                    "childType": "Attribute_DateTime",
                                     "type": "document",
-                                    "GUID": "e18a8060-78c7-4aea-9f39-ec7d6b5ab130",
-                                    "description": "Hvis dette ikke indberettes tolkes det som at NPH-assessment ikke har fundet sted.\n\n**Bemærk:** Hvis kun en dato kan findes kan tid indberettes som 00:00:00.",
+                                    "GUID": "1e8d19b5-c7ad-48f6-b7bc-a5fdf34887ef",
+                                    "description": "Hvis dette ikke indberettes tolkes det som at NPH-assessment ikke har fundet sted.\n<br><br>\n**Bemærk:** Hvis kun en dato kan findes kan tid indberettes som 00:00:00.",
                                     "error": {}
                                 }
                             ],
@@ -62,7 +62,7 @@
                             "isActivated": true,
                             "properties": [
                                 {
-                                    "name": "ResultValue",
+                                    "name": "DateTime",
                                     "hackoladeMeta": {},
                                     "isActivated": true,
                                     "properties": [
@@ -77,12 +77,10 @@
                                             "error": {}
                                         }
                                     ],
-                                    "childType": "Attribute_ResultValue",
+                                    "childType": "Attribute_DateTime",
                                     "type": "document",
-                                    "GUID": "3a4e4047-c636-46e0-b72c-22bbef482ea7",
-                                    "description": "Hvis dette ikke indberettes tolkes det som at NPU ikke har fundet sted.\n\n**Bemærk:** Hvis kun en dato kan findes kan tid indberettes som 00:00:00.",
-                                    "foreignCollection": "",
-                                    "foreignField": [],
+                                    "GUID": "e45a653a-c466-4106-81d8-c9c4dac877dc",
+                                    "description": "Hvis dette ikke indberettes tolkes det som at undersøgelsen ikke har fundet sted.\n<br><br>\n**Bemærk:** Hvis kun en dato kan findes kan tid indberettes som 00:00:00.",
                                     "error": {}
                                 }
                             ],
@@ -122,8 +120,8 @@
                                             "childType": "Base_Value_Numeric",
                                             "type": "numeric",
                                             "GUID": "b6ff079e-fad8-4547-aeec-1f5480cdc499",
-                                            "LL_Type": "Greater than or =",
-                                            "UL_Type": "Less than or =",
+                                            "LL_Type": "Greater than or Equal",
+                                            "UL_Type": "Less than or Equal",
                                             "ge": 0,
                                             "le": 30,
                                             "error": {}
@@ -160,8 +158,8 @@
                                             "childType": "Base_Value_Numeric",
                                             "type": "numeric",
                                             "GUID": "213f714e-0b07-47cc-aac0-ad8a77b06fd1",
-                                            "LL_Type": "Greater than or =",
-                                            "UL_Type": "Less than or =",
+                                            "LL_Type": "Greater than or Equal",
+                                            "UL_Type": "Less than or Equal",
                                             "ge": 0,
                                             "le": 100,
                                             "error": {}
@@ -198,8 +196,8 @@
                                             "childType": "Base_Value_Numeric",
                                             "type": "numeric",
                                             "GUID": "37c9c018-6994-4f0d-ae0f-44561394d481",
-                                            "LL_Type": "Greater than or =",
-                                            "UL_Type": "Less than or =",
+                                            "LL_Type": "Greater than or Equal",
+                                            "UL_Type": "Less than or Equal",
                                             "ge": 0,
                                             "le": 25,
                                             "error": {}
@@ -236,8 +234,8 @@
                                             "childType": "Base_Value_Numeric",
                                             "type": "numeric",
                                             "GUID": "fc582172-104b-4e14-9d70-c7f063a4bd28",
-                                            "LL_Type": "Greater than or =",
-                                            "UL_Type": "Less than or =",
+                                            "LL_Type": "Greater than or Equal",
+                                            "UL_Type": "Less than or Equal",
                                             "ge": 0,
                                             "le": 105,
                                             "error": {}
@@ -274,8 +272,8 @@
                                             "childType": "Base_Value_Numeric",
                                             "type": "numeric",
                                             "GUID": "e874ebf4-56b3-4d67-9656-10831d460ac5",
-                                            "LL_Type": "Greater than or =",
-                                            "UL_Type": "Less than or =",
+                                            "LL_Type": "Greater than or Equal",
+                                            "UL_Type": "Less than or Equal",
                                             "ge": 0,
                                             "le": 30,
                                             "error": {}
@@ -312,8 +310,8 @@
                                             "childType": "Base_Value_Numeric",
                                             "type": "numeric",
                                             "GUID": "257f4e39-72f9-464f-ae03-3049a17084ea",
-                                            "LL_Type": "Greater than or =",
-                                            "UL_Type": "Less than or =",
+                                            "LL_Type": "Greater than or Equal",
+                                            "UL_Type": "Less than or Equal",
                                             "ge": 0,
                                             "le": 100,
                                             "error": {}
@@ -350,8 +348,8 @@
                                             "childType": "Base_Value_Numeric",
                                             "type": "numeric",
                                             "GUID": "d8b0bb77-be79-49af-91b2-d4d4a632cfde",
-                                            "LL_Type": "Greater than or =",
-                                            "UL_Type": "Less than or =",
+                                            "LL_Type": "Greater than or Equal",
+                                            "UL_Type": "Less than or Equal",
                                             "ge": 0,
                                             "le": 30,
                                             "error": {}
@@ -389,8 +387,8 @@
                                             "childType": "Base_Value_Numeric",
                                             "type": "numeric",
                                             "GUID": "1da4ce37-bd2c-44f6-8823-ecd42d2e157e",
-                                            "LL_Type": "Greater than or =",
-                                            "UL_Type": "Less than or =",
+                                            "LL_Type": "Greater than or Equal",
+                                            "UL_Type": "Less than or Equal",
                                             "ge": 0,
                                             "le": 30,
                                             "error": {}
@@ -427,8 +425,8 @@
                                             "childType": "Base_Value_Numeric",
                                             "type": "numeric",
                                             "GUID": "0b32d0c2-a966-4e61-aead-ba96fb824c15",
-                                            "LL_Type": "Greater than or =",
-                                            "UL_Type": "Less than or =",
+                                            "LL_Type": "Greater than or Equal",
+                                            "UL_Type": "Less than or Equal",
                                             "ge": 0,
                                             "le": 40,
                                             "error": {}
@@ -465,8 +463,8 @@
                                             "childType": "Base_Value_Numeric",
                                             "type": "numeric",
                                             "GUID": "b2ac1b6b-a337-40a3-b620-1b8798438c64",
-                                            "LL_Type": "Greater than or =",
-                                            "UL_Type": "Less than or =",
+                                            "LL_Type": "Greater than or Equal",
+                                            "UL_Type": "Less than or Equal",
                                             "ge": 0,
                                             "le": 78,
                                             "error": {}
@@ -535,7 +533,7 @@
                                     "childType": "Attribute_ResultValue",
                                     "type": "document",
                                     "GUID": "e6db085b-5b02-473e-9a6d-38365d0f2a93",
-                                    "description": "*Kognitiv svækkelse, ikke dement*\n\nKognitiv svækkelse i et eller flere domæner, men ikke dement (normal ADL). Det er ikke  afgørende om patienten har svigt indenfor ét eller flere kognitive domæner, men om patienten trods svigt opretholder et normalt dagligt funktionsniveau. Den kognitive svækkelse kan være på såvel organisk som non-organisk baggrund.\n\n*Demens i let grad jf. ICD-10*\n\nICD-10 Demenskriterierne skal være opfyldte og sværhedsgrad let ud fra en samlet klinisk vurdering.\n\n*Demens (NIA-AA) i let grad (ICD-10)*\n\nNIA-AA kriterier for demens skal være opfyldte og ADL påvirkning er let jf. ICD-10 kriterier.\n\n*Demens (NIA-AA) i moderat grad (ICD-10):*\n\nNIA-AA kriterier for demens skal være opfyldte og ADL påvirkning er moderat jf. ICD-10 kriterier.\n\n*Demens (NIA-AA) i svær grad (ICD-10)*\n\nNIA-AA kriterier for demens skal være opfyldte og ADL påvirkning er svær jf. ICD-10 kriterier",
+                                    "description": "###### Kognitiv svækkelse, ikke dement\nKognitiv svækkelse i et eller flere domæner, men ikke dement (normal ADL). Det er ikke  afgørende om patienten har svigt indenfor ét eller flere kognitive domæner, men om patienten trods svigt opretholder et normalt dagligt funktionsniveau. Den kognitive svækkelse kan være på såvel organisk som non-organisk baggrund.\n\n###### Demens i let grad jf. ICD-10\nICD-10 Demenskriterierne skal være opfyldte og sværhedsgrad let ud fra en samlet klinisk vurdering.\n\n###### Demens (NIA-AA) i let grad (ICD-10)\nNIA-AA kriterier for demens skal være opfyldte og ADL påvirkning er let jf. ICD-10 kriterier.\n\n###### Demens (NIA-AA) i moderat grad (ICD-10):\nNIA-AA kriterier for demens skal være opfyldte og ADL påvirkning er moderat jf. ICD-10 kriterier.\n\n###### Demens (NIA-AA) i svær grad (ICD-10)\nNIA-AA kriterier for demens skal være opfyldte og ADL påvirkning er svær jf. ICD-10 kriterier",
                                     "required": true,
                                     "error": {}
                                 }
@@ -674,7 +672,7 @@
                                     "childType": "Attribute_DateTime",
                                     "type": "document",
                                     "GUID": "830a1dae-94f2-4886-b4bf-cd431adeffc1",
-                                    "description": "Dato for diagnosesamtale defineres som den dag patienten første gang informeres om en diagnostisk konklusion. Dette er normalt ved en ambulant konsultation. Se eksempler nedenfor. Det skal ses fra patienten synsvinkel: ”Hvornår fik jeg første gang noget at vide om diagnose og evt. behandling.\n\nHvis der gives svar per brev (f. eks hvis patienten ikke ønsker at møde op, eller der er aftalt brevsvar) anvendes dato for afgivelse af dette svar.\n\nHvis patienten aflyser midt i et udredningsforløb, anvendes den dato hvor patienten afsluttes journalmæssigt.\n\nHvis patienten dør under udredningsforløb, anvendes dødsdato.\n\nHvis patienten efter den initiale udredning informeres om, at der er depression / depressive symptomer (og evt. sættes i behandling) vil dette være dato for diagnose. Dette også selv om man klinisk kan have en mistanke om en bagvedliggende demenssygdom, men hvor diagnose først kan stilles når depressionen er behandlet.",
+                                    "description": "Dato for diagnosesamtale defineres som den dag patienten første gang informeres om en diagnostisk konklusion. Dette er normalt ved en ambulant konsultation. Se eksempler nedenfor. Det skal ses fra patienten synsvinkel: ”Hvornår fik jeg første gang noget at vide om diagnose og evt. behandling.\n<br><br>\nHvis der gives svar per brev (f. eks hvis patienten ikke ønsker at møde op, eller der er aftalt brevsvar) anvendes dato for afgivelse af dette svar.\n<br><br>\nHvis patienten aflyser midt i et udredningsforløb, anvendes den dato hvor patienten afsluttes journalmæssigt.\n<br><br>\nHvis patienten dør under udredningsforløb, anvendes dødsdato.\n<br><br>\nHvis patienten efter den initiale udredning informeres om, at der er depression / depressive symptomer (og evt. sættes i behandling) vil dette være dato for diagnose. Dette også selv om man klinisk kan have en mistanke om en bagvedliggende demenssygdom, men hvor diagnose først kan stilles når depressionen er behandlet.",
                                     "required": true,
                                     "error": {}
                                 }
@@ -682,10 +680,10 @@
                             "childType": "Base_Object",
                             "type": "document",
                             "GUID": "8df64c5d-a51b-4042-a5ae-0ce5a6823bc1",
-                            "description": "Denne dato er ekstrem vigtig og der skal gøres en stor indsats for at validere denne dato. Denne dato kobles bl.a. med henvsiningsdato og første kontakt dato i udredningsforløbet identificeret i LPR ved procedurekoden ZZ1500. Herudfra bestemmes ventetid og udredningstid, hvilke er ekstremt vigtige parametre for patient og pårørende og dermed ventidsgarantier regionerne bør leve op til. \n\nDatoen er den dato, hvor alle undersøgelser, der er blevet lavet i udredningsforløbet foreligger og er vurderet/beskrevet og dermed kan føre til en konklusiv diagnose på det bedst mulige kliniske grundlag.\n",
+                            "description": "**Denne dato er ekstrem vigtig og der skal gøres en stor indsats for at validere denne dato.**\n<br><br>\nDenne dato kobles bl.a. med henvsiningsdato og første kontakt dato i udredningsforløbet identificeret i LPR ved procedurekoden ZZ1500. Herudfra bestemmes ventetid og udredningstid, hvilke er ekstremt vigtige parametre for patient og pårørende og dermed ventidsgarantier regionerne bør leve op til. \n<br><br>\nDatoen er den dato, hvor alle undersøgelser, der er blevet lavet i udredningsforløbet foreligger og er vurderet/beskrevet og dermed kan føre til en konklusiv diagnose på det bedst mulige kliniske grundlag.\n",
                             "required": true,
-                            "error": {},
-                            "ChangeLogID": "a1a41f9a-4d39-4e24-aa85-970fdcfe4aaa"
+                            "ChangeLogID": "a1a41f9a-4d39-4e24-aa85-970fdcfe4aaa",
+                            "error": {}
                         },
                         {
                             "name": "Referral",
@@ -918,7 +916,7 @@
                                                 },
                                                 {
                                                     "GUID": "648f177f-631a-4cdd-a9de-acc85dfd5075",
-                                                    "Udfald": "Anden  ikke neurodegenerativ sygdom"
+                                                    "Udfald": "Anden ikke neurodegenerativ sygdom"
                                                 },
                                                 {
                                                     "GUID": "fd6bfb9f-cfa7-440d-95d4-15a053b947f4",
@@ -939,7 +937,7 @@
                                     "type": "document",
                                     "GUID": "7bf736bc-48a2-40a8-8718-dd5a1376dcea",
                                     "required": true,
-                                    "description": "*Demens*\n\nNational Institute on Aging and the Alzheimer's Association (NIA-AA) workgroup kriterier (McKhann GM et al. 2011)\nNogle udredningsenheder har også erfaring med anvende NIA-AA 2018 AD-kriterierne\n\n*Alzheimers sygdom*\n\nEn række demensudredningsenheder samarbejder i ADEX alliancen om harmonisering: \nhttp://www.videnscenterfordemens.dk/forskning/adex/adex-alliancen/ og er 2016 enige om at  anvende følgende diagnosekriterier: National Institute on Aging and the Alzheimer's Association (NIA-AA) workgroup kriterier (McKhann GM et al. 2011)\n\nNogle udredningsenheder har også erfaring med anvende NIA-AA 2018 AD-kriterierne\n\n*Lewy Body sygdom*\n\nKriterier fra fourth consensus report of the DLB Consortium (McKeith IG et al. 2017)\nParkinson sygdom\n\n*Cerebrovaskulær sygdom*\n\nThe International Society for Vascular Behavioral and Cognitive Disorders (VAS-COG)-kriterier \n(Sachdev P et al. 2014)\n\n*Mixed (Alzheimer + Cerebrovaskulær)*\n\nNår de kognitive symptomer er forklaret ved Alzheimers sygdom såvel som cerebrovaskulær sygdom.\n\n*Frontotemporal demens*\n\nRevised diagnostic criteria for the behavioral variant of frontotemporal demens (Rascovsky K et al. 2011) Classification of primary progressive aphasia and its variants (Gorno-Tempini M et al. 2011)\n\n*Atypisk Parkinson (MSA, CBS, PSP)*\n\nNormaltryks hydrocephalus (NPH)\n\n*Huntingtons sygdom*\n\nDiagnostic Criteria for Huntington's Disease based on Natural History (Reilmann R et al. 2014)\n\n*Alkohol*\nFor at anvende Alkohol som den primære årsag til kognitivt deficit, så skal det være den  primære årsag og/eller der er diagnosticeret Wernicke-Korsakoff. Hvis der samtidig er verificeret en neuro-degenerativ lidelse (f. eks Alzheimers sygdom), så skal denne vælges som \nprimære årsag, ikke alkohol.\n\n*Anden specifik neuro-degenerativ sygdom*\n\nKan f.eks. være spinocerebellare ataksier, ALS-FTD og lign.\n\n*Anden ikke neuro-degenerativ sygdom*\n\nKan f.eks. være følger efter traume eller intra-kraniel tumor.\n\n*Psykiatrisk sygdom*\n\nPsykiatrisk genese til kognitive deficit registres selvstændigt, når det er den eneste/primære årsag. Hvis der er verificeret en neuro-degenerativ lidelse (f.eks. Alzheimers sygdom), så skal denne vælges som den primære årsag og ikke psykiatrisk sygdom.\n\n*Uafklaret ætiologi*\n\nHvis der ikke kan stilles en specifik diagnose.",
+                                    "description": "###### Demens\nNational Institute on Aging and the Alzheimer's Association (NIA-AA) workgroup kriterier (McKhann GM et al. 2011)\nNogle udredningsenheder har også erfaring med anvende NIA-AA 2018 AD-kriterierne.\n\n###### Alzheimers sygdom\nEn række demensudredningsenheder samarbejder i ADEX alliancen om harmonisering [Link](http://www.videnscenterfordemens.dk/forskning/adex/adex-alliancen/) og er 2016 enige om at  anvende følgende diagnosekriterier: National Institute on Aging and the Alzheimer's Association (NIA-AA) workgroup kriterier (McKhann GM et al. 2011)\n\n###### Lewy Body sygdom\nKriterier fra fourth consensus report of the DLB Consortium (McKeith IG et al. 2017)\n\n###### Parkinson sygdom\nParkinson\n\n###### Cerebrovaskulær sygdom\nThe International Society for Vascular Behavioral and Cognitive Disorders (VAS-COG)-kriterier  (Sachdev P et al. 2014)\n\n###### Mixed (Alzheimer + Cerebrovaskulær)\nNår de kognitive symptomer er forklaret ved Alzheimers sygdom såvel som cerebrovaskulær sygdom.\n\n###### Frontotemporal demens\nRevised diagnostic criteria for the behavioral variant of frontotemporal demens (Rascovsky K et al. 2011) Classification of primary progressive aphasia and its variants (Gorno-Tempini M et al. 2011)\n\n###### Atypisk Parkinson (MSA, CBS, PSP)\nNormaltryks hydrocephalus (NPH)\n\n###### Huntingtons sygdom\nDiagnostic Criteria for Huntington's Disease based on Natural History (Reilmann R et al. 2014)\n\n###### Alkohol\nFor at anvende Alkohol som den primære årsag til kognitivt deficit, så skal det være den  primære årsag og/eller der er diagnosticeret Wernicke-Korsakoff. Hvis der samtidig er verificeret en neuro-degenerativ lidelse (f. eks Alzheimers sygdom), så skal denne vælges som primære årsag, ikke alkohol.\n\n###### Anden specifik neuro-degenerativ sygdom\nKan f.eks. være spinocerebellare ataksier, ALS-FTD og lign.\n\n###### Anden ikke neuro-degenerativ sygdom\nKan f.eks. være følger efter traume eller intra-kraniel tumor.\n\n###### Psykiatrisk sygdom\nPsykiatrisk genese til kognitive deficit registres selvstændigt, når det er den eneste/primære årsag. Hvis der er verificeret en neuro-degenerativ lidelse (f.eks. Alzheimers sygdom), så skal denne vælges som den primære årsag og ikke psykiatrisk sygdom.\n\n###### Uafklaret ætiologi\nHvis der ikke kan stilles en specifik diagnose.",
                                     "error": {}
                                 }
                             ],
@@ -1061,10 +1059,10 @@
         "f57abb4f-f4e4-454b-8cd5-c6e127ad6f9d": "SupportPersonPresent",
         "d2a39830-27f0-48c7-81f5-7c484ef703c7": "StatusCode",
         "0f515031-6ba9-4b5a-9ec5-ccca95dc62cc": "Value_String",
-        "3a4e4047-c636-46e0-b72c-22bbef482ea7": "ResultValue",
-        "77b7f650-1fef-448c-b1d4-0df137bb9e12": "Value_DateTime",
-        "e18a8060-78c7-4aea-9f39-ec7d6b5ab130": "ResultValue",
-        "f0a64ab7-b978-4a9a-844f-43493dc31dae": "Value_DateTime"
+        "1e8d19b5-c7ad-48f6-b7bc-a5fdf34887ef": "DateTime",
+        "f0a64ab7-b978-4a9a-844f-43493dc31dae": "Value_DateTime",
+        "e45a653a-c466-4106-81d8-c9c4dac877dc": "DateTime",
+        "77b7f650-1fef-448c-b1d4-0df137bb9e12": "Value_DateTime"
     },
     "definitions": {
         "type": "definitions",
@@ -1089,7 +1087,7 @@
     "creationTS": "2024-08-16T10:58:12.414Z",
     "GUID": "119a2ef9-e29b-4a27-94d3-d52ee6653d29",
     "isLineageEnabled": false,
-    "lastModifTS": "2024-11-25T11:53:21.632Z",
+    "lastModifTS": "2024-11-25T14:50:40.845Z",
     "persistenceSchemaVersion": "6",
     "isCreatedByPlugin": true,
     "pluginInformation": {
