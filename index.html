@@ -25,13 +25,13 @@
                             </a>
                         </li>
                         <li class="nav-item ms-3">
-                            <a class="btn btn-info btn-sm" href="https://rkkp-wsapi.test.tcs.trifork.cloud/redoc" id="redocs-link">
+                            <a class="btn btn-info btn-sm" href="https://wsapi-test.sundk.dk/redoc" id="redocs-link">
                                 <i class="bi bi-window-sidebar"></i>
                                  ReDocs
                             </a>
                         </li>
                         <li class="nav-item ms-3">
-                            <a class="btn btn-info btn-sm" href="https://rkkp-wsapi.test.tcs.trifork.cloud/docs" id="swagger-link">
+                            <a class="btn btn-info btn-sm" href="https://wsapi-test.sundk.dk/docs" id="swagger-link">
                                 <i class="bi bi-menu-button-wide"></i>
                                  Swagger UI
                             </a>
@@ -202,12 +202,6 @@
                                         <i class="bi bi-filetype-xlsx"></i>
                                          Eksporter (Excel)
                                     </a>
-                                </li>
-                                <li class="nav-item ms-2">
-                                    <button data-bs-toggle='modal' data-bs-target='#jsonModal' class="btn btn-info btn-sm">
-                                        <i class="bi bi-filetype-json"></i>
-                                         JSON Eksempel
-                                    </button>
                                 </li>
                             </ul>
                             <div class="tab-content">
@@ -1526,8 +1520,8 @@ Nogle udredningsenheder har også erfaring med anvende NIA-AA 2018 AD-kriteriern
    <a data-bs-toggle="collapse" aria-expanded="false" href="#Organization" class="ObjectHeaderWrapper collapsed">
       <ol class="breadcrumb objectHeaderMain objectHeaderColor">
          <i class="bi bi-folder2 me-2"></i>
-         <li class="breadcrumb-item">DAH</li>
          <li class="breadcrumb-item">DanDem</li>
+         <li class="breadcrumb-item">Report</li>
          <li class="breadcrumb-item active">Organization</li>
          <li class="mx-2"> - </li>
          <li><strong>Organisation</strong></li>
@@ -1645,8 +1639,8 @@ Nogle udredningsenheder har også erfaring med anvende NIA-AA 2018 AD-kriteriern
    <a data-bs-toggle="collapse" aria-expanded="false" href="#Patient" class="ObjectHeaderWrapper collapsed">
       <ol class="breadcrumb objectHeaderMain objectHeaderColor">
          <i class="bi bi-folder2 me-2"></i>
-         <li class="breadcrumb-item">DAH</li>
          <li class="breadcrumb-item">DanDem</li>
+         <li class="breadcrumb-item">Report</li>
          <li class="breadcrumb-item active">Patient</li>
          <li class="mx-2"> - </li>
          <li><strong>Patient</strong></li>
@@ -1715,211 +1709,6 @@ Nogle udredningsenheder har også erfaring med anvende NIA-AA 2018 AD-kriteriern
                 </div>
             </div>
         </main>
-        <div class="modal modal-xl fade" id="jsonModal">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title fs-5" id="jsonModalLabel">API request struktur af DanDem v1.0.0</h5>
-                        <button data-bs-dismiss='modal' type="button" class="btn-close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <div class="alert alert-tertiary border">
-                            <p>Dette er et auto-genereret eksempel af JSON strukturen til indberetning af data.</p>
-                            <hr />
-                            <p>For mere information om processen af at indsende data til API'en, se venligst vores tekniske guide                                         på www.rkkp.dk eller besøg <a href='https://rkkp-wsapi.test.tcs.trifork.cloud/docs' target='_blank'>Swagger UI</a>.                                         På <a href='https://rkkp-wsapi.test.tcs.trifork.cloud/docs' target='_blank'>Swagger UI</a> kan du finde en oversigt                                         over API endpoints, samt detaljerede beskrivelser af de tilgængelige API forespørgsler, som kan foretages til hvert endpoint. </p>
-                        </div>
-                        <ul class="nav nav-tabs" id="myTab" style="border-bottom: 0px !important">
-                            <li class="nav-item">
-                                <button class="nav-link active" id="postJSONTab" onclick="jsonTabs(this.id)">POST Example</button>
-                            </li>
-                            <li class="nav-item">
-                                <button class="nav-link" id="putJSONTab" onclick="jsonTabs(this.id)">PUT Example</button>
-                            </li>
-                        </ul>
-                        <div class="tab-content">
-                            <div class="" id="postJSONContent">
-                                <div class="form-floating mb-3">
-                                    <textarea class="form-control textarea-tabs bg-body-tertiary current_json" id="json_post_textarea" style="height: 1000px">{
-    "Report": {
-        "Patient": {
-            "CivilRegistrationNumber": "0202451uV0"
-        },
-        "Organization": {
-            "OrganizationType": "regionskode",
-            "Identifier": "1234"
-        },
-        "Data": {
-            "Activity": {
-                "ExtendedNeuroAssessment": {
-                    "DateTime": "24-09-1996 14:03:02"
-                },
-                "NPHAssessment": {
-                    "DateTime": "30-03-2002 22:07:31"
-                }
-            },
-            "Contact": {
-                "InformDiagnosis": {
-                    "DateTime": "29-03-2012 15:15:52"
-                },
-                "Referral": {
-                    "ResultValue": "second_opinion",
-                    "DateTime": "19-06-2005 21:17:47"
-                },
-                "ReferralCommunalCoordinator": {
-                    "StatusCode": "ja"
-                },
-                "ReferralFreeChoice": {
-                    "DateTime": "25-12-1996 05:22:04"
-                }
-            },
-            "Diagnosis": {
-                "EtiologicalDiagnosis": {
-                    "DiagnosisCode": "frontotemporal_demens"
-                }
-            },
-            "Observation": {
-                "ACE": {
-                    "ResultValue": 89
-                },
-                "ADSC_ADL": {
-                    "ResultValue": 61
-                },
-                "BASIC": {
-                    "ResultValue": 8
-                },
-                "CAMcog": {
-                    "ResultValue": 28
-                },
-                "CognitiveImpairment": {
-                    "ResultValue": "kognitiv_svaekkelse"
-                },
-                "DAD": {
-                    "ResultValue": 8
-                },
-                "FAQ_IADL": {
-                    "ResultValue": 29
-                },
-                "MCE": {
-                    "ResultValue": 52
-                },
-                "MMSE": {
-                    "ResultValue": 26
-                },
-                "MoCa": {
-                    "ResultValue": 19
-                },
-                "RUDAS": {
-                    "ResultValue": 26
-                },
-                "SupportPersonPresent": {
-                    "StatusCode": "ja"
-                },
-                "Trinvold_DSQIID": {
-                    "StatusCode": "ja"
-                }
-            }
-        }
-    }
-}</textarea>
-                                    <label _for="floatingTextarea2">JSON POST Structure</label>
-                                </div>
-                            </div>
-                            <div class="hidden" id="putJSONContent">
-                                <div class="form-floating mb-3">
-                                    <textarea class="form-control textarea-tabs bg-body-tertiary" id="json_put_textarea" style="height: 1000px">{
-    "Report": {
-        "Patient": {
-            "CivilRegistrationNumber": "2508910909"
-        },
-        "Organization": {
-            "OrganizationType": "regionskode",
-            "Identifier": "1234"
-        },
-        "Data": {
-            "Activity": {
-                "ExtendedNeuroAssessment": {
-                    "DateTime": "11-09-2005 19:39:51"
-                },
-                "NPHAssessment": {
-                    "DateTime": "15-02-2000 02:28:02"
-                }
-            },
-            "Contact": {
-                "InformDiagnosis": {
-                    "DateTime": "26-06-2023 01:08:43"
-                },
-                "Referral": {
-                    "ResultValue": "second_opinion",
-                    "DateTime": "09-09-2013 09:40:13"
-                },
-                "ReferralCommunalCoordinator": {
-                    "StatusCode": "ja"
-                },
-                "ReferralFreeChoice": {
-                    "DateTime": "29-11-2019 10:10:00"
-                }
-            },
-            "Diagnosis": {
-                "EtiologicalDiagnosis": {
-                    "DiagnosisCode": "anden_specifik_neurodegenerativ_sygdom"
-                }
-            },
-            "Observation": {
-                "ACE": {
-                    "ResultValue": 60
-                },
-                "ADSC_ADL": {
-                    "ResultValue": 75
-                },
-                "BASIC": {
-                    "ResultValue": 8
-                },
-                "CAMcog": {
-                    "ResultValue": 35
-                },
-                "CognitiveImpairment": {
-                    "ResultValue": "kognitiv_intakt"
-                },
-                "DAD": {
-                    "ResultValue": 25
-                },
-                "FAQ_IADL": {
-                    "ResultValue": 22
-                },
-                "MCE": {
-                    "ResultValue": 37
-                },
-                "MMSE": {
-                    "ResultValue": 17
-                },
-                "MoCa": {
-                    "ResultValue": 7
-                },
-                "RUDAS": {
-                    "ResultValue": 13
-                },
-                "SupportPersonPresent": {
-                    "StatusCode": "ja"
-                },
-                "Trinvold_DSQIID": {
-                    "StatusCode": "ja"
-                }
-            }
-        }
-    }
-}</textarea>
-                                    <label _for="floatingTextarea2">JSON PUT Structure</label>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="modal-footer">
-                        <button data-bs-dismiss='modal' type="button" class="btn btn-secondary btn-sm">Close Window</button>
-                        <button type="button" class="btn btn-primary btn-sm" id="copyJsonButton" onclick="copyText()">Copy JSON</button>
-                    </div>
-                </div>
-            </div>
-        </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" crossorgigin="anonymous"></script>
         <script src="js/rkkp.js" crossorgigin="anonymous"></script>
         <script>
