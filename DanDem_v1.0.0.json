@@ -53,8 +53,9 @@
                             "type": "document",
                             "GUID": "5ded80eb-01f0-4515-ac24-a7fe56d018ee",
                             "description": "Dette er kun relevant for:\n\n- Rigshospitalet, Blegdamsvej (SOR: 253121000016002)\n- Aalborg UH, Demensenheden (SOR: 911061000016003)\n- Aalborg UH, Neurologisk (SOR: 275991000016001)",
-                            "error": {},
-                            "ChangeLogID": "71775ac3-9417-4bb7-b131-69e47ccee44f"
+                            "ChangeLogID": "71775ac3-9417-4bb7-b131-69e47ccee44f",
+                            "realName": "Undersøgelse af normaltrykshydrocephalus",
+                            "error": {}
                         },
                         {
                             "name": "ExtendedNeuroAssessment",
@@ -505,7 +506,7 @@
                                             "enum": [
                                                 {
                                                     "GUID": "f5c07c92-521a-4b01-94e2-11904389fa5b",
-                                                    "Udfald": "Kognitiv intakt"
+                                                    "Udfald": "Habituel kognitiv funktion"
                                                 },
                                                 {
                                                     "GUID": "a44554d5-5dd3-412f-86a2-4fe125f40b73",
@@ -533,7 +534,7 @@
                                     "childType": "Attribute_ResultValue",
                                     "type": "document",
                                     "GUID": "e6db085b-5b02-473e-9a6d-38365d0f2a93",
-                                    "description": "###### Kognitiv svækkelse, ikke dement\nKognitiv svækkelse i et eller flere domæner, men ikke dement (normal ADL). Det er ikke  afgørende om patienten har svigt indenfor ét eller flere kognitive domæner, men om patienten trods svigt opretholder et normalt dagligt funktionsniveau. Den kognitive svækkelse kan være på såvel organisk som non-organisk baggrund.\n\n###### Demens i let grad jf. ICD-10\nICD-10 Demenskriterierne skal være opfyldte og sværhedsgrad let ud fra en samlet klinisk vurdering.\n\n###### Demens (NIA-AA) i let grad (ICD-10)\nNIA-AA kriterier for demens skal være opfyldte og ADL påvirkning er let jf. ICD-10 kriterier.\n\n###### Demens (NIA-AA) i moderat grad (ICD-10):\nNIA-AA kriterier for demens skal være opfyldte og ADL påvirkning er moderat jf. ICD-10 kriterier.\n\n###### Demens (NIA-AA) i svær grad (ICD-10)\nNIA-AA kriterier for demens skal være opfyldte og ADL påvirkning er svær jf. ICD-10 kriterier",
+                                    "description": "###### Habituel kognitiv funktion \nTest inden for alders- og uddannelseskorrigeret normalområde og præmorbid funktion. \n\n###### Kognitiv svækkelse, ikke dement \nKognitiv svækkelse i et eller flere domæner, men ikke dement (normal ADL). Det er ikke afgørende om patienten har svigt indenfor ét eller flere kognitive domæner, men om patienten trods svigt opretholder et normalt dagligt funktionsniveau. Den kognitive svækkelse kan være på såvel organisk som non-organisk baggrund. \n\n###### Demens i let grad jf. ICD-10 \nICD-10 Demenskriterierne** skal være opfyldte og sværhedsgrad let ud fra en samlet klinisk vurdering. Demens (NIA-AA) i let grad (ICD-10): NIA-AA kriterier for demens skal være opfyldte og ADL påvirkning er let jf. ICD-10 kriterier. \n\n###### Demens i moderat grad jf. ICD-10\nDemens (NIA-AA) i moderat grad (ICD-10): NIA-AA kriterier for demens skal være opfyldte og ADL påvirkning er moderat jf. ICD-10 kriterier. \n\n###### Demens i svær grad jf. ICD-10 \nDemens (NIA-AA) i svær grad (ICD-10): NIA-AA kriterier for demens skal være opfyldte og ADL påvirkning er svær jf. ICD-10 kriterier\n",
                                     "required": true,
                                     "error": {}
                                 }
@@ -541,13 +542,14 @@
                             "childType": "Base_Object",
                             "type": "document",
                             "GUID": "c9a045e5-1740-4fe1-ab88-26eb47c91aad",
-                            "description": "Habituel kognitiv funktion: Test inden for alders- og uddannelseskorrigeret normalområde og præmorbid funktion.",
+                            "description": "Graden af kognitiv påvirkning. \n\nOBS: Afsluttes en patient pga. død eller at patienten afbryder udredningsforløb før diagnosesamtale anføres graden af kognitiv påvirkning på baggrund af de foreliggende oplysninger og efter bedste skøn. Er der tvivl om graden af kognitivt påvirkning (fx tvivl om demens i let grad og demens i moderat grad) anføres tilstanden med den laveste grad af kognitiv deficit.",
                             "required": true,
-                            "error": {},
-                            "ChangeLogID": "53ba861f-1748-4cd0-b652-3ff0d755ddb6"
+                            "ChangeLogID": "53ba861f-1748-4cd0-b652-3ff0d755ddb6",
+                            "realName": "Graden af kognitiv påvirkning",
+                            "error": {}
                         },
                         {
-                            "name": "Trinvold_DSQIID",
+                            "name": "Trinvold",
                             "hackoladeMeta": {},
                             "isActivated": true,
                             "properties": [
@@ -586,11 +588,11 @@
                             "childType": "Base_Object",
                             "type": "document",
                             "GUID": "3abc60d0-fe94-4510-be1e-5dbf70df735b",
-                            "description": "Trindvold/DSQIID er instrumenter der anvendes til vurdering af patienter med samtidig Downs syndrom eller anden mental retardering og mistanke om erhvervet demenssygdom.\n\nDette instrument anvendes, når det ikke er muligt at anvende de sædvanlige instrumenter grundet mental retardering m.fl.\n\n**I tilfælde af denne er positiv, er der ikke behov for at udføre de andre tests: MMSE, ACE, BASIC, CAMcog, MoCa, MCE, RUDAS, FAQ_IADL, DAD, ADSC_ADL, CognitiveImpairment**",
+                            "description": "Trindvold er instrumenter der anvendes til vurdering af patienter med samtidig Downs syndrom eller anden mental retardering og mistanke om erhvervet demenssygdom.\n\nDette instrument anvendes, når det ikke er muligt at anvende de sædvanlige instrumenter grundet mental retardering m.fl.\n\n**I tilfælde af denne er positiv, er der ikke behov for at udføre de andre tests: MMSE, ACE, BASIC, CAMcog, MoCa, MCE, RUDAS, FAQ_IADL, DAD, ADSC_ADL, CognitiveImpairment**",
                             "foreignCollection": "",
                             "foreignField": [],
-                            "error": {},
-                            "ChangeLogID": "8e2e6652-f4d0-4da2-85ae-4deb96e04502"
+                            "ChangeLogID": "8e2e6652-f4d0-4da2-85ae-4deb96e04502",
+                            "error": {}
                         },
                         {
                             "hackoladeMeta": {},
@@ -632,10 +634,55 @@
                             "childType": "Base_Object",
                             "type": "document",
                             "GUID": "f57abb4f-f4e4-454b-8cd5-c6e127ad6f9d",
-                            "description": "Var der en pårørende / professionel omsorgsperson involveret i vurderingerne?\n\nDa demente ikke altid selv har indsigt i eget funktionsniveau, da inddrages pårørende eller andre, som kender patienten indgående. Der markeres ”Ja” hvis der har været en pårørende og/eller professionel omsorgsperson (der kender patienten til at kunne svare på vurderingen) ved forundersøgelse.\n\nDenne variabel er dækkende for alle de nævnte vurderinger, og det antages at hvis der har været en pårørende til stede ved en vurdering har der været en pårørende til stede ved alle.",
+                            "description": "Var der en pårørende / professionel omsorgsperson involveret i udredningsforløbet? \n\nPersoner med demens har ikke altid indsigt i eget aktuelle funktionsniveau, hvorfor det anses for god kvalitet at inddrage pårørende eller andre, som kender patienten indgående i udredningen. Der markeres ”Ja” hvis der har været en pårørende og/eller professionel omsorgsperson til stede.\n\nDenne variabel er dækkende for alle de nævnte vurderinger, hvor der spørges ind til funktionsniveau. \n",
                             "name": "SupportPersonPresent",
                             "ChangeLogID": "ed742d89-b813-4d71-ac1b-6bcc07300a18",
                             "realName": "Pårørende til stede",
+                            "error": {}
+                        },
+                        {
+                            "name": "DSQIID",
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "properties": [
+                                {
+                                    "name": "StatusCode",
+                                    "hackoladeMeta": {},
+                                    "isActivated": true,
+                                    "properties": [
+                                        {
+                                            "name": "Value_String",
+                                            "hackoladeMeta": {},
+                                            "isActivated": true,
+                                            "python_type": "enum",
+                                            "childType": "Base_Value_String",
+                                            "type": "string",
+                                            "GUID": "bce49e81-d20d-40a4-951a-06d1586157c1",
+                                            "error": {},
+                                            "enum": [
+                                                {
+                                                    "GUID": "a58e751e-2b7a-47ae-99e2-dc4c4a6d9d9c",
+                                                    "Udfald": "ja"
+                                                },
+                                                {
+                                                    "GUID": "1acebd6d-9d09-4ae0-a3c5-987906d10b97",
+                                                    "Udfald": "nej"
+                                                }
+                                            ]
+                                        }
+                                    ],
+                                    "childType": "Attribute_StatusCode",
+                                    "type": "document",
+                                    "GUID": "a2f08a99-1fa9-4438-b14c-98d8af631c4c",
+                                    "error": {}
+                                }
+                            ],
+                            "childType": "Base_Object",
+                            "type": "document",
+                            "GUID": "af40e467-05e7-4143-9fa7-73ce8b068e40",
+                            "description": "DSQIID er instrumenter der anvendes til vurdering af patienter med samtidig Downs syndrom eller anden mental retardering og mistanke om erhvervet demenssygdom.\n\nDette instrument anvendes, når det ikke er muligt at anvende de sædvanlige instrumenter grundet mental retardering m.fl.\n\n**I tilfælde af denne er positiv, er der ikke behov for at udføre de andre tests: MMSE, ACE, BASIC, CAMcog, MoCa, MCE, RUDAS, FAQ_IADL, DAD, ADSC_ADL, CognitiveImpairment**",
+                            "foreignCollection": "",
+                            "foreignField": [],
                             "error": {}
                         }
                     ],
@@ -683,6 +730,7 @@
                             "description": "**Denne dato er ekstrem vigtig og der skal gøres en stor indsats for at validere denne dato.**\n<br><br>\nDenne dato kobles bl.a. med henvsiningsdato og første kontakt dato i udredningsforløbet identificeret i LPR ved procedurekoden ZZ1500. Herudfra bestemmes ventetid og udredningstid, hvilke er ekstremt vigtige parametre for patient og pårørende og dermed ventidsgarantier regionerne bør leve op til. \n<br><br>\nDatoen er den dato, hvor alle undersøgelser, der er blevet lavet i udredningsforløbet foreligger og er vurderet/beskrevet og dermed kan føre til en konklusiv diagnose på det bedst mulige kliniske grundlag.\n",
                             "required": true,
                             "ChangeLogID": "a1a41f9a-4d39-4e24-aa85-970fdcfe4aaa",
+                            "realName": "Dato for diagnosesamtale / patient ønsker ikke udredning",
                             "error": {}
                         },
                         {
@@ -755,47 +803,13 @@
                             "childType": "Base_Object",
                             "type": "document",
                             "GUID": "b0bf0abe-ccfc-4a22-8a4b-cc26729e4cd2",
-                            "description": "Henvisningstype  / Pt. ønsker ikke udredning.\n\nHenvisningstypen er afgørende for, hvorledes patienten indgår i indikatorberegningen.",
-                            "error": {},
-                            "ChangeLogID": "d221e3a8-041a-49b3-bb31-dc5f442c50c5"
+                            "description": "Fritvalgshenvisning kan gives ved lang ventetid. Ved patienter der er omvisiteret via fritvalgsordning til primær udredning skal datoen for modtagelse af fritvalgshenvisningen oplyses. ",
+                            "ChangeLogID": "d221e3a8-041a-49b3-bb31-dc5f442c50c5",
+                            "realName": "Henvisningstype",
+                            "error": {}
                         },
                         {
-                            "name": "ReferralFreeChoice",
-                            "hackoladeMeta": {},
-                            "isActivated": true,
-                            "properties": [
-                                {
-                                    "name": "DateTime",
-                                    "hackoladeMeta": {},
-                                    "isActivated": true,
-                                    "properties": [
-                                        {
-                                            "name": "Value_DateTime",
-                                            "hackoladeMeta": {},
-                                            "isActivated": true,
-                                            "python_type": "DateTime",
-                                            "childType": "Base_Value_DateTime",
-                                            "type": "string",
-                                            "GUID": "bacca989-ff80-4db6-9df3-2e5406d0521a",
-                                            "error": {}
-                                        }
-                                    ],
-                                    "childType": "Attribute_DateTime",
-                                    "type": "document",
-                                    "GUID": "f3199b85-6b8a-498d-8608-06aaea1c2541",
-                                    "description": "Patienter der er omvisiteret via fritvalgsordning til primær udredning jf. henvisningstype, da skal datoen for fritvalgshenvisningen oplyses. Fritvalgshenvisning kan gives ved lang ventetid.",
-                                    "error": {}
-                                }
-                            ],
-                            "childType": "Base_Object",
-                            "type": "document",
-                            "GUID": "387313ff-43c9-41f3-b1f4-57747d8935a9",
-                            "description": "Fritvalgshenvisning modtaget\n",
-                            "error": {},
-                            "ChangeLogID": "1f889d10-46b6-412f-8aa8-2e4a3a84d1b1"
-                        },
-                        {
-                            "name": "ReferralCommunalCoordinator",
+                            "name": "ReferralMunicipalDementiaCoordinator",
                             "hackoladeMeta": {},
                             "isActivated": true,
                             "properties": [
@@ -836,8 +850,11 @@
                             "type": "document",
                             "GUID": "6ad72a23-7572-4583-b09a-524f7fa9d55d",
                             "description": "Kommunal demenskoordinator henvisning",
-                            "error": {},
-                            "ChangeLogID": "d04767f8-4b6a-47ba-b114-ec8011b8d9a5"
+                            "ChangeLogID": "d04767f8-4b6a-47ba-b114-ec8011b8d9a5",
+                            "realName": "Demenskoordinator",
+                            "error": {
+                                "name": false
+                            }
                         }
                     ],
                     "childType": "Group_Contact",
@@ -937,7 +954,7 @@
                                     "type": "document",
                                     "GUID": "7bf736bc-48a2-40a8-8718-dd5a1376dcea",
                                     "required": true,
-                                    "description": "###### Demens\nNational Institute on Aging and the Alzheimer's Association (NIA-AA) workgroup kriterier (McKhann GM et al. 2011)\nNogle udredningsenheder har også erfaring med anvende NIA-AA 2018 AD-kriterierne.\n\n###### Alzheimers sygdom\nEn række demensudredningsenheder samarbejder i ADEX alliancen om harmonisering [Link](http://www.videnscenterfordemens.dk/forskning/adex/adex-alliancen/) og er 2016 enige om at  anvende følgende diagnosekriterier: National Institute on Aging and the Alzheimer's Association (NIA-AA) workgroup kriterier (McKhann GM et al. 2011)\n\n###### Lewy Body sygdom\nKriterier fra fourth consensus report of the DLB Consortium (McKeith IG et al. 2017)\n\n###### Parkinson sygdom\nParkinson\n\n###### Cerebrovaskulær sygdom\nThe International Society for Vascular Behavioral and Cognitive Disorders (VAS-COG)-kriterier  (Sachdev P et al. 2014)\n\n###### Mixed (Alzheimer + Cerebrovaskulær)\nNår de kognitive symptomer er forklaret ved Alzheimers sygdom såvel som cerebrovaskulær sygdom.\n\n###### Frontotemporal demens\nRevised diagnostic criteria for the behavioral variant of frontotemporal demens (Rascovsky K et al. 2011) Classification of primary progressive aphasia and its variants (Gorno-Tempini M et al. 2011)\n\n###### Atypisk Parkinson (MSA, CBS, PSP)\nNormaltryks hydrocephalus (NPH)\n\n###### Huntingtons sygdom\nDiagnostic Criteria for Huntington's Disease based on Natural History (Reilmann R et al. 2014)\n\n###### Alkohol\nFor at anvende Alkohol som den primære årsag til kognitivt deficit, så skal det være den  primære årsag og/eller der er diagnosticeret Wernicke-Korsakoff. Hvis der samtidig er verificeret en neuro-degenerativ lidelse (f. eks Alzheimers sygdom), så skal denne vælges som primære årsag, ikke alkohol.\n\n###### Anden specifik neuro-degenerativ sygdom\nKan f.eks. være spinocerebellare ataksier, ALS-FTD og lign.\n\n###### Anden ikke neuro-degenerativ sygdom\nKan f.eks. være følger efter traume eller intra-kraniel tumor.\n\n###### Psykiatrisk sygdom\nPsykiatrisk genese til kognitive deficit registres selvstændigt, når det er den eneste/primære årsag. Hvis der er verificeret en neuro-degenerativ lidelse (f.eks. Alzheimers sygdom), så skal denne vælges som den primære årsag og ikke psykiatrisk sygdom.\n\n###### Uafklaret ætiologi\nHvis der ikke kan stilles en specifik diagnose.",
+                                    "description": "###### Demens\nNational Institute on Aging and the Alzheimer's Association (NIA-AA) workgroup kriterier (McKhann GM et al. 2011)\nNogle udredningsenheder har også erfaring med anvende NIA-AA 2018 AD-kriterierne.\n\n###### Alzheimers sygdom\nEn række demensudredningsenheder samarbejder i ADEX alliancen om harmonisering [Link](http://www.videnscenterfordemens.dk/forskning/adex/adex-alliancen/) og er 2016 enige om at  anvende følgende diagnosekriterier: National Institute on Aging and the Alzheimer's Association (NIA-AA) workgroup kriterier (McKhann GM et al. 2011)\n\n###### Lewy Body sygdom\nKriterier fra fourth consensus report of the DLB Consortium (McKeith IG et al. 2017)\n\n###### Parkinson sygdom\nParkinson\n\n###### Cerebrovaskulær sygdom\nThe International Society for Vascular Behavioral and Cognitive Disorders (VAS-COG)-kriterier  (Sachdev P et al. 2014)\n\n###### Mixed (Alzheimer + Cerebrovaskulær)\nNår de kognitive symptomer er forklaret ved Alzheimers sygdom såvel som cerebrovaskulær sygdom.\n\n###### Frontotemporal demens\nRevised diagnostic criteria for the behavioral variant of frontotemporal demens (Rascovsky K et al. 2011) Classification of primary progressive aphasia and its variants (Gorno-Tempini M et al. 2011)\n\n###### Atypisk Parkinson (MSA, CBS, PSP)\n\n######Normaltryks hydrocephalus (NPH)\n\n###### Huntingtons sygdom\nDiagnostic Criteria for Huntington's Disease based on Natural History (Reilmann R et al. 2014)\n\n###### Alkohol\nFor at anvende Alkohol som den primære årsag til kognitivt deficit, så skal det være den  primære årsag og/eller der er diagnosticeret Wernicke-Korsakoff. Hvis der samtidig er verificeret en neuro-degenerativ lidelse (f. eks Alzheimers sygdom), så skal denne vælges som primære årsag, ikke alkohol.\n\n###### Anden specifik neuro-degenerativ sygdom\nKan f.eks. være spinocerebellare ataksier, ALS-FTD og lign.\n\n###### Anden ikke neuro-degenerativ sygdom\nKan f.eks. være følger efter traume eller intra-kraniel tumor.\n\n###### Psykiatrisk sygdom\nPsykiatrisk genese til kognitive deficit registres selvstændigt, når det er den eneste/primære årsag. Hvis der er verificeret en neuro-degenerativ lidelse (f.eks. Alzheimers sygdom), så skal denne vælges som den primære årsag og ikke psykiatrisk sygdom.\n\n###### Uafklaret ætiologi\nHvis der ikke kan stilles en specifik diagnose.\n\n###### Ikke relevant\nIkke relevant er forbeholdt patienter, hvor graden af kognitiv påvirkning angives til habituel kognitiv funktion.",
                                     "error": {}
                                 }
                             ],
@@ -946,8 +963,9 @@
                             "GUID": "f4442f9a-60c4-423e-9c30-10c0ca68b6ba",
                             "description": "Hvis Graden af kognitiv påvirkning ikke er svarende til Habituel kognitiv funktion, da skal Ætiologisk diagnose angives, hvis det er muligt. \n\nDen sygdomsspecifikke diagnose, der registres skal være den anførte diagnose i journalen og som er kommunikeret til patient/pårørende. Ved flere konkurrerende ætiologier indberettes den ætiologi, der bedst beskriver den dominerende kliniske tilstand. \nSiden 2015 har de diagnostiske kriterier for demens været diskuteret, men der er stadig ikke konsensus om, hvilke diagnostiske kriterier, der skal anvendes på tværs af landet. Trial Nation anbefaler følgende diagnosekriterier:",
                             "required": true,
-                            "error": {},
-                            "ChangeLogID": "1d9cc20d-1675-423a-81d5-bdf51513345f"
+                            "ChangeLogID": "1d9cc20d-1675-423a-81d5-bdf51513345f",
+                            "realName": "Ætiologisk diagnose",
+                            "error": {}
                         }
                     ],
                     "childType": "Group_Diagnosis",
@@ -1011,9 +1029,6 @@
         "c9691bb8-6ecd-4c58-8d03-2b80ea8ee5b8": "DateTime",
         "55a86aae-d54d-44a6-bf42-e559ff4fd7f8": "Value_String",
         "b69e48cd-d7e2-4d3f-afcf-9b3979239d45": "Value_DateTime",
-        "387313ff-43c9-41f3-b1f4-57747d8935a9": "ReferralFreeChoice",
-        "f3199b85-6b8a-498d-8608-06aaea1c2541": "DateTime",
-        "bacca989-ff80-4db6-9df3-2e5406d0521a": "Value_DateTime",
         "420af8df-fce9-4ce6-a95b-07281bbd5afa": "ResultValue",
         "b6ff079e-fad8-4547-aeec-1f5480cdc499": "Value_Numeric",
         "aa739dc0-ee7a-43f6-b3e1-86efb73c7d8d": "ACE",
@@ -1050,10 +1065,10 @@
         "f4442f9a-60c4-423e-9c30-10c0ca68b6ba": "EtiologicalDiagnosis",
         "7bf736bc-48a2-40a8-8718-dd5a1376dcea": "DiagnosisCode",
         "bdf367db-22a0-4933-8de1-8782481c09ba": "Value_String",
-        "6ad72a23-7572-4583-b09a-524f7fa9d55d": "ReferralCommunalCoordinator",
+        "6ad72a23-7572-4583-b09a-524f7fa9d55d": "ReferralMunicipalDementiaCoordinator",
         "b6f59db2-0a63-4b31-b6fe-33fdad26c63e": "StatusCode",
         "766c6b7d-5fb3-4183-b86b-be1b82e73517": "Value_String",
-        "3abc60d0-fe94-4510-be1e-5dbf70df735b": "Trinvold_DSQIID",
+        "3abc60d0-fe94-4510-be1e-5dbf70df735b": "Trinvold",
         "e4957fed-32a6-414c-8400-1a98ab83c847": "StatusCode",
         "db48f4a3-65c3-4115-b411-f39caccebfbb": "Value_String",
         "f57abb4f-f4e4-454b-8cd5-c6e127ad6f9d": "SupportPersonPresent",
@@ -1062,7 +1077,10 @@
         "1e8d19b5-c7ad-48f6-b7bc-a5fdf34887ef": "DateTime",
         "f0a64ab7-b978-4a9a-844f-43493dc31dae": "Value_DateTime",
         "e45a653a-c466-4106-81d8-c9c4dac877dc": "DateTime",
-        "77b7f650-1fef-448c-b1d4-0df137bb9e12": "Value_DateTime"
+        "77b7f650-1fef-448c-b1d4-0df137bb9e12": "Value_DateTime",
+        "af40e467-05e7-4143-9fa7-73ce8b068e40": "DSQIID",
+        "a2f08a99-1fa9-4438-b14c-98d8af631c4c": "StatusCode",
+        "bce49e81-d20d-40a4-951a-06d1586157c1": "Value_String"
     },
     "definitions": {
         "type": "definitions",
@@ -1087,7 +1105,7 @@
     "creationTS": "2024-08-16T10:58:12.414Z",
     "GUID": "119a2ef9-e29b-4a27-94d3-d52ee6653d29",
     "isLineageEnabled": false,
-    "lastModifTS": "2024-11-25T14:50:40.845Z",
+    "lastModifTS": "2025-01-13T14:07:41.742Z",
     "persistenceSchemaVersion": "6",
     "isCreatedByPlugin": true,
     "pluginInformation": {
