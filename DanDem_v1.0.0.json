@@ -588,7 +588,7 @@
                             "childType": "Base_Object",
                             "type": "document",
                             "GUID": "3abc60d0-fe94-4510-be1e-5dbf70df735b",
-                            "description": "Trindvold er instrumenter der anvendes til vurdering af patienter med samtidig Downs syndrom eller anden mental retardering og mistanke om erhvervet demenssygdom.\n\nDette instrument anvendes, når det ikke er muligt at anvende de sædvanlige instrumenter grundet mental retardering m.fl.\n\n**I tilfælde af denne er positiv, er der ikke behov for at udføre de andre tests: MMSE, ACE, BASIC, CAMcog, MoCa, MCE, RUDAS, FAQ_IADL, DAD, ADSC_ADL, CognitiveImpairment**",
+                            "description": "Trindvold er instrumenter der anvendes til vurdering af patienter med samtidig Downs syndrom eller anden mental retardering og mistanke om erhvervet demenssygdom.\n\nDette instrument anvendes, når det ikke er muligt at anvende de sædvanlige instrumenter grundet mental retardering m.fl.\n\n**I tilfælde af denne er positiv, er der ikke behov for at udføre de andre tests: MMSE, ACE, BASIC, CAMcog, MoCa, MCE, RUDAS, FAQ_IADL, DAD, ADSC_ADL,**",
                             "foreignCollection": "",
                             "foreignField": [],
                             "ChangeLogID": "8e2e6652-f4d0-4da2-85ae-4deb96e04502",
@@ -680,7 +680,7 @@
                             "childType": "Base_Object",
                             "type": "document",
                             "GUID": "af40e467-05e7-4143-9fa7-73ce8b068e40",
-                            "description": "DSQIID er instrumenter der anvendes til vurdering af patienter med samtidig Downs syndrom eller anden mental retardering og mistanke om erhvervet demenssygdom.\n\nDette instrument anvendes, når det ikke er muligt at anvende de sædvanlige instrumenter grundet mental retardering m.fl.\n\n**I tilfælde af denne er positiv, er der ikke behov for at udføre de andre tests: MMSE, ACE, BASIC, CAMcog, MoCa, MCE, RUDAS, FAQ_IADL, DAD, ADSC_ADL, CognitiveImpairment**",
+                            "description": "DSQIID er instrumenter der anvendes til vurdering af patienter med samtidig Downs syndrom eller anden mental retardering og mistanke om erhvervet demenssygdom.\n\nDette instrument anvendes, når det ikke er muligt at anvende de sædvanlige instrumenter grundet mental retardering m.fl.\n\n**I tilfælde af denne er positiv, er der ikke behov for at udføre de andre tests: MMSE, ACE, BASIC, CAMcog, MoCa, MCE, RUDAS, FAQ_IADL, DAD, ADSC_ADL**",
                             "foreignCollection": "",
                             "foreignField": [],
                             "error": {}
@@ -1105,7 +1105,7 @@
     "creationTS": "2024-08-16T10:58:12.414Z",
     "GUID": "119a2ef9-e29b-4a27-94d3-d52ee6653d29",
     "isLineageEnabled": false,
-    "lastModifTS": "2025-01-13T14:07:41.742Z",
+    "lastModifTS": "2025-01-13T14:40:36.469Z",
     "persistenceSchemaVersion": "6",
     "isCreatedByPlugin": true,
     "pluginInformation": {
