@@ -88,7 +88,7 @@
                             "childType": "Base_Object",
                             "type": "document",
                             "GUID": "991acd7b-fd4d-4169-810f-066fbbd9677a",
-                            "description": "Er \"Udvidet neuropsykologisk undersøgelse\" (Diagnosekode: ZZ5000A) udført i udredningsenhedens regi, uddelegeret derfra eller blevet gennemlæst/vurderet af udredningsenhedens neuropsykologer og fundet velgennemført?\n\n**Testen skal være udført inden for de seneste 12 mdr.**",
+                            "description": "Er \"Udvidet neuropsykologisk undersøgelse\" (Procedurekode: ZZ5000A) udført i udredningsenhedens regi, uddelegeret derfra eller blevet gennemlæst/vurderet af udredningsenhedens neuropsykologer og fundet velgennemført?\n\n**Testen skal være udført inden for de seneste 12 mdr.**",
                             "ChangeLogID": "c0c4a864-01c4-44e2-8de9-87d19e73b0b8",
                             "realName": "Udvidet neuropsykologisk undersøgelse",
                             "error": {}
@@ -1105,7 +1105,7 @@
     "creationTS": "2024-08-16T10:58:12.414Z",
     "GUID": "119a2ef9-e29b-4a27-94d3-d52ee6653d29",
     "isLineageEnabled": false,
-    "lastModifTS": "2025-01-13T14:40:36.469Z",
+    "lastModifTS": "2025-01-15T07:52:15.999Z",
     "persistenceSchemaVersion": "6",
     "isCreatedByPlugin": true,
     "pluginInformation": {
