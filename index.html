@@ -151,7 +151,6 @@
 <p>Datagrundlaget indeholder ikke: </p>
 <ol>
 <li>Patienter, der er yngre end 18 år samt </li>
-<li>patienter genhenvist med sikker diagnose pga. adfærdsforstyrrelser</li>
 </ol>
 <h6>Uddybende information</h6>
 <p>Det anbefales at databasens kontaktperson kontaktes forud for ændringer samt ved etableringen af nye integrationer til webservicen, da det kan have betydning for datakvaliteten.</p></p>
@@ -233,7 +232,7 @@
                                                     <p class="table_view_hider" style="height: 1rem !important; margin: 0px !important;"></p>
                                                     <div class="objectDescription alert alert-warning">
                                                         <p><strong>Udvidet neuropsykologisk undersøgelse</strong></p>
-                                                        <p><p>Er 'Udvidet neuropsykologisk undersøgelse' (Diagnosekode: ZZ5000A) udført i udredningsenhedens regi, uddelegeret derfra eller blevet gennemlæst/vurderet af udredningsenhedens neuropsykologer og fundet velgennemført?</p>
+                                                        <p><p>Er 'Udvidet neuropsykologisk undersøgelse' (Procedurekode: ZZ5000A) udført i udredningsenhedens regi, uddelegeret derfra eller blevet gennemlæst/vurderet af udredningsenhedens neuropsykologer og fundet velgennemført?</p>
 <p><strong>Testen skal være udført inden for de seneste 12 mdr.</strong></p></p>
                                                     </div>
                                                     <table class="table table-bordered table-striped table-hover ">
@@ -281,12 +280,15 @@
                                                     <li class="breadcrumb-item">DanDem</li>
                                                     <li class="breadcrumb-item">Activity</li>
                                                     <li class="breadcrumb-item active">NPHAssessment</li>
+                                                    <li class="mx-2"> - </li>
+                                                    <li><strong>Undersøgelse af normaltrykshydrocephalus</strong></li>
                                                 </ol>
                                             </a>
                                             <div class="collapse m-3 objectBodyMain" id="NPHAssessment2">
                                                 <div class="object_margin">
                                                     <p class="table_view_hider" style="height: 1rem !important; margin: 0px !important;"></p>
                                                     <div class="objectDescription alert alert-warning">
+                                                        <p><strong>Undersøgelse af normaltrykshydrocephalus</strong></p>
                                                         <p><p>Dette er kun relevant for:</p>
 <ul>
 <li>Rigshospitalet, Blegdamsvej (SOR: 253121000016002)</li>
@@ -341,6 +343,8 @@
                                                     <li class="breadcrumb-item">DanDem</li>
                                                     <li class="breadcrumb-item">Contact</li>
                                                     <li class="breadcrumb-item active">InformDiagnosis</li>
+                                                    <li class="mx-2"> - </li>
+                                                    <li><strong>Dato for diagnosesamtale / patient ønsker ikke udredning</strong></li>
                                                     <span class="d-flex ms-auto align-content-center">
                                                         <div class="badge rounded-pill text-bg-danger ms-2 me-2 d-inline-flex align-items-center">
                                                             <i class="bi bi-exclamation-diamond me-1" style="margin-top: -2px;"></i>
@@ -353,6 +357,7 @@
                                                 <div class="object_margin">
                                                     <p class="table_view_hider" style="height: 1rem !important; margin: 0px !important;"></p>
                                                     <div class="objectDescription alert alert-warning">
+                                                        <p><strong>Dato for diagnosesamtale / patient ønsker ikke udredning</strong></p>
                                                         <p><p><strong>Denne dato er ekstrem vigtig og der skal gøres en stor indsats for at validere denne dato.</strong>
 <br><br>
 Denne dato kobles bl.a. med henvsiningsdato og første kontakt dato i udredningsforløbet identificeret i LPR ved procedurekoden ZZ1500. Herudfra bestemmes ventetid og udredningstid, hvilke er ekstremt vigtige parametre for patient og pårørende og dermed ventidsgarantier regionerne bør leve op til. 
@@ -409,20 +414,78 @@ Hvis patienten efter den initiale udredning informeres om, at der er depression 
                                             </div>
                                         </div>
                                         <div class="dataObject">
-                                            <a data-bs-toggle='collapse' aria-expanded='false' href="#Referral2" class="ObjectHeaderWrapper">
+                                            <a data-bs-toggle='collapse' aria-expanded='false' href="#MunicipalDementiaCoordinator2" class="ObjectHeaderWrapper">
+                                                <ol class="breadcrumb objectHeaderMain objectHeaderColor">
+                                                    <i class="bi bi-folder2 me-2" style="margin-top: -3px;"></i>
+                                                    <li class="breadcrumb-item">DanDem</li>
+                                                    <li class="breadcrumb-item">Contact</li>
+                                                    <li class="breadcrumb-item active">MunicipalDementiaCoordinator</li>
+                                                    <li class="mx-2"> - </li>
+                                                    <li><strong>Demenskoordinator</strong></li>
+                                                </ol>
+                                            </a>
+                                            <div class="collapse m-3 objectBodyMain" id="MunicipalDementiaCoordinator2">
+                                                <div class="object_margin">
+                                                    <p class="table_view_hider" style="height: 1rem !important; margin: 0px !important;"></p>
+                                                    <div class="objectDescription alert alert-warning">
+                                                        <p><strong>Demenskoordinator</strong></p>
+                                                        <p><p>Kommunal demenskoordinator henvisning</p></p>
+                                                    </div>
+                                                    <table class="table table-bordered table-striped table-hover ">
+                                                        <thead>
+                                                            <tr>
+                                                                <th scope="col" class="fst-italic th-attribute">Attribute</th>
+                                                                <th scope="col" class="fst-italic th-description">Description</th>
+                                                                <th scope="col" class="fst-italic th-value">Constraints</th>
+                                                                <th scope="col" class="fst-italic th-required">Required</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody class="table-group-divider">
+                                                            <tr>
+                                                                <th scope="row">StatusCode</th>
+                                                                <td scope="row"><p>Der skal svares Ja, hvis patienten er blevet tilbudt henvisning. Både hvis patient/pårørende ønsker dette sat i værk eller hvis de ikke ønsker dette sat i værk.</p></td>
+                                                                <td scope="row">
+                                                                    <table class="table table-sm" style="--bs-table-bg: transparent !important;">
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th scope="col" style="width: 20%">Type</th>
+                                                                                <th scope="col" style="width: 20%">Udfald</th>
+                                                                                <th scope="col" style="width: 60%">Beskrivelse</th>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td>str, Enum</td>
+                                                                                <td>ja</td>
+                                                                                <td></td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </td>
+                                                                <td scope="row"></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="dataObject">
+                                            <a data-bs-toggle='collapse' aria-expanded='false' href="#Referral3" class="ObjectHeaderWrapper">
                                                 <ol class="breadcrumb objectHeaderMain objectHeaderColor">
                                                     <i class="bi bi-folder2 me-2" style="margin-top: -3px;"></i>
                                                     <li class="breadcrumb-item">DanDem</li>
                                                     <li class="breadcrumb-item">Contact</li>
                                                     <li class="breadcrumb-item active">Referral</li>
+                                                    <li class="mx-2"> - </li>
+                                                    <li><strong>Henvisningstype</strong></li>
                                                 </ol>
                                             </a>
-                                            <div class="collapse m-3 objectBodyMain" id="Referral2">
+                                            <div class="collapse m-3 objectBodyMain" id="Referral3">
                                                 <div class="object_margin">
                                                     <p class="table_view_hider" style="height: 1rem !important; margin: 0px !important;"></p>
                                                     <div class="objectDescription alert alert-warning">
-                                                        <p><p>Henvisningstype  / Pt. ønsker ikke udredning.</p>
-<p>Henvisningstypen er afgørende for, hvorledes patienten indgår i indikatorberegningen.</p></p>
+                                                        <p><strong>Henvisningstype</strong></p>
+                                                        <p><p>Fritvalgshenvisning kan gives ved lang ventetid. Ved patienter der er omvisiteret via fritvalgsordning til primær udredning skal datoen for modtagelse af fritvalgshenvisningen oplyses.</p></p>
                                                     </div>
                                                     <table class="table table-bordered table-striped table-hover ">
                                                         <thead>
@@ -498,110 +561,6 @@ Hvis patienten efter den initiale udredning informeres om, at der er depression 
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="dataObject">
-                                            <a data-bs-toggle='collapse' aria-expanded='false' href="#ReferralCommunalCoordinator3" class="ObjectHeaderWrapper">
-                                                <ol class="breadcrumb objectHeaderMain objectHeaderColor">
-                                                    <i class="bi bi-folder2 me-2" style="margin-top: -3px;"></i>
-                                                    <li class="breadcrumb-item">DanDem</li>
-                                                    <li class="breadcrumb-item">Contact</li>
-                                                    <li class="breadcrumb-item active">ReferralCommunalCoordinator</li>
-                                                </ol>
-                                            </a>
-                                            <div class="collapse m-3 objectBodyMain" id="ReferralCommunalCoordinator3">
-                                                <div class="object_margin">
-                                                    <p class="table_view_hider" style="height: 1rem !important; margin: 0px !important;"></p>
-                                                    <div class="objectDescription alert alert-warning">
-                                                        <p><p>Kommunal demenskoordinator henvisning</p></p>
-                                                    </div>
-                                                    <table class="table table-bordered table-striped table-hover ">
-                                                        <thead>
-                                                            <tr>
-                                                                <th scope="col" class="fst-italic th-attribute">Attribute</th>
-                                                                <th scope="col" class="fst-italic th-description">Description</th>
-                                                                <th scope="col" class="fst-italic th-value">Constraints</th>
-                                                                <th scope="col" class="fst-italic th-required">Required</th>
-                                                            </tr>
-                                                        </thead>
-                                                        <tbody class="table-group-divider">
-                                                            <tr>
-                                                                <th scope="row">StatusCode</th>
-                                                                <td scope="row"><p>Der skal svares Ja, hvis patienten er blevet tilbudt henvisning. Både hvis patient/pårørende ønsker dette sat i værk eller hvis de ikke ønsker dette sat i værk.</p></td>
-                                                                <td scope="row">
-                                                                    <table class="table table-sm" style="--bs-table-bg: transparent !important;">
-                                                                        <thead>
-                                                                            <tr>
-                                                                                <th scope="col" style="width: 20%">Type</th>
-                                                                                <th scope="col" style="width: 20%">Udfald</th>
-                                                                                <th scope="col" style="width: 60%">Beskrivelse</th>
-                                                                            </tr>
-                                                                        </thead>
-                                                                        <tbody>
-                                                                            <tr>
-                                                                                <td>str, Enum</td>
-                                                                                <td>ja</td>
-                                                                                <td></td>
-                                                                            </tr>
-                                                                        </tbody>
-                                                                    </table>
-                                                                </td>
-                                                                <td scope="row"></td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="dataObject">
-                                            <a data-bs-toggle='collapse' aria-expanded='false' href="#ReferralFreeChoice4" class="ObjectHeaderWrapper">
-                                                <ol class="breadcrumb objectHeaderMain objectHeaderColor">
-                                                    <i class="bi bi-folder2 me-2" style="margin-top: -3px;"></i>
-                                                    <li class="breadcrumb-item">DanDem</li>
-                                                    <li class="breadcrumb-item">Contact</li>
-                                                    <li class="breadcrumb-item active">ReferralFreeChoice</li>
-                                                </ol>
-                                            </a>
-                                            <div class="collapse m-3 objectBodyMain" id="ReferralFreeChoice4">
-                                                <div class="object_margin">
-                                                    <p class="table_view_hider" style="height: 1rem !important; margin: 0px !important;"></p>
-                                                    <div class="objectDescription alert alert-warning">
-                                                        <p><p>Fritvalgshenvisning modtaget</p></p>
-                                                    </div>
-                                                    <table class="table table-bordered table-striped table-hover ">
-                                                        <thead>
-                                                            <tr>
-                                                                <th scope="col" class="fst-italic th-attribute">Attribute</th>
-                                                                <th scope="col" class="fst-italic th-description">Description</th>
-                                                                <th scope="col" class="fst-italic th-value">Constraints</th>
-                                                                <th scope="col" class="fst-italic th-required">Required</th>
-                                                            </tr>
-                                                        </thead>
-                                                        <tbody class="table-group-divider">
-                                                            <tr>
-                                                                <th scope="row">DateTime</th>
-                                                                <td scope="row"><p>Patienter der er omvisiteret via fritvalgsordning til primær udredning jf. henvisningstype, da skal datoen for fritvalgshenvisningen oplyses. Fritvalgshenvisning kan gives ved lang ventetid.</p></td>
-                                                                <td scope="row">
-                                                                    <table class="table table-sm" style="--bs-table-bg: transparent !important;">
-                                                                        <thead>
-                                                                            <tr>
-                                                                                <th scope="col" style="width: 20%">Type</th>
-                                                                                <th scope="col">Ingen begrænsninger</th>
-                                                                            </tr>
-                                                                        </thead>
-                                                                        <tbody>
-                                                                            <tr>
-                                                                                <td scope="row">DateTime</td>
-                                                                                <td></td>
-                                                                            </tr>
-                                                                        </tbody>
-                                                                    </table>
-                                                                </td>
-                                                                <td scope="row"></td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table>
-                                                </div>
-                                            </div>
-                                        </div>
                                     </div>
                                     <div id="groupCourse" class="groupCourse"></div>
                                     <div id="groupDiagnosis" class="groupDiagnosis">
@@ -612,6 +571,8 @@ Hvis patienten efter den initiale udredning informeres om, at der er depression 
                                                     <li class="breadcrumb-item">DanDem</li>
                                                     <li class="breadcrumb-item">Diagnosis</li>
                                                     <li class="breadcrumb-item active">EtiologicalDiagnosis</li>
+                                                    <li class="mx-2"> - </li>
+                                                    <li><strong>Ætiologisk diagnose</strong></li>
                                                     <span class="d-flex ms-auto align-content-center">
                                                         <div class="badge rounded-pill text-bg-danger ms-2 me-2 d-inline-flex align-items-center">
                                                             <i class="bi bi-exclamation-diamond me-1" style="margin-top: -2px;"></i>
@@ -624,8 +585,14 @@ Hvis patienten efter den initiale udredning informeres om, at der er depression 
                                                 <div class="object_margin">
                                                     <p class="table_view_hider" style="height: 1rem !important; margin: 0px !important;"></p>
                                                     <div class="objectDescription alert alert-warning">
+                                                        <p><strong>Ætiologisk diagnose</strong></p>
                                                         <p><p>Hvis Graden af kognitiv påvirkning ikke er svarende til Habituel kognitiv funktion, da skal Ætiologisk diagnose angives, hvis det er muligt. </p>
-<p>Den sygdomsspecifikke diagnose, der registres skal være den anførte diagnose i journalen og som er kommunikeret til patient/pårørende. Ved flere konkurrerende ætiologier indberettes den ætiologi, der bedst beskriver den dominerende kliniske tilstand. 
+<h6>Demens</h6>
+<p>National Institute on Aging and the Alzheimer's Association (NIA-AA) workgroup kriterier (McKhann GM et al. 2011)
+Nogle udredningsenheder har også erfaring med anvende NIA-AA 2018 AD-kriterierne.<br>
+<br>
+Den sygdomsspecifikke diagnose, der registres skal være den anførte diagnose i journalen og som er kommunikeret til patient/pårørende. Ved flere konkurrerende ætiologier indberettes den ætiologi, der bedst beskriver den dominerende kliniske tilstand.<br>
+<br>
 Siden 2015 har de diagnostiske kriterier for demens været diskuteret, men der er stadig ikke konsensus om, hvilke diagnostiske kriterier, der skal anvendes på tværs af landet. Trial Nation anbefaler følgende diagnosekriterier:</p></p>
                                                     </div>
                                                     <table class="table table-bordered table-striped table-hover ">
@@ -640,10 +607,7 @@ Siden 2015 har de diagnostiske kriterier for demens været diskuteret, men der e
                                                         <tbody class="table-group-divider">
                                                             <tr>
                                                                 <th scope="row">DiagnosisCode</th>
-                                                                <td scope="row"><h6>Demens</h6>
-<p>National Institute on Aging and the Alzheimer's Association (NIA-AA) workgroup kriterier (McKhann GM et al. 2011)
-Nogle udredningsenheder har også erfaring med anvende NIA-AA 2018 AD-kriterierne.</p>
-<h6>Alzheimers sygdom</h6>
+                                                                <td scope="row"><h6>Alzheimers sygdom</h6>
 <p>En række demensudredningsenheder samarbejder i ADEX alliancen om harmonisering <a href="http://www.videnscenterfordemens.dk/forskning/adex/adex-alliancen/">Link</a> og er 2016 enige om at  anvende følgende diagnosekriterier: National Institute on Aging and the Alzheimer's Association (NIA-AA) workgroup kriterier (McKhann GM et al. 2011)</p>
 <h6>Lewy Body sygdom</h6>
 <p>Kriterier fra fourth consensus report of the DLB Consortium (McKeith IG et al. 2017)</p>
@@ -656,7 +620,7 @@ Nogle udredningsenheder har også erfaring med anvende NIA-AA 2018 AD-kriteriern
 <h6>Frontotemporal demens</h6>
 <p>Revised diagnostic criteria for the behavioral variant of frontotemporal demens (Rascovsky K et al. 2011) Classification of primary progressive aphasia and its variants (Gorno-Tempini M et al. 2011)</p>
 <h6>Atypisk Parkinson (MSA, CBS, PSP)</h6>
-<p>Normaltryks hydrocephalus (NPH)</p>
+<h6>Normaltryks hydrocephalus (NPH)</h6>
 <h6>Huntingtons sygdom</h6>
 <p>Diagnostic Criteria for Huntington's Disease based on Natural History (Reilmann R et al. 2014)</p>
 <h6>Alkohol</h6>
@@ -668,7 +632,9 @@ Nogle udredningsenheder har også erfaring med anvende NIA-AA 2018 AD-kriteriern
 <h6>Psykiatrisk sygdom</h6>
 <p>Psykiatrisk genese til kognitive deficit registres selvstændigt, når det er den eneste/primære årsag. Hvis der er verificeret en neuro-degenerativ lidelse (f.eks. Alzheimers sygdom), så skal denne vælges som den primære årsag og ikke psykiatrisk sygdom.</p>
 <h6>Uafklaret ætiologi</h6>
-<p>Hvis der ikke kan stilles en specifik diagnose.</p></td>
+<p>Hvis der ikke kan stilles en specifik diagnose.</p>
+<h6>Ikke relevant</h6>
+<p>Ikke relevant er forbeholdt patienter, hvor graden af kognitiv påvirkning angives til habituel kognitiv funktion.</p></td>
                                                                 <td scope="row">
                                                                     <table class="table table-sm" style="--bs-table-bg: transparent !important;">
                                                                         <thead>
@@ -990,6 +956,8 @@ Nogle udredningsenheder har også erfaring med anvende NIA-AA 2018 AD-kriteriern
                                                     <li class="breadcrumb-item">DanDem</li>
                                                     <li class="breadcrumb-item">Observation</li>
                                                     <li class="breadcrumb-item active">CognitiveImpairment</li>
+                                                    <li class="mx-2"> - </li>
+                                                    <li><strong>Graden af kognitiv påvirkning</strong></li>
                                                     <span class="d-flex ms-auto align-content-center">
                                                         <div class="badge rounded-pill text-bg-danger ms-2 me-2 d-inline-flex align-items-center">
                                                             <i class="bi bi-exclamation-diamond me-1" style="margin-top: -2px;"></i>
@@ -1002,7 +970,9 @@ Nogle udredningsenheder har også erfaring med anvende NIA-AA 2018 AD-kriteriern
                                                 <div class="object_margin">
                                                     <p class="table_view_hider" style="height: 1rem !important; margin: 0px !important;"></p>
                                                     <div class="objectDescription alert alert-warning">
-                                                        <p><p>Habituel kognitiv funktion: Test inden for alders- og uddannelseskorrigeret normalområde og præmorbid funktion.</p></p>
+                                                        <p><strong>Graden af kognitiv påvirkning</strong></p>
+                                                        <p><p>Graden af kognitiv påvirkning. </p>
+<p>OBS: Afsluttes en patient pga. død eller at patienten afbryder udredningsforløb før diagnosesamtale anføres graden af kognitiv påvirkning på baggrund af de foreliggende oplysninger og efter bedste skøn. Er der tvivl om graden af kognitivt påvirkning (fx tvivl om demens i let grad og demens i moderat grad) anføres tilstanden med den laveste grad af kognitiv deficit.</p></p>
                                                     </div>
                                                     <table class="table table-bordered table-striped table-hover ">
                                                         <thead>
@@ -1016,16 +986,16 @@ Nogle udredningsenheder har også erfaring med anvende NIA-AA 2018 AD-kriteriern
                                                         <tbody class="table-group-divider">
                                                             <tr>
                                                                 <th scope="row">ResultValue</th>
-                                                                <td scope="row"><h6>Kognitiv svækkelse, ikke dement</h6>
-<p>Kognitiv svækkelse i et eller flere domæner, men ikke dement (normal ADL). Det er ikke  afgørende om patienten har svigt indenfor ét eller flere kognitive domæner, men om patienten trods svigt opretholder et normalt dagligt funktionsniveau. Den kognitive svækkelse kan være på såvel organisk som non-organisk baggrund.</p>
+                                                                <td scope="row"><h6>Habituel kognitiv funktion</h6>
+<p>Test inden for alders- og uddannelseskorrigeret normalområde og præmorbid funktion. </p>
+<h6>Kognitiv svækkelse, ikke dement</h6>
+<p>Kognitiv svækkelse i et eller flere domæner, men ikke dement (normal ADL). Det er ikke afgørende om patienten har svigt indenfor ét eller flere kognitive domæner, men om patienten trods svigt opretholder et normalt dagligt funktionsniveau. Den kognitive svækkelse kan være på såvel organisk som non-organisk baggrund. </p>
 <h6>Demens i let grad jf. ICD-10</h6>
-<p>ICD-10 Demenskriterierne skal være opfyldte og sværhedsgrad let ud fra en samlet klinisk vurdering.</p>
-<h6>Demens (NIA-AA) i let grad (ICD-10)</h6>
-<p>NIA-AA kriterier for demens skal være opfyldte og ADL påvirkning er let jf. ICD-10 kriterier.</p>
-<h6>Demens (NIA-AA) i moderat grad (ICD-10):</h6>
-<p>NIA-AA kriterier for demens skal være opfyldte og ADL påvirkning er moderat jf. ICD-10 kriterier.</p>
-<h6>Demens (NIA-AA) i svær grad (ICD-10)</h6>
-<p>NIA-AA kriterier for demens skal være opfyldte og ADL påvirkning er svær jf. ICD-10 kriterier</p></td>
+<p>ICD-10 Demenskriterierne** skal være opfyldte og sværhedsgrad let ud fra en samlet klinisk vurdering. Demens (NIA-AA) i let grad (ICD-10): NIA-AA kriterier for demens skal være opfyldte og ADL påvirkning er let jf. ICD-10 kriterier. </p>
+<h6>Demens i moderat grad jf. ICD-10</h6>
+<p>Demens (NIA-AA) i moderat grad (ICD-10): NIA-AA kriterier for demens skal være opfyldte og ADL påvirkning er moderat jf. ICD-10 kriterier. </p>
+<h6>Demens i svær grad jf. ICD-10</h6>
+<p>Demens (NIA-AA) i svær grad (ICD-10): NIA-AA kriterier for demens skal være opfyldte og ADL påvirkning er svær jf. ICD-10 kriterier</p></td>
                                                                 <td scope="row">
                                                                     <table class="table table-sm" style="--bs-table-bg: transparent !important;">
                                                                         <thead>
@@ -1038,7 +1008,7 @@ Nogle udredningsenheder har også erfaring med anvende NIA-AA 2018 AD-kriteriern
                                                                         <tbody>
                                                                             <tr>
                                                                                 <td>str, Enum</td>
-                                                                                <td>kognitiv_intakt</td>
+                                                                                <td>habituel_kognitiv_funktion</td>
                                                                                 <td></td>
                                                                             </tr>
                                                                             <tr>
@@ -1130,7 +1100,67 @@ Nogle udredningsenheder har også erfaring med anvende NIA-AA 2018 AD-kriteriern
                                             </div>
                                         </div>
                                         <div class="dataObject">
-                                            <a data-bs-toggle='collapse' aria-expanded='false' href="#FAQ_IADL7" class="ObjectHeaderWrapper">
+                                            <a data-bs-toggle='collapse' aria-expanded='false' href="#DSQIID7" class="ObjectHeaderWrapper">
+                                                <ol class="breadcrumb objectHeaderMain objectHeaderColor">
+                                                    <i class="bi bi-folder2 me-2" style="margin-top: -3px;"></i>
+                                                    <li class="breadcrumb-item">DanDem</li>
+                                                    <li class="breadcrumb-item">Observation</li>
+                                                    <li class="breadcrumb-item active">DSQIID</li>
+                                                </ol>
+                                            </a>
+                                            <div class="collapse m-3 objectBodyMain" id="DSQIID7">
+                                                <div class="object_margin">
+                                                    <p class="table_view_hider" style="height: 1rem !important; margin: 0px !important;"></p>
+                                                    <div class="objectDescription alert alert-warning">
+                                                        <p><p>DSQIID er instrumenter der anvendes til vurdering af patienter med samtidig Downs syndrom eller anden mental retardering og mistanke om erhvervet demenssygdom.</p>
+<p>Dette instrument anvendes, når det ikke er muligt at anvende de sædvanlige instrumenter grundet mental retardering m.fl.</p>
+<p><strong>I tilfælde af denne er positiv, er der ikke behov for at udføre de andre tests: MMSE, ACE, BASIC, CAMcog, MoCa, MCE, RUDAS, FAQ_IADL, DAD, ADSC_ADL</strong></p></p>
+                                                    </div>
+                                                    <table class="table table-bordered table-striped table-hover ">
+                                                        <thead>
+                                                            <tr>
+                                                                <th scope="col" class="fst-italic th-attribute">Attribute</th>
+                                                                <th scope="col" class="fst-italic th-description">Description</th>
+                                                                <th scope="col" class="fst-italic th-value">Constraints</th>
+                                                                <th scope="col" class="fst-italic th-required">Required</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody class="table-group-divider">
+                                                            <tr>
+                                                                <th scope="row">StatusCode</th>
+                                                                <td scope="row"></td>
+                                                                <td scope="row">
+                                                                    <table class="table table-sm" style="--bs-table-bg: transparent !important;">
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th scope="col" style="width: 20%">Type</th>
+                                                                                <th scope="col" style="width: 20%">Udfald</th>
+                                                                                <th scope="col" style="width: 60%">Beskrivelse</th>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td>str, Enum</td>
+                                                                                <td>ja</td>
+                                                                                <td></td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>-</td>
+                                                                                <td>nej</td>
+                                                                                <td></td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </td>
+                                                                <td scope="row"></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="dataObject">
+                                            <a data-bs-toggle='collapse' aria-expanded='false' href="#FAQ_IADL8" class="ObjectHeaderWrapper">
                                                 <ol class="breadcrumb objectHeaderMain objectHeaderColor">
                                                     <i class="bi bi-folder2 me-2" style="margin-top: -3px;"></i>
                                                     <li class="breadcrumb-item">DanDem</li>
@@ -1138,7 +1168,7 @@ Nogle udredningsenheder har også erfaring med anvende NIA-AA 2018 AD-kriteriern
                                                     <li class="breadcrumb-item active">FAQ_IADL</li>
                                                 </ol>
                                             </a>
-                                            <div class="collapse m-3 objectBodyMain" id="FAQ_IADL7">
+                                            <div class="collapse m-3 objectBodyMain" id="FAQ_IADL8">
                                                 <div class="object_margin">
                                                     <p class="table_view_hider" style="height: 1rem !important; margin: 0px !important;"></p>
                                                     <div class="objectDescription alert alert-warning">
@@ -1183,7 +1213,7 @@ Nogle udredningsenheder har også erfaring med anvende NIA-AA 2018 AD-kriteriern
                                             </div>
                                         </div>
                                         <div class="dataObject">
-                                            <a data-bs-toggle='collapse' aria-expanded='false' href="#MCE8" class="ObjectHeaderWrapper">
+                                            <a data-bs-toggle='collapse' aria-expanded='false' href="#MCE9" class="ObjectHeaderWrapper">
                                                 <ol class="breadcrumb objectHeaderMain objectHeaderColor">
                                                     <i class="bi bi-folder2 me-2" style="margin-top: -3px;"></i>
                                                     <li class="breadcrumb-item">DanDem</li>
@@ -1191,7 +1221,7 @@ Nogle udredningsenheder har også erfaring med anvende NIA-AA 2018 AD-kriteriern
                                                     <li class="breadcrumb-item active">MCE</li>
                                                 </ol>
                                             </a>
-                                            <div class="collapse m-3 objectBodyMain" id="MCE8">
+                                            <div class="collapse m-3 objectBodyMain" id="MCE9">
                                                 <div class="object_margin">
                                                     <p class="table_view_hider" style="height: 1rem !important; margin: 0px !important;"></p>
                                                     <div class="objectDescription alert alert-warning">
@@ -1236,7 +1266,7 @@ Nogle udredningsenheder har også erfaring med anvende NIA-AA 2018 AD-kriteriern
                                             </div>
                                         </div>
                                         <div class="dataObject">
-                                            <a data-bs-toggle='collapse' aria-expanded='false' href="#MMSE9" class="ObjectHeaderWrapper">
+                                            <a data-bs-toggle='collapse' aria-expanded='false' href="#MMSE10" class="ObjectHeaderWrapper">
                                                 <ol class="breadcrumb objectHeaderMain objectHeaderColor">
                                                     <i class="bi bi-folder2 me-2" style="margin-top: -3px;"></i>
                                                     <li class="breadcrumb-item">DanDem</li>
@@ -1244,7 +1274,7 @@ Nogle udredningsenheder har også erfaring med anvende NIA-AA 2018 AD-kriteriern
                                                     <li class="breadcrumb-item active">MMSE</li>
                                                 </ol>
                                             </a>
-                                            <div class="collapse m-3 objectBodyMain" id="MMSE9">
+                                            <div class="collapse m-3 objectBodyMain" id="MMSE10">
                                                 <div class="object_margin">
                                                     <p class="table_view_hider" style="height: 1rem !important; margin: 0px !important;"></p>
                                                     <div class="objectDescription alert alert-warning">
@@ -1289,7 +1319,7 @@ Nogle udredningsenheder har også erfaring med anvende NIA-AA 2018 AD-kriteriern
                                             </div>
                                         </div>
                                         <div class="dataObject">
-                                            <a data-bs-toggle='collapse' aria-expanded='false' href="#MoCa10" class="ObjectHeaderWrapper">
+                                            <a data-bs-toggle='collapse' aria-expanded='false' href="#MoCa11" class="ObjectHeaderWrapper">
                                                 <ol class="breadcrumb objectHeaderMain objectHeaderColor">
                                                     <i class="bi bi-folder2 me-2" style="margin-top: -3px;"></i>
                                                     <li class="breadcrumb-item">DanDem</li>
@@ -1297,7 +1327,7 @@ Nogle udredningsenheder har også erfaring med anvende NIA-AA 2018 AD-kriteriern
                                                     <li class="breadcrumb-item active">MoCa</li>
                                                 </ol>
                                             </a>
-                                            <div class="collapse m-3 objectBodyMain" id="MoCa10">
+                                            <div class="collapse m-3 objectBodyMain" id="MoCa11">
                                                 <div class="object_margin">
                                                     <p class="table_view_hider" style="height: 1rem !important; margin: 0px !important;"></p>
                                                     <div class="objectDescription alert alert-warning">
@@ -1342,7 +1372,7 @@ Nogle udredningsenheder har også erfaring med anvende NIA-AA 2018 AD-kriteriern
                                             </div>
                                         </div>
                                         <div class="dataObject">
-                                            <a data-bs-toggle='collapse' aria-expanded='false' href="#RUDAS11" class="ObjectHeaderWrapper">
+                                            <a data-bs-toggle='collapse' aria-expanded='false' href="#RUDAS12" class="ObjectHeaderWrapper">
                                                 <ol class="breadcrumb objectHeaderMain objectHeaderColor">
                                                     <i class="bi bi-folder2 me-2" style="margin-top: -3px;"></i>
                                                     <li class="breadcrumb-item">DanDem</li>
@@ -1350,7 +1380,7 @@ Nogle udredningsenheder har også erfaring med anvende NIA-AA 2018 AD-kriteriern
                                                     <li class="breadcrumb-item active">RUDAS</li>
                                                 </ol>
                                             </a>
-                                            <div class="collapse m-3 objectBodyMain" id="RUDAS11">
+                                            <div class="collapse m-3 objectBodyMain" id="RUDAS12">
                                                 <div class="object_margin">
                                                     <p class="table_view_hider" style="height: 1rem !important; margin: 0px !important;"></p>
                                                     <div class="objectDescription alert alert-warning">
@@ -1396,7 +1426,7 @@ Nogle udredningsenheder har også erfaring med anvende NIA-AA 2018 AD-kriteriern
                                             </div>
                                         </div>
                                         <div class="dataObject">
-                                            <a data-bs-toggle='collapse' aria-expanded='false' href="#SupportPersonPresent12" class="ObjectHeaderWrapper">
+                                            <a data-bs-toggle='collapse' aria-expanded='false' href="#SupportPersonPresent13" class="ObjectHeaderWrapper">
                                                 <ol class="breadcrumb objectHeaderMain objectHeaderColor">
                                                     <i class="bi bi-folder2 me-2" style="margin-top: -3px;"></i>
                                                     <li class="breadcrumb-item">DanDem</li>
@@ -1406,14 +1436,14 @@ Nogle udredningsenheder har også erfaring med anvende NIA-AA 2018 AD-kriteriern
                                                     <li><strong>Pårørende til stede</strong></li>
                                                 </ol>
                                             </a>
-                                            <div class="collapse m-3 objectBodyMain" id="SupportPersonPresent12">
+                                            <div class="collapse m-3 objectBodyMain" id="SupportPersonPresent13">
                                                 <div class="object_margin">
                                                     <p class="table_view_hider" style="height: 1rem !important; margin: 0px !important;"></p>
                                                     <div class="objectDescription alert alert-warning">
                                                         <p><strong>Pårørende til stede</strong></p>
-                                                        <p><p>Var der en pårørende / professionel omsorgsperson involveret i vurderingerne?</p>
-<p>Da demente ikke altid selv har indsigt i eget funktionsniveau, da inddrages pårørende eller andre, som kender patienten indgående. Der markeres ”Ja” hvis der har været en pårørende og/eller professionel omsorgsperson (der kender patienten til at kunne svare på vurderingen) ved forundersøgelse.</p>
-<p>Denne variabel er dækkende for alle de nævnte vurderinger, og det antages at hvis der har været en pårørende til stede ved en vurdering har der været en pårørende til stede ved alle.</p></p>
+                                                        <p><p>Var der en pårørende / professionel omsorgsperson involveret i udredningsforløbet? </p>
+<p>Personer med demens har ikke altid indsigt i eget aktuelle funktionsniveau, hvorfor det anses for god kvalitet at inddrage pårørende eller andre, som kender patienten indgående i udredningen. Der markeres ”Ja” hvis der har været en pårørende og/eller professionel omsorgsperson til stede.</p>
+<p>Denne variabel er dækkende for alle de nævnte vurderinger, hvor der spørges ind til funktionsniveau. </p></p>
                                                     </div>
                                                     <table class="table table-bordered table-striped table-hover ">
                                                         <thead>
@@ -1454,21 +1484,21 @@ Nogle udredningsenheder har også erfaring med anvende NIA-AA 2018 AD-kriteriern
                                             </div>
                                         </div>
                                         <div class="dataObject">
-                                            <a data-bs-toggle='collapse' aria-expanded='false' href="#Trinvold_DSQIID13" class="ObjectHeaderWrapper">
+                                            <a data-bs-toggle='collapse' aria-expanded='false' href="#Trinvold14" class="ObjectHeaderWrapper">
                                                 <ol class="breadcrumb objectHeaderMain objectHeaderColor">
                                                     <i class="bi bi-folder2 me-2" style="margin-top: -3px;"></i>
                                                     <li class="breadcrumb-item">DanDem</li>
                                                     <li class="breadcrumb-item">Observation</li>
-                                                    <li class="breadcrumb-item active">Trinvold_DSQIID</li>
+                                                    <li class="breadcrumb-item active">Trinvold</li>
                                                 </ol>
                                             </a>
-                                            <div class="collapse m-3 objectBodyMain" id="Trinvold_DSQIID13">
+                                            <div class="collapse m-3 objectBodyMain" id="Trinvold14">
                                                 <div class="object_margin">
                                                     <p class="table_view_hider" style="height: 1rem !important; margin: 0px !important;"></p>
                                                     <div class="objectDescription alert alert-warning">
-                                                        <p><p>Trindvold/DSQIID er instrumenter der anvendes til vurdering af patienter med samtidig Downs syndrom eller anden mental retardering og mistanke om erhvervet demenssygdom.</p>
+                                                        <p><p>Trindvold er instrumenter der anvendes til vurdering af patienter med samtidig Downs syndrom eller anden mental retardering og mistanke om erhvervet demenssygdom.</p>
 <p>Dette instrument anvendes, når det ikke er muligt at anvende de sædvanlige instrumenter grundet mental retardering m.fl.</p>
-<p><strong>I tilfælde af denne er positiv, er der ikke behov for at udføre de andre tests: MMSE, ACE, BASIC, CAMcog, MoCa, MCE, RUDAS, FAQ_IADL, DAD, ADSC_ADL, CognitiveImpairment</strong></p></p>
+<p><strong>I tilfælde af denne er positiv, er der ikke behov for at udføre de andre tests: MMSE, ACE, BASIC, CAMcog, MoCa, MCE, RUDAS, FAQ_IADL, DAD, ADSC_ADL,</strong></p></p>
                                                     </div>
                                                     <table class="table table-bordered table-striped table-hover ">
                                                         <thead>
@@ -1568,12 +1598,12 @@ Nogle udredningsenheder har også erfaring med anvende NIA-AA 2018 AD-kriteriern
                                 <tr>
                                     <td>str, Enum</td>
                                     <td>sor</td>
-                                    <td>sor format</td>
+                                    <td>SOR format</td>
                                 </tr>
                                 <tr>
                                     <td>str, Enum</td>
                                     <td>shak</td>
-                                    <td>shak format</td>
+                                    <td>SHAK format</td>
                                 </tr>
                                 <tr>
                                     <td>str, Enum</td>
