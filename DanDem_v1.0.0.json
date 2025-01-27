@@ -809,7 +809,7 @@
                             "error": {}
                         },
                         {
-                            "name": "ReferralMunicipalDementiaCoordinator",
+                            "name": "MunicipalDementiaCoordinator",
                             "hackoladeMeta": {},
                             "isActivated": true,
                             "properties": [
@@ -852,9 +852,7 @@
                             "description": "Kommunal demenskoordinator henvisning",
                             "ChangeLogID": "d04767f8-4b6a-47ba-b114-ec8011b8d9a5",
                             "realName": "Demenskoordinator",
-                            "error": {
-                                "name": false
-                            }
+                            "error": {}
                         }
                     ],
                     "childType": "Group_Contact",
@@ -954,14 +952,14 @@
                                     "type": "document",
                                     "GUID": "7bf736bc-48a2-40a8-8718-dd5a1376dcea",
                                     "required": true,
-                                    "description": "###### Demens\nNational Institute on Aging and the Alzheimer's Association (NIA-AA) workgroup kriterier (McKhann GM et al. 2011)\nNogle udredningsenheder har også erfaring med anvende NIA-AA 2018 AD-kriterierne.\n\n###### Alzheimers sygdom\nEn række demensudredningsenheder samarbejder i ADEX alliancen om harmonisering [Link](http://www.videnscenterfordemens.dk/forskning/adex/adex-alliancen/) og er 2016 enige om at  anvende følgende diagnosekriterier: National Institute on Aging and the Alzheimer's Association (NIA-AA) workgroup kriterier (McKhann GM et al. 2011)\n\n###### Lewy Body sygdom\nKriterier fra fourth consensus report of the DLB Consortium (McKeith IG et al. 2017)\n\n###### Parkinson sygdom\nParkinson\n\n###### Cerebrovaskulær sygdom\nThe International Society for Vascular Behavioral and Cognitive Disorders (VAS-COG)-kriterier  (Sachdev P et al. 2014)\n\n###### Mixed (Alzheimer + Cerebrovaskulær)\nNår de kognitive symptomer er forklaret ved Alzheimers sygdom såvel som cerebrovaskulær sygdom.\n\n###### Frontotemporal demens\nRevised diagnostic criteria for the behavioral variant of frontotemporal demens (Rascovsky K et al. 2011) Classification of primary progressive aphasia and its variants (Gorno-Tempini M et al. 2011)\n\n###### Atypisk Parkinson (MSA, CBS, PSP)\n\n######Normaltryks hydrocephalus (NPH)\n\n###### Huntingtons sygdom\nDiagnostic Criteria for Huntington's Disease based on Natural History (Reilmann R et al. 2014)\n\n###### Alkohol\nFor at anvende Alkohol som den primære årsag til kognitivt deficit, så skal det være den  primære årsag og/eller der er diagnosticeret Wernicke-Korsakoff. Hvis der samtidig er verificeret en neuro-degenerativ lidelse (f. eks Alzheimers sygdom), så skal denne vælges som primære årsag, ikke alkohol.\n\n###### Anden specifik neuro-degenerativ sygdom\nKan f.eks. være spinocerebellare ataksier, ALS-FTD og lign.\n\n###### Anden ikke neuro-degenerativ sygdom\nKan f.eks. være følger efter traume eller intra-kraniel tumor.\n\n###### Psykiatrisk sygdom\nPsykiatrisk genese til kognitive deficit registres selvstændigt, når det er den eneste/primære årsag. Hvis der er verificeret en neuro-degenerativ lidelse (f.eks. Alzheimers sygdom), så skal denne vælges som den primære årsag og ikke psykiatrisk sygdom.\n\n###### Uafklaret ætiologi\nHvis der ikke kan stilles en specifik diagnose.\n\n###### Ikke relevant\nIkke relevant er forbeholdt patienter, hvor graden af kognitiv påvirkning angives til habituel kognitiv funktion.",
+                                    "description": "###### Alzheimers sygdom\nEn række demensudredningsenheder samarbejder i ADEX alliancen om harmonisering [Link](http://www.videnscenterfordemens.dk/forskning/adex/adex-alliancen/) og er 2016 enige om at  anvende følgende diagnosekriterier: National Institute on Aging and the Alzheimer's Association (NIA-AA) workgroup kriterier (McKhann GM et al. 2011)\n\n###### Lewy Body sygdom\nKriterier fra fourth consensus report of the DLB Consortium (McKeith IG et al. 2017)\n\n###### Parkinson sygdom\nParkinson\n\n###### Cerebrovaskulær sygdom\nThe International Society for Vascular Behavioral and Cognitive Disorders (VAS-COG)-kriterier  (Sachdev P et al. 2014)\n\n###### Mixed (Alzheimer + Cerebrovaskulær)\nNår de kognitive symptomer er forklaret ved Alzheimers sygdom såvel som cerebrovaskulær sygdom.\n\n###### Frontotemporal demens\nRevised diagnostic criteria for the behavioral variant of frontotemporal demens (Rascovsky K et al. 2011) Classification of primary progressive aphasia and its variants (Gorno-Tempini M et al. 2011)\n\n###### Atypisk Parkinson (MSA, CBS, PSP)\n\n######Normaltryks hydrocephalus (NPH)\n\n###### Huntingtons sygdom\nDiagnostic Criteria for Huntington's Disease based on Natural History (Reilmann R et al. 2014)\n\n###### Alkohol\nFor at anvende Alkohol som den primære årsag til kognitivt deficit, så skal det være den  primære årsag og/eller der er diagnosticeret Wernicke-Korsakoff. Hvis der samtidig er verificeret en neuro-degenerativ lidelse (f. eks Alzheimers sygdom), så skal denne vælges som primære årsag, ikke alkohol.\n\n###### Anden specifik neuro-degenerativ sygdom\nKan f.eks. være spinocerebellare ataksier, ALS-FTD og lign.\n\n###### Anden ikke neuro-degenerativ sygdom\nKan f.eks. være følger efter traume eller intra-kraniel tumor.\n\n###### Psykiatrisk sygdom\nPsykiatrisk genese til kognitive deficit registres selvstændigt, når det er den eneste/primære årsag. Hvis der er verificeret en neuro-degenerativ lidelse (f.eks. Alzheimers sygdom), så skal denne vælges som den primære årsag og ikke psykiatrisk sygdom.\n\n###### Uafklaret ætiologi\nHvis der ikke kan stilles en specifik diagnose.\n\n###### Ikke relevant\nIkke relevant er forbeholdt patienter, hvor graden af kognitiv påvirkning angives til habituel kognitiv funktion.",
                                     "error": {}
                                 }
                             ],
                             "childType": "Base_Object",
                             "type": "document",
                             "GUID": "f4442f9a-60c4-423e-9c30-10c0ca68b6ba",
-                            "description": "Hvis Graden af kognitiv påvirkning ikke er svarende til Habituel kognitiv funktion, da skal Ætiologisk diagnose angives, hvis det er muligt. \n\nDen sygdomsspecifikke diagnose, der registres skal være den anførte diagnose i journalen og som er kommunikeret til patient/pårørende. Ved flere konkurrerende ætiologier indberettes den ætiologi, der bedst beskriver den dominerende kliniske tilstand. \nSiden 2015 har de diagnostiske kriterier for demens været diskuteret, men der er stadig ikke konsensus om, hvilke diagnostiske kriterier, der skal anvendes på tværs af landet. Trial Nation anbefaler følgende diagnosekriterier:",
+                            "description": "Hvis Graden af kognitiv påvirkning ikke er svarende til Habituel kognitiv funktion, da skal Ætiologisk diagnose angives, hvis det er muligt. \n\n###### Demens\nNational Institute on Aging and the Alzheimer's Association (NIA-AA) workgroup kriterier (McKhann GM et al. 2011)\nNogle udredningsenheder har også erfaring med anvende NIA-AA 2018 AD-kriterierne.\n\nDen sygdomsspecifikke diagnose, der registres skal være den anførte diagnose i journalen og som er kommunikeret til patient/pårørende. Ved flere konkurrerende ætiologier indberettes den ætiologi, der bedst beskriver den dominerende kliniske tilstand. \n\nSiden 2015 har de diagnostiske kriterier for demens været diskuteret, men der er stadig ikke konsensus om, hvilke diagnostiske kriterier, der skal anvendes på tværs af landet. Trial Nation anbefaler følgende diagnosekriterier:",
                             "required": true,
                             "ChangeLogID": "1d9cc20d-1675-423a-81d5-bdf51513345f",
                             "realName": "Ætiologisk diagnose",
@@ -1065,7 +1063,7 @@
         "f4442f9a-60c4-423e-9c30-10c0ca68b6ba": "EtiologicalDiagnosis",
         "7bf736bc-48a2-40a8-8718-dd5a1376dcea": "DiagnosisCode",
         "bdf367db-22a0-4933-8de1-8782481c09ba": "Value_String",
-        "6ad72a23-7572-4583-b09a-524f7fa9d55d": "ReferralMunicipalDementiaCoordinator",
+        "6ad72a23-7572-4583-b09a-524f7fa9d55d": "MunicipalDementiaCoordinator",
         "b6f59db2-0a63-4b31-b6fe-33fdad26c63e": "StatusCode",
         "766c6b7d-5fb3-4183-b86b-be1b82e73517": "Value_String",
         "3abc60d0-fe94-4510-be1e-5dbf70df735b": "Trinvold",
@@ -1105,7 +1103,7 @@
     "creationTS": "2024-08-16T10:58:12.414Z",
     "GUID": "119a2ef9-e29b-4a27-94d3-d52ee6653d29",
     "isLineageEnabled": false,
-    "lastModifTS": "2025-01-27T08:02:52.670Z",
+    "lastModifTS": "2025-01-27T14:14:12.582Z",
     "persistenceSchemaVersion": "6",
     "isCreatedByPlugin": true,
     "pluginInformation": {
