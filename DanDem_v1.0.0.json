@@ -959,7 +959,7 @@
                             "childType": "Base_Object",
                             "type": "document",
                             "GUID": "f4442f9a-60c4-423e-9c30-10c0ca68b6ba",
-                            "description": "Hvis Graden af kognitiv påvirkning ikke er svarende til Habituel kognitiv funktion, da skal Ætiologisk diagnose angives, hvis det er muligt. \n\n###### Demens\nNational Institute on Aging and the Alzheimer's Association (NIA-AA) workgroup kriterier (McKhann GM et al. 2011)\nNogle udredningsenheder har også erfaring med anvende NIA-AA 2018 AD-kriterierne.\n\nDen sygdomsspecifikke diagnose, der registres skal være den anførte diagnose i journalen og som er kommunikeret til patient/pårørende. Ved flere konkurrerende ætiologier indberettes den ætiologi, der bedst beskriver den dominerende kliniske tilstand. \n\nSiden 2015 har de diagnostiske kriterier for demens været diskuteret, men der er stadig ikke konsensus om, hvilke diagnostiske kriterier, der skal anvendes på tværs af landet. Trial Nation anbefaler følgende diagnosekriterier:",
+                            "description": "Hvis Graden af kognitiv påvirkning ikke er svarende til Habituel kognitiv funktion, da skal Ætiologisk diagnose angives, hvis det er muligt. \n\n###### Demens\nNational Institute on Aging and the Alzheimer's Association (NIA-AA) workgroup kriterier (McKhann GM et al. 2011)\nNogle udredningsenheder har også erfaring med anvende NIA-AA 2018 AD-kriterierne.<br>\n<br>\nDen sygdomsspecifikke diagnose, der registres skal være den anførte diagnose i journalen og som er kommunikeret til patient/pårørende. Ved flere konkurrerende ætiologier indberettes den ætiologi, der bedst beskriver den dominerende kliniske tilstand.<br>\n<br>\nSiden 2015 har de diagnostiske kriterier for demens været diskuteret, men der er stadig ikke konsensus om, hvilke diagnostiske kriterier, der skal anvendes på tværs af landet. Trial Nation anbefaler følgende diagnosekriterier:",
                             "required": true,
                             "ChangeLogID": "1d9cc20d-1675-423a-81d5-bdf51513345f",
                             "realName": "Ætiologisk diagnose",
@@ -1103,7 +1103,7 @@
     "creationTS": "2024-08-16T10:58:12.414Z",
     "GUID": "119a2ef9-e29b-4a27-94d3-d52ee6653d29",
     "isLineageEnabled": false,
-    "lastModifTS": "2025-01-27T14:14:12.582Z",
+    "lastModifTS": "2025-01-27T14:16:37.810Z",
     "persistenceSchemaVersion": "6",
     "isCreatedByPlugin": true,
     "pluginInformation": {
