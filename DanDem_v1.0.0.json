@@ -984,7 +984,8 @@
             "dbNameShort": "DanDem",
             "dbImplementationGuide": "###### Populations beskrivelse\n\nPopulationen omfatter alle som henvises til elektiv demensudredning i en demensudredningsenhed/hukommelsesklinik, der er placeret under følgende tre specialer: \n\n1. geriatri\n2. neurologi\n3. psykiatri\n\nPatienten skal være henvist til demensudredning med procedurekoden ZZ1500. \n\nPatienten skal være fyldt 18 år på henvisningstidspunktet for at kunne indgå i DanDem.\n\nDatabase populationen defineres, som patienter der udredes for demens i hospitalsregi eller via fritvalgsordningen ved alternativt hospital, anden region eller privat aktør. \n\n###### Ekslusionskriterier\n\nDatagrundlaget indeholder ikke: \n\n1. Patienter, der er yngre end 18 år samt \n\n###### Uddybende information\n\nDet anbefales at databasens kontaktperson kontaktes forud for ændringer samt ved etableringen af nye integrationer til webservicen, da det kan have betydning for datakvaliteten. ",
             "dbSchema": "Demens",
-            "docLink": "https://rkkpdk.github.io/RKKP.afdDI.Webservice.DanDem.Demens/"
+            "docLink": "https://sundkdk.github.io/SundK.afdDI.Webservice.DanDem.Demens/",
+            "hackoladeMeta": {}
         }
     ],
     "buckets": [
@@ -1002,7 +1003,10 @@
             },
             "show": true,
             "isActivated": true,
-            "GUID": "bdea2baf-86e0-4dce-aefe-a5d20dd110b8"
+            "GUID": "bdea2baf-86e0-4dce-aefe-a5d20dd110b8",
+            "hackoladeMeta": {
+                "validationErrors": {}
+            }
         }
     ],
     "views": [],
@@ -1103,7 +1107,7 @@
     "creationTS": "2024-08-16T10:58:12.414Z",
     "GUID": "119a2ef9-e29b-4a27-94d3-d52ee6653d29",
     "isLineageEnabled": false,
-    "lastModifTS": "2025-01-27T14:16:37.810Z",
+    "lastModifTS": "2025-01-28T08:21:11.263Z",
     "persistenceSchemaVersion": "6",
     "isCreatedByPlugin": true,
     "pluginInformation": {
@@ -1112,7 +1116,7 @@
         "pluginEngineVersion": "1.0.0"
     },
     "applicationInformation": {
-        "version": "6.10.18"
+        "version": "6.11.9"
     },
     "hackoladeMeta": {},
     "settings": {
