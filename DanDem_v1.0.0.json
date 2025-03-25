@@ -959,7 +959,7 @@
                             "childType": "Base_Object",
                             "type": "document",
                             "GUID": "f4442f9a-60c4-423e-9c30-10c0ca68b6ba",
-                            "description": "Hvis Graden af kognitiv påvirkning ikke er svarende til Habituel kognitiv funktion, da skal Ætiologisk diagnose angives, hvis det er muligt. \n\n###### Demens\nNational Institute on Aging and the Alzheimer's Association (NIA-AA) workgroup kriterier (McKhann GM et al. 2011)\nNogle udredningsenheder har også erfaring med anvende NIA-AA 2018 AD-kriterierne.<br>\n<br>\nDen sygdomsspecifikke diagnose, der registres skal være den anførte diagnose i journalen og som er kommunikeret til patient/pårørende. Ved flere konkurrerende ætiologier indberettes den ætiologi, der bedst beskriver den dominerende kliniske tilstand.<br>\n<br>\nSiden 2015 har de diagnostiske kriterier for demens været diskuteret, men der er stadig ikke konsensus om, hvilke diagnostiske kriterier, der skal anvendes på tværs af landet. Trial Nation anbefaler følgende diagnosekriterier:",
+                            "description": "Hvis Graden af kognitiv påvirkning ikke er svarende til Habituel kognitiv funktion, da skal Ætiologisk diagnose angives, hvis det er muligt. \n\n###### Demens\nSiden 2015 har de diagnostiske kriterier for demens været diskuteret, men der er stadig ikke konsensus om, hvilke diagnostiske kriterier, der skal anvendes på tværs af landet, og derfor er der ikke angivet SKS diagnosekoder, som ellers ville kunne identificeres i LPR. Der henvises til følgende diagnosekriterier; Trial Nation, National Institute on Aging and the Alzheimer's Association (NIA-AA) workgroup kriterier (McKhann GM et al. 2011) samt NIA-AA 2018 AD-kriterierne.”",
                             "required": true,
                             "ChangeLogID": "1d9cc20d-1675-423a-81d5-bdf51513345f",
                             "realName": "Ætiologisk diagnose",
@@ -982,7 +982,7 @@
             "GUID": "79e59bf8-0e30-4b5c-8afd-c85afb00b871",
             "bucketId": "bdea2baf-86e0-4dce-aefe-a5d20dd110b8",
             "dbNameShort": "DanDem",
-            "dbImplementationGuide": "###### Populations beskrivelse\n\nPopulationen omfatter alle som henvises til elektiv demensudredning i en demensudredningsenhed/hukommelsesklinik, der er placeret under følgende tre specialer: \n\n1. geriatri\n2. neurologi\n3. psykiatri\n\nPatienten skal være henvist til demensudredning med procedurekoden ZZ1500. \n\nPatienten skal være fyldt 18 år på henvisningstidspunktet for at kunne indgå i DanDem.\n\nDatabase populationen defineres, som patienter der udredes for demens i hospitalsregi eller via fritvalgsordningen ved alternativt hospital, anden region eller privat aktør. \n\n###### Ekslusionskriterier\n\nDatagrundlaget indeholder ikke: \n\n1. Patienter, der er yngre end 18 år samt \n\n###### Uddybende information\n\nDet anbefales at databasens kontaktperson kontaktes forud for ændringer samt ved etableringen af nye integrationer til webservicen, da det kan have betydning for datakvaliteten. ",
+            "dbImplementationGuide": "###### Populations beskrivelse\n\nPopulationen omfatter alle som henvises til elektiv demensudredning i en demensudredningsenhed/hukommelsesklinik, der er placeret under følgende tre specialer: \n\n1. geriatri\n2. neurologi\n3. psykiatri\n\nPatienten skal være henvist til demensudredning med procedurekoden ZZ1500. \n\nPatienten skal være fyldt 18 år på henvisningstidspunktet for at kunne indgå i DanDem.\n\nDatabase populationen defineres, som patienter der udredes for demens i hospitalsregi eller via fritvalgsordningen ved alternativt hospital, anden region eller privat aktør. \n\n###### Ekslusionskriterier\n\nDatagrundlaget indeholder ikke: \n\n1. Patienter, der er yngre end 18 år.\n\n###### Uddybende information\n\nDet anbefales at databasens kontaktperson kontaktes forud for ændringer samt ved etableringen af nye integrationer til webservicen, da det kan have betydning for datakvaliteten. ",
             "dbSchema": "Demens",
             "docLink": "https://sundkdk.github.io/SundK.afdDI.Webservice.DanDem.Demens/",
             "hackoladeMeta": {}
@@ -1107,7 +1107,7 @@
     "creationTS": "2024-08-16T10:58:12.414Z",
     "GUID": "119a2ef9-e29b-4a27-94d3-d52ee6653d29",
     "isLineageEnabled": false,
-    "lastModifTS": "2025-01-28T08:21:11.263Z",
+    "lastModifTS": "2025-03-25T09:16:40.059Z",
     "persistenceSchemaVersion": "6",
     "isCreatedByPlugin": true,
     "pluginInformation": {
@@ -1116,7 +1116,7 @@
         "pluginEngineVersion": "1.0.0"
     },
     "applicationInformation": {
-        "version": "6.11.9"
+        "version": "6.10.18"
     },
     "hackoladeMeta": {},
     "settings": {
