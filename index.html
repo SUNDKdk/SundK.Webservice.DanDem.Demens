@@ -4,8 +4,8 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>DanDem v1.0.0 Dokumentation</title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous" />
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet" />
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="assets/css/bootstrap-icons.css" rel="stylesheet" />
         <link href="style.css" rel="stylesheet" />
         <link href="favicon.png" rel="icon" type="image/png" />
     </head>
@@ -13,50 +13,49 @@
         <header class="mb-5">
             <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary py-4 header-style">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="https://www.sundk.dk/">
-                        <img class="d-inline-block me-1 align-text-middle" src="favicon.png" width="50" height="50" />
-                        RKKP
+                    <a class="navbar-brand" href="https://www.rkkp.dk/">
+                        <img class="d-inline-block me-1 align-text-middle max-h-14" src="assets/img/TopLogo_Blue.png" height="50" />
                     </a>
                     <ul class="navbar-nav ms-3 me-auto">
                         <li class="nav-item ms-3">
-                            <a class="btn btn-info btn-sm hidden" href="https://github.com/SUNDKdk" id="github-link">
+                            <a class="btn btn-info hidden" href="https://github.com/SUNDKdk" id="github-link">
                                 <i class="bi bi-github"></i>
                                  GitHub
                             </a>
                         </li>
                         <li class="nav-item ms-3">
-                            <a class="btn btn-info btn-sm" href="https://wsapi-test.sundk.dk/redoc" id="redocs-link">
+                            <a class="btn btn-info" href="https://wsapi-test.sundk.dk/redoc" id="redocs-link">
                                 <i class="bi bi-window-sidebar"></i>
                                  ReDocs
                             </a>
                         </li>
                         <li class="nav-item ms-3">
-                            <a class="btn btn-info btn-sm" href="https://wsapi-test.sundk.dk/docs" id="swagger-link">
+                            <a class="btn btn-info" href="https://wsapi-test.sundk.dk/docs" id="swagger-link">
                                 <i class="bi bi-menu-button-wide"></i>
                                  Swagger UI
                             </a>
                         </li>
                         <li class="nav-item ms-3">
-                            <a class="btn btn-info btn-sm disabled" href="#" id="ldm-link">
+                            <a class="btn btn-info" href="https://sundk.dk/media/l5donzc5/wsapi-datamodel-beskrivelse.pdf" id="ldm-link">
                                 <i class="bi bi-database"></i>
-                                 RKKP Data Model
+                                 SundK Data Model
                             </a>
                         </li>
                     </ul>
                     <div class="d-flex">
                         <div class="row align-items-center">
                             <div class="col">
-                                <button class="btn btn-info btn-sm ms-2 visible" type="button" onclick="expandAll()" id="toggleExpand">
+                                <button class="btn btn-info ms-2 visible" type="button" onclick="expandAll()" id="toggleExpand">
                                     <i class="bi bi-arrows-expand"></i>
-                                     Fold Alt Ud
+                                     Fold alle ud
                                 </button>
                             </div>
                         </div>
                         <div class="row align-items-center me-3">
                             <div class="col">
-                                <button class="btn btn-info btn-sm ms-2 hidden" type="button" onclick="collapseAll()" id="toggleCollapse">
+                                <button class="btn btn-info ms-2 hidden" type="button" onclick="collapseAll()" id="toggleCollapse">
                                     <i class="bi bi-arrows-collapse"></i>
-                                     Fold Alt Ind
+                                     Fold alle ind
                                 </button>
                             </div>
                         </div>
@@ -64,13 +63,7 @@
                             <div class="col flex-fill">
                                 <div class="form-check form-switch">
                                     <input class="form-check-input switch-size" type="checkbox" id="toggleAdvView" />
-                                    <label class="form-check-label switch-size" for="flexSwitchCheckChecked">Avanceret Visning</label>
-                                </div>
-                            </div>
-                            <div class="col flex-fill">
-                                <div class="form-check form-switch">
-                                    <input class="form-check-input switch-size" type="checkbox" id="toggleFlatView" />
-                                    <label class="form-check-label switch-size" for="toggleFlatView">Tabel Visning</label>
+                                    <label class="form-check-label switch-size me-3" for="toggleAdvView">Avanceret Visning</label>
                                 </div>
                             </div>
                         </div>
@@ -96,23 +89,20 @@
             <div class="container-lg" style="margin-top:6rem !important">
                 <div class="row mt-4">
                     <div class="col-sm-12 mt-5">
-                        <div class="container main-container-style bg-body-tertiary rounded-3 p-3" style="margin-bottom: 0px !important">
+                        <div class="container box-lightblue p-5">
                             <div class="container-fluid">
-                                <div class="row d-flex align-items-center">
-                                    <div class="col-md-8">
-                                        <h1>Dansk Klinisk Kvalitetsdatabase for Demens</h1>
-                                    </div>
-                                    <div class="col-md-4 d-flex justify-content-end">
-                                        <ul class="nav ">
+                                <div class="row d-flex">
+                                    <div class="col d-flex justify-content-end">
+                                        <ul class="nav">
                                             <li class="nav-item ms-2">
-                                                <button class="btn btn-info btn-sm disabled">
-                                                    <i class="bi bi-card-list"></i>
+                                                <button class="btn btn-info disabled">
+                                                    <i class="bi bi-card-list "></i>
                                                      Change Logs
                                                 </button>
                                             </li>
                                             <li class="nav-item ms-2">
                                                 <div class="dropdown">
-                                                    <button data-bs-toggle='dropdown' class="btn btn-info btn-sm disabled dropdown-toggle">
+                                                    <button data-bs-toggle='dropdown' class="btn btn-info disabled dropdown-toggle">
                                                         <i class="bi bi-git"></i>
                                                          Version History
                                                     </button>
@@ -129,13 +119,17 @@
                                         </ul>
                                     </div>
                                 </div>
+                                <div class="row d-flex">
+                                    <div class="col">
+                                        <h1 class="display-3 py-4">Dansk Klinisk Kvalitetsdatabase for Demens</h1>
+                                        <h4>DanDem - Demens</h4>
+                                        <h5>Dokumentation til endpoint version:
+                                            <span class="badge bg-sundk fs-6" style="color: var(--sundk-badge-color)">v1.0.0</span>
+                                        </h5>
+                                    </div>
+                                </div>
                                 <div class="row">
                                     <div class="col">
-                                        <h4>DanDem - Demens</h4>
-                                        <h6>Dokumentation til endpoint version: 1.0.0
-                                            <span class="badge bg-success hidden" style="vertical-align: super !important;font-size: 12px;">Newest version</span>
-                                        </h6>
-                                        <hr />
                                         <h5>Implementeringsguide</h5>
                                         <p><h6>Populations beskrivelse</h6>
 <p>Populationen omfatter alle som henvises til elektiv demensudredning i en demensudredningsenhed/hukommelsesklinik, der er placeret under følgende tre specialer: </p>
@@ -150,7 +144,7 @@
 <h6>Ekslusionskriterier</h6>
 <p>Datagrundlaget indeholder ikke: </p>
 <ol>
-<li>Patienter, der er yngre end 18 år samt </li>
+<li>Patienter, der er yngre end 18 år.</li>
 </ol>
 <h6>Uddybende information</h6>
 <p>Det anbefales at databasens kontaktperson kontaktes forud for ændringer samt ved etableringen af nye integrationer til webservicen, da det kan have betydning for datakvaliteten.</p></p>
@@ -163,8 +157,9 @@
                     </div>
                 </div>
                 <div class="row mt-4">
-                    <div class="col-sm-12">
-                        <div class="main-container-style bg-body-tertiary border rounded-3 p-3">
+                    <div class="col-12">
+                        <div class="input-group">
+                            <div class="input-group-text"><i class="bi bi-search "></i></div>
                             <input class="form-control form-control-lg" id="searchInput" placeholder="Søg i objektnavne og beskrivelser ..." type="text" />
                         </div>
                     </div>
@@ -176,28 +171,28 @@
                                 <button class="nav-link active" id="showAll" type="button" onclick="filterTypes('showAll', this)"><i class="bi bi-square-fill gray-txt me-2"></i>Show all</button>
                             </li>
                             <li class="nav-item">
-                                <button class="nav-link" id="tabActivity" type="button" onclick="filterTypes('groupActivity', this)"><i class="bi bi-square-fill bg-body-tertiary activity-txt me-2"></i>Activities</button>
+                                <button class="nav-link" id="tabActivity" type="button" onclick="filterTypes('groupActivity', this)"><i class="bi bi-square-fill activity-txt me-2"></i>Activities</button>
                             </li>
                             <li class="nav-item">
-                                <button class="nav-link" id="tabContact" type="button" onclick="filterTypes('groupContact', this)"><i class="bi bi-square-fill bg-body-tertiary contact-txt me-2"></i>Contacts</button>
+                                <button class="nav-link" id="tabContact" type="button" onclick="filterTypes('groupContact', this)"><i class="bi bi-square-fill contact-txt me-2"></i>Contacts</button>
                             </li>
                             <li class="nav-item">
                                 <button class="nav-link hidden" id="tabCourse" type="button"><i class="bi bi-square-fill course-txt me-2"></i>Courses</button>
                             </li>
                             <li class="nav-item">
-                                <button class="nav-link" id="tabDiagnosis" type="button" onclick="filterTypes('groupDiagnosis', this)"><i class="bi bi-square-fill bg-body-tertiary diagnosis-txt me-2"></i>Diagnosis</button>
+                                <button class="nav-link" id="tabDiagnosis" type="button" onclick="filterTypes('groupDiagnosis', this)"><i class="bi bi-square-fill diagnosis-txt me-2"></i>Diagnosis</button>
                             </li>
                             <li class="nav-item">
-                                <button class="nav-link" id="tabObservation" type="button" onclick="filterTypes('groupObservation', this)"><i class="bi bi-square-fill bg-body-tertiary observation-txt me-2"></i>Observations</button>
+                                <button class="nav-link" id="tabObservation" type="button" onclick="filterTypes('groupObservation', this)"><i class="bi bi-square-fill observation-txt me-2"></i>Observations</button>
                             </li>
                             <li class="nav-item">
-                                <button class="nav-link" id="tabReport" type="button" onclick="filterTypes('groupReport', this)"><i class="bi bi-square-fill bg-body-tertiary report-txt me-2"></i>Report Objects</button>
+                                <button class="nav-link" id="tabReport" type="button" onclick="filterTypes('groupReport', this)"><i class="bi bi-square-fill report-txt me-2"></i>Report Objects</button>
                             </li>
                         </ul>
-                        <div class="container main-container-style bg-body-tertiary rounded-3 p-3 mb-3" style="border-top: 0px !important;border-top-left-radius: 0px !important;border-top-right-radius: 0px !important;">
+                        <div class="container box-lightblue p-3 mb-3" style="border-top: 0px !important;border-top-left-radius: 0px !important;border-top-right-radius: 0px !important;">
                             <ul class="nav mb-2 d-flex justify-content-end">
                                 <li class="nav-item me-2">
-                                    <a class="btn btn-info btn-sm" href="dandem_demens_v100_export.xlsx">
+                                    <a class="btn btn-info" href="dandem_demens_v100_export.xlsx">
                                         <i class="bi bi-filetype-xlsx"></i>
                                          Eksporter (Excel)
                                     </a>
@@ -205,20 +200,20 @@
                             </ul>
                             <div class="tab-content">
                                 <div class="tab-pane fade show active" id="tabAll-pane">
-                                    <div class="alert alert-danger m-3" role="alert">
+                                    <div class="alert alert-danger" role="alert">
                                         <div class="d-flex align-items-center" style="margin-bottom: 0.5rem !important;">
                                             <h6 style="margin-top: 0px !important;margin-bottom: 0px !important;">Bemærk: </h6>
-                                            <div class="badge rounded-pill text-bg-danger ms-2 me-2 d-inline-flex align-items-center">
-                                                <i class="bi bi-exclamation-diamond me-1" style="margin-top: -2px;"></i>
+                                            <div class="badge text-bg-danger ms-2 me-2 d-inline-flex align-items-center">
+                                                <i class="bi bi-exclamation-diamond me-1"></i>
                                                 <span> Required</span>
                                             </div>
                                         </div>
-                                        <p>Alle felter skal som udgangspunkt indberettes. Felter markeret som <strong>required</strong> er påkrævet for at kunne oprette en indberetning.</p>
+                                        <p style="margin-bottom: 0px !important;">Alle felter skal som udgangspunkt indberettes. Felter markeret som <strong>required</strong> er påkrævet for at kunne oprette en indberetning.</p>
                                     </div>
                                     <div id="groupActivity" class="groupActivity">
-                                        <div class="dataObject">
+                                        <div class="dataObject mb-3">
                                             <a data-bs-toggle='collapse' aria-expanded='false' href="#ExtendedNeuroAssessment1" class="ObjectHeaderWrapper">
-                                                <ol class="breadcrumb objectHeaderMain objectHeaderColor">
+                                                <ol class="breadcrumb objectHeader objectHeaderColor">
                                                     <i class="bi bi-folder2 me-2" style="margin-top: -3px;"></i>
                                                     <li class="breadcrumb-item">DanDem</li>
                                                     <li class="breadcrumb-item">Activity</li>
@@ -227,16 +222,16 @@
                                                     <li><strong>Udvidet neuropsykologisk undersøgelse</strong></li>
                                                 </ol>
                                             </a>
-                                            <div class="collapse m-3 objectBodyMain" id="ExtendedNeuroAssessment1">
-                                                <div class="object_margin">
-                                                    <p class="table_view_hider" style="height: 1rem !important; margin: 0px !important;"></p>
-                                                    <div class="objectDescription alert alert-warning">
+                                            <div class="collapse mb-3 objectBodyWrapper" id="ExtendedNeuroAssessment1">
+                                                <div class="objectBody">
+                                                    <p class="hidden" style="height: 1rem !important; margin: 0px !important;"></p>
+                                                    <div class="objectBodyDescription">
                                                         <p><strong>Udvidet neuropsykologisk undersøgelse</strong></p>
-                                                        <p><p>Er 'Udvidet neuropsykologisk undersøgelse' (Procedurekode: ZZ5000A) udført i udredningsenhedens regi, uddelegeret derfra eller blevet gennemlæst/vurderet af udredningsenhedens neuropsykologer og fundet velgennemført?</p>
-<p><strong>Testen skal være udført inden for de seneste 12 mdr.</strong></p></p>
+                                                        <html><p>Er 'Udvidet neuropsykologisk undersøgelse' (Procedurekode: ZZ5000A) udført i udredningsenhedens regi, uddelegeret derfra eller blevet gennemlæst/vurderet af udredningsenhedens neuropsykologer og fundet velgennemført?</p>
+<p><strong>Testen skal være udført inden for de seneste 12 mdr.</strong></p></html>
                                                     </div>
-                                                    <table class="table table-bordered table-striped table-hover ">
-                                                        <thead>
+                                                    <table class="table">
+                                                        <thead class="main-thead">
                                                             <tr>
                                                                 <th scope="col" class="fst-italic th-attribute">Attribute</th>
                                                                 <th scope="col" class="fst-italic th-description">Description</th>
@@ -244,14 +239,14 @@
                                                                 <th scope="col" class="fst-italic th-required">Required</th>
                                                             </tr>
                                                         </thead>
-                                                        <tbody class="table-group-divider">
+                                                        <tbody class="main-tbody">
                                                             <tr>
                                                                 <th scope="row">DateTime</th>
                                                                 <td scope="row"><p>Hvis dette ikke indberettes tolkes det som at undersøgelsen ikke har fundet sted.
 <br><br>
 <strong>Bemærk:</strong> Hvis kun en dato kan findes kan tid indberettes som 00:00:00.</p></td>
                                                                 <td scope="row">
-                                                                    <table class="table table-sm" style="--bs-table-bg: transparent !important;">
+                                                                    <table class="table table-sm inner_table" style="--bs-table-bg: transparent !important;">
                                                                         <thead>
                                                                             <tr>
                                                                                 <th scope="col" style="width: 20%">Type</th>
@@ -273,9 +268,9 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="dataObject">
+                                        <div class="dataObject mb-3">
                                             <a data-bs-toggle='collapse' aria-expanded='false' href="#NPHAssessment2" class="ObjectHeaderWrapper">
-                                                <ol class="breadcrumb objectHeaderMain objectHeaderColor">
+                                                <ol class="breadcrumb objectHeader objectHeaderColor">
                                                     <i class="bi bi-folder2 me-2" style="margin-top: -3px;"></i>
                                                     <li class="breadcrumb-item">DanDem</li>
                                                     <li class="breadcrumb-item">Activity</li>
@@ -284,20 +279,20 @@
                                                     <li><strong>Undersøgelse af normaltrykshydrocephalus</strong></li>
                                                 </ol>
                                             </a>
-                                            <div class="collapse m-3 objectBodyMain" id="NPHAssessment2">
-                                                <div class="object_margin">
-                                                    <p class="table_view_hider" style="height: 1rem !important; margin: 0px !important;"></p>
-                                                    <div class="objectDescription alert alert-warning">
+                                            <div class="collapse mb-3 objectBodyWrapper" id="NPHAssessment2">
+                                                <div class="objectBody">
+                                                    <p class="hidden" style="height: 1rem !important; margin: 0px !important;"></p>
+                                                    <div class="objectBodyDescription">
                                                         <p><strong>Undersøgelse af normaltrykshydrocephalus</strong></p>
-                                                        <p><p>Dette er kun relevant for:</p>
+                                                        <html><p>Dette er kun relevant for:</p>
 <ul>
 <li>Rigshospitalet, Blegdamsvej (SOR: 253121000016002)</li>
 <li>Aalborg UH, Demensenheden (SOR: 911061000016003)</li>
 <li>Aalborg UH, Neurologisk (SOR: 275991000016001)</li>
-</ul></p>
+</ul></html>
                                                     </div>
-                                                    <table class="table table-bordered table-striped table-hover ">
-                                                        <thead>
+                                                    <table class="table">
+                                                        <thead class="main-thead">
                                                             <tr>
                                                                 <th scope="col" class="fst-italic th-attribute">Attribute</th>
                                                                 <th scope="col" class="fst-italic th-description">Description</th>
@@ -305,14 +300,14 @@
                                                                 <th scope="col" class="fst-italic th-required">Required</th>
                                                             </tr>
                                                         </thead>
-                                                        <tbody class="table-group-divider">
+                                                        <tbody class="main-tbody">
                                                             <tr>
                                                                 <th scope="row">DateTime</th>
                                                                 <td scope="row"><p>Hvis dette ikke indberettes tolkes det som at NPH-assessment ikke har fundet sted.
 <br><br>
 <strong>Bemærk:</strong> Hvis kun en dato kan findes kan tid indberettes som 00:00:00.</p></td>
                                                                 <td scope="row">
-                                                                    <table class="table table-sm" style="--bs-table-bg: transparent !important;">
+                                                                    <table class="table table-sm inner_table" style="--bs-table-bg: transparent !important;">
                                                                         <thead>
                                                                             <tr>
                                                                                 <th scope="col" style="width: 20%">Type</th>
@@ -336,9 +331,9 @@
                                         </div>
                                     </div>
                                     <div id="groupContact" class="groupContact">
-                                        <div class="dataObject">
+                                        <div class="dataObject mb-3">
                                             <a data-bs-toggle='collapse' aria-expanded='false' href="#InformDiagnosis1" class="ObjectHeaderWrapper">
-                                                <ol class="breadcrumb objectHeaderMain objectHeaderColor">
+                                                <ol class="breadcrumb objectHeader objectHeaderColor">
                                                     <i class="bi bi-folder2 me-2" style="margin-top: -3px;"></i>
                                                     <li class="breadcrumb-item">DanDem</li>
                                                     <li class="breadcrumb-item">Contact</li>
@@ -346,26 +341,26 @@
                                                     <li class="mx-2"> - </li>
                                                     <li><strong>Dato for diagnosesamtale / patient ønsker ikke udredning</strong></li>
                                                     <span class="d-flex ms-auto align-content-center">
-                                                        <div class="badge rounded-pill text-bg-danger ms-2 me-2 d-inline-flex align-items-center">
-                                                            <i class="bi bi-exclamation-diamond me-1" style="margin-top: -2px;"></i>
+                                                        <div class="badge text-bg-danger ms-2 me-2 d-inline-flex align-items-center">
+                                                            <i class="bi bi-exclamation-diamond me-1"></i>
                                                             <span> Required</span>
                                                         </div>
                                                     </span>
                                                 </ol>
                                             </a>
-                                            <div class="collapse m-3 objectBodyMain" id="InformDiagnosis1">
-                                                <div class="object_margin">
-                                                    <p class="table_view_hider" style="height: 1rem !important; margin: 0px !important;"></p>
-                                                    <div class="objectDescription alert alert-warning">
+                                            <div class="collapse mb-3 objectBodyWrapper" id="InformDiagnosis1">
+                                                <div class="objectBody">
+                                                    <p class="hidden" style="height: 1rem !important; margin: 0px !important;"></p>
+                                                    <div class="objectBodyDescription">
                                                         <p><strong>Dato for diagnosesamtale / patient ønsker ikke udredning</strong></p>
-                                                        <p><p><strong>Denne dato er ekstrem vigtig og der skal gøres en stor indsats for at validere denne dato.</strong>
+                                                        <html><p><strong>Denne dato er ekstrem vigtig og der skal gøres en stor indsats for at validere denne dato.</strong>
 <br><br>
 Denne dato kobles bl.a. med henvsiningsdato og første kontakt dato i udredningsforløbet identificeret i LPR ved procedurekoden ZZ1500. Herudfra bestemmes ventetid og udredningstid, hvilke er ekstremt vigtige parametre for patient og pårørende og dermed ventidsgarantier regionerne bør leve op til. 
 <br><br>
-Datoen er den dato, hvor alle undersøgelser, der er blevet lavet i udredningsforløbet foreligger og er vurderet/beskrevet og dermed kan føre til en konklusiv diagnose på det bedst mulige kliniske grundlag.</p></p>
+Datoen er den dato, hvor alle undersøgelser, der er blevet lavet i udredningsforløbet foreligger og er vurderet/beskrevet og dermed kan føre til en konklusiv diagnose på det bedst mulige kliniske grundlag.</p></html>
                                                     </div>
-                                                    <table class="table table-bordered table-striped table-hover ">
-                                                        <thead>
+                                                    <table class="table">
+                                                        <thead class="main-thead">
                                                             <tr>
                                                                 <th scope="col" class="fst-italic th-attribute">Attribute</th>
                                                                 <th scope="col" class="fst-italic th-description">Description</th>
@@ -373,7 +368,7 @@ Datoen er den dato, hvor alle undersøgelser, der er blevet lavet i udredningsfo
                                                                 <th scope="col" class="fst-italic th-required">Required</th>
                                                             </tr>
                                                         </thead>
-                                                        <tbody class="table-group-divider">
+                                                        <tbody class="main-tbody">
                                                             <tr>
                                                                 <th scope="row">DateTime</th>
                                                                 <td scope="row"><p>Dato for diagnosesamtale defineres som den dag patienten første gang informeres om en diagnostisk konklusion. Dette er normalt ved en ambulant konsultation. Se eksempler nedenfor. Det skal ses fra patienten synsvinkel: ”Hvornår fik jeg første gang noget at vide om diagnose og evt. behandling.
@@ -386,7 +381,7 @@ Hvis patienten dør under udredningsforløb, anvendes dødsdato.
 <br><br>
 Hvis patienten efter den initiale udredning informeres om, at der er depression / depressive symptomer (og evt. sættes i behandling) vil dette være dato for diagnose. Dette også selv om man klinisk kan have en mistanke om en bagvedliggende demenssygdom, men hvor diagnose først kan stilles når depressionen er behandlet.</p></td>
                                                                 <td scope="row">
-                                                                    <table class="table table-sm" style="--bs-table-bg: transparent !important;">
+                                                                    <table class="table table-sm inner_table" style="--bs-table-bg: transparent !important;">
                                                                         <thead>
                                                                             <tr>
                                                                                 <th scope="col" style="width: 20%">Type</th>
@@ -402,8 +397,8 @@ Hvis patienten efter den initiale udredning informeres om, at der er depression 
                                                                     </table>
                                                                 </td>
                                                                 <td scope="row">
-                                                                    <div class="badge rounded-pill text-bg-danger ms-2 me-2 d-inline-flex align-items-center">
-                                                                        <i class="bi bi-exclamation-diamond me-1" style="margin-top: -2px;"></i>
+                                                                    <div class="badge text-bg-danger ms-2 me-2 d-inline-flex align-items-center">
+                                                                        <i class="bi bi-exclamation-diamond me-1"></i>
                                                                         <span> Required</span>
                                                                     </div>
                                                                 </td>
@@ -413,9 +408,9 @@ Hvis patienten efter den initiale udredning informeres om, at der er depression 
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="dataObject">
+                                        <div class="dataObject mb-3">
                                             <a data-bs-toggle='collapse' aria-expanded='false' href="#MunicipalDementiaCoordinator2" class="ObjectHeaderWrapper">
-                                                <ol class="breadcrumb objectHeaderMain objectHeaderColor">
+                                                <ol class="breadcrumb objectHeader objectHeaderColor">
                                                     <i class="bi bi-folder2 me-2" style="margin-top: -3px;"></i>
                                                     <li class="breadcrumb-item">DanDem</li>
                                                     <li class="breadcrumb-item">Contact</li>
@@ -424,15 +419,15 @@ Hvis patienten efter den initiale udredning informeres om, at der er depression 
                                                     <li><strong>Demenskoordinator</strong></li>
                                                 </ol>
                                             </a>
-                                            <div class="collapse m-3 objectBodyMain" id="MunicipalDementiaCoordinator2">
-                                                <div class="object_margin">
-                                                    <p class="table_view_hider" style="height: 1rem !important; margin: 0px !important;"></p>
-                                                    <div class="objectDescription alert alert-warning">
+                                            <div class="collapse mb-3 objectBodyWrapper" id="MunicipalDementiaCoordinator2">
+                                                <div class="objectBody">
+                                                    <p class="hidden" style="height: 1rem !important; margin: 0px !important;"></p>
+                                                    <div class="objectBodyDescription">
                                                         <p><strong>Demenskoordinator</strong></p>
-                                                        <p><p>Kommunal demenskoordinator henvisning</p></p>
+                                                        <html><p>Kommunal demenskoordinator henvisning</p></html>
                                                     </div>
-                                                    <table class="table table-bordered table-striped table-hover ">
-                                                        <thead>
+                                                    <table class="table">
+                                                        <thead class="main-thead">
                                                             <tr>
                                                                 <th scope="col" class="fst-italic th-attribute">Attribute</th>
                                                                 <th scope="col" class="fst-italic th-description">Description</th>
@@ -440,12 +435,12 @@ Hvis patienten efter den initiale udredning informeres om, at der er depression 
                                                                 <th scope="col" class="fst-italic th-required">Required</th>
                                                             </tr>
                                                         </thead>
-                                                        <tbody class="table-group-divider">
+                                                        <tbody class="main-tbody">
                                                             <tr>
                                                                 <th scope="row">StatusCode</th>
                                                                 <td scope="row"><p>Der skal svares Ja, hvis patienten er blevet tilbudt henvisning. Både hvis patient/pårørende ønsker dette sat i værk eller hvis de ikke ønsker dette sat i værk.</p></td>
                                                                 <td scope="row">
-                                                                    <table class="table table-sm" style="--bs-table-bg: transparent !important;">
+                                                                    <table class="table table-sm inner_table" style="--bs-table-bg: transparent !important;">
                                                                         <thead>
                                                                             <tr>
                                                                                 <th scope="col" style="width: 20%">Type</th>
@@ -469,9 +464,9 @@ Hvis patienten efter den initiale udredning informeres om, at der er depression 
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="dataObject">
+                                        <div class="dataObject mb-3">
                                             <a data-bs-toggle='collapse' aria-expanded='false' href="#Referral3" class="ObjectHeaderWrapper">
-                                                <ol class="breadcrumb objectHeaderMain objectHeaderColor">
+                                                <ol class="breadcrumb objectHeader objectHeaderColor">
                                                     <i class="bi bi-folder2 me-2" style="margin-top: -3px;"></i>
                                                     <li class="breadcrumb-item">DanDem</li>
                                                     <li class="breadcrumb-item">Contact</li>
@@ -480,15 +475,15 @@ Hvis patienten efter den initiale udredning informeres om, at der er depression 
                                                     <li><strong>Henvisningstype</strong></li>
                                                 </ol>
                                             </a>
-                                            <div class="collapse m-3 objectBodyMain" id="Referral3">
-                                                <div class="object_margin">
-                                                    <p class="table_view_hider" style="height: 1rem !important; margin: 0px !important;"></p>
-                                                    <div class="objectDescription alert alert-warning">
+                                            <div class="collapse mb-3 objectBodyWrapper" id="Referral3">
+                                                <div class="objectBody">
+                                                    <p class="hidden" style="height: 1rem !important; margin: 0px !important;"></p>
+                                                    <div class="objectBodyDescription">
                                                         <p><strong>Henvisningstype</strong></p>
-                                                        <p><p>Fritvalgshenvisning kan gives ved lang ventetid. Ved patienter der er omvisiteret via fritvalgsordning til primær udredning skal datoen for modtagelse af fritvalgshenvisningen oplyses.</p></p>
+                                                        <html><p>Fritvalgshenvisning kan gives ved lang ventetid. Ved patienter der er omvisiteret via fritvalgsordning til primær udredning skal datoen for modtagelse af fritvalgshenvisningen oplyses.</p></html>
                                                     </div>
-                                                    <table class="table table-bordered table-striped table-hover ">
-                                                        <thead>
+                                                    <table class="table">
+                                                        <thead class="main-thead">
                                                             <tr>
                                                                 <th scope="col" class="fst-italic th-attribute">Attribute</th>
                                                                 <th scope="col" class="fst-italic th-description">Description</th>
@@ -496,12 +491,12 @@ Hvis patienten efter den initiale udredning informeres om, at der er depression 
                                                                 <th scope="col" class="fst-italic th-required">Required</th>
                                                             </tr>
                                                         </thead>
-                                                        <tbody class="table-group-divider">
+                                                        <tbody class="main-tbody">
                                                             <tr>
                                                                 <th scope="row">DateTime</th>
                                                                 <td scope="row"><p>Hvis 'Omvisiteret' er valgt, skal der angives en dato.</p></td>
                                                                 <td scope="row">
-                                                                    <table class="table table-sm" style="--bs-table-bg: transparent !important;">
+                                                                    <table class="table table-sm inner_table" style="--bs-table-bg: transparent !important;">
                                                                         <thead>
                                                                             <tr>
                                                                                 <th scope="col" style="width: 20%">Type</th>
@@ -522,7 +517,7 @@ Hvis patienten efter den initiale udredning informeres om, at der er depression 
                                                                 <th scope="row">ResultValue</th>
                                                                 <td scope="row"></td>
                                                                 <td scope="row">
-                                                                    <table class="table table-sm" style="--bs-table-bg: transparent !important;">
+                                                                    <table class="table table-sm inner_table" style="--bs-table-bg: transparent !important;">
                                                                         <thead>
                                                                             <tr>
                                                                                 <th scope="col" style="width: 20%">Type</th>
@@ -564,9 +559,9 @@ Hvis patienten efter den initiale udredning informeres om, at der er depression 
                                     </div>
                                     <div id="groupCourse" class="groupCourse"></div>
                                     <div id="groupDiagnosis" class="groupDiagnosis">
-                                        <div class="dataObject">
+                                        <div class="dataObject mb-3">
                                             <a data-bs-toggle='collapse' aria-expanded='false' href="#EtiologicalDiagnosis1" class="ObjectHeaderWrapper">
-                                                <ol class="breadcrumb objectHeaderMain objectHeaderColor">
+                                                <ol class="breadcrumb objectHeader objectHeaderColor">
                                                     <i class="bi bi-folder2 me-2" style="margin-top: -3px;"></i>
                                                     <li class="breadcrumb-item">DanDem</li>
                                                     <li class="breadcrumb-item">Diagnosis</li>
@@ -574,29 +569,24 @@ Hvis patienten efter den initiale udredning informeres om, at der er depression 
                                                     <li class="mx-2"> - </li>
                                                     <li><strong>Ætiologisk diagnose</strong></li>
                                                     <span class="d-flex ms-auto align-content-center">
-                                                        <div class="badge rounded-pill text-bg-danger ms-2 me-2 d-inline-flex align-items-center">
-                                                            <i class="bi bi-exclamation-diamond me-1" style="margin-top: -2px;"></i>
+                                                        <div class="badge text-bg-danger ms-2 me-2 d-inline-flex align-items-center">
+                                                            <i class="bi bi-exclamation-diamond me-1"></i>
                                                             <span> Required</span>
                                                         </div>
                                                     </span>
                                                 </ol>
                                             </a>
-                                            <div class="collapse m-3 objectBodyMain" id="EtiologicalDiagnosis1">
-                                                <div class="object_margin">
-                                                    <p class="table_view_hider" style="height: 1rem !important; margin: 0px !important;"></p>
-                                                    <div class="objectDescription alert alert-warning">
+                                            <div class="collapse mb-3 objectBodyWrapper" id="EtiologicalDiagnosis1">
+                                                <div class="objectBody">
+                                                    <p class="hidden" style="height: 1rem !important; margin: 0px !important;"></p>
+                                                    <div class="objectBodyDescription">
                                                         <p><strong>Ætiologisk diagnose</strong></p>
-                                                        <p><p>Hvis Graden af kognitiv påvirkning ikke er svarende til Habituel kognitiv funktion, da skal Ætiologisk diagnose angives, hvis det er muligt. </p>
+                                                        <html><p>Hvis Graden af kognitiv påvirkning ikke er svarende til Habituel kognitiv funktion, da skal Ætiologisk diagnose angives, hvis det er muligt. </p>
 <h6>Demens</h6>
-<p>National Institute on Aging and the Alzheimer's Association (NIA-AA) workgroup kriterier (McKhann GM et al. 2011)
-Nogle udredningsenheder har også erfaring med anvende NIA-AA 2018 AD-kriterierne.<br>
-<br>
-Den sygdomsspecifikke diagnose, der registres skal være den anførte diagnose i journalen og som er kommunikeret til patient/pårørende. Ved flere konkurrerende ætiologier indberettes den ætiologi, der bedst beskriver den dominerende kliniske tilstand.<br>
-<br>
-Siden 2015 har de diagnostiske kriterier for demens været diskuteret, men der er stadig ikke konsensus om, hvilke diagnostiske kriterier, der skal anvendes på tværs af landet. Trial Nation anbefaler følgende diagnosekriterier:</p></p>
+<p>Siden 2015 har de diagnostiske kriterier for demens været diskuteret, men der er stadig ikke konsensus om, hvilke diagnostiske kriterier, der skal anvendes på tværs af landet, og derfor er der ikke angivet SKS diagnosekoder, som ellers ville kunne identificeres i LPR. Der henvises til følgende diagnosekriterier; Trial Nation, National Institute on Aging and the Alzheimer's Association (NIA-AA) workgroup kriterier (McKhann GM et al. 2011) samt NIA-AA 2018 AD-kriterierne.”</p></html>
                                                     </div>
-                                                    <table class="table table-bordered table-striped table-hover ">
-                                                        <thead>
+                                                    <table class="table">
+                                                        <thead class="main-thead">
                                                             <tr>
                                                                 <th scope="col" class="fst-italic th-attribute">Attribute</th>
                                                                 <th scope="col" class="fst-italic th-description">Description</th>
@@ -604,7 +594,7 @@ Siden 2015 har de diagnostiske kriterier for demens været diskuteret, men der e
                                                                 <th scope="col" class="fst-italic th-required">Required</th>
                                                             </tr>
                                                         </thead>
-                                                        <tbody class="table-group-divider">
+                                                        <tbody class="main-tbody">
                                                             <tr>
                                                                 <th scope="row">DiagnosisCode</th>
                                                                 <td scope="row"><h6>Alzheimers sygdom</h6>
@@ -636,7 +626,7 @@ Siden 2015 har de diagnostiske kriterier for demens været diskuteret, men der e
 <h6>Ikke relevant</h6>
 <p>Ikke relevant er forbeholdt patienter, hvor graden af kognitiv påvirkning angives til habituel kognitiv funktion.</p></td>
                                                                 <td scope="row">
-                                                                    <table class="table table-sm" style="--bs-table-bg: transparent !important;">
+                                                                    <table class="table table-sm inner_table" style="--bs-table-bg: transparent !important;">
                                                                         <thead>
                                                                             <tr>
                                                                                 <th scope="col" style="width: 20%">Type</th>
@@ -724,8 +714,8 @@ Siden 2015 har de diagnostiske kriterier for demens været diskuteret, men der e
                                                                     </table>
                                                                 </td>
                                                                 <td scope="row">
-                                                                    <div class="badge rounded-pill text-bg-danger ms-2 me-2 d-inline-flex align-items-center">
-                                                                        <i class="bi bi-exclamation-diamond me-1" style="margin-top: -2px;"></i>
+                                                                    <div class="badge text-bg-danger ms-2 me-2 d-inline-flex align-items-center">
+                                                                        <i class="bi bi-exclamation-diamond me-1"></i>
                                                                         <span> Required</span>
                                                                     </div>
                                                                 </td>
@@ -737,23 +727,23 @@ Siden 2015 har de diagnostiske kriterier for demens været diskuteret, men der e
                                         </div>
                                     </div>
                                     <div id="groupObservation" class="groupObservation">
-                                        <div class="dataObject">
+                                        <div class="dataObject mb-3">
                                             <a data-bs-toggle='collapse' aria-expanded='false' href="#ACE1" class="ObjectHeaderWrapper">
-                                                <ol class="breadcrumb objectHeaderMain objectHeaderColor">
+                                                <ol class="breadcrumb objectHeader objectHeaderColor">
                                                     <i class="bi bi-folder2 me-2" style="margin-top: -3px;"></i>
                                                     <li class="breadcrumb-item">DanDem</li>
                                                     <li class="breadcrumb-item">Observation</li>
                                                     <li class="breadcrumb-item active">ACE</li>
                                                 </ol>
                                             </a>
-                                            <div class="collapse m-3 objectBodyMain" id="ACE1">
-                                                <div class="object_margin">
-                                                    <p class="table_view_hider" style="height: 1rem !important; margin: 0px !important;"></p>
-                                                    <div class="objectDescription alert alert-warning">
-                                                        <p><p>Addenbrooke’s Cognitive Examination (ACE) giver flere og mere nuancerede oplysninger om det kognitive funktionsniveau end fx MMSE alene og udgør et velegnet supplement ved demensudredning.</p></p>
+                                            <div class="collapse mb-3 objectBodyWrapper" id="ACE1">
+                                                <div class="objectBody">
+                                                    <p class="hidden" style="height: 1rem !important; margin: 0px !important;"></p>
+                                                    <div class="objectBodyDescription">
+                                                        <html><p>Addenbrooke’s Cognitive Examination (ACE) giver flere og mere nuancerede oplysninger om det kognitive funktionsniveau end fx MMSE alene og udgør et velegnet supplement ved demensudredning.</p></html>
                                                     </div>
-                                                    <table class="table table-bordered table-striped table-hover ">
-                                                        <thead>
+                                                    <table class="table">
+                                                        <thead class="main-thead">
                                                             <tr>
                                                                 <th scope="col" class="fst-italic th-attribute">Attribute</th>
                                                                 <th scope="col" class="fst-italic th-description">Description</th>
@@ -761,24 +751,24 @@ Siden 2015 har de diagnostiske kriterier for demens været diskuteret, men der e
                                                                 <th scope="col" class="fst-italic th-required">Required</th>
                                                             </tr>
                                                         </thead>
-                                                        <tbody class="table-group-divider">
+                                                        <tbody class="main-tbody">
                                                             <tr>
                                                                 <th scope="row">ResultValue</th>
                                                                 <td scope="row"></td>
                                                                 <td scope="row">
-                                                                    <table class="table table-sm" style="--bs-table-bg: transparent !important;">
+                                                                    <table class="table table-sm inner_table" style="--bs-table-bg: transparent !important;">
                                                                         <thead>
                                                                             <tr>
                                                                                 <th scope="col" style="width: 20%">Type</th>
-                                                                                <th scope="col">Min or Equal to</th>
                                                                                 <th scope="col">Max or Equal to</th>
+                                                                                <th scope="col">Min or Equal to</th>
                                                                             </tr>
                                                                         </thead>
                                                                         <tbody>
                                                                             <tr>
                                                                                 <td scope="row">Integer</td>
-                                                                                <td>0</td>
                                                                                 <td>100</td>
+                                                                                <td>0</td>
                                                                             </tr>
                                                                         </tbody>
                                                                     </table>
@@ -790,23 +780,23 @@ Siden 2015 har de diagnostiske kriterier for demens været diskuteret, men der e
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="dataObject">
+                                        <div class="dataObject mb-3">
                                             <a data-bs-toggle='collapse' aria-expanded='false' href="#ADSC_ADL2" class="ObjectHeaderWrapper">
-                                                <ol class="breadcrumb objectHeaderMain objectHeaderColor">
+                                                <ol class="breadcrumb objectHeader objectHeaderColor">
                                                     <i class="bi bi-folder2 me-2" style="margin-top: -3px;"></i>
                                                     <li class="breadcrumb-item">DanDem</li>
                                                     <li class="breadcrumb-item">Observation</li>
                                                     <li class="breadcrumb-item active">ADSC_ADL</li>
                                                 </ol>
                                             </a>
-                                            <div class="collapse m-3 objectBodyMain" id="ADSC_ADL2">
-                                                <div class="object_margin">
-                                                    <p class="table_view_hider" style="height: 1rem !important; margin: 0px !important;"></p>
-                                                    <div class="objectDescription alert alert-warning">
-                                                        <p><p>Alzheimer's Disease Cooperative Study(ADCS)-ADL er udviklet med henblik på vurdering af praktisk funktionsevne hos patienter med Alzheimers sygdom.</p></p>
+                                            <div class="collapse mb-3 objectBodyWrapper" id="ADSC_ADL2">
+                                                <div class="objectBody">
+                                                    <p class="hidden" style="height: 1rem !important; margin: 0px !important;"></p>
+                                                    <div class="objectBodyDescription">
+                                                        <html><p>Alzheimer's Disease Cooperative Study(ADCS)-ADL er udviklet med henblik på vurdering af praktisk funktionsevne hos patienter med Alzheimers sygdom.</p></html>
                                                     </div>
-                                                    <table class="table table-bordered table-striped table-hover ">
-                                                        <thead>
+                                                    <table class="table">
+                                                        <thead class="main-thead">
                                                             <tr>
                                                                 <th scope="col" class="fst-italic th-attribute">Attribute</th>
                                                                 <th scope="col" class="fst-italic th-description">Description</th>
@@ -814,24 +804,24 @@ Siden 2015 har de diagnostiske kriterier for demens været diskuteret, men der e
                                                                 <th scope="col" class="fst-italic th-required">Required</th>
                                                             </tr>
                                                         </thead>
-                                                        <tbody class="table-group-divider">
+                                                        <tbody class="main-tbody">
                                                             <tr>
                                                                 <th scope="row">ResultValue</th>
                                                                 <td scope="row"></td>
                                                                 <td scope="row">
-                                                                    <table class="table table-sm" style="--bs-table-bg: transparent !important;">
+                                                                    <table class="table table-sm inner_table" style="--bs-table-bg: transparent !important;">
                                                                         <thead>
                                                                             <tr>
                                                                                 <th scope="col" style="width: 20%">Type</th>
-                                                                                <th scope="col">Min or Equal to</th>
                                                                                 <th scope="col">Max or Equal to</th>
+                                                                                <th scope="col">Min or Equal to</th>
                                                                             </tr>
                                                                         </thead>
                                                                         <tbody>
                                                                             <tr>
                                                                                 <td scope="row">Integer</td>
-                                                                                <td>0</td>
                                                                                 <td>78</td>
+                                                                                <td>0</td>
                                                                             </tr>
                                                                         </tbody>
                                                                     </table>
@@ -843,23 +833,23 @@ Siden 2015 har de diagnostiske kriterier for demens været diskuteret, men der e
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="dataObject">
+                                        <div class="dataObject mb-3">
                                             <a data-bs-toggle='collapse' aria-expanded='false' href="#BASIC3" class="ObjectHeaderWrapper">
-                                                <ol class="breadcrumb objectHeaderMain objectHeaderColor">
+                                                <ol class="breadcrumb objectHeader objectHeaderColor">
                                                     <i class="bi bi-folder2 me-2" style="margin-top: -3px;"></i>
                                                     <li class="breadcrumb-item">DanDem</li>
                                                     <li class="breadcrumb-item">Observation</li>
                                                     <li class="breadcrumb-item active">BASIC</li>
                                                 </ol>
                                             </a>
-                                            <div class="collapse m-3 objectBodyMain" id="BASIC3">
-                                                <div class="object_margin">
-                                                    <p class="table_view_hider" style="height: 1rem !important; margin: 0px !important;"></p>
-                                                    <div class="objectDescription alert alert-warning">
-                                                        <p><p>Brief Assessment of Impaired Cognition (BASIC) er udviklet til rettidig identifikation af kognitiv svækkelse og demens.</p></p>
+                                            <div class="collapse mb-3 objectBodyWrapper" id="BASIC3">
+                                                <div class="objectBody">
+                                                    <p class="hidden" style="height: 1rem !important; margin: 0px !important;"></p>
+                                                    <div class="objectBodyDescription">
+                                                        <html><p>Brief Assessment of Impaired Cognition (BASIC) er udviklet til rettidig identifikation af kognitiv svækkelse og demens.</p></html>
                                                     </div>
-                                                    <table class="table table-bordered table-striped table-hover ">
-                                                        <thead>
+                                                    <table class="table">
+                                                        <thead class="main-thead">
                                                             <tr>
                                                                 <th scope="col" class="fst-italic th-attribute">Attribute</th>
                                                                 <th scope="col" class="fst-italic th-description">Description</th>
@@ -867,24 +857,24 @@ Siden 2015 har de diagnostiske kriterier for demens været diskuteret, men der e
                                                                 <th scope="col" class="fst-italic th-required">Required</th>
                                                             </tr>
                                                         </thead>
-                                                        <tbody class="table-group-divider">
+                                                        <tbody class="main-tbody">
                                                             <tr>
                                                                 <th scope="row">ResultValue</th>
                                                                 <td scope="row"></td>
                                                                 <td scope="row">
-                                                                    <table class="table table-sm" style="--bs-table-bg: transparent !important;">
+                                                                    <table class="table table-sm inner_table" style="--bs-table-bg: transparent !important;">
                                                                         <thead>
                                                                             <tr>
                                                                                 <th scope="col" style="width: 20%">Type</th>
-                                                                                <th scope="col">Min or Equal to</th>
                                                                                 <th scope="col">Max or Equal to</th>
+                                                                                <th scope="col">Min or Equal to</th>
                                                                             </tr>
                                                                         </thead>
                                                                         <tbody>
                                                                             <tr>
                                                                                 <td scope="row">Integer</td>
-                                                                                <td>0</td>
                                                                                 <td>25</td>
+                                                                                <td>0</td>
                                                                             </tr>
                                                                         </tbody>
                                                                     </table>
@@ -896,23 +886,23 @@ Siden 2015 har de diagnostiske kriterier for demens været diskuteret, men der e
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="dataObject">
+                                        <div class="dataObject mb-3">
                                             <a data-bs-toggle='collapse' aria-expanded='false' href="#CAMcog4" class="ObjectHeaderWrapper">
-                                                <ol class="breadcrumb objectHeaderMain objectHeaderColor">
+                                                <ol class="breadcrumb objectHeader objectHeaderColor">
                                                     <i class="bi bi-folder2 me-2" style="margin-top: -3px;"></i>
                                                     <li class="breadcrumb-item">DanDem</li>
                                                     <li class="breadcrumb-item">Observation</li>
                                                     <li class="breadcrumb-item active">CAMcog</li>
                                                 </ol>
                                             </a>
-                                            <div class="collapse m-3 objectBodyMain" id="CAMcog4">
-                                                <div class="object_margin">
-                                                    <p class="table_view_hider" style="height: 1rem !important; margin: 0px !important;"></p>
-                                                    <div class="objectDescription alert alert-warning">
-                                                        <p><p>Cambridge Cognitive Examination (CAMCOG) er udviklet med henblik på at bidrage til at diagnosticere demens i et tidligt stadium og giver væsentligt flere oplysninger end fx MMSE. </p></p>
+                                            <div class="collapse mb-3 objectBodyWrapper" id="CAMcog4">
+                                                <div class="objectBody">
+                                                    <p class="hidden" style="height: 1rem !important; margin: 0px !important;"></p>
+                                                    <div class="objectBodyDescription">
+                                                        <html><p>Cambridge Cognitive Examination (CAMCOG) er udviklet med henblik på at bidrage til at diagnosticere demens i et tidligt stadium og giver væsentligt flere oplysninger end fx MMSE. </p></html>
                                                     </div>
-                                                    <table class="table table-bordered table-striped table-hover ">
-                                                        <thead>
+                                                    <table class="table">
+                                                        <thead class="main-thead">
                                                             <tr>
                                                                 <th scope="col" class="fst-italic th-attribute">Attribute</th>
                                                                 <th scope="col" class="fst-italic th-description">Description</th>
@@ -920,24 +910,24 @@ Siden 2015 har de diagnostiske kriterier for demens været diskuteret, men der e
                                                                 <th scope="col" class="fst-italic th-required">Required</th>
                                                             </tr>
                                                         </thead>
-                                                        <tbody class="table-group-divider">
+                                                        <tbody class="main-tbody">
                                                             <tr>
                                                                 <th scope="row">ResultValue</th>
                                                                 <td scope="row"></td>
                                                                 <td scope="row">
-                                                                    <table class="table table-sm" style="--bs-table-bg: transparent !important;">
+                                                                    <table class="table table-sm inner_table" style="--bs-table-bg: transparent !important;">
                                                                         <thead>
                                                                             <tr>
                                                                                 <th scope="col" style="width: 20%">Type</th>
-                                                                                <th scope="col">Min or Equal to</th>
                                                                                 <th scope="col">Max or Equal to</th>
+                                                                                <th scope="col">Min or Equal to</th>
                                                                             </tr>
                                                                         </thead>
                                                                         <tbody>
                                                                             <tr>
                                                                                 <td scope="row">Integer</td>
-                                                                                <td>0</td>
                                                                                 <td>105</td>
+                                                                                <td>0</td>
                                                                             </tr>
                                                                         </tbody>
                                                                     </table>
@@ -949,9 +939,9 @@ Siden 2015 har de diagnostiske kriterier for demens været diskuteret, men der e
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="dataObject">
+                                        <div class="dataObject mb-3">
                                             <a data-bs-toggle='collapse' aria-expanded='false' href="#CognitiveImpairment5" class="ObjectHeaderWrapper">
-                                                <ol class="breadcrumb objectHeaderMain objectHeaderColor">
+                                                <ol class="breadcrumb objectHeader objectHeaderColor">
                                                     <i class="bi bi-folder2 me-2" style="margin-top: -3px;"></i>
                                                     <li class="breadcrumb-item">DanDem</li>
                                                     <li class="breadcrumb-item">Observation</li>
@@ -959,23 +949,23 @@ Siden 2015 har de diagnostiske kriterier for demens været diskuteret, men der e
                                                     <li class="mx-2"> - </li>
                                                     <li><strong>Graden af kognitiv påvirkning</strong></li>
                                                     <span class="d-flex ms-auto align-content-center">
-                                                        <div class="badge rounded-pill text-bg-danger ms-2 me-2 d-inline-flex align-items-center">
-                                                            <i class="bi bi-exclamation-diamond me-1" style="margin-top: -2px;"></i>
+                                                        <div class="badge text-bg-danger ms-2 me-2 d-inline-flex align-items-center">
+                                                            <i class="bi bi-exclamation-diamond me-1"></i>
                                                             <span> Required</span>
                                                         </div>
                                                     </span>
                                                 </ol>
                                             </a>
-                                            <div class="collapse m-3 objectBodyMain" id="CognitiveImpairment5">
-                                                <div class="object_margin">
-                                                    <p class="table_view_hider" style="height: 1rem !important; margin: 0px !important;"></p>
-                                                    <div class="objectDescription alert alert-warning">
+                                            <div class="collapse mb-3 objectBodyWrapper" id="CognitiveImpairment5">
+                                                <div class="objectBody">
+                                                    <p class="hidden" style="height: 1rem !important; margin: 0px !important;"></p>
+                                                    <div class="objectBodyDescription">
                                                         <p><strong>Graden af kognitiv påvirkning</strong></p>
-                                                        <p><p>Graden af kognitiv påvirkning. </p>
-<p>OBS: Afsluttes en patient pga. død eller at patienten afbryder udredningsforløb før diagnosesamtale anføres graden af kognitiv påvirkning på baggrund af de foreliggende oplysninger og efter bedste skøn. Er der tvivl om graden af kognitivt påvirkning (fx tvivl om demens i let grad og demens i moderat grad) anføres tilstanden med den laveste grad af kognitiv deficit.</p></p>
+                                                        <html><p>Graden af kognitiv påvirkning. </p>
+<p>OBS: Afsluttes en patient pga. død eller at patienten afbryder udredningsforløb før diagnosesamtale anføres graden af kognitiv påvirkning på baggrund af de foreliggende oplysninger og efter bedste skøn. Er der tvivl om graden af kognitivt påvirkning (fx tvivl om demens i let grad og demens i moderat grad) anføres tilstanden med den laveste grad af kognitiv deficit.</p></html>
                                                     </div>
-                                                    <table class="table table-bordered table-striped table-hover ">
-                                                        <thead>
+                                                    <table class="table">
+                                                        <thead class="main-thead">
                                                             <tr>
                                                                 <th scope="col" class="fst-italic th-attribute">Attribute</th>
                                                                 <th scope="col" class="fst-italic th-description">Description</th>
@@ -983,7 +973,7 @@ Siden 2015 har de diagnostiske kriterier for demens været diskuteret, men der e
                                                                 <th scope="col" class="fst-italic th-required">Required</th>
                                                             </tr>
                                                         </thead>
-                                                        <tbody class="table-group-divider">
+                                                        <tbody class="main-tbody">
                                                             <tr>
                                                                 <th scope="row">ResultValue</th>
                                                                 <td scope="row"><h6>Habituel kognitiv funktion</h6>
@@ -997,7 +987,7 @@ Siden 2015 har de diagnostiske kriterier for demens været diskuteret, men der e
 <h6>Demens i svær grad jf. ICD-10</h6>
 <p>Demens (NIA-AA) i svær grad (ICD-10): NIA-AA kriterier for demens skal være opfyldte og ADL påvirkning er svær jf. ICD-10 kriterier</p></td>
                                                                 <td scope="row">
-                                                                    <table class="table table-sm" style="--bs-table-bg: transparent !important;">
+                                                                    <table class="table table-sm inner_table" style="--bs-table-bg: transparent !important;">
                                                                         <thead>
                                                                             <tr>
                                                                                 <th scope="col" style="width: 20%">Type</th>
@@ -1035,8 +1025,8 @@ Siden 2015 har de diagnostiske kriterier for demens været diskuteret, men der e
                                                                     </table>
                                                                 </td>
                                                                 <td scope="row">
-                                                                    <div class="badge rounded-pill text-bg-danger ms-2 me-2 d-inline-flex align-items-center">
-                                                                        <i class="bi bi-exclamation-diamond me-1" style="margin-top: -2px;"></i>
+                                                                    <div class="badge text-bg-danger ms-2 me-2 d-inline-flex align-items-center">
+                                                                        <i class="bi bi-exclamation-diamond me-1"></i>
                                                                         <span> Required</span>
                                                                     </div>
                                                                 </td>
@@ -1046,23 +1036,23 @@ Siden 2015 har de diagnostiske kriterier for demens været diskuteret, men der e
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="dataObject">
+                                        <div class="dataObject mb-3">
                                             <a data-bs-toggle='collapse' aria-expanded='false' href="#DAD6" class="ObjectHeaderWrapper">
-                                                <ol class="breadcrumb objectHeaderMain objectHeaderColor">
+                                                <ol class="breadcrumb objectHeader objectHeaderColor">
                                                     <i class="bi bi-folder2 me-2" style="margin-top: -3px;"></i>
                                                     <li class="breadcrumb-item">DanDem</li>
                                                     <li class="breadcrumb-item">Observation</li>
                                                     <li class="breadcrumb-item active">DAD</li>
                                                 </ol>
                                             </a>
-                                            <div class="collapse m-3 objectBodyMain" id="DAD6">
-                                                <div class="object_margin">
-                                                    <p class="table_view_hider" style="height: 1rem !important; margin: 0px !important;"></p>
-                                                    <div class="objectDescription alert alert-warning">
-                                                        <p><p>The Disability Assessment for Dementia (DAD) er udviklet af en gruppe canadiske ergo- og fysioterapeuter med henblik på vurdering af praktisk funktionsevne hos hjemmeboende patienter med Alzheimers sygdom. Instrumentet er følsomt over for ændringer i funktionsevne.</p></p>
+                                            <div class="collapse mb-3 objectBodyWrapper" id="DAD6">
+                                                <div class="objectBody">
+                                                    <p class="hidden" style="height: 1rem !important; margin: 0px !important;"></p>
+                                                    <div class="objectBodyDescription">
+                                                        <html><p>The Disability Assessment for Dementia (DAD) er udviklet af en gruppe canadiske ergo- og fysioterapeuter med henblik på vurdering af praktisk funktionsevne hos hjemmeboende patienter med Alzheimers sygdom. Instrumentet er følsomt over for ændringer i funktionsevne.</p></html>
                                                     </div>
-                                                    <table class="table table-bordered table-striped table-hover ">
-                                                        <thead>
+                                                    <table class="table">
+                                                        <thead class="main-thead">
                                                             <tr>
                                                                 <th scope="col" class="fst-italic th-attribute">Attribute</th>
                                                                 <th scope="col" class="fst-italic th-description">Description</th>
@@ -1070,24 +1060,24 @@ Siden 2015 har de diagnostiske kriterier for demens været diskuteret, men der e
                                                                 <th scope="col" class="fst-italic th-required">Required</th>
                                                             </tr>
                                                         </thead>
-                                                        <tbody class="table-group-divider">
+                                                        <tbody class="main-tbody">
                                                             <tr>
                                                                 <th scope="row">ResultValue</th>
                                                                 <td scope="row"></td>
                                                                 <td scope="row">
-                                                                    <table class="table table-sm" style="--bs-table-bg: transparent !important;">
+                                                                    <table class="table table-sm inner_table" style="--bs-table-bg: transparent !important;">
                                                                         <thead>
                                                                             <tr>
                                                                                 <th scope="col" style="width: 20%">Type</th>
-                                                                                <th scope="col">Min or Equal to</th>
                                                                                 <th scope="col">Max or Equal to</th>
+                                                                                <th scope="col">Min or Equal to</th>
                                                                             </tr>
                                                                         </thead>
                                                                         <tbody>
                                                                             <tr>
                                                                                 <td scope="row">Integer</td>
-                                                                                <td>0</td>
                                                                                 <td>40</td>
+                                                                                <td>0</td>
                                                                             </tr>
                                                                         </tbody>
                                                                     </table>
@@ -1099,25 +1089,25 @@ Siden 2015 har de diagnostiske kriterier for demens været diskuteret, men der e
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="dataObject">
+                                        <div class="dataObject mb-3">
                                             <a data-bs-toggle='collapse' aria-expanded='false' href="#DSQIID7" class="ObjectHeaderWrapper">
-                                                <ol class="breadcrumb objectHeaderMain objectHeaderColor">
+                                                <ol class="breadcrumb objectHeader objectHeaderColor">
                                                     <i class="bi bi-folder2 me-2" style="margin-top: -3px;"></i>
                                                     <li class="breadcrumb-item">DanDem</li>
                                                     <li class="breadcrumb-item">Observation</li>
                                                     <li class="breadcrumb-item active">DSQIID</li>
                                                 </ol>
                                             </a>
-                                            <div class="collapse m-3 objectBodyMain" id="DSQIID7">
-                                                <div class="object_margin">
-                                                    <p class="table_view_hider" style="height: 1rem !important; margin: 0px !important;"></p>
-                                                    <div class="objectDescription alert alert-warning">
-                                                        <p><p>DSQIID er instrumenter der anvendes til vurdering af patienter med samtidig Downs syndrom eller anden mental retardering og mistanke om erhvervet demenssygdom.</p>
+                                            <div class="collapse mb-3 objectBodyWrapper" id="DSQIID7">
+                                                <div class="objectBody">
+                                                    <p class="hidden" style="height: 1rem !important; margin: 0px !important;"></p>
+                                                    <div class="objectBodyDescription">
+                                                        <html><p>DSQIID er instrumenter der anvendes til vurdering af patienter med samtidig Downs syndrom eller anden mental retardering og mistanke om erhvervet demenssygdom.</p>
 <p>Dette instrument anvendes, når det ikke er muligt at anvende de sædvanlige instrumenter grundet mental retardering m.fl.</p>
-<p><strong>I tilfælde af denne er positiv, er der ikke behov for at udføre de andre tests: MMSE, ACE, BASIC, CAMcog, MoCa, MCE, RUDAS, FAQ_IADL, DAD, ADSC_ADL</strong></p></p>
+<p><strong>I tilfælde af denne er positiv, er der ikke behov for at udføre de andre tests: MMSE, ACE, BASIC, CAMcog, MoCa, MCE, RUDAS, FAQ_IADL, DAD, ADSC_ADL</strong></p></html>
                                                     </div>
-                                                    <table class="table table-bordered table-striped table-hover ">
-                                                        <thead>
+                                                    <table class="table">
+                                                        <thead class="main-thead">
                                                             <tr>
                                                                 <th scope="col" class="fst-italic th-attribute">Attribute</th>
                                                                 <th scope="col" class="fst-italic th-description">Description</th>
@@ -1125,12 +1115,12 @@ Siden 2015 har de diagnostiske kriterier for demens været diskuteret, men der e
                                                                 <th scope="col" class="fst-italic th-required">Required</th>
                                                             </tr>
                                                         </thead>
-                                                        <tbody class="table-group-divider">
+                                                        <tbody class="main-tbody">
                                                             <tr>
                                                                 <th scope="row">StatusCode</th>
                                                                 <td scope="row"></td>
                                                                 <td scope="row">
-                                                                    <table class="table table-sm" style="--bs-table-bg: transparent !important;">
+                                                                    <table class="table table-sm inner_table" style="--bs-table-bg: transparent !important;">
                                                                         <thead>
                                                                             <tr>
                                                                                 <th scope="col" style="width: 20%">Type</th>
@@ -1159,23 +1149,23 @@ Siden 2015 har de diagnostiske kriterier for demens været diskuteret, men der e
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="dataObject">
+                                        <div class="dataObject mb-3">
                                             <a data-bs-toggle='collapse' aria-expanded='false' href="#FAQ_IADL8" class="ObjectHeaderWrapper">
-                                                <ol class="breadcrumb objectHeaderMain objectHeaderColor">
+                                                <ol class="breadcrumb objectHeader objectHeaderColor">
                                                     <i class="bi bi-folder2 me-2" style="margin-top: -3px;"></i>
                                                     <li class="breadcrumb-item">DanDem</li>
                                                     <li class="breadcrumb-item">Observation</li>
                                                     <li class="breadcrumb-item active">FAQ_IADL</li>
                                                 </ol>
                                             </a>
-                                            <div class="collapse m-3 objectBodyMain" id="FAQ_IADL8">
-                                                <div class="object_margin">
-                                                    <p class="table_view_hider" style="height: 1rem !important; margin: 0px !important;"></p>
-                                                    <div class="objectDescription alert alert-warning">
-                                                        <p><p>Functional Activities Questionnaire (FAQ IADL) er udviklet med henblik på – via oplysninger fra pårørende – at opnå en hurtig og systematisk vurdering af patientens praktiske funktionsevne i hverdagen.</p></p>
+                                            <div class="collapse mb-3 objectBodyWrapper" id="FAQ_IADL8">
+                                                <div class="objectBody">
+                                                    <p class="hidden" style="height: 1rem !important; margin: 0px !important;"></p>
+                                                    <div class="objectBodyDescription">
+                                                        <html><p>Functional Activities Questionnaire (FAQ IADL) er udviklet med henblik på – via oplysninger fra pårørende – at opnå en hurtig og systematisk vurdering af patientens praktiske funktionsevne i hverdagen.</p></html>
                                                     </div>
-                                                    <table class="table table-bordered table-striped table-hover ">
-                                                        <thead>
+                                                    <table class="table">
+                                                        <thead class="main-thead">
                                                             <tr>
                                                                 <th scope="col" class="fst-italic th-attribute">Attribute</th>
                                                                 <th scope="col" class="fst-italic th-description">Description</th>
@@ -1183,24 +1173,24 @@ Siden 2015 har de diagnostiske kriterier for demens været diskuteret, men der e
                                                                 <th scope="col" class="fst-italic th-required">Required</th>
                                                             </tr>
                                                         </thead>
-                                                        <tbody class="table-group-divider">
+                                                        <tbody class="main-tbody">
                                                             <tr>
                                                                 <th scope="row">ResultValue</th>
                                                                 <td scope="row"></td>
                                                                 <td scope="row">
-                                                                    <table class="table table-sm" style="--bs-table-bg: transparent !important;">
+                                                                    <table class="table table-sm inner_table" style="--bs-table-bg: transparent !important;">
                                                                         <thead>
                                                                             <tr>
                                                                                 <th scope="col" style="width: 20%">Type</th>
-                                                                                <th scope="col">Min or Equal to</th>
                                                                                 <th scope="col">Max or Equal to</th>
+                                                                                <th scope="col">Min or Equal to</th>
                                                                             </tr>
                                                                         </thead>
                                                                         <tbody>
                                                                             <tr>
                                                                                 <td scope="row">Integer</td>
-                                                                                <td>0</td>
                                                                                 <td>30</td>
+                                                                                <td>0</td>
                                                                             </tr>
                                                                         </tbody>
                                                                     </table>
@@ -1212,23 +1202,23 @@ Siden 2015 har de diagnostiske kriterier for demens været diskuteret, men der e
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="dataObject">
+                                        <div class="dataObject mb-3">
                                             <a data-bs-toggle='collapse' aria-expanded='false' href="#MCE9" class="ObjectHeaderWrapper">
-                                                <ol class="breadcrumb objectHeaderMain objectHeaderColor">
+                                                <ol class="breadcrumb objectHeader objectHeaderColor">
                                                     <i class="bi bi-folder2 me-2" style="margin-top: -3px;"></i>
                                                     <li class="breadcrumb-item">DanDem</li>
                                                     <li class="breadcrumb-item">Observation</li>
                                                     <li class="breadcrumb-item active">MCE</li>
                                                 </ol>
                                             </a>
-                                            <div class="collapse m-3 objectBodyMain" id="MCE9">
-                                                <div class="object_margin">
-                                                    <p class="table_view_hider" style="height: 1rem !important; margin: 0px !important;"></p>
-                                                    <div class="objectDescription alert alert-warning">
-                                                        <p><p>Multicultural Cognitive Examination (MCE) er udviklet som et så vidt muligt kulturuafhængigt eller tværkulturelt screeningsinstrument for demens. MCE giver flere og mere nuancerede oplysninger om det kognitive funktionsniveau end fx RUDAS alene og udgør et velegnet supplement ved tværkulturel demensudredning.  </p></p>
+                                            <div class="collapse mb-3 objectBodyWrapper" id="MCE9">
+                                                <div class="objectBody">
+                                                    <p class="hidden" style="height: 1rem !important; margin: 0px !important;"></p>
+                                                    <div class="objectBodyDescription">
+                                                        <html><p>Multicultural Cognitive Examination (MCE) er udviklet som et så vidt muligt kulturuafhængigt eller tværkulturelt screeningsinstrument for demens. MCE giver flere og mere nuancerede oplysninger om det kognitive funktionsniveau end fx RUDAS alene og udgør et velegnet supplement ved tværkulturel demensudredning.  </p></html>
                                                     </div>
-                                                    <table class="table table-bordered table-striped table-hover ">
-                                                        <thead>
+                                                    <table class="table">
+                                                        <thead class="main-thead">
                                                             <tr>
                                                                 <th scope="col" class="fst-italic th-attribute">Attribute</th>
                                                                 <th scope="col" class="fst-italic th-description">Description</th>
@@ -1236,24 +1226,24 @@ Siden 2015 har de diagnostiske kriterier for demens været diskuteret, men der e
                                                                 <th scope="col" class="fst-italic th-required">Required</th>
                                                             </tr>
                                                         </thead>
-                                                        <tbody class="table-group-divider">
+                                                        <tbody class="main-tbody">
                                                             <tr>
                                                                 <th scope="row">ResultValue</th>
                                                                 <td scope="row"></td>
                                                                 <td scope="row">
-                                                                    <table class="table table-sm" style="--bs-table-bg: transparent !important;">
+                                                                    <table class="table table-sm inner_table" style="--bs-table-bg: transparent !important;">
                                                                         <thead>
                                                                             <tr>
                                                                                 <th scope="col" style="width: 20%">Type</th>
-                                                                                <th scope="col">Min or Equal to</th>
                                                                                 <th scope="col">Max or Equal to</th>
+                                                                                <th scope="col">Min or Equal to</th>
                                                                             </tr>
                                                                         </thead>
                                                                         <tbody>
                                                                             <tr>
                                                                                 <td scope="row">Integer</td>
-                                                                                <td>0</td>
                                                                                 <td>100</td>
+                                                                                <td>0</td>
                                                                             </tr>
                                                                         </tbody>
                                                                     </table>
@@ -1265,23 +1255,23 @@ Siden 2015 har de diagnostiske kriterier for demens været diskuteret, men der e
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="dataObject">
+                                        <div class="dataObject mb-3">
                                             <a data-bs-toggle='collapse' aria-expanded='false' href="#MMSE10" class="ObjectHeaderWrapper">
-                                                <ol class="breadcrumb objectHeaderMain objectHeaderColor">
+                                                <ol class="breadcrumb objectHeader objectHeaderColor">
                                                     <i class="bi bi-folder2 me-2" style="margin-top: -3px;"></i>
                                                     <li class="breadcrumb-item">DanDem</li>
                                                     <li class="breadcrumb-item">Observation</li>
                                                     <li class="breadcrumb-item active">MMSE</li>
                                                 </ol>
                                             </a>
-                                            <div class="collapse m-3 objectBodyMain" id="MMSE10">
-                                                <div class="object_margin">
-                                                    <p class="table_view_hider" style="height: 1rem !important; margin: 0px !important;"></p>
-                                                    <div class="objectDescription alert alert-warning">
-                                                        <p><p>Mini mental status examination (MMSE) er uden sammenligning det hyppigst anvendte kognitive screeningsinstrument i ind- og udland og indgår som rutineundersøgelse ved demensudredning.</p></p>
+                                            <div class="collapse mb-3 objectBodyWrapper" id="MMSE10">
+                                                <div class="objectBody">
+                                                    <p class="hidden" style="height: 1rem !important; margin: 0px !important;"></p>
+                                                    <div class="objectBodyDescription">
+                                                        <html><p>Mini mental status examination (MMSE) er uden sammenligning det hyppigst anvendte kognitive screeningsinstrument i ind- og udland og indgår som rutineundersøgelse ved demensudredning.</p></html>
                                                     </div>
-                                                    <table class="table table-bordered table-striped table-hover ">
-                                                        <thead>
+                                                    <table class="table">
+                                                        <thead class="main-thead">
                                                             <tr>
                                                                 <th scope="col" class="fst-italic th-attribute">Attribute</th>
                                                                 <th scope="col" class="fst-italic th-description">Description</th>
@@ -1289,24 +1279,24 @@ Siden 2015 har de diagnostiske kriterier for demens været diskuteret, men der e
                                                                 <th scope="col" class="fst-italic th-required">Required</th>
                                                             </tr>
                                                         </thead>
-                                                        <tbody class="table-group-divider">
+                                                        <tbody class="main-tbody">
                                                             <tr>
                                                                 <th scope="row">ResultValue</th>
                                                                 <td scope="row"></td>
                                                                 <td scope="row">
-                                                                    <table class="table table-sm" style="--bs-table-bg: transparent !important;">
+                                                                    <table class="table table-sm inner_table" style="--bs-table-bg: transparent !important;">
                                                                         <thead>
                                                                             <tr>
                                                                                 <th scope="col" style="width: 20%">Type</th>
-                                                                                <th scope="col">Min or Equal to</th>
                                                                                 <th scope="col">Max or Equal to</th>
+                                                                                <th scope="col">Min or Equal to</th>
                                                                             </tr>
                                                                         </thead>
                                                                         <tbody>
                                                                             <tr>
                                                                                 <td scope="row">Integer</td>
-                                                                                <td>0</td>
                                                                                 <td>30</td>
+                                                                                <td>0</td>
                                                                             </tr>
                                                                         </tbody>
                                                                     </table>
@@ -1318,23 +1308,23 @@ Siden 2015 har de diagnostiske kriterier for demens været diskuteret, men der e
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="dataObject">
+                                        <div class="dataObject mb-3">
                                             <a data-bs-toggle='collapse' aria-expanded='false' href="#MoCa11" class="ObjectHeaderWrapper">
-                                                <ol class="breadcrumb objectHeaderMain objectHeaderColor">
+                                                <ol class="breadcrumb objectHeader objectHeaderColor">
                                                     <i class="bi bi-folder2 me-2" style="margin-top: -3px;"></i>
                                                     <li class="breadcrumb-item">DanDem</li>
                                                     <li class="breadcrumb-item">Observation</li>
                                                     <li class="breadcrumb-item active">MoCa</li>
                                                 </ol>
                                             </a>
-                                            <div class="collapse m-3 objectBodyMain" id="MoCa11">
-                                                <div class="object_margin">
-                                                    <p class="table_view_hider" style="height: 1rem !important; margin: 0px !important;"></p>
-                                                    <div class="objectDescription alert alert-warning">
-                                                        <p><p>The Montreal Cognitive Assessment (MoCA) er udviklet med henblik på at identificere mild cognitive impairment (let kognitiv svækkelse; MCI).</p></p>
+                                            <div class="collapse mb-3 objectBodyWrapper" id="MoCa11">
+                                                <div class="objectBody">
+                                                    <p class="hidden" style="height: 1rem !important; margin: 0px !important;"></p>
+                                                    <div class="objectBodyDescription">
+                                                        <html><p>The Montreal Cognitive Assessment (MoCA) er udviklet med henblik på at identificere mild cognitive impairment (let kognitiv svækkelse; MCI).</p></html>
                                                     </div>
-                                                    <table class="table table-bordered table-striped table-hover ">
-                                                        <thead>
+                                                    <table class="table">
+                                                        <thead class="main-thead">
                                                             <tr>
                                                                 <th scope="col" class="fst-italic th-attribute">Attribute</th>
                                                                 <th scope="col" class="fst-italic th-description">Description</th>
@@ -1342,24 +1332,24 @@ Siden 2015 har de diagnostiske kriterier for demens været diskuteret, men der e
                                                                 <th scope="col" class="fst-italic th-required">Required</th>
                                                             </tr>
                                                         </thead>
-                                                        <tbody class="table-group-divider">
+                                                        <tbody class="main-tbody">
                                                             <tr>
                                                                 <th scope="row">ResultValue</th>
                                                                 <td scope="row"></td>
                                                                 <td scope="row">
-                                                                    <table class="table table-sm" style="--bs-table-bg: transparent !important;">
+                                                                    <table class="table table-sm inner_table" style="--bs-table-bg: transparent !important;">
                                                                         <thead>
                                                                             <tr>
                                                                                 <th scope="col" style="width: 20%">Type</th>
-                                                                                <th scope="col">Min or Equal to</th>
                                                                                 <th scope="col">Max or Equal to</th>
+                                                                                <th scope="col">Min or Equal to</th>
                                                                             </tr>
                                                                         </thead>
                                                                         <tbody>
                                                                             <tr>
                                                                                 <td scope="row">Integer</td>
-                                                                                <td>0</td>
                                                                                 <td>30</td>
+                                                                                <td>0</td>
                                                                             </tr>
                                                                         </tbody>
                                                                     </table>
@@ -1371,24 +1361,24 @@ Siden 2015 har de diagnostiske kriterier for demens været diskuteret, men der e
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="dataObject">
+                                        <div class="dataObject mb-3">
                                             <a data-bs-toggle='collapse' aria-expanded='false' href="#RUDAS12" class="ObjectHeaderWrapper">
-                                                <ol class="breadcrumb objectHeaderMain objectHeaderColor">
+                                                <ol class="breadcrumb objectHeader objectHeaderColor">
                                                     <i class="bi bi-folder2 me-2" style="margin-top: -3px;"></i>
                                                     <li class="breadcrumb-item">DanDem</li>
                                                     <li class="breadcrumb-item">Observation</li>
                                                     <li class="breadcrumb-item active">RUDAS</li>
                                                 </ol>
                                             </a>
-                                            <div class="collapse m-3 objectBodyMain" id="RUDAS12">
-                                                <div class="object_margin">
-                                                    <p class="table_view_hider" style="height: 1rem !important; margin: 0px !important;"></p>
-                                                    <div class="objectDescription alert alert-warning">
-                                                        <p><p>The Rowland Universal Dementia Assessment Scale (RUDAS) er udviklet som et så vidt muligt kulturuafhængigt eller tværkulturelt screeningsinstrument for demens. </p>
-<p><strong>Hvis denne test er udført, er der ikke behov for at udføre yderligere tests. Det anbefales derfor at implementere denne først i integrationer til webservicen.</strong></p></p>
+                                            <div class="collapse mb-3 objectBodyWrapper" id="RUDAS12">
+                                                <div class="objectBody">
+                                                    <p class="hidden" style="height: 1rem !important; margin: 0px !important;"></p>
+                                                    <div class="objectBodyDescription">
+                                                        <html><p>The Rowland Universal Dementia Assessment Scale (RUDAS) er udviklet som et så vidt muligt kulturuafhængigt eller tværkulturelt screeningsinstrument for demens. </p>
+<p><strong>Hvis denne test er udført, er der ikke behov for at udføre yderligere tests. Det anbefales derfor at implementere denne først i integrationer til webservicen.</strong></p></html>
                                                     </div>
-                                                    <table class="table table-bordered table-striped table-hover ">
-                                                        <thead>
+                                                    <table class="table">
+                                                        <thead class="main-thead">
                                                             <tr>
                                                                 <th scope="col" class="fst-italic th-attribute">Attribute</th>
                                                                 <th scope="col" class="fst-italic th-description">Description</th>
@@ -1396,24 +1386,24 @@ Siden 2015 har de diagnostiske kriterier for demens været diskuteret, men der e
                                                                 <th scope="col" class="fst-italic th-required">Required</th>
                                                             </tr>
                                                         </thead>
-                                                        <tbody class="table-group-divider">
+                                                        <tbody class="main-tbody">
                                                             <tr>
                                                                 <th scope="row">ResultValue</th>
                                                                 <td scope="row"><p><strong>Hvis denne test er udført, er der ikke behov for at udføre yderligere tests. Det anbefales derfor at implementere denne først i integrationer til webservicen.</strong></p></td>
                                                                 <td scope="row">
-                                                                    <table class="table table-sm" style="--bs-table-bg: transparent !important;">
+                                                                    <table class="table table-sm inner_table" style="--bs-table-bg: transparent !important;">
                                                                         <thead>
                                                                             <tr>
                                                                                 <th scope="col" style="width: 20%">Type</th>
-                                                                                <th scope="col">Min or Equal to</th>
                                                                                 <th scope="col">Max or Equal to</th>
+                                                                                <th scope="col">Min or Equal to</th>
                                                                             </tr>
                                                                         </thead>
                                                                         <tbody>
                                                                             <tr>
                                                                                 <td scope="row">Integer</td>
-                                                                                <td>0</td>
                                                                                 <td>30</td>
+                                                                                <td>0</td>
                                                                             </tr>
                                                                         </tbody>
                                                                     </table>
@@ -1425,9 +1415,9 @@ Siden 2015 har de diagnostiske kriterier for demens været diskuteret, men der e
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="dataObject">
+                                        <div class="dataObject mb-3">
                                             <a data-bs-toggle='collapse' aria-expanded='false' href="#SupportPersonPresent13" class="ObjectHeaderWrapper">
-                                                <ol class="breadcrumb objectHeaderMain objectHeaderColor">
+                                                <ol class="breadcrumb objectHeader objectHeaderColor">
                                                     <i class="bi bi-folder2 me-2" style="margin-top: -3px;"></i>
                                                     <li class="breadcrumb-item">DanDem</li>
                                                     <li class="breadcrumb-item">Observation</li>
@@ -1436,17 +1426,17 @@ Siden 2015 har de diagnostiske kriterier for demens været diskuteret, men der e
                                                     <li><strong>Pårørende til stede</strong></li>
                                                 </ol>
                                             </a>
-                                            <div class="collapse m-3 objectBodyMain" id="SupportPersonPresent13">
-                                                <div class="object_margin">
-                                                    <p class="table_view_hider" style="height: 1rem !important; margin: 0px !important;"></p>
-                                                    <div class="objectDescription alert alert-warning">
+                                            <div class="collapse mb-3 objectBodyWrapper" id="SupportPersonPresent13">
+                                                <div class="objectBody">
+                                                    <p class="hidden" style="height: 1rem !important; margin: 0px !important;"></p>
+                                                    <div class="objectBodyDescription">
                                                         <p><strong>Pårørende til stede</strong></p>
-                                                        <p><p>Var der en pårørende / professionel omsorgsperson involveret i udredningsforløbet? </p>
+                                                        <html><p>Var der en pårørende / professionel omsorgsperson involveret i udredningsforløbet? </p>
 <p>Personer med demens har ikke altid indsigt i eget aktuelle funktionsniveau, hvorfor det anses for god kvalitet at inddrage pårørende eller andre, som kender patienten indgående i udredningen. Der markeres ”Ja” hvis der har været en pårørende og/eller professionel omsorgsperson til stede.</p>
-<p>Denne variabel er dækkende for alle de nævnte vurderinger, hvor der spørges ind til funktionsniveau. </p></p>
+<p>Denne variabel er dækkende for alle de nævnte vurderinger, hvor der spørges ind til funktionsniveau. </p></html>
                                                     </div>
-                                                    <table class="table table-bordered table-striped table-hover ">
-                                                        <thead>
+                                                    <table class="table">
+                                                        <thead class="main-thead">
                                                             <tr>
                                                                 <th scope="col" class="fst-italic th-attribute">Attribute</th>
                                                                 <th scope="col" class="fst-italic th-description">Description</th>
@@ -1454,12 +1444,12 @@ Siden 2015 har de diagnostiske kriterier for demens været diskuteret, men der e
                                                                 <th scope="col" class="fst-italic th-required">Required</th>
                                                             </tr>
                                                         </thead>
-                                                        <tbody class="table-group-divider">
+                                                        <tbody class="main-tbody">
                                                             <tr>
                                                                 <th scope="row">StatusCode</th>
                                                                 <td scope="row"><p>Har der været en pårørende eller professionel omsorgsperson til stede i udredningsforløbet, der kender patienten tilstrækkeligt til at kunne svare på spørgsmål relateret til ADL?</p></td>
                                                                 <td scope="row">
-                                                                    <table class="table table-sm" style="--bs-table-bg: transparent !important;">
+                                                                    <table class="table table-sm inner_table" style="--bs-table-bg: transparent !important;">
                                                                         <thead>
                                                                             <tr>
                                                                                 <th scope="col" style="width: 20%">Type</th>
@@ -1483,25 +1473,25 @@ Siden 2015 har de diagnostiske kriterier for demens været diskuteret, men der e
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="dataObject">
+                                        <div class="dataObject mb-3">
                                             <a data-bs-toggle='collapse' aria-expanded='false' href="#Trinvold14" class="ObjectHeaderWrapper">
-                                                <ol class="breadcrumb objectHeaderMain objectHeaderColor">
+                                                <ol class="breadcrumb objectHeader objectHeaderColor">
                                                     <i class="bi bi-folder2 me-2" style="margin-top: -3px;"></i>
                                                     <li class="breadcrumb-item">DanDem</li>
                                                     <li class="breadcrumb-item">Observation</li>
                                                     <li class="breadcrumb-item active">Trinvold</li>
                                                 </ol>
                                             </a>
-                                            <div class="collapse m-3 objectBodyMain" id="Trinvold14">
-                                                <div class="object_margin">
-                                                    <p class="table_view_hider" style="height: 1rem !important; margin: 0px !important;"></p>
-                                                    <div class="objectDescription alert alert-warning">
-                                                        <p><p>Trindvold er instrumenter der anvendes til vurdering af patienter med samtidig Downs syndrom eller anden mental retardering og mistanke om erhvervet demenssygdom.</p>
+                                            <div class="collapse mb-3 objectBodyWrapper" id="Trinvold14">
+                                                <div class="objectBody">
+                                                    <p class="hidden" style="height: 1rem !important; margin: 0px !important;"></p>
+                                                    <div class="objectBodyDescription">
+                                                        <html><p>Trindvold er instrumenter der anvendes til vurdering af patienter med samtidig Downs syndrom eller anden mental retardering og mistanke om erhvervet demenssygdom.</p>
 <p>Dette instrument anvendes, når det ikke er muligt at anvende de sædvanlige instrumenter grundet mental retardering m.fl.</p>
-<p><strong>I tilfælde af denne er positiv, er der ikke behov for at udføre de andre tests: MMSE, ACE, BASIC, CAMcog, MoCa, MCE, RUDAS, FAQ_IADL, DAD, ADSC_ADL,</strong></p></p>
+<p><strong>I tilfælde af denne er positiv, er der ikke behov for at udføre de andre tests: MMSE, ACE, BASIC, CAMcog, MoCa, MCE, RUDAS, FAQ_IADL, DAD, ADSC_ADL,</strong></p></html>
                                                     </div>
-                                                    <table class="table table-bordered table-striped table-hover ">
-                                                        <thead>
+                                                    <table class="table">
+                                                        <thead class="main-thead">
                                                             <tr>
                                                                 <th scope="col" class="fst-italic th-attribute">Attribute</th>
                                                                 <th scope="col" class="fst-italic th-description">Description</th>
@@ -1509,12 +1499,12 @@ Siden 2015 har de diagnostiske kriterier for demens været diskuteret, men der e
                                                                 <th scope="col" class="fst-italic th-required">Required</th>
                                                             </tr>
                                                         </thead>
-                                                        <tbody class="table-group-divider">
+                                                        <tbody class="main-tbody">
                                                             <tr>
                                                                 <th scope="row">StatusCode</th>
                                                                 <td scope="row"></td>
                                                                 <td scope="row">
-                                                                    <table class="table table-sm" style="--bs-table-bg: transparent !important;">
+                                                                    <table class="table table-sm inner_table" style="--bs-table-bg: transparent !important;">
                                                                         <thead>
                                                                             <tr>
                                                                                 <th scope="col" style="width: 20%">Type</th>
@@ -1546,34 +1536,33 @@ Siden 2015 har de diagnostiske kriterier for demens været diskuteret, men der e
                                     </div>
                                     <div id="groupReport" class="groupReport"></div>
                                     <div id="groupReport" class="groupReport">
-                                        <div class="dataObject">
+                                        <div class="dataObject mb-3">
    <a data-bs-toggle="collapse" aria-expanded="false" href="#Organization" class="ObjectHeaderWrapper collapsed">
-      <ol class="breadcrumb objectHeaderMain objectHeaderColor">
-         <i class="bi bi-folder2 me-2"></i>
+      <ol class="breadcrumb objectHeader objectHeaderColor">
+         <i class="bi bi-folder2 me-2" style="margin-top: -3px;"></i>
          <li class="breadcrumb-item">DanDem</li>
          <li class="breadcrumb-item">Report</li>
          <li class="breadcrumb-item active">Organization</li>
          <li class="mx-2"> - </li>
          <li><strong>Organisation</strong></li>
          <span class="d-flex ms-auto align-content-center">
-            <div class="badge rounded-pill text-bg-danger ms-2 me-2 d-inline-flex align-items-center" style="margin-top: -3px;">
-                <i class="bi bi-exclamation-diamond me-1" style="margin-top: -2px;"></i>
+            <div class="badge text-bg-danger ms-2 me-2 d-inline-flex align-items-center">
+                <i class="bi bi-exclamation-diamond me-1"></i>
                 <span> Required</span>
             </div>
             </span>
       </ol>
    </a>
-   <div class="m-3 objectBodyMain collapse" id="Organization" style="">
-      <div class="object_margin">
-         <p class="table_view_hider" style="height: 1rem !important; margin: 0px !important;"></p>
-         <div class="objectDescription alert alert-warning">
+   <div class="mb-3 objectBodyWrapper collapse" id="Organization" style="">
+      <div class="objectBody">
+         <p class="hidden" style="height: 1rem !important; margin: 0px !important;"></p>
+         <div class="objectBodyDescription">
             <p><strong>Organisation</strong></p>
             <p></p>
             <p>Standard for all indberetninger. <br><br> Organisationen, der er ansvarlig for indberetning af patienten.</p>
-            <p></p>
          </div>
-         <table class="table table-bordered table-striped table-hover ">
-            <thead>
+         <table class="table">
+            <thead class="main-thead">
                <tr>
                   <th scope="col" class="fst-italic th-attribute">Attribute</th>
                   <th scope="col" class="fst-italic th-description">Description</th>
@@ -1581,12 +1570,12 @@ Siden 2015 har de diagnostiske kriterier for demens været diskuteret, men der e
                   <th scope="col" class="fst-italic th-required">Required</th>
                </tr>
             </thead>
-            <tbody class="table-group-divider">
+            <tbody class="main-tbody">
                 <tr>
                     <th scope="row">OrganizationType</th>
                     <td scope="row">Typen af Identifier, som bliver indberettet.</td>
                     <td scope="row">
-                        <table class="table table-sm" style="--bs-table-bg: transparent !important;">
+                        <table class="table table-sm inner_table" style="--bs-table-bg: transparent !important;">
                             <thead>
                             <tr>
                                 <th scope="col" style="width: 20%">Type</th>
@@ -1629,17 +1618,16 @@ Siden 2015 har de diagnostiske kriterier for demens været diskuteret, men der e
                         </table>
                     </td>
                     <td scope="row">
-                        <div class="badge rounded-pill text-bg-danger ms-2 me-2 d-inline-flex align-items-center" style="margin-top: -3px;">
-                            <i class="bi bi-exclamation-diamond me-1" style="margin-top: -2px;"></i>
+                        <div class="badge text-bg-danger ms-2 me-2 d-inline-flex align-items-center">
+                            <i class="bi bi-exclamation-diamond me-1"></i>
                             <span> Required</span>
                         </div>
                     </td>
-            </tbody>
                 <tr>
                     <th scope="row">Identifier</th>
                     <td scope="row">ID på den enkelte organisation, der er ansvarlig for indberetning af patienten. Typen af ID skal følge den indsendte OrganizationType.</td>
                     <td scope="row">
-                        <table class="table table-sm" style="--bs-table-bg: transparent !important;">
+                        <table class="table table-sm inner_table" style="--bs-table-bg: transparent !important;">
                             <thead>
                             <tr>
                                 <th scope="col" style="width: 20%">Type</th>
@@ -1655,8 +1643,8 @@ Siden 2015 har de diagnostiske kriterier for demens været diskuteret, men der e
                         </table>                    
                     </td>
                     <td scope="row">
-                        <div class="badge rounded-pill text-bg-danger ms-2 me-2 d-inline-flex align-items-center" style="margin-top: -3px;">
-                            <i class="bi bi-exclamation-diamond me-1" style="margin-top: -2px;"></i>
+                        <div class="badge text-bg-danger ms-2 me-2 d-inline-flex align-items-center">
+                            <i class="bi bi-exclamation-diamond me-1"></i>
                             <span> Required</span>
                         </div>
                     </td>
@@ -1665,34 +1653,33 @@ Siden 2015 har de diagnostiske kriterier for demens været diskuteret, men der e
       </div>
    </div>
 </div>
-                                        <div class="dataObject">
+                                        <div class="dataObject mb-3">
    <a data-bs-toggle="collapse" aria-expanded="false" href="#Patient" class="ObjectHeaderWrapper collapsed">
-      <ol class="breadcrumb objectHeaderMain objectHeaderColor">
-         <i class="bi bi-folder2 me-2"></i>
+      <ol class="breadcrumb objectHeader objectHeaderColor">
+         <i class="bi bi-folder2 me-2" style="margin-top: -3px;"></i>
          <li class="breadcrumb-item">DanDem</li>
          <li class="breadcrumb-item">Report</li>
          <li class="breadcrumb-item active">Patient</li>
          <li class="mx-2"> - </li>
          <li><strong>Patient</strong></li>
          <span class="d-flex ms-auto align-content-center">
-            <div class="badge rounded-pill text-bg-danger ms-2 me-2 d-inline-flex align-items-center" style="margin-top: -3px;">
-                <i class="bi bi-exclamation-diamond me-1" style="margin-top: -2px;"></i>
+            <div class="badge text-bg-danger ms-2 me-2 d-inline-flex align-items-center">
+                <i class="bi bi-exclamation-diamond me-1"></i>
                 <span> Required</span>
             </div>
             </span>
       </ol>
    </a>
-   <div class="m-3 objectBodyMain collapse" id="Patient" style="">
-      <div class="object_margin">
-         <p class="table_view_hider" style="height: 1rem !important; margin: 0px !important;"></p>
-         <div class="objectDescription alert alert-warning">
+   <div class="mb-3 objectBodyWrapper collapse" id="Patient" style="">
+      <div class="objectBody">
+         <p class="hidden" style="height: 1rem !important; margin: 0px !important;"></p>
+         <div class="objectBodyDescription">
             <p><strong>Patient</strong></p>
             <p></p>
             <p>Standard for all indberetninger. <br> <br> Patienten, som indberetningen vedrører.</p>
-            <p></p>
          </div>
-         <table class="table table-bordered table-striped table-hover ">
-            <thead>
+         <table class="table">
+            <thead class="main-thead">
                <tr>
                   <th scope="col" class="fst-italic th-attribute">Attribute</th>
                   <th scope="col" class="fst-italic th-description">Description</th>
@@ -1700,12 +1687,12 @@ Siden 2015 har de diagnostiske kriterier for demens været diskuteret, men der e
                   <th scope="col" class="fst-italic th-required">Required</th>
                </tr>
             </thead>
-            <tbody class="table-group-divider">
+            <tbody class="main-tbody">
                 <tr>
                     <th scope="row">CivilRegistrationNumber</th>
                     <td scope="row">CPR nummer på patienten.</td>
                     <td scope="row">
-                        <table class="table table-sm" style="--bs-table-bg: transparent !important;">
+                        <table class="table table-sm inner_table" style="--bs-table-bg: transparent !important;">
                             <thead>
                             <tr>
                                 <th scope="col" style="width: 20%">Type</th>
@@ -1721,8 +1708,8 @@ Siden 2015 har de diagnostiske kriterier for demens været diskuteret, men der e
                         </table>                    
                     </td>
                     <td scope="row">
-                        <div class="badge rounded-pill text-bg-danger ms-2 me-2 d-inline-flex align-items-center" style="margin-top: -3px;">
-                            <i class="bi bi-exclamation-diamond me-1" style="margin-top: -2px;"></i>
+                        <div class="badge text-bg-danger ms-2 me-2 d-inline-flex align-items-center">
+                            <i class="bi bi-exclamation-diamond me-1"></i>
                             <span> Required</span>
                         </div>
                     </td>
@@ -1739,8 +1726,8 @@ Siden 2015 har de diagnostiske kriterier for demens været diskuteret, men der e
                 </div>
             </div>
         </main>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" crossorgigin="anonymous"></script>
-        <script src="js/rkkp.js" crossorgigin="anonymous"></script>
+        <script src="assets/js/bootstrap.bundle.min.js" crossorgigin="anonymous"></script>
+        <script src="assets/js/rkkp.js" crossorgigin="anonymous"></script>
         <script>
             
         // Bootstrap tooltips
