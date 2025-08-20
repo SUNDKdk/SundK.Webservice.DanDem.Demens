@@ -763,7 +763,7 @@
                                                 },
                                                 {
                                                     "GUID": "26a454bf-5525-4ae7-83b4-817bd3c88093",
-                                                    "Udfald": "patient_oensker_ikke_yderligere_undersoegelser"
+                                                    "Udfald": "patient_afbryder_udredningsforløb_før_diagnosesamtale"
                                                 },
                                                 {
                                                     "GUID": "548c852e-a935-48db-b69f-da5aa5f45602",
@@ -775,6 +775,7 @@
                                     "childType": "Attribute_ResultValue",
                                     "type": "document",
                                     "GUID": "82a7f073-f54e-4a0d-a0c5-f55ec238ba00",
+                                    "required": true,
                                     "error": {}
                                 },
                                 {
@@ -806,6 +807,7 @@
                             "description": "Fritvalgshenvisning kan gives ved lang ventetid. Ved patienter der er omvisiteret via fritvalgsordning til primær udredning skal datoen for modtagelse af fritvalgshenvisningen oplyses. ",
                             "ChangeLogID": "d221e3a8-041a-49b3-bb31-dc5f442c50c5",
                             "realName": "Henvisningstype",
+                            "required": true,
                             "error": {}
                         },
                         {
@@ -978,7 +980,7 @@
             },
             "isActivated": true,
             "additionalProperties": false,
-            "dbVersion": "1.0.0",
+            "dbVersion": "2.0.0",
             "GUID": "79e59bf8-0e30-4b5c-8afd-c85afb00b871",
             "bucketId": "bdea2baf-86e0-4dce-aefe-a5d20dd110b8",
             "dbNameShort": "DanDem",
@@ -1107,7 +1109,7 @@
     "creationTS": "2024-08-16T10:58:12.414Z",
     "GUID": "119a2ef9-e29b-4a27-94d3-d52ee6653d29",
     "isLineageEnabled": false,
-    "lastModifTS": "2025-03-27T12:12:44.745Z",
+    "lastModifTS": "2025-08-20T11:42:14.618Z",
     "persistenceSchemaVersion": "6",
     "isCreatedByPlugin": true,
     "pluginInformation": {
@@ -1116,7 +1118,7 @@
         "pluginEngineVersion": "1.0.0"
     },
     "applicationInformation": {
-        "version": "6.10.18"
+        "version": "6.11.9"
     },
     "hackoladeMeta": {},
     "settings": {
